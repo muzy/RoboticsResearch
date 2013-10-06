@@ -1,0 +1,112 @@
+\documentclass[twocolumn]{article}
+
+\usepackage[english]{babel} 
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+% Math
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm} 
+
+\newtheoremstyle{break}
+   {\topsep}{\topsep}%
+   {\itshape}{}%
+   {\bfseries}{}%
+   {\newline}
+   {\thmname{#1}\thmnumber{\@ifnotempty{#1}{ }\@upn{#2}}%
+    \thmnote{ {\bfseries(#3)}}}% 
+    
+\newtheorem{definition}{Definition}
+
+\usepackage[parfill]{parskip}
+%\usepackage[onehalfspacing]{setspace}
+\usepackage{newclude}
+
+\usepackage[sortcites=true, style=authoryear,natbib=true]{biblatex}
+
+\bibliography{bibliography}
+
+%Autornamen in Bibliography fett
+\AtBeginBibliography{\renewcommand*{\mkbibnamelast }[1]{\textbf{#1}}}
+\AtBeginBibliography{\renewcommand*{\mkbibnamefirst }[1]{\textbf{#1}}}
+
+
+\title{Development of a educational and sustainable robotic platform for children and adults}
+\date{\today}
+\author{Sebastian Muszytowski \\Baden-Wuerttemberg Cooperative State University Mannheim }
+
+\begin{document}
+
+\twocolumn[
+        \maketitle
+        \begin{@twocolumnfalse}
+        \maketitle
+        \end{@twocolumnfalse}
+]
+
+
+\section{Introduction}
+Getting children in touch with technology is important in todays technologically advanced society. In schools technology (specifically electrical engineering and programming) is often taught using robots. Robots are well suited for children since they allow interaction with the reality in contrast to arbitrary technology related exercises such as programming execises which doesn't affect the real world.\newline 
+Since schools are required to save money, robots used for teaching stay property of the schools. Therefore children usually cannot take the robot home to work with it. In addition modification of robot is usually not permitted which reduces potential learning experiences. Giving students the full control over all possibilities of the robot requires them to own the robot. This requires to robot to be cheap, extendable and suitable for educational purposes.\newline
+The development of a robot plattform for educational purpose requires requirement engineering, market research and evaluation of robots which are already used in education. Once the research is completed a new robot plattform can be constructed taking the research results into account.
+\section{Requirement Analysis / Project Goals}
+The target user group of the robot are mainly children and adults with very little or no experience in electrical engineering and programming. Teaching the knowledge requires a platform which is designed to be educational. Therefore it has to comply with several requirements which affect technical aspects as well as social aspects.
+The following lists describes the basic requirements on which existing platforms can be assessed. The assessent critera can also be used to make decisions when developing a new platform.
+\begin{description}
+\item[Affordable] \hfill \\ The robot platform must be affordable for everyone. Especially when the robot is used in schools every child should own the robot to increase the possibilities to modify and extend it. Robots which stay property of a school may result in social problems since socially disadvantaged children cannot afford their own robot whereas socially advantaged children can. A considerable price tag for a educational robot is the educational budget for a wellfare recipient which is 100 Euro per year in Germany as defined defined in SGB II §28 (as of the 07.05.2013).
+\item[Educational] \hfill \\ Documentation, learning materials and suggestions for lessons are needed to teach the usage of the robot. The robot should be designed to teach both electrical engineering as well as programming. This can be realized by having exercises specific to the topic e.g. by soldering the robot first with programming afterwards. By using strategies like Poka-yoke (mistake proofing) the platform becomes more robust and therefore can prevent frustration.
+\item[Sustainable] \hfill \\ Sustainability is an environmental issue which should be taken into account. Sustainability includes serveral aspects such as the choice of materials, their durability and the repairability. It is a huge bonus if materials are environment-friendly and produced in a socially acceptable manner. If the robot can be repaired or interchanged using household or easy to get items the robot can be considered sustainable. 
+\item[Extendable] \hfill \\ Extendabilitiy enables the robot to adapt to new tasks. Interchangeable sensors are the key to a flexible plattform. Unused microcontroller pins should be mapped onto easy accessible pins which require no soldering.
+\item[Open-Source] \hfill \\ Open-Source products can be easily modified, extended and remixed into new, continously improved, products.  
+\end{description}
+
+
+\section{State of the Art}
+The development of a new robot platform requires
+
+\subsection{Asuro}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/asuro.jpg}
+  \caption{Picture of the Asuro (CC-BY-SA Robin Gruber)}
+\end{figure}
+\subsection{Arduino Robot}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/arduinorobot.jpg}
+  \caption{Picture of the Asuro (CC-BY-SA Robin Gruber)}
+\end{figure}
+\subsection{Lego Mindstorms}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/mindstorms.jpg}
+  \caption{Picture of the Lego Mindstorms NXT (from http://www.devoxx.com/)}
+\end{figure}
+\subsection{Thymio II}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/thymioii.jpg}
+  \caption{Picture of the Thymio II (from https://aseba.wikidot.com/en:thymio)}
+\end{figure}
+
+
+\section{Case studies}
+\subsection{Movement}
+\subsection{Sensors}
+\subsection{Communication}
+\subsection{Microcontroller}
+\subsection{Power Supply}
+
+\section{Robot Construction}
+
+
+
+\nocite{*}
+
+\printbibliography[maxnames=25]
+\addcontentsline{toc}{part}{Literaturverzeichnis}
+\end{document}
