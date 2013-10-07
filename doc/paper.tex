@@ -26,14 +26,15 @@
 %\usepackage[onehalfspacing]{setspace}
 \usepackage{newclude}
 
-\usepackage[sortcites=true, style=authoryear,natbib=true]{biblatex}
-
+%\usepackage[sortcites=true, style=authoryear,natbib=true]{biblatex}
+\usepackage{biblatex}
 \bibliography{bibliography}
 
 %Autornamen in Bibliography fett
-\AtBeginBibliography{\renewcommand*{\mkbibnamelast }[1]{\textbf{#1}}}
-\AtBeginBibliography{\renewcommand*{\mkbibnamefirst }[1]{\textbf{#1}}}
+%\AtBeginBibliography{\renewcommand*{\mkbibnamelast }[1]{\textbf{#1}}}
+%\AtBeginBibliography{\renewcommand*{\mkbibnamefirst }[1]{\textbf{#1}}}
 
+%\makeindex
 
 \title{Development of a educational and sustainable robotic platform for children and adults}
 \date{\today}
@@ -66,7 +67,7 @@ The following lists describes the basic requirements on which existing platforms
 
 
 \section{State of the Art}
-The development of a new robot platform requires
+The development of a new robot platform requires the assessment of current robotic platforms using the requirements developed. In focus of the assessment are popular robot platforms which are either actively used in schools or developed with education in mind. All of the platforms are independently developed and focus on different ideas. 
 
 \subsection{Asuro}
 \begin{figure}[h!]
@@ -74,12 +75,17 @@ The development of a new robot platform requires
   \includegraphics[width=0.5\textwidth]{images/asuro.jpg}
   \caption{Picture of the Asuro (CC-BY-SA Robin Gruber)}
 \end{figure}
+
+The Asuro robot is developed by the German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt e.V.) with focus on edcuational use. Asuros development started in 2004 and is now discontinued. The robot is shipped as a do-it-yourself kit and requires about eight hours build time for a novice. 
+
 \subsection{Arduino Robot}
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{images/arduinorobot.jpg}
-  \caption{Picture of the Asuro (CC-BY-SA Robin Gruber)}
+  \caption{Picture of the Arduino Robot}
 \end{figure}
+
+The Arduino Robot is the first robot created by the arduino foundation. It comes preassembled and contains two microcontrollers 
 \subsection{Lego Mindstorms}
 \begin{figure}[h!]
   \centering
@@ -95,7 +101,21 @@ The development of a new robot platform requires
 
 
 \section{Case studies}
+A robot is built using parts and modules which can be grouped into functional groups like movement, sensors or communication. The goal of each functional group can be achieved in various ways which have to be evaluated using the requirements used in the evaluation of other robot platforms. The difficulty in the evaluation process are dependencies between different modules, e.g. when a sensor has special power requirements. 
 \subsection{Movement}
+Movement is the most important interaction with the robots environment. In contrast to a stationary robot a moving robot can interact with a wider area but requires battery power. Different approaches for robot movement exist which will be part of critical evaluation.
+\subsubsection{Wheels}
+Wheeled robots are common.
+\paragraph{Wheeled with two DC motors}
+
+Wheeled with two Stepper motors
+Omniwheels
+
+\subsubsection{Legs}
+Bipod
+Qadropod
+Hexapod
+
 \subsection{Sensors}
 \subsection{Communication}
 \subsection{Microcontroller}
@@ -108,5 +128,5 @@ The development of a new robot platform requires
 \nocite{*}
 
 \printbibliography[maxnames=25]
-\addcontentsline{toc}{part}{Literaturverzeichnis}
+\addcontentsline{toc}{part}{References}
 \end{document}
