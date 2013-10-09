@@ -6,6 +6,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 
+\usepackage{xcolor}
+\usepackage{tabu}
+\usepackage{colortbl}
+
 % Math
 
 \usepackage{amsmath}
@@ -103,13 +107,28 @@ The Arduino Robot is the first robot created by the arduino foundation. It comes
 \section{Case studies}
 A robot is built using parts and modules which can be grouped into functional groups like movement, sensors or communication. The goal of each functional group can be achieved in various ways which have to be evaluated using the requirements used in the evaluation of other robot platforms. The difficulty in the evaluation process are dependencies between different modules, e.g. when a sensor has special power requirements. 
 \subsection{Movement}
-Movement is the most important interaction with the robots environment. In contrast to a stationary robot a moving robot can interact with a wider area but requires battery power. Different approaches for robot movement exist which will be part of critical evaluation.
+Movement is the most important feature since it allows interaction with the robots environment. In contrast to a stationary robot a moving robot can interact with a wider area but requires battery power. Different approaches for robot movement exist which will be part of critical evaluation.
 \subsubsection{Wheels}
-Wheeled robots are common since their mechanic and control is rather simple. Typically robots either have two 
+Wheeled robots are common since their mechanic principle is rather simple. Typically robots have two wheels and a ball caster which prevents the robot from falling over. A ball caster acts as a third undirected wheel with reduced friction. Using wheels a robot can be moved in all directions.
 \paragraph{Wheeled with two DC motors}
+DC motors can be used to drive the wheels. To allow the control of direction (forward and backward) a so called H bridge is often used. Two H bridges can be combined to allow the robot to move right/left as well. 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/hbridge.png}
+  \caption{Basic schematic of a H-bridge (CC-BY-SA Cyril Buttay)}
+\end{figure}
+\paragraph{Wheeled with two Stepper motors}
+Stepper motors are slightly modified DC motors. In stepper motors the full rotation is divided into a number of equal steps which can be separately controlled. The motor can step forward, backward or hold the current position with huge torque. Stepper motors are usually shipped within a gear box which reduces steps much further to gain higher precision and torque. 
+These motors can be driven by a dual H bridge, a stepper driver or by using generic Input/Output pins in combination with a darlington array to reduce the current on the I/O pin. 
 
-Wheeled with two Stepper motors
-Omniwheels
+Stepper motors start at 2.95USD (in China) up to 4.95USD (in the USA\footnote{http://www.adafruit.com/products/858}). Two stepper motors are needed to drive the robot. To reduce the cost a ULN2803 darlington array with eight outputs can be used in combination with a eight bit shift-register (74HC595) to control the movement. This solution has a price tag of 2*2.95USD (steppers) plus 0.9USD (ULN2803) plus 0.9USD (74HC595) rendering a total cost of 8USD. Another advantage beneath the low costs are the parts itself. The afore mentioned shift register and darlington array are standard parts which come in beginner friendlly easy to solder SMD packages. 
+
+The alternative solution is to use a stepper motor driver like Toshibas TB6612FNG which can drive either two DC motors or a single stepper motor. With a price of 3USD it is rather costly since two driver chips are needed for two stepper motors.
+
+\paragraph{Omniwheels}
+
+\paragraph{Comparison}
+
 
 \subsubsection{Legs}
 Bipod

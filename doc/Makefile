@@ -6,10 +6,10 @@ git:
 	git push
 
 edit:
-	geany `find . | grep 'tex'` bibliography.bib
+	kate `find . | grep 'tex'` bibliography.bib
 	
 editall:
-	geany `find . | grep 'tex'`
+	kate `find . | grep 'tex'`
 
 e: edit
 
