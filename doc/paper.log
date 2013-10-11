@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.8.14)  9 OCT 2013 21:13
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.8.14)  11 OCT 2013 07:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -870,9 +870,9 @@ home/muzy/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/muzy/.t
 exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/muzy/.texmf-var/fon
 ts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/muzy/.texmf-var/fonts/pk/ljfour
 /jknappen/ec/ecrm1728.600pk>
-Output written on paper.pdf (4 pages, 672643 bytes).
+Output written on paper.pdf (4 pages, 672305 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
+ 347 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
