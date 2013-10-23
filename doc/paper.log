@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.10.18)  23 OCT 2013 15:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.10.18)  23 OCT 2013 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -922,8 +922,11 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 104--105
  []
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 1708) in paragraph at lines 108--109
-[]\T1/lmr/m/n/10 The Asuro robot is de-vel-oped by the Ger-man
+\T1/lmr/m/n/10 The Asuro robot is de-vel-oped by the Ger-man
  []
 
 <images/arduinorobot.jpg, id=12, 489.32813pt x 306.39468pt>
@@ -940,10 +943,7 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 116--117
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 1990) has occurred while \output is active []
-
- [2 <./images/asuro.jpg>] <images/mindstorms.jpg, id=17, 449.68pt x 381.425pt>
+<images/mindstorms.jpg, id=13, 449.68pt x 381.425pt>
 File: images/mindstorms.jpg Graphic file (type jpg)
 
 <use images/mindstorms.jpg>
@@ -954,7 +954,10 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 124--125
  [][] 
  []
 
-<images/thymioii.jpg, id=18, 1204.5pt x 903.375pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/thymioii.jpg, id=14, 1204.5pt x 903.375pt>
 File: images/thymioii.jpg Graphic file (type jpg)
  <use images/thymioii.jpg>
 Package pdftex.def Info: images/thymioii.jpg used on input line 130.
@@ -969,8 +972,18 @@ Underfull \hbox (badness 5175) in paragraph at lines 131--131
 []\T1/lmr/m/n/10 Figure 4: Pic-ture of the Thymio II (from
  []
 
-[3 <./images/arduinorobot.jpg> <./images/mindstorms.jpg> <./images/thymioii.jpg
->] <images/hbridge.png, id=22, 501.875pt x 308.15125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 2310) has occurred while \output is active []
+
+ [2]
+Overfull \vbox (9.13771pt too high) has occurred while \output is active []
+
+
+[3 <./images/asuro.jpg> <./images/arduinorobot.jpg> <./images/mindstorms.jpg> <
+./images/thymioii.jpg>] <images/hbridge.png, id=22, 501.875pt x 308.15125pt>
 File: images/hbridge.png Graphic file (type png)
 
 <use images/hbridge.png>
@@ -997,7 +1010,7 @@ Package logreq Info: Writing requests to 'paper.run.xml'.
 Here is how much of TeX's memory you used:
  10297 strings out of 494938
  150526 string characters out of 6178155
- 332359 words of memory out of 5000000
+ 335359 words of memory out of 5000000
  13277 multiletter control sequences out of 15000+600000
  66408 words of font info for 60 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1010,7 +1023,7 @@ exmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lm
 r6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on paper.pdf (5 pages, 826628 bytes).
+Output written on paper.pdf (5 pages, 827044 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
