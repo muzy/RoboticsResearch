@@ -10,8 +10,10 @@
 \usepackage{xcolor}
 \usepackage{tabu}
 \usepackage{colortbl}
+\usepackage{calc}
 
 \usepackage{pifont}
+\usepackage{forloop}
 % Math
 
 \usepackage{amsmath}
@@ -31,6 +33,13 @@
 \usepackage[parfill]{parskip}
 %\usepackage[onehalfspacing]{setspace}
 \usepackage{newclude}
+
+\newcounter{starnumber}
+\newcommand{\stars}[1]{
+  \forloop{starnumber}{1}{\value{starnumber} < {#1+1}}{\ding{72}}
+  
+}
+
 
 %\usepackage[sortcites=true, style=authoryear,natbib=true]{biblatex}
 \usepackage{biblatex}
@@ -84,7 +93,9 @@ The development of a new robot platform requires the assessment of current robot
 
 The Asuro robot is developed by the German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt e.V.) in cooperation with Arexx Engineering focussed on edcuational use. Asuros development started in 2004 and is now discontinued. The robot is shipped as a do-it-yourself kit and requires about eight hours build time for a novice. 
 
-\ding{72}\ding{73}
+%\ding{72}\ding{73}
+\stars{5}
+
 \subsection{Arduino Robot}
 \begin{figure}[h!]
   \centering

@@ -16,17 +16,6 @@
   {}
 \endgroup
 
-\entry{9783423057677}{book}{}
-  \list{publisher}{1}{%
-    {DTV Deutscher Taschenbuch}%
-  }
-  \field{sortinit}{S}
-  \field{isbn}{342305767X}
-  \field{title}{SGB II Grundsicherung für Arbeitssuchende / SGB XII
-  Sozialhilfe}
-  \field{year}{2007}
-\endentry
-
 \lossort
 \endlossort
 
