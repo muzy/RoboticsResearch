@@ -21,12 +21,6 @@ sd:
 show: pdf
 	okular paper.pdf
 
-pdf: pdfindex
-	bibtex paper
-	pdflatex -shell-escape paper.tex
-	#makeindex paper.nlo -s nomencl.ist -o paper.nls
-	pdflatex -shell-escape paper.tex
-
-pdfindex:
-	pdflatex -shell-escape paper.tex
+pdf: 
+	latexmk -bibtex -pdf paper.tex
 
