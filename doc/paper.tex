@@ -7,6 +7,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 
+\usepackage{ifthen}
 \usepackage{xcolor}
 \usepackage{tabu}
 \usepackage{colortbl}
@@ -14,6 +15,7 @@
 
 \usepackage{pifont}
 \usepackage{forloop}
+\usepackage[nomessages]{fp}
 % Math
 
 \usepackage{amsmath}
@@ -36,8 +38,9 @@
 
 \newcounter{starnumber}
 \newcommand{\stars}[1]{
-  \forloop{starnumber}{1}{\value{starnumber} < {#1+1}}{\ding{72}}
-  
+  \forloop{starnumber}{1}{\value{starnumber} < 6}{
+    \ifthenelse{#1 < \value{starnumber}}{\ding{73}}{\ding{72}}%
+  }
 }
 
 
@@ -84,6 +87,17 @@ The following lists describes the basic requirements on which existing platforms
 \section{State of the Art}
 The development of a new robot platform requires the assessment of current robotic platforms using the requirements developed. In focus of the assessment are popular robot platforms which are either actively used in schools or developed with education in mind. All of the platforms are independently developed and focus on different ideas. 
 
+Assement criterias are evaluated using a rating system which allows values between zero and five where higher values are better. Each value is represented using stars for better overview. Detailed description of each rating is explained below.
+
+\begin{description}
+\item[\stars{5}] The evaluated aspect fully complies with the assessment critera and adds additional functionality which exceeds expectations. 
+\item[\stars{4}] The evaluated aspect fully complies with the assessment critera. Mentioned properties may have minor restraints which do not affect the overall rating of the system.
+\item[\stars{3}]foo
+\item[\stars{2}]foo
+\item[\stars{1}]foo
+\item[\stars{0}] The evaluated aspect does not comply with 
+\end{description}
+
 \subsection{Asuro}
 \begin{figure}[h!]
   \centering
@@ -94,7 +108,7 @@ The development of a new robot platform requires the assessment of current robot
 The Asuro robot is developed by the German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt e.V.) in cooperation with Arexx Engineering focussed on edcuational use. Asuros development started in 2004 and is now discontinued. The robot is shipped as a do-it-yourself kit and requires about eight hours build time for a novice. 
 
 %\ding{72}\ding{73}
-\stars{5}
+
 
 \subsection{Arduino Robot}
 \begin{figure}[h!]
