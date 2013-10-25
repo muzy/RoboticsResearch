@@ -78,9 +78,9 @@ The following lists describes the basic requirements on which existing platforms
 \begin{description}
 \item[Affordable] \hfill \\ The robot platform must be affordable for everyone. Especially when the robot is used in schools every child should own the robot to increase the possibilities to modify and extend it. Robots which stay property of a school may result in social problems since socially disadvantaged children cannot afford their own robot whereas socially advantaged children can. A considerable price tag for a educational robot is the educational budget for a wellfare recipient which is 100 Euro per year in Germany as defined defined in SGB II §28 (as of the 07.05.2013).
 \item[Educational] \hfill \\ Documentation, learning materials and suggestions for lessons are needed to teach the usage of the robot. The robot should be designed to teach both electrical engineering as well as programming. This can be realized by having exercises specific to the topic e.g. by soldering the robot first with programming afterwards. By using strategies like Poka-yoke (mistake proofing) the platform becomes more robust and therefore can prevent frustration.
-\item[Sustainable] \hfill \\ Sustainability is an environmental issue which should be taken into account. Sustainability includes serveral aspects such as the choice of materials, their durability and the repairability. It is a huge bonus if materials are environment-friendly and produced in a socially acceptable manner. If the robot can be repaired or interchanged using household or easy to get items the robot can be considered sustainable. 
-\item[Extendable] \hfill \\ Extendabilitiy enables the robot to adapt to new tasks. Interchangeable sensors are the key to a flexible plattform. Unused microcontroller pins should be mapped onto easy accessible pins which require no soldering.
-\item[Open-Source] \hfill \\ Open-Source products can be easily modified, extended and remixed into new, continously improved, products.  
+\item[Sustainable] \hfill \\ Sustainability is an environmental issue which should be taken into account. Sustainability includes serveral aspects such as the choice of materials, their durability and the repairability. It is a huge bonus if materials are environment-friendly and produced in a socially acceptable manner. If the robot can be easily repaired or interchanged using household or easy to get items the robot can be considered sustainable. 
+\item[Extendable] \hfill \\ Extendabilitiy enables the robot to adapt to new tasks. Interchangeable sensors and actuators are the key to a flexible plattform. The plattform should provide some unused microcontroller pins dedicated to extensions. Those pins should be mapped onto easy accessible pins which require no soldering.  
+\item[Open-Source] \hfill \\ Open-Source products can be easily modified, extended and remixed into new, continously improved, products. Schematics, build-instructions and specifications should be accessible under a permissive open-source license. 
 \end{description}
 
 
@@ -107,7 +107,11 @@ Assement criterias are evaluated using a rating system which allows values betwe
 
 The Asuro robot is developed by the German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt e.V.) in cooperation with Arexx Engineering focussed on edcuational use. Asuros development started in 2004 and is now discontinued. The robot is shipped as a do-it-yourself kit and requires about eight hours build time for a novice. 
 
-%\ding{72}\ding{73}
+Asuro features an eight bit Atmel ATmega8L microcontroller with eight kilobytes of flash memory, 512 bytes of electrical eraseable programmable read only memory (short EEPROM) and one kilobytes of static random-access memory (short SRAM). One kilobyte of flash is used for the bootloader which results in seven kilobytes of flash usable for user programs.
+
+Interaction with the environment is realized using two DC motors which can be controlled individually in terms of direction and speed. Four LEDs are used for displaying the status of the asuro. The whole system is powered by four AAA batteries or rechargable batteries mounted in a 2x2 battery case. 
+
+Asuro can sense its environment using different sensors such as two photodiodes which can be used for line-following tasks, six push buttons to detect objects in front of Asuro and two photoelectric sensors to determine the rotation speed of each of Asuros wheels.
 
 
 \subsection{Arduino Robot}
