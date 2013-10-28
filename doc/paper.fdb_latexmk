@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex paper"] 1382993940 "paper.aux" "paper.bbl" "paper" 1382993941
+["bibtex paper"] 1382993940 "paper.aux" "paper.bbl" "paper" 1382993957
   "/usr/share/texmf/bibtex/bst/biblatex/bst/biblatex.bst" 1321204148 60396 e6b4061d3c40fe2842ecdd2bc99ea74d ""
   "bibliography.bib" 1382514322 183 9463a8523111538f903cad63841a45c3 ""
   "paper-blx.bib" 1382993940 306 385f19de3b8fd810ba7ca241d1791e14 ""
@@ -104,7 +104,7 @@
   "paper-blx.bib"
   "paper.log"
   "paper.aux"
-["pdflatex"] 1382993940 "paper.tex" "paper.pdf" "paper" 1382993941
+["pdflatex"] 1382993940 "paper.tex" "paper.pdf" "paper" 1382993957
   "/etc/texmf/web2c/texmf.cnf" 1382042420 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
