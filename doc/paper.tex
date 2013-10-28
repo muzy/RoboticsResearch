@@ -1,22 +1,27 @@
-\documentclass[twocolumn]{article}
+\documentclass[11pt,a4paper]{article}
+%\documentclass[conference]{IEEEtran}
+%\documentclass[twocolumn]{article}
 
 \usepackage[english]{babel} 
 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\DeclareUnicodeCharacter{20AC}{\euro}
 \usepackage{graphicx}
-
+\usepackage{rotating} 
+\usepackage{array}
+\usepackage{booktabs} 
+\usepackage{longtable}
 \usepackage{ifthen}
 \usepackage{xcolor}
 \usepackage{tabu}
 \usepackage{colortbl}
 \usepackage{calc}
-
 \usepackage{pifont}
 \usepackage{forloop}
 \usepackage[nomessages]{fp}
-% Math
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -43,6 +48,7 @@
   }
 }
 
+\renewcommand{\arraystretch}{1.2}
 
 %\usepackage[sortcites=true, style=authoryear,natbib=true]{biblatex}
 \usepackage{biblatex}
@@ -60,12 +66,13 @@
 
 \begin{document}
 
-\twocolumn[
-        \maketitle
-        \begin{@twocolumnfalse}
-        \maketitle
-        \end{@twocolumnfalse}
-]
+\maketitle
+%\twocolumn[
+%       \maketitle
+%        \begin{@twocolumnfalse}
+%        \maketitle
+%        \end{@twocolumnfalse}
+%]
 
 
 \section{Introduction}
@@ -77,10 +84,11 @@ The target user group of the robot are mainly children and adults with very litt
 The following lists describes the basic requirements on which existing platforms can be assessed. The assessent critera can also be used to make decisions when developing a new platform.
 \begin{description}
 \item[Affordable] \hfill \\ The robot platform must be affordable for everyone. Especially when the robot is used in schools every child should own the robot to increase the possibilities to modify and extend it. Robots which stay property of a school may result in social problems since socially disadvantaged children cannot afford their own robot whereas socially advantaged children can. A considerable price tag for a educational robot is the educational budget for a wellfare recipient which is 100 Euro per year in Germany as defined defined in SGB II §28 (as of the 07.05.2013).
-\item[Educational] \hfill \\ Documentation, learning materials and suggestions for lessons are needed to teach the usage of the robot. The robot should be designed to teach both electrical engineering as well as programming. This can be realized by having exercises specific to the topic e.g. by soldering the robot first with programming afterwards. By using strategies like Poka-yoke (mistake proofing) the platform becomes more robust and therefore can prevent frustration.
-\item[Sustainable] \hfill \\ Sustainability is an environmental issue which should be taken into account. Sustainability includes serveral aspects such as the choice of materials, their durability and the repairability. It is a huge bonus if materials are environment-friendly and produced in a socially acceptable manner. If the robot can be easily repaired or interchanged using household or easy to get items the robot can be considered sustainable. 
+\item[Educational] \hfill \\ Documentation, learning materials and suggestions for lessons are needed to teach the usage of the robot. The robot should be designed to teach both electrical engineering as well as programming. This can be realized by having exercises specific to the topic e.g. by soldering the robot first with programming afterwards. If the plattform supports both, graphical programming languages for young children as well as high-level programming languages the plattform is more accessible for education. 
+\item[Sustainable] \hfill \\ Sustainability is an environmental issue which should be taken into account. Sustainability includes serveral aspects such as the choice of materials, their durability and the repairability. It is a huge bonus if materials are environment-friendly and produced in a socially acceptable manner (tantalum capacitors for instance should be avoided for those reasons). If the robot can be easily repaired or interchanged using household or easy to get items the robot can be considered sustainable. 
 \item[Extendable] \hfill \\ Extendabilitiy enables the robot to adapt to new tasks. Interchangeable sensors and actuators are the key to a flexible plattform. The plattform should provide some unused microcontroller pins dedicated to extensions. Those pins should be mapped onto easy accessible pins which require no soldering.  
-\item[Open-Source] \hfill \\ Open-Source products can be easily modified, extended and remixed into new, continously improved, products. Schematics, build-instructions and specifications should be accessible under a permissive open-source license. 
+\item[Trouble-free] \hfill \\ Building the robot should be a smooth, trouble free, task. Error sources should be prevented e.g. by using connectors which fit in one direction only or properly marked electric parts. Bending or modifying shipped parts should be avoided since it  could render the part broken or malfunctioning. Replacement parts should be easy to order or included within the robot kit (parts such as small SMD resistors which are very cheap).
+\item[Open-Source] \hfill \\ Open-Source products can be easily modified, extended and remixed into new, continously improved, products. Schematics, pcb layout files, build-instructions and specifications should be accessible under a permissive open-source license. 
 \end{description}
 
 
@@ -107,12 +115,29 @@ Assement criterias are evaluated using a rating system which allows values betwe
 
 The Asuro robot is developed by the German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt e.V.) in cooperation with Arexx Engineering focussed on edcuational use. Asuros development started in 2004 and is now discontinued. The robot is shipped as a do-it-yourself kit and requires about eight hours build time for a novice. 
 
-Asuro features an eight bit Atmel ATmega8L microcontroller with eight kilobytes of flash memory, 512 bytes of electrical eraseable programmable read only memory (short EEPROM) and one kilobytes of static random-access memory (short SRAM). One kilobyte of flash is used for the bootloader which results in seven kilobytes of flash usable for user programs.
+Asuro features an eight bit Atmel ATmega8L microcontroller with eight kilobytes of flash memory, 512 bytes of electrical eraseable programmable read only memory (short EEPROM) and one kilobytes of static random-access memory (short SRAM). One kilobyte of flash is used for the bootloader which results in seven kilobytes of flash usable for user programs. User programs are uploaded using a infrared serial connection.
 
 Interaction with the environment is realized using two DC motors which can be controlled individually in terms of direction and speed. The robot is stabilized using a half table-tennis ball mounted at the bottom of the robot. Four LEDs are used for displaying the status of the asuro. The whole system is powered by four AAA batteries or rechargable batteries mounted in a 2x2 battery case. 
 
 Asuro can sense its environment using different sensors such as two photodiodes which can be used for line-following tasks, six push buttons to detect objects in front of Asuro and two photoelectric sensors to determine the rotation speed of each of Asuros wheels.
 
+\begin{table}[h!]
+\centering
+\begin{tabular}{p{0.2\textwidth}p{0.2\textwidth}p{0.6\textwidth}}
+\toprule
+Assessment Criteria    & Rating & Description \\
+\midrule
+Affordable      & \stars{5}    & Having a price tag of 50€ renders the Asuro very affordable in comparison to the 100€ limit set. The cost effectiveness is outstanding and features sensors and actuators for basic tasks.     \\
+Educational     & \stars{3}     & Asuro features detailed build-instructions in English and German. The guide also includes a tutorial on how to program Asuro in C. Even though there are a lot of opportunities to teach electrical engineering, the available documents do not explain the electrical usage and functional principle of each part. \\
+Sustainable       & \stars{4}     & Asuro uses standard components only and features ROHS compliant parts which are free from heavy metals such as lead (PB). A broken Asuro can be easily repaired using the tools which are required to solder it. \\
+Extendable & \stars{2}      & Having no free microcontroller pins and no broken out pins, Asuro cannot be considered extendable. There exist some hardware modification in the Asuro community which extend the functionality but require to unsolder/remove some parts.  \\
+Trouble-free & \stars{3} & Building Asuro is well documented but some steps may lead to frustration. Mounting the axis using solder is very difficult and may burn the PCB due to the heat emitted in this process. Another frustrating task is to program the robot using the infrared serial connection, since this method is prone to interference. \\
+Open-Source & \stars{4} & ????? \\
+\bottomrule
+\end{tabular}
+\caption{Asuro evaluation}
+\label{tbl:asuro_eval}
+\end{table}
 
 \subsection{Arduino Robot}
 \begin{figure}[h!]
@@ -122,12 +147,49 @@ Asuro can sense its environment using different sensors such as two photodiodes 
 \end{figure}
 
 The Arduino Robot is the first robot created by the arduino foundation. It comes preassembled and contains two microcontrollers 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{p{0.2\textwidth}p{0.2\textwidth}p{0.6\textwidth}}
+\toprule
+Assessment Criteria    & Rating & Description \\
+\midrule
+Affordable      & \stars{2}    & With a price tag of XXX Euro and XXX Euro for a sensor extension kit the Arduino Robot is far above the price limit of 100€. The price for the basic robot without the sensor extension is very high compared to the features.\\
+Educational     & \stars{3}     & The Arduino robot comes pre-built and therefore lacks the build experience. Learning material for teachers is not provided but instructions for other Arduino products are easily adapted to the robots system.\\
+Sustainable       & \stars{3}     &  \\
+Extendable & \stars{5}      &  \\
+Trouble-free & \stars{4} & Since the Arduino robot comes pre-assembled and tested in factory, the robot can be called trouble-free. Uploading new code using the Arduino IDE works well on every officially supported operating system.\\
+Open-Source & \stars{3} & Even though it is claimed that the Arduino robot is open-source, not all files required for building the robot are published. The website is missing the pcb design files and includes the schematics only. A software library is available under a open-source license.  \\
+\bottomrule
+\end{tabular}
+\caption{Arduino Robot evaluation}
+\label{tbl:arduinorobot_eval}
+\end{table}
+
 \subsection{Lego Mindstorms}
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{images/mindstorms.jpg}
   \caption{Picture of the Lego Mindstorms NXT (from http://www.devoxx.com/)}
 \end{figure}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{llr}
+\toprule
+Assessment Criteria    & Rating & Description \\
+\midrule
+Affordable      & \stars{2}    & 13.65      \\
+Educational     & \stars{4}     & 92.50      \\
+Sustainable       & \stars{3}     & 33.33      \\
+Extendable & \stars{2}      & 8.99       \\
+Open-Source & \stars{4} & bar \\
+\bottomrule
+\end{tabular}
+\caption{Lego Mindstorms evaluation}
+\label{tbl:mindstorms_eval}
+\end{table}
+
 \subsection{Thymio II}
 \begin{figure}[h!]
   \centering
@@ -135,6 +197,22 @@ The Arduino Robot is the first robot created by the arduino foundation. It comes
   \caption{Picture of the Thymio II (from https://aseba.wikidot.com/en:thymio)}
 \end{figure}
 
+\begin{table}[h!]
+\centering
+\begin{tabular}{llr}
+\toprule
+Assessment Criteria    & Rating & Description \\
+\midrule
+Affordable      & \stars{3}    & 13.65      \\
+Educational     & \stars{4}     & 92.50      \\
+Sustainable       & \stars{3}     & 33.33      \\
+Extendable & \stars{3}      & 8.99       \\
+Open-Source & \stars{4} & bar \\
+\bottomrule
+\end{tabular}
+\caption{Thymio II evaluation}
+\label{tbl:thymio_eval}
+\end{table}
 
 \section{Case studies}
 A robot is built using parts and modules which can be grouped into functional groups like movement, sensors or communication. The goal of each functional group can be achieved in various ways which have to be evaluated using the requirements used in the evaluation of other robot platforms. The difficulty in the evaluation process are dependencies between different modules, e.g. when a sensor has special power requirements. 
