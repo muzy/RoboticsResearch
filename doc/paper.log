@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.12.4)  29 OCT 2013 08:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.12.4)  30 OCT 2013 09:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -988,6 +988,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--128
  []
 
 
+Underfull \hbox (badness 6978) in paragraph at lines 135--136
+\T1/lmr/m/n/10.95 which is tran-si-tioned into a Creative-
+ []
+
+
 Overfull \hbox (36.0pt too wide) in paragraph at lines 126--138
  [][] 
  []
@@ -1019,7 +1024,11 @@ Overfull \hbox (36.0pt too wide) in paragraph at lines 153--165
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/mindstorms.jpg, id=23, 449.68pt x 381.425pt>
+
+Overfull \vbox (25.2389pt too high) has occurred while \output is active []
+
+
+[5] <images/mindstorms.jpg, id=27, 449.68pt x 381.425pt>
 File: images/mindstorms.jpg Graphic file (type jpg)
 
 <use images/mindstorms.jpg>
@@ -1030,7 +1039,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--173
 []\T1/lmr/m/n/10.95 Figure 3: Pic-ture of the Lego Mind-storms NXT (from
  []
 
-[5]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1054,7 +1062,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \vbox (73.99284pt too high) has occurred while \output is active []
+Overfull \vbox (60.39284pt too high) has occurred while \output is active []
 
 
 [6 <./images/arduinorobot.jpg>] [7 <./images/mindstorms.jpg> <./images/thymioii
@@ -1091,7 +1099,7 @@ s/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on paper.pdf (10 pages, 837446 bytes).
+Output written on paper.pdf (10 pages, 837200 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream

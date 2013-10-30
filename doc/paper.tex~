@@ -154,7 +154,7 @@ The Arduino Robot is the first robot created by the arduino foundation. It comes
 \toprule
 Assessment Criteria    & Rating & Description \\
 \midrule
-Affordable      & \stars{2}    & With a price tag of 189 Euro the Arduino Robot is far above the price limit of 100€. The price for the basic robot is very high compared to the features.\\
+Affordable      & \stars{2}    & With a price tag of 189 Euro the Arduino Robot is far above the price limit of 100€. The price for the basic robot without the sensor extension is very high compared to the features.\\
 Educational     & \stars{3}     & The Arduino robot comes pre-built and therefore lacks the build experience. Learning material for teachers is not provided but instructions for other Arduino products are easily adapted to the robots system.\\
 Sustainable       & \stars{3}     &  \\
 Extendable & \stars{5}      &  \\
