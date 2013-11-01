@@ -1,9 +1,16 @@
 all: show git
 
+g: git
+
 git:
 	git add *
 	git commit -v -m "autocommited by makefile"
 	git push
+
+u: update
+	
+update:
+	git pull
 
 edit:
 	kate `find . | grep 'tex'` bibliography.bib

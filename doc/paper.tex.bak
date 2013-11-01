@@ -76,34 +76,34 @@
 
 
 \section{Introduction}
-Getting children in touch with technology is important in todays technologically advanced society. In schools technology (specifically electrical engineering and programming) is often taught using robots. Robots are well suited for children since they allow interaction with the reality in contrast to arbitrary technology related exercises such as programming exercises which doesn't affect the real world.\newline 
+Getting children in touch with technology is important in todays technologically advanced society. In schools technology (specifically electrical engineering and programming) is often taught using robots. Robots are well suited for children since they allow interaction with the reality in contrast to arbitrary technology related exercises such as programming execises which doesn't affect the real world.\newline 
 Since schools are required to save money, robots used for teaching stay property of the schools. Therefore children usually cannot take the robot home to work with it. In addition modification of robot is usually not permitted which reduces potential learning experiences. Giving students the full control over all possibilities of the robot requires them to own the robot. This requires to robot to be cheap, extendable and suitable for educational purposes.\newline
-The development of a robot platform for educational purpose requires requirement engineering, market research and evaluation of robots which are already used in education. Once the research is completed a new robot platform can be constructed taking the research results into account.
+The development of a robot plattform for educational purpose requires requirement engineering, market research and evaluation of robots which are already used in education. Once the research is completed a new robot plattform can be constructed taking the research results into account.
 \section{Requirement Analysis / Project Goals}
 The target user group of the robot are mainly children and adults with very little or no experience in electrical engineering and programming. Teaching the knowledge requires a platform which is designed to be educational. Therefore it has to comply with several requirements which affect technical aspects as well as social aspects.
-The following lists describes the basic requirements on which existing platforms can be assessed. The assessment criteria can also be used to make decisions when developing a new platform.
+The following lists describes the basic requirements on which existing platforms can be assessed. The assessent critera can also be used to make decisions when developing a new platform.
 \begin{description}
-\item[Affordable] \hfill \\ The robot platform must be affordable for everyone. Especially when the robot is used in schools every child should own the robot to increase the possibilities to modify and extend it. Robots which stay property of a school may result in social problems since socially disadvantaged children cannot afford their own robot whereas socially advantaged children can. A considerable price tag for a educational robot is the educational budget for a welfare recipient which is 100 Euro per year in Germany as defined defined in SGB II §28 (as of the 07.05.2013).
-\item[Educational] \hfill \\ Documentation, learning materials and suggestions for lessons are needed to teach the usage of the robot. The robot should be designed to teach both electrical engineering as well as programming. This can be realized by having exercises specific to the topic e.g. by soldering the robot first with programming afterwards. If the platform supports both, graphical programming languages for young children as well as high-level programming languages the platform is more accessible for education. 
-\item[Sustainable] \hfill \\ Sustainability is an environmental issue which should be taken into account. Sustainability includes several aspects such as the choice of materials, their durability and the repairability. It is a huge bonus if materials are environment-friendly and produced in a socially acceptable manner (tantalum capacitors for instance should be avoided for those reasons). If the robot can be easily repaired or interchanged using household or easy to get items the robot can be considered sustainable. 
-\item[Extendable] \hfill \\ Extendability enables the robot to adapt to new tasks. Interchangeable sensors and actuators are the key to a flexible platform. The platform should provide some unused microcontroller pins dedicated to extensions. Those pins should be mapped onto easy accessible pins which require no soldering.  
+\item[Affordable] \hfill \\ The robot platform must be affordable for everyone. Especially when the robot is used in schools every child should own the robot to increase the possibilities to modify and extend it. Robots which stay property of a school may result in social problems since socially disadvantaged children cannot afford their own robot whereas socially advantaged children can. A considerable price tag for a educational robot is the educational budget for a wellfare recipient which is 100 Euro per year in Germany as defined defined in SGB II §28 (as of the 07.05.2013).
+\item[Educational] \hfill \\ Documentation, learning materials and suggestions for lessons are needed to teach the usage of the robot. The robot should be designed to teach both electrical engineering as well as programming. This can be realized by having exercises specific to the topic e.g. by soldering the robot first with programming afterwards. If the plattform supports both, graphical programming languages for young children as well as high-level programming languages the plattform is more accessible for education. 
+\item[Sustainable] \hfill \\ Sustainability is an environmental issue which should be taken into account. Sustainability includes serveral aspects such as the choice of materials, their durability and the repairability. It is a huge bonus if materials are environment-friendly and produced in a socially acceptable manner (tantalum capacitors for instance should be avoided for those reasons). If the robot can be easily repaired or interchanged using household or easy to get items the robot can be considered sustainable. 
+\item[Extendable] \hfill \\ Extendabilitiy enables the robot to adapt to new tasks. Interchangeable sensors and actuators are the key to a flexible plattform. The plattform should provide some unused microcontroller pins dedicated to extensions. Those pins should be mapped onto easy accessible pins which require no soldering.  
 \item[Trouble-free] \hfill \\ Building the robot should be a smooth, trouble free, task. Error sources should be prevented e.g. by using connectors which fit in one direction only or properly marked electric parts. Bending or modifying shipped parts should be avoided since it  could render the part broken or malfunctioning. Replacement parts should be easy to order or included within the robot kit (parts such as small SMD resistors which are very cheap).
-\item[Open-Source] \hfill \\ Open-Source products can be easily modified, extended and remixed into new, continuously improved, products. Schematics, PCB layout files, build-instructions and specifications should be accessible under a permissive open-source license. 
+\item[Open-Source] \hfill \\ Open-Source products can be easily modified, extended and remixed into new, continously improved, products. Schematics, pcb layout files, build-instructions and specifications should be accessible under a permissive open-source license. 
 \end{description}
 
 
 \section{State of the Art}
 The development of a new robot platform requires the assessment of current robotic platforms using the requirements developed. In focus of the assessment are popular robot platforms which are either actively used in schools or developed with education in mind. All of the platforms are independently developed and focus on different ideas. 
 
-Assessment criteria are evaluated using a rating system which allows values between zero and five where higher values are better. Each value is represented using stars for better overview. Detailed description of each rating is explained below.
+Assement criterias are evaluated using a rating system which allows values between zero and five where higher values are better. Each value is represented using stars for better overview. Detailed description of each rating is explained below.
 
 \begin{description}
-\item[\stars{5}] \hfill \\The evaluated aspect fully complies with the assessment criteria and adds additional functionality which exceeds expectations. 
-\item[\stars{4}] \hfill \\The evaluated aspect fully complies with the assessment criteria. Mentioned properties may have minor restraints which do not affect the overall quality/functionality of the system.
-\item[\stars{3}] \hfill \\The evaluated aspect complies with most of the assessment criteria. The evaluation shows that some minor and/or major restraints exist which may affect the overall quality/functionality.
-\item[\stars{2}] \hfill \\The evaluated aspect meets the assessment criteria partially but shows severe restraints affecting the overall quality/functionality.
-\item[\stars{1}] \hfill \\The evaluated aspect contains the rudiments of the assessment criteria.
-\item[\stars{0}] \hfill \\The evaluated aspect does not met the assessment criteria in any way. 
+\item[\stars{5}] \hfill \\The evaluated aspect fully complies with the assessment critera and adds additional functionality which exceeds expectations. 
+\item[\stars{4}] \hfill \\The evaluated aspect fully complies with the assessment critera. Mentioned properties may have minor restraints which do not affect the overall quality/functionality of the system.
+\item[\stars{3}] \hfill \\The evaluated aspect complies with most of the assessment critera. The evaluation shows that some minor and/or major restraints exist which may affect the overall quality/functionality.
+\item[\stars{2}] \hfill \\The evaluated aspect mets the assessment critera partially but shows severe restraints affecting the overall quality/functionality.
+\item[\stars{1}] \hfill \\The evaluated aspect contains the rudiments of the assessment critera.
+\item[\stars{0}] \hfill \\The evaluated aspect does not met the assessment critera in any way. 
 \end{description}
 
 \subsection{Asuro}
@@ -113,11 +113,11 @@ Assessment criteria are evaluated using a rating system which allows values betw
   \caption{Picture of the Asuro (CC-BY-SA Robin Gruber)}
 \end{figure}
 
-The Asuro robot is developed by the German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt e.V.) in cooperation with Arexx Engineering focused on educational use. Asuros development started in 2004 and is now discontinued. The robot is shipped as a do-it-yourself kit and requires about eight hours build time for a novice. 
+The Asuro robot is developed by the German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt e.V.) in cooperation with Arexx Engineering focussed on edcuational use. Asuros development started in 2004 and is now discontinued. The robot is shipped as a do-it-yourself kit and requires about eight hours build time for a novice. 
 
-Asuro features an eight bit Atmel ATmega8L microcontroller with eight kilobytes of flash memory, 512 bytes of electrical erasable programmable read only memory (short EEPROM) and one kilobytes of static random-access memory (short SRAM). One kilobyte of flash is used for the bootloader which results in seven kilobytes of flash usable for user programs. User programs are uploaded using a infrared serial connection.
+Asuro features an eight bit Atmel ATmega8L microcontroller with eight kilobytes of flash memory, 512 bytes of electrical eraseable programmable read only memory (short EEPROM) and one kilobytes of static random-access memory (short SRAM). One kilobyte of flash is used for the bootloader which results in seven kilobytes of flash usable for user programs. User programs are uploaded using a infrared serial connection.
 
-Interaction with the environment is realized using two DC motors which can be controlled individually in terms of direction and speed. The robot is stabilized using a half table-tennis ball mounted at the bottom of the robot. Four LEDs are used for displaying the status of the Asuro. The whole system is powered by four AAA batteries or rechargeable batteries mounted in a 2x2 battery case. 
+Interaction with the environment is realized using two DC motors which can be controlled individually in terms of direction and speed. The robot is stabilized using a half table-tennis ball mounted at the bottom of the robot. Four LEDs are used for displaying the status of the asuro. The whole system is powered by four AAA batteries or rechargable batteries mounted in a 2x2 battery case. 
 
 Asuro can sense its environment using different sensors such as two photodiodes which can be used for line-following tasks, six push buttons to detect objects in front of Asuro and two photoelectric sensors to determine the rotation speed of each of Asuros wheels.
 
@@ -132,14 +132,14 @@ Educational     & \stars{3}     & Asuro features detailed build-instructions in 
 Sustainable       & \stars{4}     & Asuro uses standard components only and features ROHS compliant parts which are free from heavy metals such as lead (PB). A broken Asuro can be easily repaired using the tools which are required to solder it. \\
 Extendable & \stars{2}      & Having no free microcontroller pins and no broken out pins, Asuro cannot be considered extendable. There exist some hardware modification in the Asuro community which extend the functionality but require to unsolder/remove some parts.  \\
 Trouble-free & \stars{3} & Building Asuro is well documented but some steps may lead to frustration. Mounting the axis using solder is very difficult and may burn the PCB due to the heat emitted in this process. Another frustrating task is to program the robot using the infrared serial connection, since this method is prone to interference. \\
-Open-Source & \stars{4} & Asuro was licensed under the DLR-license which is transitioned into a Creative-Commons license model. Everything except the PCB layout files are available for download on the Asuro website.\\
+Open-Source & \stars{4} & Asuro was licensed under the DLR-license which is transitioned into a Creative-Commons license model. Everything except the pcb layout files are available for download on the Asuro website.\\
 \bottomrule
 \end{tabular}
 \caption{Asuro evaluation}
 \label{tbl:asuro_eval}
 \end{table}
 
-All in all the Asuro is a cost effective robot platform suitable for beginners. The lack of extendability and some difficult steps during the build lower the overall good rating to an average of 3.5 stars. 
+All in all the Asuro is a cost effective robot plattform suitable for beginners. The lack of extendability and some difficult steps during the build lower the overall good rating to an average of 3.5 stars. 
 
 \subsection{Arduino Robot}
 \begin{figure}[h!]
@@ -148,7 +148,7 @@ All in all the Asuro is a cost effective robot platform suitable for beginners. 
   \caption{Picture of the Arduino Robot}
 \end{figure}
 
-The Arduino Robot is the first robot created by the Arduino foundation. It comes preassembled and contains two microcontrollers 
+The Arduino Robot is the first robot created by the arduino foundation. It comes preassembled and contains two microcontrollers 
 
 \begin{table}[h!]
 \centering
@@ -161,7 +161,7 @@ Educational     & \stars{3}     & The Arduino robot comes pre-built and therefor
 Sustainable       & \stars{3}     &  \\
 Extendable & \stars{5}      &  \\
 Trouble-free & \stars{4} & Since the Arduino robot comes pre-assembled and tested in factory, the robot can be called trouble-free. Uploading new code using the Arduino IDE works well on every officially supported operating system.\\
-Open-Source & \stars{3} & Even though it is claimed that the Arduino robot is open-source, not all files required for building the robot are published. The website is missing the PCB design files and includes the schematics only. A software library is available under a open-source license.  \\
+Open-Source & \stars{3} & Even though it is claimed that the Arduino robot is open-source, not all files required for building the robot are published. The website is missing the pcb design files and includes the schematics only. A software library is available under a open-source license.  \\
 \bottomrule
 \end{tabular}
 \caption{Arduino Robot evaluation}
@@ -233,7 +233,7 @@ DC motors can be used to drive the wheels. To allow the control of direction (fo
 Stepper motors are slightly modified DC motors. In stepper motors the full rotation is divided into a number of equal steps which can be separately controlled. The motor can step forward, backward or hold the current position with huge torque. Stepper motors are usually shipped within a gear box which reduces steps much further to gain higher precision and torque. 
 These motors can be driven by a dual H bridge, a stepper driver or by using generic Input/Output pins in combination with a darlington array to reduce the current on the I/O pin. 
 
-Stepper motors start at 2.95USD (in China) up to 4.95USD (in the USA\footnote{http://www.adafruit.com/products/858}). Two stepper motors are needed to drive the robot. To reduce the cost a ULN2803 darlington array with eight outputs can be used in combination with a eight bit shift-register (74HC595) to control the movement. This solution has a price tag of 2*2.95USD (steppers) plus 0.9USD (ULN2803) plus 0.9USD (74HC595) rendering a total cost of 8USD. Another advantage beneath the low costs are the parts itself. The afore mentioned shift register and darlington array are standard parts which come in beginner friendly easy to solder SMD packages. 
+Stepper motors start at 2.95USD (in China) up to 4.95USD (in the USA\footnote{http://www.adafruit.com/products/858}). Two stepper motors are needed to drive the robot. To reduce the cost a ULN2803 darlington array with eight outputs can be used in combination with a eight bit shift-register (74HC595) to control the movement. This solution has a price tag of 2*2.95USD (steppers) plus 0.9USD (ULN2803) plus 0.9USD (74HC595) rendering a total cost of 8USD. Another advantage beneath the low costs are the parts itself. The afore mentioned shift register and darlington array are standard parts which come in beginner friendlly easy to solder SMD packages. 
 
 The alternative solution is to use a stepper motor driver like Toshibas TB6612FNG which can drive either two DC motors or a single stepper motor. With a price of 3USD it is rather costly since two driver chips are needed for two stepper motors.
 
