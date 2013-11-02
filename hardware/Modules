@@ -1,0 +1,56 @@
+= GPIO =
+
+== Analog MUX (74HC4051) =
+VCC
+GND
+A
+B
+C
+W
+
+= PWM =
+
+== Gripper ==
+VCC
+GND
+PWM-IN
+
+= SPI =
+
+== Motors + Shift Registers (2x 74HC595) ==
+VCC (Motors: 140mA max/Motor)
+GND
+SCK -> SRCK
+MOSI -> SER
+SS -> RCK
+
+== TFT + SD Module==
+
+=== TFT ===
+VCC (+5V)
+GND
+LED (+3V, 30mA)
+RST
+CS
+SDA
+SCK
+
+=== SD ===
+CS
+MOSI
+MISO
+SCK
+
+= I2C =
+
+== HMC588L (Compass) ==
+VCC (5V)
+GND
+SCL
+SDA
+
+== MPU-6050 (Accel + Gyro ))
+VCC (5V)
+GND
+SCL
+SDA
