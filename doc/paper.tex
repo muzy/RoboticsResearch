@@ -127,7 +127,7 @@ Asuro can sense its environment using different sensors such as two photodiodes 
 \toprule
 Assessment Criteria    & Rating & Description \\
 \midrule
-Affordable      & \stars{5}    & Having a price tag of 50€ renders the Asuro very affordable in comparison to the 100€ limit set. The cost effectiveness is outstanding and features sensors and actuators for basic tasks.     \\
+Affordable      & \stars{5}    & Having a price tag of 50 Euro renders the Asuro very affordable in comparison to the 100 Euro limit set. The cost effectiveness is outstanding and features sensors and actuators for basic tasks.     \\
 Educational     & \stars{3}     & Asuro features detailed build-instructions in English and German. The guide also includes a tutorial on how to program Asuro in C. Even though there are a lot of opportunities to teach electrical engineering, the available documents do not explain the electrical usage and functional principle of each part. \\
 Sustainable       & \stars{4}     & Asuro uses standard components only and features ROHS compliant parts which are free from heavy metals such as lead (PB). A broken Asuro can be easily repaired using the tools which are required to solder it. \\
 Extendable & \stars{2}      & Having no free microcontroller pins and no broken out pins, Asuro cannot be considered extendable. There exist some hardware modification in the Asuro community which extend the functionality but require to unsolder/remove some parts.  \\
@@ -148,7 +148,9 @@ All in all the Asuro is a cost effective robot platform suitable for beginners. 
   \caption{Picture of the Arduino Robot}
 \end{figure}
 
-The Arduino Robot is the first robot created by the Arduino foundation. It comes preassembled and contains two microcontrollers 
+The Arduino Robot is the first robot created by the Arduino foundation. It comes preassembled and consists of two different boards: the motor board and the control board. Due to this design, the Arduino robot contains two Atmel ATmega 32U4 microcontroller featuring a clock speed of 16MHz, 32KB of flash memory (of which 28KB can be used for user programs), 2.5KB of RAM and 1KB of EEPROM each.
+
+Each board can be individually programmed using the freely available Arduino IDE having the Robot connected to the computer using an USB cable. The system is powered using four rechargeable NIMH-batteries which can be recharged on the board by connecting an appropriate power source to the barrel jack on board. 
 
 \begin{table}[h!]
 \centering
@@ -156,9 +158,9 @@ The Arduino Robot is the first robot created by the Arduino foundation. It comes
 \toprule
 Assessment Criteria    & Rating & Description \\
 \midrule
-Affordable      & \stars{2}    & With a price tag of 189 Euro the Arduino Robot is far above the price limit of 100€. The price for the basic robot is very high compared to the features.\\
+Affordable      & \stars{2}    & With a price tag of 189 Euro the Arduino Robot is far above the price limit of 100 Euro. The price for the basic robot is very high compared to the features.\\
 Educational     & \stars{3}     & The Arduino robot comes pre-built and therefore lacks the build experience. Learning material for teachers is not provided but instructions for other Arduino products are easily adapted to the robots system.\\
-Sustainable       & \stars{3}     &  \\
+Sustainable       & \stars{4}     &  \\
 Extendable & \stars{5}      &  \\
 Trouble-free & \stars{4} & Since the Arduino robot comes pre-assembled and tested in factory, the robot can be called trouble-free. Uploading new code using the Arduino IDE works well on every officially supported operating system.\\
 Open-Source & \stars{3} & Even though it is claimed that the Arduino robot is open-source, not all files required for building the robot are published. The website is missing the PCB design files and includes the schematics only. A software library is available under a open-source license.  \\
