@@ -1,9 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 %\documentclass[conference]{IEEEtran}
-%\documentclass[twocolumn]{article}
-
 \usepackage[english]{babel} 
-
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage[utf8]{inputenc}
@@ -163,9 +160,9 @@ Assessment Criteria    & Rating & Description \\
 \midrule
 Affordable      & \stars{2}    & With a price tag of 189 Euro the Arduino Robot is far above the price limit of 100 Euro. The price for the basic robot is very high compared to its features.\\
 Educational     & \stars{3}     & The Arduino robot comes pre-built and therefore lacks the build experience. Learning material for teachers is not provided but a lot of examples and a library to ease programming is provided. Instructions for other Arduino products can be easily adapted to the robot. \\
-Sustainable       & \stars{4}     &  The robot is ROHS certified and contains no hazardous components. The integrated charging circuit for the NIMH batteries eliminates the need of a dedicated battery charger and therefore reduces the amount of electrical waste. A small restraint is the choice of components because they cannot be interchanged/repaired by beginners. This is due to the manufacturing process which requires SMD components to be cost effective. Through hole parts would be easier to interchange but require manual assembly which is very expensive.\\
+Sustainable       & \stars{4}     &  The robot integrates charging circuit for the NIMH batteries eliminates the need of a dedicated battery charger and therefore reduces the amount of electrical waste. A small restraint is the choice of components because they cannot be interchanged/repaired by beginners. This is due to the manufacturing process which requires SMD components to be cost effective. Through hole parts would be easier to interchange but require manual assembly which is very expensive.\\
 Extendable & \stars{5}      &  Having prototyping areas directly on the control board, the robot can be considered extendable. Moreover connectors for additional sensors are populated all over the robot board making it possible and easy to add sensors without soldering.\\
-Trouble-free & \stars{4} & Since the Arduino robot comes pre-assembled and tested in factory, the robot can be called trouble-free. Transportation defects like loose screws can be repaired using household items. Uploading new code using the Arduino IDE works well on every officially supported operating system.\\
+Trouble-free & \stars{4} & Since the Arduino robot comes pre-assembled and tested in factory, the robot can be called trouble-free. Transportation defects like loose screws can be repaired using household items. The usage is very simple and straight-forward.\\
 Open-Source & \stars{3} & Even though it is claimed that the Arduino robot is open-source, not all files required for building the robot are published. The website is missing the PCB design files and includes the schematics only. A software library is available under a open-source license. \\
 \bottomrule
 \end{tabular}
@@ -194,21 +191,23 @@ The consumer kit has a price tag of 279 Euro and the education basis set a price
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{llr}
+\begin{tabular}{p{0.2\textwidth}p{0.2\textwidth}p{0.6\textwidth}}
 \toprule
 Assessment Criteria    & Rating & Description \\
 \midrule
-Affordable      & \stars{2}    & 13.65      \\
-Educational     & \stars{4}     & 92.50      \\
-Sustainable       & \stars{3}     & 33.33      \\
-Extendable & \stars{2}      & 8.99       \\
-Trouble-free & \stars{5} & \\
-Open-Source & \stars{4} & bar \\
+Affordable  & \stars{2}    & With a price tag of 279 Euro (retail consumer edition) and 368.99 Euro (education version) the robot is far beyond the price tag of 100 Euro. The amount of sensors and actuators is low compared to the price.\\
+Educational & \stars{5}     & LEGO provides a lot of resources for teaching and personal education using the Mindstorms NXT 2.0. Even though the electrical components are not subject, the set can teach a lot of knowledge and even interdisciplinary content. The flexibility of the robot allows the transformation of the robert for a lot of education concern. \\
+Sustainable  & \stars{3}     & The Mindstorms NXT 2.0 set cannot be repaired using household items. Nevertheless the components are considered sustainable to a certain extend, since they are designed to be robust and to last a long time.\\
+Extendable & \stars{3} & The robot can be extended up to a certain extend. Even though the specification for each interface is public available custom sensors are rare and/or expensive. \\
+Trouble-free & \stars{5} & Using the platform is trouble free and easy. The LEGO Mindstorms IDE is intuitional. Support for different programming languages such as Java exist. A huge community and a lot of resources are available.\\
+Open-Source & \stars{4} & LEGO open sourced the LEGO Mindstorms NXT brick and moreover the specification for each connector and sensor. The PCB design files and the casing are not open-sourced to prevent unauthorized replicas.\\
 \bottomrule
 \end{tabular}
 \caption{Lego Mindstorms evaluation}
 \label{tbl:mindstorms_eval}
 \end{table}
+
+All in all the LEGO Mindstorms NXT 2.0 is a great robot platform with a lot of possible applications due to its compability with other LEGO products. The only drawback is the price which is not affordable for everyone.
 
 \subsection{Thymio II}
 \begin{figure}[h!]
@@ -217,9 +216,13 @@ Open-Source & \stars{4} & bar \\
   \caption{Picture of the Thymio II (from https://aseba.wikidot.com/en:thymio)}
 \end{figure}
 
+Thymio II is a robot developed by the Ecole Polytechnique Fédérale de Lausanne and the Ecole Cantonale d'Art de Lausanne for educational purposes. The robot comes preassembled and has a price tag of 99 CHF (plus taxes). It features a 16-bit PIC Microcontroller from Microchip with 128KB Flash, 16KB RAM and a clock Frequency of 8MHz. Programming is archieved using the integrated USB connection
+
+
+
 \begin{table}[h!]
 \centering
-\begin{tabular}{llr}
+\begin{tabular}{p{0.2\textwidth}p{0.2\textwidth}p{0.6\textwidth}}
 \toprule
 Assessment Criteria    & Rating & Description \\
 \midrule
