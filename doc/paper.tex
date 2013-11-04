@@ -243,29 +243,68 @@ Open-Source & \stars{5} & Everything needed to build the robot is licensed under
 To sum it up the Thymio II platform comes at a great price equipped with a lot of sensors. Its LEGO compatible fixation points are a huge bonus, the license of each aspect of the robot is very permissive. The overall rating of 3.66 stars reflects the huge potential of the platform. Once the educational material is available the platform is considerable as a educational platform.
 
 \section{Case studies}
-A robot is built using parts and modules which can be grouped into functional groups like movement, sensors or communication. The goal of each functional group can be achieved in various ways which have to be evaluated using the requirements used in the evaluation of other robot platforms. The difficulty in the evaluation process are dependencies between different modules, e.g. when a sensor has special power requirements. 
+A robot is built using parts and modules which can be grouped into functional groups like movement, sensors or communication. The goal of each functional group can be achieved in various ways which have to be evaluated using the requirements used in the evaluation of other robot platforms. Some evaluation critera such as the fulfillment of the educational aspect or the open-source aspect may not be suitable for evaluation of single components and therefore left out. The Extendability describes the amount of microcontroller pins where the lesser amount of pins is considered better since this leaves space for extensions. Other difficulties in the evaluation process are dependencies between different modules, e.g. when a sensor has special power requirements. Based on the evaluation the robot will be constructed.
 \subsection{Movement}
-Movement is the most important feature since it allows interaction with the robots environment. In contrast to a stationary robot a moving robot can interact with a wider area but requires battery power. Different approaches for robot movement exist which will be part of critical evaluation.
+Movement is the most important feature since it allows the robot to interact with its environment. In contrast to a stationary robot, a moving robot can interact with a wider area but requires battery power or similar mobile energy sources. Different approaches for robot movement exist which will be part of critical evaluation.
 \subsubsection{Wheels}
-Wheeled robots are common since their mechanic principle is rather simple. Typically robots have two wheels and a ball caster which prevents the robot from falling over. A ball caster acts as a third undirected wheel with reduced friction. Using wheels a robot can be moved in all directions.
+Wheeled robots are common since their mechanic principle is rather simple and easy to implement. Typically robots have two wheels and a ball caster which prevents the robot from falling over. A ball caster acts as a third unidirected wheel with reduced friction. Alternatively four wheels and a steering mechanism or three wheels using omniwheels can be used. All types of wheeled robots can move in flat terrain and tolerate slight uneven surfaces. The outdoor usage is limited.
 \paragraph{Wheeled with two DC motors}
-DC motors can be used to drive the wheels. To allow the control of direction (forward and backward) a so called H bridge is often used. Two H bridges can be combined to allow the robot to move right/left as well. 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.5\textwidth]{images/hbridge.png}
-  \caption{Basic schematic of a H-bridge (CC-BY-SA Cyril Buttay)}
-\end{figure}
+DC motors (direct current motors) are a cheap solutions for driving wheels. Usually a gear box is required to reduce the motor speed in favor of torque. Controlling the direction (forward and backward) requires the ability to switch the direction of the current flow. This is usally archieved using a H-bridge which can be found in as an integrated circuit or build using four electrical switches. 
+
+There exist integrated circuits which provides two H-bridges combined in one component which allow the control of steering beneath the control of direction. Speed control is controlled by an external PWM (pulse-width-modulation) source.
+
+%TODO Image of gearbox motor
+
+In terms of cost effectiveness a solution with two wheels powered by a DC motor each performs well. A DC motor with integrated gearbox including a plastic wheel (see figure @TODO) is available for X USD, a motor driver such as the L293 costs about Y USD rendering a total cost of Y USD per robot. 
+
+The mentioned gearbox cannot be repaired once broken and should be replaced rather than repaired. Moreover it is unclear which materials are used in the plastic parts and whether they can be recycled. Mounting and controlling the motors is trouble free and requires at least six microcontroller pins as one can see in the following table.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{p{0.15\textwidth}p{0.15\textwidth}p{0.5\textwidth}}
+\toprule
+Pin count & Pin type & Description \\
+\midrule
+2 & PWM  & Motor speed control using pulse-width-modulation.\\
+4 & GPIO & Direction control and steering control using a 4-bit (16 combinations) pattern.\\
+\bottomrule
+\end{tabular}
+\caption{DC motor microcontroller pin usage}
+\label{tbl:dc_pin}
+\end{table}
+
+When using a shift register for setting the four GPIO inputs of the motor driver, the pin count on the microcontroller can be reduced to three pins (Clock, Serial Data, Enable).  A single shift register can provide eight GPIO port and can be chained.
+
+
 \paragraph{Wheeled with two Stepper motors}
 Stepper motors are slightly modified DC motors. In stepper motors the full rotation is divided into a number of equal steps which can be separately controlled. The motor can step forward, backward or hold the current position with huge torque. Stepper motors are usually shipped within a gear box which reduces steps much further to gain higher precision and torque. 
-These motors can be driven by a dual H bridge, a stepper driver or by using generic Input/Output pins in combination with a darlington array to reduce the current on the I/O pin. 
+In typical applications stepper motors are driven by a dual H-bridge or darlington arrays attached to shift registers. The latter method is very cost effective but limited in current supply, the first method utilized a motor driver such as the L293 per stepper.
 
-Stepper motors start at 2.95USD (in China) up to 4.95USD (in the USA\footnote{http://www.adafruit.com/products/858}). Two stepper motors are needed to drive the robot. To reduce the cost a ULN2803 darlington array with eight outputs can be used in combination with a eight bit shift-register (74HC595) to control the movement. This solution has a price tag of 2*2.95USD (steppers) plus 0.9USD (ULN2803) plus 0.9USD (74HC595) rendering a total cost of 8USD. Another advantage beneath the low costs are the parts itself. The afore mentioned shift register and darlington array are standard parts which come in beginner friendly easy to solder SMD packages. 
+Stepper motors are availble for about 5 USD (in the USA\footnote{http://www.adafruit.com/products/858}). Two stepper motors are needed to drive the robot, an additional ball caster is needed to stabilize the movement. As mentioned in the forehand the cost of driving a stepper motor can be reduced using a shift register such as the 74HC595 in combination with a darlinton array such as the ULN2803. Costs for this solution are about 12 USD where the stepper motors cost 10 USD, and the integrated circuits about 2 USD.
 
-The alternative solution is to use a stepper motor driver like Toshibas TB6612FNG which can drive either two DC motors or a single stepper motor. With a price of 3USD it is rather costly since two driver chips are needed for two stepper motors.
+The pin usage on the microcontroller using the shift register is as follows:
 
+\begin{table}[h!]
+\centering
+\begin{tabular}{p{0.15\textwidth}p{0.15\textwidth}p{0.5\textwidth}}
+\toprule
+Pin count & Pin type & Description \\
+\midrule
+1 & GPIO & Clock which clocks the serial data. Not time critical due to the design of a shift register.\\
+1 & GPIO & Serial data in which sets the bit pattern.\\
+1 & GPIO & Chip enable which enables the shift register output.\\
+\bottomrule
+\end{tabular}
+\caption{Shift register microcontroller pin usage}
+\label{tbl:74hc595_pin}
+\end{table}
+
+Since shift registered are chainable, several stepper motors can be controlled using three pins only. A typical 74HC595 shift register has a settle time of 13 nanoseconds which allows 76900 switch cycles per second. For an eight bit shift register about 9600 full state changes can be performed, each additional shift register reduces the amount by half.
+
+If a stepper motor gets broken, it can be easily replaced using the same model of stepper motor. Since the wheel is not part of the stepper motor, the old wheel can be replaced easily.
 \paragraph{Omniwheels}
-
-\paragraph{Comparison}
+Omniwheels are the most flexible way of moving using wheels. Omniwheels are a special form of wheels which allow the movement in any direction having three independently moveable wheels. It requires three motors (typically DC motors) with direction control and 
+\paragraph{Conclusion}
 
 
 \subsubsection{Legs}

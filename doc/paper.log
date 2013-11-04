@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.10.18)  4 NOV 2013 00:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.10.18)  4 NOV 2013 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1076,30 +1076,34 @@ Overfull \hbox (36.0pt too wide) in paragraph at lines 227--239
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./images/thymioii.jpg>]
-<images/hbridge.png, id=38, 501.875pt x 308.15125pt>
-File: images/hbridge.png Graphic file (type png)
- <use images/hbridge.png>
-Package pdftex.def Info: images/hbridge.png used on input line 255.
-(pdftex.def)             Requested size: 180.0pt x 110.52058pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 262.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 262.
+[8 <./images/thymioii.jpg>] [9]
+Underfull \hbox (badness 3168) in paragraph at lines 268--269
+[]|\T1/lmr/m/n/10.95 Motor speed con-trol us-ing pulse-
+ []
 
-[9 <./images/hbridge.png>] [10] [11] [12] [13] [14] (./paper.aux)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 283.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 283.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10] [11] [12] [13] [14] [15] (./paper.aux)
 Package logreq Info: Writing requests to 'paper.run.xml'.
 \openout1 = `paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 10558 strings out of 494938
- 154072 string characters out of 6178155
- 349280 words of memory out of 5000000
- 13522 multiletter control sequences out of 15000+600000
+ 10554 strings out of 494938
+ 153995 string characters out of 6178155
+ 352280 words of memory out of 5000000
+ 13520 multiletter control sequences out of 15000+600000
  66714 words of font info for 61 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,11n,35p,821b,1313s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,35p,833b,1313s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/publ
@@ -1108,10 +1112,10 @@ exmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lm
 r6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on paper.pdf (14 pages, 839271 bytes).
+Output written on paper.pdf (15 pages, 834132 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

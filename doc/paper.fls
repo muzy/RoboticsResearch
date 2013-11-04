@@ -243,9 +243,6 @@ INPUT ./images/mindstorms.jpg
 INPUT images/thymioii.jpg
 INPUT ./images/thymioii.jpg
 INPUT ./images/thymioii.jpg
-INPUT images/hbridge.png
-INPUT ./images/hbridge.png
-INPUT ./images/hbridge.png
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr9.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr9.tfm
