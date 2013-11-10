@@ -246,16 +246,18 @@ To sum it up the Thymio II platform comes at a great price equipped with a lot o
 A robot is built using parts and modules which can be grouped into functional groups like movement, sensors or communication. The goal of each functional group can be achieved in various ways which have to be evaluated using the requirements used in the evaluation of other robot platforms. Some evaluation critera such as the fulfillment of the educational aspect or the open-source aspect may not be suitable for evaluation of single components and therefore left out. The Extendability describes the amount of microcontroller pins where the lesser amount of pins is considered better since this leaves space for extensions. Other difficulties in the evaluation process are dependencies between different modules, e.g. when a sensor has special power requirements. Based on the evaluation the robot will be constructed.
 \subsection{Movement}
 Movement is the most important feature since it allows the robot to interact with its environment. In contrast to a stationary robot, a moving robot can interact with a wider area but requires battery power or similar mobile energy sources. Different approaches for robot movement exist which will be part of critical evaluation.
-\subsubsection{Wheels}
-Wheeled robots are common since their mechanic principle is rather simple and easy to implement. Typically robots have two wheels and a ball caster which prevents the robot from falling over. A ball caster acts as a third unidirected wheel with reduced friction. Alternatively four wheels and a steering mechanism or three wheels using omniwheels can be used. All types of wheeled robots can move in flat terrain and tolerate slight uneven surfaces. The outdoor usage is limited.
-\paragraph{Wheeled with two DC motors}
+
+There exist wheeled, legged, flying, swimming, diving and much more robot movement types. Wheeled robots are common since their mechanic principle is rather simple, cheap and easy to implement and control. Therefore other mentioned movement techniques except wheeled robots are not part of the evaluation.
+
+Typically robots have two wheels and a ball caster which prevents the robot from falling over. A ball caster acts as a third unidirected wheel with reduced friction. Alternatively four wheels and a steering mechanism or three wheels using omniwheels can be used. All types of wheeled robots can move in flat terrain and tolerate slight uneven surfaces. The outdoor usage is limited.
+\subsubsection{Wheeled with two DC motors}
 DC motors (direct current motors) are a cheap solutions for driving wheels. Usually a gear box is required to reduce the motor speed in favor of torque. Controlling the direction (forward and backward) requires the ability to switch the direction of the current flow. This is usally archieved using a H-bridge which can be found in as an integrated circuit or build using four electrical switches. 
 
 There exist integrated circuits which provides two H-bridges combined in one component which allow the control of steering beneath the control of direction. Speed control is controlled by an external PWM (pulse-width-modulation) source.
 
 %TODO Image of gearbox motor
 
-In terms of cost effectiveness a solution with two wheels powered by a DC motor each performs well. A DC motor with integrated gearbox including a plastic wheel (see figure @TODO) is available for X USD, a motor driver such as the L293 costs about Y USD rendering a total cost of Y USD per robot. 
+In terms of cost effectiveness a solution with two wheels powered by a DC motor each performs well. A DC motor with integrated gearbox including (see figure @TODO) is available for 5.5 USD, the plastic wheel costs 3.5, a motor driver such as the L293 costs about 3.5 USD rendering a total cost of 21.5 USD per robot. In addition speed sensors for each of the wheels are needed since the motors do not have exactly the same speed. Without speed control the robot cannot drive straight forward.
 
 The mentioned gearbox cannot be repaired once broken and should be replaced rather than repaired. Moreover it is unclear which materials are used in the plastic parts and whether they can be recycled. Mounting and controlling the motors is trouble free and requires at least six microcontroller pins as one can see in the following table.
 
@@ -276,7 +278,7 @@ Pin count & Pin type & Description \\
 When using a shift register for setting the four GPIO inputs of the motor driver, the pin count on the microcontroller can be reduced to three pins (Clock, Serial Data, Enable).  A single shift register can provide eight GPIO port and can be chained.
 
 
-\paragraph{Wheeled with two Stepper motors}
+\subsubsection{Wheeled with two Stepper motors}
 Stepper motors are slightly modified DC motors. In stepper motors the full rotation is divided into a number of equal steps which can be separately controlled. The motor can step forward, backward or hold the current position with huge torque. Stepper motors are usually shipped within a gear box which reduces steps much further to gain higher precision and torque. 
 In typical applications stepper motors are driven by a dual H-bridge or darlington arrays attached to shift registers. The latter method is very cost effective but limited in current supply, the first method utilized a motor driver such as the L293 per stepper.
 
@@ -302,20 +304,48 @@ Pin count & Pin type & Description \\
 Since shift registered are chainable, several stepper motors can be controlled using three pins only. A typical 74HC595 shift register has a settle time of 13 nanoseconds which allows 76900 switch cycles per second. For an eight bit shift register about 9600 full state changes can be performed, each additional shift register reduces the amount by half.
 
 If a stepper motor gets broken, it can be easily replaced using the same model of stepper motor. Since the wheel is not part of the stepper motor, the old wheel can be replaced easily.
-\paragraph{Omniwheels}
-Omniwheels are the most flexible way of moving using wheels. Omniwheels are a special form of wheels which allow the movement in any direction having three independently moveable wheels. It requires three motors (typically DC motors) with direction control and 
-\paragraph{Conclusion}
+\subsubsection{Omniwheels}
+Omniwheels/Mecanum wheels are the most flexible way of moving using wheels. Omniwheels are a special form of wheels which allow the movement in any direction having three independently moveable wheels. It requires three motors (typically DC motors) with direction control and optional speed control.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/mecanum.png}
+  \caption{Screenshot of a mecanum wheel 3D model (from http://www.thingiverse.com/thing:2318)}
+\end{figure}
+
+Integrating omni wheels into the robot plattform reduces the need of ball caster for stabilization but increases costs due to the need of an additional motor and motor controller. Moreover omni wheels itself have a price tag of 4 USD each which sums up to 12 USD for the wheels, three motors for 5.5 USD and two motor drivers for 3.5 USD each. This renders a cost of 35.5 USD plus the speed sensors which adds some more costs. 
+
+The pin usage is similar to the pin usage of wheeled robots with two DC motors. The control is more difficult since the 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/omniwheel.jpg}
+  \caption{Controm scheme of a omni wheel (from http://commons.wikimedia.org/wiki/File:Omni\_wheel\_control.jpg)}
+\end{figure}
 
 
-\subsubsection{Legs}
-Bipod
-Qadropod
-Hexapod
+\subsubsection{Conclusion}
+
 
 \subsection{Sensors}
+
+
+
+\subsubsection{Conclusion}
 \subsection{Communication}
+\subsubsection{Infrared}
+\subsubsection{RFM12}
+\subsubsection{Bluetooth}
+\subsubsection{NRF24L01}
+
 \subsection{Microcontroller}
+
+\subsubsection{ATmega328p}
+\subsubsection{ATmega32U4}
+
 \subsection{Power Supply}
+\subsubsection{Nickel-metal hydride batteries}
+\subsubsection{Lithium Polymer batteries}
 
 \section{Robot Construction}
 
