@@ -313,22 +313,35 @@ Omniwheels/Mecanum wheels are the most flexible way of moving using wheels. Omni
   \caption{Screenshot of a mecanum wheel 3D model (from http://www.thingiverse.com/thing:2318)}
 \end{figure}
 
-Integrating omni wheels into the robot plattform reduces the need of ball caster for stabilization but increases costs due to the need of an additional motor and motor controller. Moreover omni wheels itself have a price tag of 4 USD each which sums up to 12 USD for the wheels, three motors for 5.5 USD and two motor drivers for 3.5 USD each. This renders a cost of 35.5 USD plus the speed sensors which adds some more costs. 
+Integrating omni wheels into the robot plattform reduces the need of ball caster for stabilization but increases costs due to the need of an additional motor and motor controller. Moreover omni wheels itself have a price tag of 4 USD each which sums up to 12 USD for the wheels, three motors for 5.5 USD and two motor drivers for 3.5 USD each. This renders a cost of 35.5 USD plus the speed sensors which adds to even more. 
 
-The pin usage is similar to the pin usage of wheeled robots with two DC motors. The control is more difficult since the control scheme is complex due to the movement vectors. 
+The pin usage is similar to the pin usage of wheeled robots with two DC motors. The control is more difficult since the control scheme is complex due to the movement vectors as shown in the figure \ref{fig:omnicontrol}.
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{images/omniwheel.jpg}
   \caption{Control scheme of a omni wheel (from http://commons.wikimedia.org/wiki/File:Omni\_wheel\_control.jpg)}
+  \label{fig:omnicontrol}
 \end{figure}
 
 
 \subsubsection{Conclusion}
-
+All in all a solution using stepper motors with darlington array connected to shift registers is the most cost-effective solution. It provides the necessary functions and complies to the evaluation aspects such as the educational potential.
 
 \subsection{Sensors}
+Sensors are important to make the robot sense its environment. Sensing the environment enables the interaction in it, the avoidance of obstacles or 
 
+\subsection{IR Reciever}
+
+\subsection{IR Proximity Sensor}
+
+\subsection{Ultrasonic Distance Sensor}
+
+\subsection{Accelerometer}
+
+\subsection{Gyroscope}
+
+\subsection{Compass}
 
 
 \subsubsection{Conclusion}
