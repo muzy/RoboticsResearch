@@ -356,8 +356,6 @@ A compass allows the robot
 
 \subsubsection{Conclusion}
 \subsection{Communication}
-Communication between robots or between the robot is essential to widen the application possibilities. When the robot is connected to a computer it gets much more processing power to solve complicated problems; when robots can communicate with each other tasks can be solved collaboratively.
-
 \subsubsection{Infrared}
 Infrared based data transfer is widely used in remote control application where a small amount of data is transferred. Infrared communication is easily interfered by other infrared signals. This limits the data rate since error correction mechanisms must be implemented.
 
