@@ -1,21 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.12.4)  6 DEC 2013 15:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.24)  17 DEC 2013 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **paper.tex
 (./paper.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
-hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
- czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
-n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
-reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
- sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
-n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
-speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
-lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
-celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, th
-ai, loaded.
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -33,14 +23,14 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/var/lib/texmf/tex/generic/babel/babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/05/16 v3.9f The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/english.ldf
-Language: english 2005/03/30 v3.3o English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+File: babel.def 2013/05/16 v3.9f Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
@@ -535,7 +525,7 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip56
 
 For additional information on amsmath, use the `?' option.
@@ -555,20 +545,20 @@ Package: amsbsy 1999/11/29 v1.2d
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count120
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count121
 \leftroot@=\count122
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count123
 \DOTSCASE@=\count124
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box37
 \strutbox@=\box38
 \big@size=\dimen137
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count125
 \c@MaxMatrixCols=\count126
 \dotsspace@=\muskip10
@@ -589,21 +579,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \multlinegap=\skip57
 \multlinetaggap=\skip58
 \mathdisplay@stack=\toks27
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2009/06/22 v3.00
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2009/07/02 v2.20.1
+Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks28
 \thm@bodyfont=\toks29
 \thm@headfont=\toks30
@@ -636,7 +626,16 @@ Package: moredefs 2001/08/31 v1.8 more defining commands (Frankenstein's brain)
 \c@starnumber=\count134
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2011/11/13 v1.7 programmable bibliographies
+Package: biblatex 2013/07/15 v2.7a programmable bibliographies (PK/JW/AB)
+
+
+Package biblatex Warning: No "backend" specified, using Biber backend.
+(biblatex)                To use BibTeX, load biblatex with 
+(biblatex)                the "backend=bibtex" option.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex2.sty
+Package: biblatex2 2013/07/15 v2.7a programmable bibliographies (biber) (PK/JW/
+AB)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
@@ -647,6 +646,24 @@ Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 )
 \etb@tempcnta=\count136
 )
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count137
@@ -658,40 +675,44 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-\c@listtotal=\count138
-\c@listcount=\count139
-\c@liststart=\count140
-\c@liststop=\count141
-\c@citecount=\count142
-\c@citetotal=\count143
-\c@multicitecount=\count144
-\c@multicitetotal=\count145
-\c@instcount=\count146
-\c@maxnames=\count147
-\c@minnames=\count148
-\c@maxitems=\count149
-\c@minitems=\count150
-\c@citecounter=\count151
-\c@savedcitecounter=\count152
-\c@uniquelist=\count153
-\c@uniquename=\count154
-\c@refsection=\count155
-\c@refsegment=\count156
-\c@maxextrayear=\count157
-\c@maxextraalpha=\count158
-\c@abbrvpenalty=\count159
-\c@highnamepenalty=\count160
-\c@lownamepenalty=\count161
-\c@maxparens=\count162
-\c@parenlevel=\count163
-\blx@tempcnta=\count164
-\blx@tempcntb=\count165
-\blx@tempcntc=\count166
-\blx@maxsection=\count167
-\blx@maxsegment=\count168
-\blx@notetype=\count169
-\blx@parenlevel@text=\count170
-\blx@parenlevel@foot=\count171
+\c@tabx@nest=\count138
+\c@listtotal=\count139
+\c@listcount=\count140
+\c@liststart=\count141
+\c@liststop=\count142
+\c@citecount=\count143
+\c@citetotal=\count144
+\c@multicitecount=\count145
+\c@multicitetotal=\count146
+\c@instcount=\count147
+\c@maxnames=\count148
+\c@minnames=\count149
+\c@maxitems=\count150
+\c@minitems=\count151
+\c@citecounter=\count152
+\c@savedcitecounter=\count153
+\c@uniquelist=\count154
+\c@uniquename=\count155
+\c@refsection=\count156
+\c@refsegment=\count157
+\c@maxextratitle=\count158
+\c@maxextratitleyear=\count159
+\c@maxextrayear=\count160
+\c@maxextraalpha=\count161
+\c@abbrvpenalty=\count162
+\c@highnamepenalty=\count163
+\c@lownamepenalty=\count164
+\c@maxparens=\count165
+\c@parenlevel=\count166
+\blx@tempcnta=\count167
+\blx@tempcntb=\count168
+\blx@tempcntc=\count169
+\blx@maxsection=\count170
+\blx@maxsegment@0=\count171
+\blx@notetype=\count172
+\blx@parenlevel@text=\count173
+\blx@parenlevel@foot=\count174
+\blx@sectionciteorder@0=\count175
 \labelnumberwidth=\skip62
 \labelalphawidth=\skip63
 \shorthandwidth=\skip64
@@ -701,117 +722,129 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 \bibinitsep=\skip68
 \bibparsep=\skip69
 \bibhang=\skip70
-\blx@auxin=\read1
-\blx@auxout=\write3
-\c@mincomprange=\count172
-\c@maxcomprange=\count173
-\c@mincompwidth=\count174
-\c@labelname=\count175
-\c@savedlabelname=\count176
-\c@author=\count177
-\c@savedauthor=\count178
-\c@shortauthor=\count179
-\c@savedshortauthor=\count180
-\c@editor=\count181
-\c@savededitor=\count182
-\c@editora=\count183
-\c@savededitora=\count184
-\c@editorb=\count185
-\c@savededitorb=\count186
-\c@editorc=\count187
-\c@savededitorc=\count188
-\c@shorteditor=\count189
-\c@savedshorteditor=\count190
-\c@bookauthor=\count191
-\c@savedbookauthor=\count192
-\c@translator=\count193
-\c@savedtranslator=\count194
-\c@annotator=\count195
-\c@savedannotator=\count196
-\c@commentator=\count197
-\c@savedcommentator=\count198
-\c@introduction=\count199
-\c@savedintroduction=\count200
-\c@foreword=\count201
-\c@savedforeword=\count202
-\c@afterword=\count203
-\c@savedafterword=\count204
-\c@holder=\count205
-\c@savedholder=\count206
-\c@namea=\count207
-\c@savednamea=\count208
-\c@nameb=\count209
-\c@savednameb=\count210
-\c@namec=\count211
-\c@savednamec=\count212
-\c@institution=\count213
-\c@savedinstitution=\count214
-\c@language=\count215
-\c@savedlanguage=\count216
-\c@location=\count217
-\c@savedlocation=\count218
-\c@organization=\count219
-\c@savedorganization=\count220
-\c@origlocation=\count221
-\c@savedoriglocation=\count222
-\c@origpublisher=\count223
-\c@savedorigpublisher=\count224
-\c@pageref=\count225
-\c@savedpageref=\count226
-\c@publisher=\count227
-\c@savedpublisher=\count228
-\c@lista=\count229
-\c@savedlista=\count230
-\c@listb=\count231
-\c@savedlistb=\count232
-\c@listc=\count233
+\blx@bcfin=\read1
+\blx@bcfout=\write3
+\c@mincomprange=\count176
+\c@maxcomprange=\count177
+\c@mincompwidth=\count178
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count179
+\c@savedafterword=\count180
+\c@annotator=\count181
+\c@savedannotator=\count182
+\c@author=\count183
+\c@savedauthor=\count184
+\c@bookauthor=\count185
+\c@savedbookauthor=\count186
+\c@commentator=\count187
+\c@savedcommentator=\count188
+\c@editor=\count189
+\c@savededitor=\count190
+\c@editora=\count191
+\c@savededitora=\count192
+\c@editorb=\count193
+\c@savededitorb=\count194
+\c@editorc=\count195
+\c@savededitorc=\count196
+\c@foreword=\count197
+\c@savedforeword=\count198
+\c@holder=\count199
+\c@savedholder=\count200
+\c@introduction=\count201
+\c@savedintroduction=\count202
+\c@namea=\count203
+\c@savednamea=\count204
+\c@nameb=\count205
+\c@savednameb=\count206
+\c@namec=\count207
+\c@savednamec=\count208
+\c@shortauthor=\count209
+\c@savedshortauthor=\count210
+\c@shorteditor=\count211
+\c@savedshorteditor=\count212
+\c@translator=\count213
+\c@savedtranslator=\count214
+\c@labelname=\count215
+\c@savedlabelname=\count216
+\c@institution=\count217
+\c@savedinstitution=\count218
+\c@lista=\count219
+\c@savedlista=\count220
+\c@listb=\count221
+\c@savedlistb=\count222
+\c@listc=\count223
+\c@savedlistc=\count224
+\c@listd=\count225
+\c@savedlistd=\count226
+\c@liste=\count227
+\c@savedliste=\count228
+\c@listf=\count229
+\c@savedlistf=\count230
+\c@location=\count231
+\c@savedlocation=\count232
+\c@organization=\count233
 Normal \count register pool exhausted, switching to extended pool.
-\c@savedlistc=\count277
-\c@listd=\count278
-\c@savedlistd=\count279
-\c@liste=\count280
-\c@savedliste=\count281
-\c@listf=\count282
-\c@savedlistf=\count283
+\c@savedorganization=\count277
+\c@origlocation=\count278
+\c@savedoriglocation=\count279
+\c@origpublisher=\count280
+\c@savedorigpublisher=\count281
+\c@publisher=\count282
+\c@savedpublisher=\count283
+\c@language=\count284
+\c@savedlanguage=\count285
+\c@pageref=\count286
+\c@savedpageref=\count287
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2011/11/13 v1.7 biblatex generic compatibility
+File: blx-compat.def 2013/07/15 v2.7a biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2011/11/13 v1.7 biblatex generic definitions
-\c@biburlnumpenalty=\count284
-\c@biburlucpenalty=\count285
-\c@biburllcpenalty=\count286
-\c@smartand=\count287
+File: biblatex.def 
+\c@textcitecount=\count288
+\c@textcitetotal=\count289
+\c@textcitemaxnames=\count290
+\c@biburlnumpenalty=\count291
+\c@biburlucpenalty=\count292
+\c@biburllcpenalty=\count293
+\c@smartand=\count294
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2011/11/13 v1.7 biblatex bibliography style
+File: numeric.bbx 2013/07/15 v2.7a biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2011/11/13 v1.7 biblatex bibliography style
+File: standard.bbx 2013/07/15 v2.7a biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count295
+\c@bbx:relatedtotal=\count296
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2011/11/13 v1.7 biblatex citation style
+File: numeric.cbx 2013/07/15 v2.7a biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\smartcites'.
@@ -821,19 +854,19 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-))
+)))
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2011/11/13 v1.7 biblatex localization
+File: english.lbx 2013/07/15 v2.7a biblatex localization (PK/JW/AB)
 )
 
 Package biblatex Warning: 'babel' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count288
-\@quotereset=\count289
+\@quotelevel=\count297
+\@quotereset=\count298
 (./paper.aux)
 \openout1 = `paper.aux'.
 
@@ -855,25 +888,21 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
+\scratchcounter=\count299
 \scratchdimen=\dimen144
 \scratchbox=\box39
-\nofMPsegments=\count291
-\nofMParguments=\count292
+\nofMPsegments=\count300
+\nofMParguments=\count301
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count293
+\MPscratchCnt=\count302
 \MPscratchDim=\dimen145
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
 \everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
@@ -892,19 +921,6 @@ Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
@@ -917,241 +933,34 @@ e
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-
-
-Package biblatex Warning: Data encoding is 'utf8'.
-(biblatex)                Use backend=biber.
-
-\openout3 = `paper-blx.bib'.
+\openout3 = `paper.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
+
+
+Package biblatex Warning: File 'paper.bbl' is wrong format version - expected 2
+.2.
+
 Package biblatex Info: ... file 'paper.bbl' found.
-(./paper.bbl)
-Package biblatex Info: Reference section=0 on input line 64.
-Package biblatex Info: Reference segment=0 on input line 64.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 66.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 66.
-
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 66.
-
-
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 66.
-
-
-(/usr/share/texmf/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 66.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 66.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 66.
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (10.2006pt too wide) in paragraph at lines 84--85
-\T1/lmr/m/n/10.95 Documentation, learn-ing ma-te-ri-als and sug-ges-tions for l
-essons are needed
- []
-
-[2] <images/asuro.jpg, id=14, 1096.095pt x 1023.825pt>
-File: images/asuro.jpg Graphic file (type jpg)
- <use images/asuro.jpg>
-Package pdftex.def Info: images/asuro.jpg used on input line 109.
-(pdftex.def)             Requested size: 180.0pt x 168.12709pt.
-
-[3]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 123.
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--125
-[]|\T1/lmr/m/n/10.95 Assessment
- []
-
-
-Underfull \hbox (badness 6978) in paragraph at lines 132--133
-\T1/lmr/m/n/10.95 which is tran-si-tioned into a Creative-
- []
-
-
-Overfull \hbox (36.0pt too wide) in paragraph at lines 123--135
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/arduinorobot.jpg, id=19, 489.32813pt x 306.39468pt>
-File: images/arduinorobot.jpg Graphic file (type jpg)
-
-<use images/arduinorobot.jpg>
-Package pdftex.def Info: images/arduinorobot.jpg used on input line 144.
-(pdftex.def)             Requested size: 180.0pt x 112.70973pt.
- [4 <./images/asuro.jpg>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \vbox (25.2389pt too high) has occurred while \output is active []
-
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
-[]|\T1/lmr/m/n/10.95 Assessment
- []
-
-
-Overfull \hbox (36.0pt too wide) in paragraph at lines 157--169
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/mindstorms.jpg, id=26, 449.68pt x 381.425pt>
-File: images/mindstorms.jpg Graphic file (type jpg)
-
-<use images/mindstorms.jpg>
-Package pdftex.def Info: images/mindstorms.jpg used on input line 178.
-(pdftex.def)             Requested size: 180.0pt x 152.67787pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--179
-[]\T1/lmr/m/n/10.95 Figure 3: Pic-ture of the LEGO Mind-storms NXT (from
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6 <./images/arduinorobot.jpg>]
-Overfull \hbox (3.5698pt too wide) in paragraph at lines 186--187
-\T1/lmr/m/n/10.95 Lithium-Ion bat-tery with in-te-grated charger which can be s
-ep-a-rately brought.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
-[]|\T1/lmr/m/n/10.95 Assessment
- []
-
-
-Overfull \hbox (36.0pt too wide) in paragraph at lines 194--206
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/thymioii.jpg, id=30, 1204.5pt x 903.375pt>
-File: images/thymioii.jpg Graphic file (type jpg)
- <use images/thymioii.jpg>
-Package pdftex.def Info: images/thymioii.jpg used on input line 215.
-(pdftex.def)             Requested size: 180.0pt x 134.99037pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-[]\T1/lmr/m/n/10.95 Figure 4: Pic-ture of the Thymio II (from
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7 <./images/mindstorms.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
-[]|\T1/lmr/m/n/10.95 Assessment
- []
-
-
-Overfull \hbox (36.0pt too wide) in paragraph at lines 227--239
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8 <./images/thymioii.jpg>] [9]
-Underfull \hbox (badness 3168) in paragraph at lines 270--271
-[]|\T1/lmr/m/n/10.95 Motor speed con-trol us-ing pulse-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 285.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 285.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10] <images/mecanum.png, id=47, 298.76567pt x 145.28505pt>
-File: images/mecanum.png Graphic file (type png)
-
-<use images/mecanum.png>
-Package pdftex.def Info: images/mecanum.png used on input line 312.
-(pdftex.def)             Requested size: 180.0pt x 87.53526pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--313
-[]\T1/lmr/m/n/10.95 Figure 5: Screen-shot of a mecanum wheel 3D model (from
- []
-
-<images/omniwheel.jpg, id=48, 394.47375pt x 362.10281pt>
-File: images/omniwheel.jpg Graphic file (type jpg)
-
-<use images/omniwheel.jpg>
-Package pdftex.def Info: images/omniwheel.jpg used on input line 322.
-(pdftex.def)             Requested size: 180.0pt x 165.22667pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 323--323
-[]\T1/lmr/m/n/10.95 Figure 6: Con-trol scheme of a omni wheel (from
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[11 <./images/mecanum.png>] [12 <./images/omniwheel.jpg>] [13] [14] [15]
-[16] [17] (./paper.aux)
-Package logreq Info: Writing requests to 'paper.run.xml'.
-\openout1 = `paper.run.xml'.
-
- ) 
+(./paper.bbl
+! Undefined control sequence.
+<argument> ...c@refsection @entry@\blx@slist@name 
+                                                  
+l.27 \endentry
+              
+? X
+ 
 Here is how much of TeX's memory you used:
- 10491 strings out of 493485
- 153419 string characters out of 3143526
- 351257 words of memory out of 3000000
- 13533 multiletter control sequences out of 15000+200000
- 66714 words of font info for 61 fonts, out of 3000000 for 9000
+ 10754 strings out of 493307
+ 160072 string characters out of 6139904
+ 581266 words of memory out of 5000000
+ 14003 multiletter control sequences out of 15000+600000
+ 8389 words of font info for 19 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,11n,35p,833b,1305s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on paper.pdf (17 pages, 1040541 bytes).
+ 44i,1n,35p,822b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 0 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

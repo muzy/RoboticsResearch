@@ -346,9 +346,18 @@ The price for an ultrasonic distance sensor is very low, cheap versions with a r
 A typical application for ultrasonic distance sensor is obstacle avoidance. By mounting the sensor on a servo motor the visible area can be increased which allows better navigation due to enhanced obstacle avoidance possibilities. 
 
 \subsection{Accelerometer}
-Accelerometers can sense acceleration on one or more axis. This can be used to determine the speed of the robot 
+Accelerometers can sense acceleration on one or more axis. This can be used to determine the speed of the robot or the direction in which the robot accelerates (which can be used to determine whether the robot falls/is lifted up). 
 
+Interfacing accelerometer is often done using serial protocols like SPI (Serial Periphal Interface), UART (Universal asynchronous receiver/transmitter) or I²C (Inter-Integrated Circuit). A affordable accelerometer with included gyroscope (evaluated in the section below) is the MPU-6050. It has a price tag of 3 USD and is usually sold on a breakout-board due to its small QFN (quad-flat no-leads) package which is hard to solder manually. 
+
+The MPU-6050 can be interfaced using various protocols, but I²C is the most common way to do so and requires two input/output pins only using software-based I²C or two I²C hardware pins. Libraries with permissive license exist which ease the use of the accelerometer. For advanced usage scenarios a integrated DMP (Digitial Motion Processor) can process raw values and interface additional sensors like a compass.
 \subsection{Gyroscope}
+Gyroscopes are used to determine the orientation. Applications for gyroscopes are balancing and position calculation (usually in combination with an accelerometer). Integrated circuits such as the MPU-6050 mentioned before usually combine a gyroscope and an accelerometer into one single device.
+
+The educational potential of a gyroscope/accelerometer is excellent, since interaction with a robot can be directly visualized. It can introduce the user to concepts of orientation and force by interacting with the robot. Advanced users can use the sensor to determine the position in of the robot based on a known starting point or lifting/falling detection.
+
+As mentioned in the previous section the MPU-6050 is easily interfaced using various protocols of which I²C is the common way.
+
 
 \subsection{Compass}
 A compass allows the robot 
