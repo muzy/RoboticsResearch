@@ -339,14 +339,14 @@ IR recievers are widely used in remote control applications such as televisions 
 Attaching a reciever to a microcontroller requires a single input pin which can be either a digital pin or a pin internally attached to an ADC. In terms of cost effectiveness and education potential IR recievers are a must have sensor. Under the premise that library for infrared readings exist, the sensor is easy to use and trouble free.
 
 \subsection{Ultrasonic Distance Sensor}
-Ultrasonic distance sensors sense distance between the sensor and an object in the visible area of the sensor. In case of ultrasonic sensors the visible area is the area where the echo spreads. By counting the time between the signal and the reflection the distance can be calculated using the speed of sound. (@TODO) 
+Ultrasonic distance sensors sense distance between the sensor and an object in the visible area of the sensor. In case of ultrasonic sensors the visible area is the area where the echo spreads. By counting the time between the signal and the reflection the distance can be calculated using the speed of sound (340.29 m / s at sea level). 
 
 The price for an ultrasonic distance sensor is very low, cheap versions with a range between 1 and 255 centimeters start at about 1.5 USD. Interfacing the sensor requires two microcontroller pins - one for triggering the echo and another one for reading back the distance value. The trigger pin can be a generic purpose input/output pin, the sense pin must be attached to a pin which provides an analog to digital converter.
 
 A typical application for ultrasonic distance sensor is obstacle avoidance. By mounting the sensor on a servo motor the visible area can be increased which allows better navigation due to enhanced obstacle avoidance possibilities. 
 
 \subsection{Accelerometer}
-
+Accelerometers can sense acceleration on one or more axis. This can be used to determine the speed of the robot 
 
 \subsection{Gyroscope}
 
