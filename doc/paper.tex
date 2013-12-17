@@ -382,30 +382,39 @@ Since a lot of effort is needed to make the connection stable, this solution is 
 The RFM12 radio modules operate on the 433MHz or 868MHz frequency band. Sender and receiver are separated into 
 
 \subsubsection{Bluetooth}
+Bluetooth operates on the 2.4GHz frequency band on which also WLAN operates.
+
 \subsubsection{NRF24L01}
+The nRF24L01 (or its sucessor the nRF24L01+) are single chip trancievers by Nordic Semiconductors which operate in the license free 2.4GHz frequency band. The allow sending and recieving of data and can standby in ultra low power mode consuming 900nA at 3.3V only.
+
+\subsubsection{Conclusion}
 
 \subsection{Microcontroller}
-Depending on the microcontroller, the final robot has different processing capabilities. Processing capabilities are mainly influenced by the processor frequency which influences the number of instructions per second, the interfaces such as I2C or SPI and the amount of flash storage and RAM.
+Depending on the microcontroller, the final robot has different processing capabilities. Its capabilities are mainly influenced by the processor frequency which influences the number of instructions per second, the interfaces such as I2C or SPI and the amount of flash storage and RAM.
 
 Since the target audience are beginners, the evaluation focusses on microcontrollers used by the Arduino project which provides libraries and tutorials for a lot of applications. A Arduino community exists where questions are discussed and answered. Those answers can be easily ported to the robot when the underlying microcontroller is compatible with the Arduino bootloader.
 \subsubsection{ATmega328p}
-The ATmega328p is a low power microcontroller which runs on voltages between 1.8 and 5.5 Volt. It is usally operated at 5 Volt with a frequency of 16 MHz. The microcontroller has 32KB of integrated flash memory, 2KB RAM and 1KB EEPROM. Hardware interfaces include a UART, SPI and I2C (called TWI - two wire interface). Six microcontroller pins provide an analog to digital converter with 12 bit resolution (0 to 1024), additional 14 pins are generic input/output pins of which six pins provide PWM (pulse-width-modulation) capabilities.
+The ATmega328p is a low power microcontroller produced by Atmel which runs on voltages between 1.8 and 5.5 Volt. It is usally operated at 5 Volt with a frequency of 16 MHz. The microcontroller has 32KB of integrated flash memory, 2KB RAM and 1KB EEPROM. Hardware interfaces include a UART, SPI and I2C (called TWI - two wire interface). Six microcontroller pins provide an analog to digital converter with 12 bit resolution (0 to 1024), additional 14 pins are generic input/output pins of which six pins provide PWM (pulse-width-modulation) capabilities.
 
 The ATmega328p costs about 3.5 USD in a single unit, when buying in bulk the price drops to about 2 USD per unit. The microcontroller can be programmed using an ISP (In-system programmer). When the Arduino bootloader is present, the microcontroller can be programmed using its UART. The bootloader consumes about 0.5KB of flash memory. Using the UART for programming requires a USB to serial cable with TTL logic level and reset pin. Integrated circuits such as the FTDI  FT232RL provide this functionality for about 4 USD plus additional components.
 \subsubsection{ATmega32U4}
-The ATmega32U4 is a microcontroller with integrated USB connectivity. It usually operates at 5 Volt with a frequency of 16Mhz. It provides 32KB of flash memory, 2.5KB RAM and 1KB EEPROM. 
+The ATmega32U4 is a microcontroller produces by Atmel with integrated USB connectivity. It usually operates at 5 Volt with a frequency of 16Mhz. It provides 32KB of flash memory, 2.5KB RAM and 1KB EEPROM. 
 
 Interfacing other hardware components is possible using 20 digital input/output pins of which seven provide PWM output and twelve pins act as an ten bit analog to digital converter. Hardware interfaces for I2C, SPI and UART exist, the USB interface can be used for emulating a serial interface or usb mouse and keyboard.
 
 When the Arduino bootloader is present on the microcontoller it can be programmed using the usb serial device. This reduces the available flash memory by 4KB to 28KB available. It also reduces the need of additional components such as an FT232RL for programming via USB.
-
 The cost per microcontroller is 6 USD for a single unit and drops to 3.5 USD in large quantities.
+\subsubsection{Conclusion}
+Both, the ATmega328p and ATmega32U4 are suitable for robotic projects. The pricing is similar considering the microcontroller to be programmable via USB (ATmega328p: 7.5 USD - ATmega32U4: 6 USD). Both microcontrollers well supported in the arduino community and provide sufficient connectivity for sensors and actuators.  
 
-
+Some features make the ATmega32U4 more favorable than the ATmega328p such as the increased number of PWM capable pins and the increased number of pins with an integrated analog to digital converter. In addition the usb keyboard and mouse emulation offers additional usage scenarios even though usb programming is not available in this mode. The newest Arduino generation (Arduino Leonardo) is based on the ATmega32U4.
 \subsection{Power Supply}
+
+
 \subsubsection{Nickel-metal hydride batteries}
 \subsubsection{Lithium-polymer batteries}
 
+\subsubsection{Conclusion}
 \section{Robot Construction}
 
 
