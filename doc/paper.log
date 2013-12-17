@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.24)  17 DEC 2013 11:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.24)  17 DEC 2013 11:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -936,31 +936,244 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `paper.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-
-
-Package biblatex Warning: File 'paper.bbl' is wrong format version - expected 2
-.2.
-
 Package biblatex Info: ... file 'paper.bbl' found.
-(./paper.bbl
-! Undefined control sequence.
-<argument> ...c@refsection @entry@\blx@slist@name 
-                                                  
-l.27 \endentry
-              
-? X
- 
+
+(./paper.bbl)
+Package biblatex Info: Reference section=0 on input line 64.
+Package biblatex Info: Reference segment=0 on input line 64.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 66.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 66.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 66.
+
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 66.
+
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 66.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 66.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (10.2006pt too wide) in paragraph at lines 84--85
+\T1/lmr/m/n/10.95 Documentation, learn-ing ma-te-ri-als and sug-ges-tions for l
+essons are needed
+ []
+
+[2] <images/asuro.jpg, id=14, 1096.095pt x 1023.825pt>
+File: images/asuro.jpg Graphic file (type jpg)
+ <use images/asuro.jpg>
+Package pdftex.def Info: images/asuro.jpg used on input line 109.
+(pdftex.def)             Requested size: 180.0pt x 168.12709pt.
+
+[3]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 123.
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\T1/lmr/m/n/10.95 Assessment
+ []
+
+
+Underfull \hbox (badness 6978) in paragraph at lines 132--133
+\T1/lmr/m/n/10.95 which is tran-si-tioned into a Creative-
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 123--135
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/arduinorobot.jpg, id=19, 489.32813pt x 306.39468pt>
+File: images/arduinorobot.jpg Graphic file (type jpg)
+
+<use images/arduinorobot.jpg>
+Package pdftex.def Info: images/arduinorobot.jpg used on input line 144.
+(pdftex.def)             Requested size: 180.0pt x 112.70973pt.
+ [4 <./images/asuro.jpg>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \vbox (25.2389pt too high) has occurred while \output is active []
+
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+[]|\T1/lmr/m/n/10.95 Assessment
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 157--169
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/mindstorms.jpg, id=26, 449.68pt x 381.425pt>
+File: images/mindstorms.jpg Graphic file (type jpg)
+
+<use images/mindstorms.jpg>
+Package pdftex.def Info: images/mindstorms.jpg used on input line 178.
+(pdftex.def)             Requested size: 180.0pt x 152.67787pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]\T1/lmr/m/n/10.95 Figure 3: Pic-ture of the LEGO Mind-storms NXT (from
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./images/arduinorobot.jpg>]
+Overfull \hbox (3.5698pt too wide) in paragraph at lines 186--187
+\T1/lmr/m/n/10.95 Lithium-Ion bat-tery with in-te-grated charger which can be s
+ep-a-rately brought.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\T1/lmr/m/n/10.95 Assessment
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 194--206
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/thymioii.jpg, id=30, 1204.5pt x 903.375pt>
+File: images/thymioii.jpg Graphic file (type jpg)
+ <use images/thymioii.jpg>
+Package pdftex.def Info: images/thymioii.jpg used on input line 215.
+(pdftex.def)             Requested size: 180.0pt x 134.99037pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+[]\T1/lmr/m/n/10.95 Figure 4: Pic-ture of the Thymio II (from
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./images/mindstorms.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+[]|\T1/lmr/m/n/10.95 Assessment
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 227--239
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <./images/thymioii.jpg>] [9]
+Underfull \hbox (badness 3168) in paragraph at lines 270--271
+[]|\T1/lmr/m/n/10.95 Motor speed con-trol us-ing pulse-
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 285.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 285.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10] <images/mecanum.png, id=47, 298.76567pt x 145.28505pt>
+File: images/mecanum.png Graphic file (type png)
+
+<use images/mecanum.png>
+Package pdftex.def Info: images/mecanum.png used on input line 312.
+(pdftex.def)             Requested size: 180.0pt x 87.53526pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
+[]\T1/lmr/m/n/10.95 Figure 5: Screen-shot of a mecanum wheel 3D model (from
+ []
+
+<images/omniwheel.jpg, id=48, 394.47375pt x 362.10281pt>
+File: images/omniwheel.jpg Graphic file (type jpg)
+
+<use images/omniwheel.jpg>
+Package pdftex.def Info: images/omniwheel.jpg used on input line 322.
+(pdftex.def)             Requested size: 180.0pt x 165.22667pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+[]\T1/lmr/m/n/10.95 Figure 6: Con-trol scheme of a omni wheel (from
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./images/mecanum.png>] [12 <./images/omniwheel.jpg>] [13] [14]
+
+LaTeX Warning: Empty bibliography on input line 394.
+
+[15] [16] [17] [18] [19] (./paper.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                paper
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'paper.run.xml'.
+\openout1 = `paper.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 10754 strings out of 493307
- 160072 string characters out of 6139904
- 581266 words of memory out of 5000000
- 14003 multiletter control sequences out of 15000+600000
- 8389 words of font info for 19 fonts, out of 8000000 for 9000
+ 10935 strings out of 493307
+ 163319 string characters out of 6139904
+ 603328 words of memory out of 5000000
+ 14120 multiletter control sequences out of 15000+600000
+ 59656 words of font info for 59 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,1n,35p,822b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 44i,11n,35p,833b,1403s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
+public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on paper.pdf (19 pages, 1007782 bytes).
 PDF statistics:
- 0 PDF objects out of 1000 (max. 8388607)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
