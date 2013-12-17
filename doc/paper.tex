@@ -6,6 +6,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{eurosym}
 \DeclareUnicodeCharacter{20AC}{\euro}
+\usepackage{csquotes}
 \usepackage{graphicx}
 \usepackage{rotating} 
 \usepackage{array}
@@ -360,9 +361,13 @@ As mentioned in the previous section the MPU-6050 is easily interfaced using var
 \subsection{Compass}
 A compass allows the robot to sense its orientation relative to the magnetic field of the earth. Technically speaking a integrated circuit providing measurement of the magnetic field of the earth are a special form of magnetometers.
 
+An integrated circuit providing a magnetometer is the HMC-5883L which is interfaced with I2C. It costs about 3 USD and is mounted on a breadboard friendly breakout board. It senses the magnetic field in three axis.
 
-
+The educational potential of a compass is given since the interaction can be directly measured (typically accuracy is 1 degree). It can be used to introduce the magnetic field of earth and its function. Advanced users can use the compass to navigate the robot with higher precision (in combination with the accelerometer and gyroscope).
 \subsubsection{Conclusion}
+Each sensor enables new robot applications such as sensing the environment, movement or navigation. Due to the fact that most sensors are already mounted on a breakout-board, the sensors are accessible to people without sophisticated soldering experience. In addition a robot can be designed to provide connectors for the breakout boards which gives more flexibility.
+
+The flexibility influences the power consumption since only sensors needed for a specific application have to be mounted/enabled. Considering the target audience of the robot, sensors can be bought separately on demand which reduces the costs for the base robot.
 \subsection{Communication}
 Communication between robots or between the robot is essential to widen the application possibilities. When the robot is connected to a computer it gets much more processing power to solve complicated problems; when robots can communicate with each other tasks can be solved collaboratively.
 
@@ -371,20 +376,35 @@ Infrared based data transfer is widely used in remote control application where 
 
 When using infrared signals only one robot can send at a time which requires collision detection. The hardware requirements for infrared transmissions are ver low, only a infrared reciever and a infrared LED is required which sums up to a total of 0.5 USD. The infrared reciever and the infrared LED require one free GPIO pin on the microcontroller each.
 
-Since a lot of effort is needed to make the connection stable, this solution is not trouble free, although techniques to stabilize communication have educational potential.
+Since a lot of effort is needed to make the connection stable, this solution is not trouble free, although techniques to stabilize communication have educational potential. A standardizes data exchange format for infrared communication does not exist.
 
 \subsubsection{RFM12}
+The RFM12 radio modules operate on the 433MHz or 868MHz frequency band. Sender and receiver are separated into 
+
 \subsubsection{Bluetooth}
 \subsubsection{NRF24L01}
 
 \subsection{Microcontroller}
+Depending on the microcontroller, the final robot has different processing capabilities. Processing capabilities are mainly influenced by the processor frequency which influences the number of instructions per second, the interfaces such as I2C or SPI and the amount of flash storage and RAM.
 
+Since the target audience are beginners, the evaluation focusses on microcontrollers used by the Arduino project which provides libraries and tutorials for a lot of applications. A Arduino community exists where questions are discussed and answered. Those answers can be easily ported to the robot when the underlying microcontroller is compatible with the Arduino bootloader.
 \subsubsection{ATmega328p}
+The ATmega328p is a low power microcontroller which runs on voltages between 1.8 and 5.5 Volt. It is usally operated at 5 Volt with a frequency of 16 MHz. The microcontroller has 32KB of integrated flash memory, 2KB RAM and 1KB EEPROM. Hardware interfaces include a UART, SPI and I2C (called TWI - two wire interface). Six microcontroller pins provide an analog to digital converter with 12 bit resolution (0 to 1024), additional 14 pins are generic input/output pins of which six pins provide PWM (pulse-width-modulation) capabilities.
+
+The ATmega328p costs about 3.5 USD in a single unit, when buying in bulk the price drops to about 2 USD per unit. The microcontroller can be programmed using an ISP (In-system programmer). When the Arduino bootloader is present, the microcontroller can be programmed using its UART. The bootloader consumes about 0.5KB of flash memory. Using the UART for programming requires a USB to serial cable with TTL logic level and reset pin. Integrated circuits such as the FTDI  FT232RL provide this functionality for about 4 USD plus additional components.
 \subsubsection{ATmega32U4}
+The ATmega32U4 is a microcontroller with integrated USB connectivity. It usually operates at 5 Volt with a frequency of 16Mhz. It provides 32KB of flash memory, 2.5KB RAM and 1KB EEPROM. 
+
+Interfacing other hardware components is possible using 20 digital input/output pins of which seven provide PWM output and twelve pins act as an ten bit analog to digital converter. Hardware interfaces for I2C, SPI and UART exist, the USB interface can be used for emulating a serial interface or usb mouse and keyboard.
+
+When the Arduino bootloader is present on the microcontoller it can be programmed using the usb serial device. This reduces the available flash memory by 4KB to 28KB available. It also reduces the need of additional components such as an FT232RL for programming via USB.
+
+The cost per microcontroller is 6 USD for a single unit and drops to 3.5 USD in large quantities.
+
 
 \subsection{Power Supply}
 \subsubsection{Nickel-metal hydride batteries}
-\subsubsection{Lithium Polymer batteries}
+\subsubsection{Lithium-polymer batteries}
 
 \section{Robot Construction}
 
