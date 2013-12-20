@@ -378,15 +378,18 @@ When using infrared signals only one robot can send at a time which requires col
 
 Since a lot of effort is needed to make the connection stable, this solution is not trouble free, although techniques to stabilize communication have educational potential. A standardizes data exchange format for infrared communication does not exist.
 
-\subsubsection{RFM12}
-The RFM12 radio modules operate on the 433MHz or 868MHz frequency band. Sender and receiver are separated into 
+\subsubsection{RFM12B}
+The RFM12B is a wireless transceiver operating in the 434MHz or 915MHz band. It is produced by HOPE RF and provides an SPI interface to communicate with a microcontroller. 
 
-\subsubsection{Bluetooth}
-Bluetooth operates on the 2.4GHz frequency band on which also WLAN operates.
+It operates at voltage levels from 2.2V to 3.8V and provides data rates up to 115.2kbps. It comes without a breakout board but is shaped with stamp holes which are easy to solder. The price tag is about 7 USD for each module.
 
+The maximum distance depends on the antenna used. A arduino compatible library exists which is licensed under MIT license. Connecting the RFM12B requires four SPI pins (MISO, MOSI, SCK and CS) and an additional IRQ interrupt on an external interrupt pin.
 \subsubsection{NRF24L01}
 The nRF24L01 (or its sucessor the nRF24L01+) are single chip trancievers by Nordic Semiconductors which operate in the license free 2.4GHz frequency band. The allow sending and recieving of data and can standby in ultra low power mode consuming 900nA at 3.3V only.
 
+Attaching the nRF24L01 to the microcontroller requires four SPI pins (MISO, MOSI, SCK and CS), an additional CE (chip enable) pin and an external interrupt pin to indicate state. Even though the microcontroller runs at 3.3V the inputs are 5V tolerant.
+
+Two open source libraries Mirf and RF24 exist where RF24 is licensed under a GPL 2.0 license and Mirf is provided as is. 
 \subsubsection{Conclusion}
 
 \subsection{Microcontroller}
@@ -409,9 +412,11 @@ Both, the ATmega328p and ATmega32U4 are suitable for robotic projects. The prici
 
 Some features make the ATmega32U4 more favorable than the ATmega328p such as the increased number of PWM capable pins and the increased number of pins with an integrated analog to digital converter. In addition the usb keyboard and mouse emulation offers additional usage scenarios even though usb programming is not available in this mode. The newest Arduino generation (Arduino Leonardo) is based on the ATmega32U4.
 \subsection{Power Supply}
-
-
+Supplying power to the robot can be archieved using different technologies. Difficulties exist in handling the needed voltages and current for all attached devices including the microcontoller, actuators and sensors. Criteria on which power supply technologies are evaluated are the discharge rate, the cost and of the security.
 \subsubsection{Nickel-metal hydride batteries}
+Nickel-metal hydride batteries better known as NiMH batteries are rechargeable with a nominal voltage of 1.2Volt and a energy density of 140 to 300 watt hours per liter. The durability of the cell is often specified in the range of 500 to 1000 charge cycles.
+
+The $H_2O + M + e^- \rightleftharpoons OH^- + MH$
 \subsubsection{Lithium-polymer batteries}
 
 \subsubsection{Conclusion}

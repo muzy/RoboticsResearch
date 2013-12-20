@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.24)  18 DEC 2013 12:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.24)  20 DEC 2013 21:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1135,8 +1135,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--324
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [11 <./images/mecanum.png>] [12 <./images/omniwheel.jpg>] [13] [14] [15]
+Overfull \hbox (3.7823pt too wide) in paragraph at lines 390--391
+[]\T1/lmr/m/n/10.95 Attaching the nRF24L01 to the mi-cro-con-troller re-quires 
+four SPI pins (MISO,
+ []
+
 [16]
-Overfull \hbox (13.63702pt too wide) in paragraph at lines 403--404
+Overfull \hbox (13.63702pt too wide) in paragraph at lines 406--407
 []\T1/lmr/m/n/10.95 Interfacing other hard-ware com-po-nents is pos-si-ble us-i
 ng 20 dig-i-tal in-put/output
  []
@@ -1154,18 +1159,22 @@ Here is how much of TeX's memory you used:
  66714 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,11n,35p,833b,1313s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on paper.pdf (22 pages, 1050541 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
+/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
+i10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on paper.pdf (22 pages, 1071322 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 145 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
