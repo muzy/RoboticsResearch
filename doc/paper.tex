@@ -20,6 +20,8 @@
 \usepackage{pifont}
 \usepackage{forloop}
 \usepackage[nomessages]{fp}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -250,6 +252,13 @@ Movement is the most important feature since it allows the robot to interact wit
 
 There exist wheeled, legged, flying, swimming, diving and much more robot movement types. Wheeled robots are common since their mechanic principle is rather simple, cheap and easy to implement and control. Therefore other mentioned movement techniques except wheeled robots are not part of the evaluation.
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/30_ballcaster.jpg}
+  \caption{Metal ball caster (CC-BY-SA Ben Oswald)}
+\end{figure}
+
+
 Typically robots have two wheels and a ball caster which prevents the robot from falling over. A ball caster acts as a third unidirected wheel with reduced friction. Alternatively four wheels and a steering mechanism or three wheels using omniwheels can be used. All types of wheeled robots can move in flat terrain and tolerate slight uneven surfaces. The outdoor usage is limited.
 \subsubsection{Wheeled with two DC motors}
 DC motors (direct current motors) are a cheap solutions for driving wheels. Usually a gear box is required to reduce the motor speed in favor of torque. Controlling the direction (forward and backward) requires the ability to switch the direction of the current flow. This is usally archieved using a H-bridge which can be found in as an integrated circuit or build using four electrical switches. 
@@ -258,11 +267,26 @@ There exist integrated circuits which provides two H-bridges combined in one com
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.5\textwidth]{images/30_dcmotor.jpg}
-  \caption{Picture of a typical DC motor (CC-BY-SA Ben Oswald)}
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/30_dcmotor.jpg}
+  \caption{Standard DC motor}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/30_gearboxmotor.jpg}
+  \caption{Gearbox motor with wheel}
+  \end{subfigure}
+  \caption{Different DC motor types (CC-BY-SA Ben Oswald)}
 \end{figure}
 
-In terms of cost effectiveness a solution with two wheels powered by a DC motor each performs well. A DC motor with integrated gearbox (see figure @TODO) is available for 5.5 USD, the plastic wheel costs 3.5 USD, a motor driver such as the L293 costs about 3.5 USD rendering a total cost of 21.5 USD per robot. In addition speed sensors for each of the wheels are needed since the motors do not have exactly the same speed. Without speed control the robot cannot drive straight forward.
+In terms of cost effectiveness a solution with two wheels powered by a DC motor each performs well. A DC motor with integrated gearbox is available for 5.5 USD, the plastic wheel costs 3.5 USD, a motor driver such as the L293 costs about 3.5 USD rendering a total cost of 21.5 USD per robot. In addition speed sensors for each of the wheels are needed since the motors do not have exactly the same speed since they are subject to variation during the production process. Without speed control sensors the robot may not drive straight forward. A simple sensor based on a rotating encoder disk and a light beam which is interrupted by the disk is available from 0.3 USD and requires one microcontroller pin per wheel (a microcontoller pin with interrupt support is the most reliable solution).
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/30_speedsensor.jpg}
+  \caption{Speedsensor (CC-BY-SA Ben Oswald)}
+\end{figure}
 
 The mentioned gearbox cannot be repaired once broken and should be replaced rather than repaired. Moreover it is unclear which materials are used in the plastic parts and whether they can be recycled. Mounting and controlling the motors is trouble free and requires at least six microcontroller pins as one can see in the following table.
 
@@ -280,7 +304,7 @@ Pin count & Pin type & Description \\
 \label{tbl:dc_pin}
 \end{table}
 
-When using a shift register for setting the four GPIO inputs of the motor driver, the pin count on the microcontroller can be reduced to three pins (Clock, Serial Data, Enable).  A single shift register can provide eight GPIO port and can be chained.
+When using a shift register for setting the four GPIO inputs of the motor driver, the pin count on the microcontroller can be reduced to three pins (Clock, Serial Data, Enable).  A single shift register can provide eight GPIO port and can be chained. 
 
 
 \subsubsection{Wheeled with two Stepper motors}
@@ -337,14 +361,42 @@ All in all a solution using stepper motors with darlington array connected to sh
 Sensors are important to make the robot sense its environment. Sensing the environment enables interaction such as obstacle avoidance, finding objects or following lines. Connecting sensors to a microcontroller can be done in various ways using various protocols. Different protocols require a different amount of microcontroller pins. Dependening on the sensor technology more or less computing time is needed to evaluate the sensors value.  
 
 \subsection{IR Reciever}
-Infrared Reciever are special photodiodes which react on infrared light with a base frequency of 38kHz. To ease the use of IR recievers with microcontrollers, the photodiode in the IR reciever provides a near binary square voltage waveform instead of rising voltages. The cost of such a reciever is about 0.3USD.
+Infrared Reciever are special photodiodes which react on infrared light with a base frequency of 38kHz. To ease the use of IR recievers with microcontrollers, the photodiode in the IR reciever has an integrated Schmitt trigger and therefore provides a near binary square voltage waveform instead of rising voltages. The cost of such a reciever is about 0.3USD.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/30_ir.jpg}
+  \caption{IR Reciever with integrated Schmitt trigger (CC-BY-SA Ben Oswald)}
+\end{figure}
 
 IR recievers are widely used in remote control applications such as televisions and remote controlled toys. Sending a signal requires a LED which emits light in the infrared spectrum. Cheap multipurpose remotes (about 1 USD) can be used to control own applications. Infrared beacons which steadily send a signal can be used to give a robot information on its current location.
 
 Attaching a reciever to a microcontroller requires a single input pin which can be either a digital pin or a pin internally attached to an ADC. In terms of cost effectiveness and education potential IR recievers are a must have sensor. Under the premise that library for infrared readings exist, the sensor is easy to use and trouble free.
 
+\subsection{IR Proximity Sensor}
+Infrared proximity sensors can be used in various ways. When measuring distances using proximity sensors one has to choose the right sensor type since the range varies from a few centimeters to a few meters. Another use of IR proximity sensors is to measure brightness. This usually works with sensors designed for very small distances. When the IR light is emitted it reflects better on bright surfaces than on dark surfaces which do not reflect light. A photodiode for infrared wavelength changes its electrical behaviour on the influence of the light reflected which can be measured using the microcontrollers analog-to-digital converter.
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/30_proximity_front.jpg}
+  \caption{front-view}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/30_proximity_back.jpg}
+  \caption{side-view}
+  \end{subfigure}
+  \caption{IR proximity sensor (CC-BY-SA Ben Oswald)}
+\end{figure}
+
+Applications for proximity sensors are line following, edge detection (for instance of a table) or generic brightness measurement. When facing the front of the robot proximity sensors can be used to prevent collisions by measuring the proximity of the surrounding objects.
+
+The price of a single proximity sensor is about 0.5 USD for average quality low distance sensors suitable for the application mentioned before. Microcontroller pin requirements are one pin to enable the infrared led within the proximity sensor (optional) and another analog-to-digital converter enabled pin to perform the readings of the photodiode. When multiple proximity sensors are used within a robot, analog multiplexer 
+
 \subsection{Ultrasonic Distance Sensor}
-Ultrasonic distance sensors sense distance between the sensor and an object in the visible area of the sensor. In case of ultrasonic sensors the visible area is the area where the echo spreads. By counting the time between the signal and the reflection the distance can be calculated using the speed of sound (340.29 m / s at sea level). 
+Ultrasonic distance sensors sense distance between the sensor and an object in the visible area of the sensor. In case of ultrasonic sensors the visible area is the area where the echo spreads. By counting the time between the signal and the reflection the distance can be calculated using the speed of sound (340.29m/s at sea level). 
 
 The price for an ultrasonic distance sensor is very low, cheap versions with a range between 1 and 255 centimeters start at about 1.5 USD. Interfacing the sensor requires two microcontroller pins - one for triggering the echo and another one for reading back the distance value. The trigger pin can be a generic purpose input/output pin, the sense pin must be attached to a pin which provides an analog to digital converter.
 
