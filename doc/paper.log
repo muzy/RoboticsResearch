@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.24)  20 DEC 2013 21:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.24)  23 DEC 2013 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1094,8 +1094,19 @@ Overfull \hbox (36.0pt too wide) in paragraph at lines 228--240
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./images/thymioii.jpg>] [9]
-Underfull \hbox (badness 3168) in paragraph at lines 271--272
+[8 <./images/thymioii.jpg>]
+<images/30_dcmotor.jpg, id=38, 1176.395pt x 783.92876pt>
+File: images/30_dcmotor.jpg Graphic file (type jpg)
+
+<use images/30_dcmotor.jpg>
+Package pdftex.def Info: images/30_dcmotor.jpg used on input line 261.
+(pdftex.def)             Requested size: 180.0pt x 119.9407pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9]
+Underfull \hbox (badness 3168) in paragraph at lines 275--276
 []|\T1/lmr/m/n/10.95 Motor speed con-trol us-ing pulse-
  []
 
@@ -1103,78 +1114,80 @@ Underfull \hbox (badness 3168) in paragraph at lines 271--272
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 286.
+(Font)              <9> on input line 290.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 286.
+(Font)              <5> on input line 290.
+[10 <./images/30_dcmotor.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10] <images/mecanum.png, id=47, 298.76567pt x 145.28505pt>
+<images/mecanum.png, id=48, 298.76567pt x 145.28505pt>
 File: images/mecanum.png Graphic file (type png)
 
 <use images/mecanum.png>
-Package pdftex.def Info: images/mecanum.png used on input line 313.
+Package pdftex.def Info: images/mecanum.png used on input line 317.
 (pdftex.def)             Requested size: 180.0pt x 87.53526pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--314
-[]\T1/lmr/m/n/10.95 Figure 5: Screen-shot of a mecanum wheel 3D model (from
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]\T1/lmr/m/n/10.95 Figure 6: Screen-shot of a mecanum wheel 3D model (from
  []
 
-<images/omniwheel.jpg, id=48, 394.47375pt x 362.10281pt>
+[11 <./images/mecanum.png>]
+<images/omniwheel.jpg, id=52, 394.47375pt x 362.10281pt>
 File: images/omniwheel.jpg Graphic file (type jpg)
 
 <use images/omniwheel.jpg>
-Package pdftex.def Info: images/omniwheel.jpg used on input line 323.
+Package pdftex.def Info: images/omniwheel.jpg used on input line 327.
 (pdftex.def)             Requested size: 180.0pt x 165.22667pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
-[]\T1/lmr/m/n/10.95 Figure 6: Con-trol scheme of a omni wheel (from
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
+[]\T1/lmr/m/n/10.95 Figure 7: Con-trol scheme of a omni wheel (from
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[11 <./images/mecanum.png>] [12 <./images/omniwheel.jpg>] [13] [14] [15]
-Overfull \hbox (3.7823pt too wide) in paragraph at lines 390--391
+[12 <./images/omniwheel.jpg>] [13] [14] [15]
+Overfull \hbox (3.7823pt too wide) in paragraph at lines 394--395
 []\T1/lmr/m/n/10.95 Attaching the nRF24L01 to the mi-cro-con-troller re-quires 
 four SPI pins (MISO,
  []
 
 [16]
-Overfull \hbox (13.63702pt too wide) in paragraph at lines 406--407
+Overfull \hbox (13.63702pt too wide) in paragraph at lines 410--411
 []\T1/lmr/m/n/10.95 Interfacing other hard-ware com-po-nents is pos-si-ble us-i
 ng 20 dig-i-tal in-put/output
  []
 
-[17] [18] [19] [20] [21] [22] (./paper.aux)
+[17] [18]
+Overfull \hbox (0.4377pt too wide) in paragraph at lines 438--439
+\T1/lmr/m/n/10.95 wrong (over-charg-ing, over-discharging and over-discharge-cu
+rrent), they pro-
+ []
+
+[19] [20] [21] [22] [23] [24] (./paper.aux)
 Package logreq Info: Writing requests to 'paper.run.xml'.
 \openout1 = `paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11059 strings out of 493307
- 162234 string characters out of 6139904
+ 11064 strings out of 493307
+ 162351 string characters out of 6139904
  373426 words of memory out of 5000000
- 14240 multiletter control sequences out of 15000+600000
+ 14244 multiletter control sequences out of 15000+600000
  66714 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,11n,35p,833b,1313s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
-/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
-i10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
-sam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on paper.pdf (22 pages, 1071322 bytes).
+ips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/zapfding/uzdr.pfb>
+Output written on paper.pdf (24 pages, 1265355 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 136 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -256,7 +256,11 @@ DC motors (direct current motors) are a cheap solutions for driving wheels. Usua
 
 There exist integrated circuits which provides two H-bridges combined in one component which allow the control of steering beneath the control of direction. Speed control is controlled by an external PWM (pulse-width-modulation) source.
 
-%TODO Image of gearbox motor
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/30_dcmotor.jpg}
+  \caption{Picture of a typical DC motor (CC-BY-SA Ben Oswald)}
+\end{figure}
 
 In terms of cost effectiveness a solution with two wheels powered by a DC motor each performs well. A DC motor with integrated gearbox (see figure @TODO) is available for 5.5 USD, the plastic wheel costs 3.5 USD, a motor driver such as the L293 costs about 3.5 USD rendering a total cost of 21.5 USD per robot. In addition speed sensors for each of the wheels are needed since the motors do not have exactly the same speed. Without speed control the robot cannot drive straight forward.
 
@@ -414,12 +418,24 @@ Some features make the ATmega32U4 more favorable than the ATmega328p such as the
 \subsection{Power Supply}
 Supplying power to the robot can be archieved using different technologies. Difficulties exist in handling the needed voltages and current for all attached devices including the microcontoller, actuators and sensors. Criteria on which power supply technologies are evaluated are the discharge rate, the cost and of the security.
 \subsubsection{Nickel-metal hydride batteries}
-Nickel-metal hydride batteries better known as NiMH batteries are rechargeable with a nominal voltage of 1.2Volt and a energy density of 140 to 300 watt hours per liter. The durability of the cell is often specified in the range of 500 to 1000 charge cycles.
+Nickel-metal hydride batteries better known as NiMH batteries are rechargeable with a nominal voltage of 1.2Volt and a energy density of 140 to 300 watt hours per liter. The durability of the cell is often specified in the range of 500 to 1000 charge cycles. Maximum discharge rates are about 1C which means full discharge in one hour.
 
-The $H_2O + M + e^- \rightleftharpoons OH^- + MH$
+Special charging circuits exist which ease the charging process. Different charging techniques such as trickle charging (constant low current), $\Delta$ V charching (voltage monitoring) and $\Delta$ T charging (temperature monitoring) exist. Each of method has its own advantages and disadvantages and may be combined.
+
+When NiMH batteries are overcharged the battery cell can destroy the cell by rupture. A vent prevents the cells from busting, hydrogen is emitted when the battery is overcharged. Similar to overcharging the cell can be destroyed by over-discharging. In that process the cell reverses its polarity and therefore good cells start to drive the discharged cell in verse.
+
+Concerning environmental impact NiMH batteries are ready for recycling when disposed into special collecting points. Modern low self-discharge NiMH batteries which provide 2000mAh (AA sized) have a price tag of 2.5 to 3 USD and 2 USD for a 750mAh (AAA sized) battery. 
 \subsubsection{Lithium-polymer batteries}
+Lithium-polymer batteries are rechargeable batteries with a nominal cell voltage of 3.7V  and a density of 300 watt hours per liter. The charge cycle durability is over 1000 cycles and the self discharge rate is very low (about 5 percent per month). During charge the voltage increases to 4.2V and drops to 3V during discharge. Therefore voltage stabilizing components such as step-up converter are needed to provide a constant voltage.
 
+There exist special charging circuits which support the charching curve required . The discharge rate can be multiple times the capacity.
+To prevent damage due to overcharging, over-discharging and over-discharge-current a protection circuit is integrated into most lithium-polymer batteries.
+
+When overcharging a lithium-polymer battery without protection circuit the battery can cause explosion or fire. When the battery is short-circuited it expands (in volume) and may cause fire. Same holds for opening/damaging the battery. 
+
+Advantages over other battery types exist in energy density and the high cell voltage of 3.7 Volt which reduces the amount of cells needed. The high current during discharge is well suited for driving variable current sources such as DC motors. Its small size and low cost of about 10 USD for a 3.7 Volt 1000mAh cell with a weight of less than 10 gramm is easy to handle.
 \subsubsection{Conclusion}
+Even though lithium-polymer batteries expose a greater risk when handled wrong (overcharging, over-discharging and over-discharge-current), they provide higher rated discharge current and a high cell voltage. The size of lithium-polymer batteries is compact and security measures  exist which prevent harm up to a certain extend.
 \section{Robot Construction}
 
 
