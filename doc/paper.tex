@@ -398,6 +398,12 @@ The price of a single proximity sensor is about 0.5 USD for average quality low 
 \subsection{Ultrasonic Distance Sensor}
 Ultrasonic distance sensors sense distance between the sensor and an object in the visible area of the sensor. In case of ultrasonic sensors the visible area is the area where the echo spreads. By counting the time between the signal and the reflection the distance can be calculated using the speed of sound (340.29m/s at sea level). 
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/30_ultrasonic.jpg}
+  \caption{HC-SR04 ultrasonic distance sensor (CC-BY-SA Ben Oswald)}
+\end{figure}
+
 The price for an ultrasonic distance sensor is very low, cheap versions with a range between 1 and 255 centimeters start at about 1.5 USD. Interfacing the sensor requires two microcontroller pins - one for triggering the echo and another one for reading back the distance value. The trigger pin can be a generic purpose input/output pin, the sense pin must be attached to a pin which provides an analog to digital converter.
 
 A typical application for ultrasonic distance sensor is obstacle avoidance. By mounting the sensor on a servo motor the visible area can be increased which allows better navigation due to enhanced obstacle avoidance possibilities. 
@@ -417,7 +423,14 @@ As mentioned in the previous section the MPU-6050 is easily interfaced using var
 \subsection{Compass}
 A compass allows the robot to sense its orientation relative to the magnetic field of the earth. Technically speaking a integrated circuit providing measurement of the magnetic field of the earth are a special form of magnetometers.
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/30_compass.jpg}
+  \caption{Triple axis compass on breakout-board (CC-BY-SA Ben Oswald)}
+\end{figure}
+
 An integrated circuit providing a magnetometer is the HMC-5883L which is interfaced with I2C. It costs about 3 USD and is mounted on a breadboard friendly breakout board. It senses the magnetic field in three axis.
+
 
 The educational potential of a compass is given since the interaction can be directly measured (typically accuracy is 1 degree). It can be used to introduce the magnetic field of earth and its function. Advanced users can use the compass to navigate the robot with higher precision (in combination with the accelerometer and gyroscope).
 \subsubsection{Conclusion}
@@ -428,9 +441,24 @@ The flexibility influences the power consumption since only sensors needed for a
 Communication between robots or between the robot is essential to widen the application possibilities. When the robot is connected to a computer it gets much more processing power to solve complicated problems; when robots can communicate with each other tasks can be solved collaboratively.
 
 \subsubsection{Infrared}
-Infrared based data transfer is widely used in remote control application where a small amount of data is transferred. Infrared communication is easily interfered by other infrared signals. This limits the data rate since error correction mechanisms must be implemented.
+Infrared based data transfer is widely used in remote control application where a small amount of data, usually a single word, is transferred. Infrared communication is easily interfered by other infrared signals. This limits the data rate since error correction mechanisms must be implemented.
 
-When using infrared signals only one robot can send at a time which requires collision detection. The hardware requirements for infrared transmissions are ver low, only a infrared reciever and a infrared LED is required which sums up to a total of 0.5 USD. The infrared reciever and the infrared LED require one free GPIO pin on the microcontroller each.
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/30_irdiodes.jpg}
+  \caption{Infrared diode (sender)}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/30_ir.jpg}
+  \caption{Infrared receiver (reciever)}
+  \end{subfigure}
+  \caption{Components for infrared communication (CC-BY-SA Ben Oswald)}
+\end{figure}
+
+When using infrared signals only one robot can send at a time which requires collision detection. The hardware requirements for infrared transmissions are ver low, only a infrared reciever and a infrared LED is required which sums up to a total of 0.5 USD. The infrared reciever and the infrared LED require one free GPIO pin on the microcontroller each. To ease programming the reciever should be attached to a microcontroller pin which is suitable for external interrupts.
 
 Since a lot of effort is needed to make the connection stable, this solution is not trouble free, although techniques to stabilize communication have educational potential. A standardizes data exchange format for infrared communication does not exist.
 
@@ -443,11 +471,17 @@ The maximum distance depends on the antenna used. A arduino compatible library e
 \subsubsection{NRF24L01}
 The nRF24L01 (or its sucessor the nRF24L01+) are single chip trancievers by Nordic Semiconductors which operate in the license free 2.4GHz frequency band. The allow sending and recieving of data and can standby in ultra low power mode consuming 900nA at 3.3V only.
 
-Attaching the nRF24L01 to the microcontroller requires four SPI pins (MISO, MOSI, SCK and CS), an additional CE (chip enable) pin and an external interrupt pin to indicate state. Even though the microcontroller runs at 3.3V the inputs are 5V tolerant.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/30_nrf24l01.jpg}
+  \caption{nRF24L01 breakout board (CC-BY-SA Ben Oswald)}
+\end{figure}
 
-Two open source libraries Mirf and RF24 exist where RF24 is licensed under a GPL 2.0 license and Mirf is provided as is. 
+Attaching the nRF24L01 to the microcontroller requires four SPI pins (MISO, MOSI, SCK and CS), an additional CE (chip enable) pin and an external interrupt pin to indicate state. Even though the microcontroller runs at 3.3V the inputs are 5V tolerant. The maximum data rate of the module is 2 Mbit/s, lower data rates (1 Mbit/s or 250Kbit/s) increase the maximum distance between two modules.
+
+Two open source libraries Mirf and RF24 exist. RF24 is licensed under a GPL 2.0 license and Mirf is provided under a permissive "as is" license. The price for a nRF24L01 on a breadout-board is around 3 USD on ebay, other modules with external antenna have a higher price tag.
 \subsubsection{Conclusion}
-
+In terms of cost-effectiveness the nRF24L01 is the best solution for wireless communication between robots. The transmission is robust, easy to implement due to library support. Since the chip comes mounted on a breadboard with 2x4 header, a user can populate a socket and add the module on demand.
 \subsection{Microcontroller}
 Depending on the microcontroller, the final robot has different processing capabilities. Its capabilities are mainly influenced by the processor frequency which influences the number of instructions per second, the interfaces such as I2C or SPI and the amount of flash storage and RAM.
 
@@ -479,6 +513,12 @@ When NiMH batteries are overcharged the battery cell can destroy the cell by rup
 Concerning environmental impact NiMH batteries are ready for recycling when disposed into special collecting points. Modern low self-discharge NiMH batteries which provide 2000mAh (AA sized) have a price tag of 2.5 to 3 USD and 2 USD for a 750mAh (AAA sized) battery. 
 \subsubsection{Lithium-polymer batteries}
 Lithium-polymer batteries are rechargeable batteries with a nominal cell voltage of 3.7V  and a density of 300 watt hours per liter. The charge cycle durability is over 1000 cycles and the self discharge rate is very low (about 5 percent per month). During charge the voltage increases to 4.2V and drops to 3V during discharge. Therefore voltage stabilizing components such as step-up converter are needed to provide a constant voltage.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/30_lithium-polymer.jpg}
+  \caption{Lithium-polymer battery (CC-BY-SA Ben Oswald)}
+\end{figure}
 
 There exist special charging circuits which support the charching curve required . The discharge rate can be multiple times the capacity.
 To prevent damage due to overcharging, over-discharging and over-discharge-current a protection circuit is integrated into most lithium-polymer batteries.
