@@ -78,9 +78,16 @@
 \section{Introduction}
 Getting children in touch with technology is important in todays technologically advanced society. In schools technology (specifically electrical engineering and programming) is often taught using robots. Robots are well suited for children since they allow interaction with the reality in contrast to arbitrary technology related exercises such as programming exercises which doesn't affect the real world.\newline 
 Since schools are required to save money, robots used for teaching stay property of the schools. Therefore children usually cannot take the robot home to work with it. In addition modification of robot is usually not permitted which reduces potential learning experiences. Giving students the full control over all possibilities of the robot requires them to own the robot. This requires to robot to be cheap, extendable and suitable for educational purposes.\newline
-The development of a robot platform for educational purpose requires requirement engineering, market research and evaluation of robots which are already used in education. Once the research is completed a new robot platform can be constructed taking the research results into account.
+The development of a robot platform for educational purpose requires requirement engineering, market research and evaluation of robots which are already used in education. Once the research is completed a new robot platform can be constructed taking the research results into account. The goal is to develop such an educational robot platform with regard to the target user group, their needs and educational concepts.
 \section{Requirement Analysis / Project Goals}
-The target user group of the robot are mainly children and adults with very little or no experience in electrical engineering and programming. Teaching the knowledge requires a platform which is designed to be educational. Therefore it has to comply with several requirements which affect technical aspects as well as social aspects.
+User group of a robot can be categorized into different groups regardless of their age:
+\begin{description}
+\item[Beginner] \hfill \\ Beginners have little to no experience with robots. They need extensive assistance to perform tasks such as soldering and programming. For programming graphical programming languages (such as minibloq or ModKit) or languages providing a high level of abstraction (such as Wiring), 
+\item[Advanced] \hfill \\ Advanced users have advanced experience with robots and robotics. Most programming and soldering tasks are done independently; working knowledge is utilized to solve new and unknown tasks.  
+\item[Expert] \hfill \\ Expert users understand all aspects of robots and their internals. New challenges are faced with ease.
+\end{description}
+
+The target user group for this educational robotic project are beginners of all age with focus of children at school with limited budget. Teaching the knowledge requires a platform which is designed to be educational. Therefore it has to comply with several requirements which affect technical aspects as well as social aspects.
 The following lists describes the basic requirements on which existing platforms can be assessed. The assessment criteria can also be used to make decisions when developing a new platform.
 \begin{description}
 \item[Affordable] \hfill \\ The robot platform must be affordable for everyone. Especially when the robot is used in schools every child should own the robot to increase the possibilities to modify and extend it. Robots which stay property of a school may result in social problems since socially disadvantaged children cannot afford their own robot whereas socially advantaged children can. A considerable price tag for a educational robot is the educational budget for a welfare recipient which is 100 Euro per year in Germany as defined defined in SGB II §28 (as of the 07.05.2013).
@@ -91,7 +98,7 @@ The following lists describes the basic requirements on which existing platforms
 \item[Open-Source] \hfill \\ Open-Source products can be easily modified, extended and remixed into new, continuously improved, products. Schematics, PCB layout files, build-instructions and specifications should be accessible under a permissive open-source license. 
 \end{description}
 
-
+In the following chapters the state of the art in robotics is evaluated, robotic components are assessed and the construction of the robot according to the requirements is presented in detail and critically discussed. The structure is aimed to give a big picture and get into detail as more and more components are introduced.
 \section{State of the Art}
 The development of a new robot platform requires the assessment of current robotic platforms using the requirements developed. In focus of the assessment are popular robot platforms which are either actively used in schools or developed with education in mind. All of the platforms are independently developed and focus on different ideas. 
 
@@ -529,8 +536,21 @@ Advantages over other battery types exist in energy density and the high cell vo
 \subsubsection{Conclusion}
 Even though lithium-polymer batteries expose a greater risk when handled wrong (overcharging, over-discharging and over-discharge-current), they provide higher rated discharge current and a high cell voltage. The size of lithium-polymer batteries is compact and security measures  exist which prevent harm up to a certain extend.
 \section{Robot Construction}
+The design and construction process of the robot is based on the evaluation and evaluation critera. The design process is centered on critera set by the components used and the previous evaluation. 
 
+Components which usage is desired in the robot are: stepper motors with wheels attached for movement, infrared sensor, ultrasonic distance sensor, accelerometer, gyroscope and compass for sensing the environment and lithium-polymer batteries as power supply. Controlling the components and the execution of custom programs should be realized by an ATmega32U4 microcontroller.
 
+\subsection{Electrical requirement}
+Each component has its own electrical requirement such as voltage, current and pin count. The requirements for all components can be added up to create a power supply and a wiring concept. 
+
+\begin{description}
+\item[Stepper motors and driver] \hfill \\ The 28BYJ stepper motors are specified for usage with 5 volt. It is possible to drive the motors with lower voltage but rotation speed and torque suffer under lower voltages. Typically for motors, the current varies depending on the coil position and the magnetic field applied. Empirical experiments show, that the maximum current flow in the stepper motors and the driver is 140mA (at 5V) each when the motor is stuck and cannot rotate. During normal operation the current flow is between 40 and 100mA (at 5V). It is safe to assume, that the maximum current for the stepper motors and the driver chip is 300mA at 5V.
+\item[Ultrasonic proximity sensor] \hfill \\ The ultrasonic proximity sensor runs with a nominal voltage of 5 volt. Other voltages are discouraged since the measured distance can get inaccurate. 
+\item[Infrared sensor] \hfill \\ The infrared sensor is based on a fotodiode and a infrared LED. When in use the LED consumes up to 20mA (at 5V) 
+\item[Accelerometer and Gyroscope] \hfill \\ The MPU-6050 combines accelerometer and gyroscope in a single package. A breakout board like the GY-521 exist which allows easy interfacing and provides supportive components. A voltage regulator on the breakout board can operate with 3.3V or 5V. At 3.3V the IC consumes 0.5mA for the accelerometer and 3.6mA for the gyroscope (according to the datasheet). Considering the supporting elements like voltage regulator, a total current consumption of less than 10mA can be assumed.
+\item[Compass] \hfill \\ The HMC-5883L is a compass and available on a breakout board. It operates at 3.3V and has a typical current draw of 0.1mA.
+
+\end{description}
 
 \nocite{*}
 \printbibliography

@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex paper"] 1387891293 "paper.aux" "paper.bbl" "paper" 1387891295
+["bibtex paper"] 1391009049 "paper.aux" "paper.bbl" "paper" 1391009050
   "/usr/share/texmf/bibtex/bst/biblatex/bst/biblatex.bst" 1321204148 60396 e6b4061d3c40fe2842ecdd2bc99ea74d ""
   "bibliography.bib" 1385139437 182 e067b01792be55f55d3e9c73aeb9104a ""
-  "paper-blx.bib" 1387891294 306 385f19de3b8fd810ba7ca241d1791e14 ""
-  "paper.aux" 1387891294 9999 55d600c02163fd71ffebb6a0ba36c92d ""
+  "paper-blx.bib" 1391009049 306 385f19de3b8fd810ba7ca241d1791e14 ""
+  "paper.aux" 1391009050 10141 2a61070bf998df980d3873b28d77f977 ""
   "paper.bcf" 1387278984 91260 9e8e66576000d2e3ec23192803ec5c58 ""
   (generated)
   "paper.blg"
   "paper.bbl"
-["pdflatex"] 1387891294 "paper.tex" "paper.pdf" "paper" 1387891295
+["pdflatex"] 1391009049 "paper.tex" "paper.pdf" "paper" 1391009050
   "/etc/texmf/web2c/texmf.cnf" 1385296139 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -183,11 +183,11 @@
   "images/mindstorms.jpg" 1380911924 23406 713074cbbce1bd5e2baaa49afc1ffac5 ""
   "images/omniwheel.jpg" 1383939248 34581 2b0b6340761d39088c47d5ed4c9fc68c ""
   "images/thymioii.jpg" 1380911555 436739 ef0a2ab1dc017690c316f670fa986bf6 ""
-  "paper-blx.bib" 1387891294 306 385f19de3b8fd810ba7ca241d1791e14 ""
-  "paper.aux" 1387891294 9999 55d600c02163fd71ffebb6a0ba36c92d ""
-  "paper.bbl" 1387891294 723 0bdc2b0eaa4299a73d130504103e18aa "bibtex paper"
-  "paper.run.xml" 1387891294 2469 4574af5eb9dd79a8b27e0aca93c2e7dd ""
-  "paper.tex" 1387891286 51081 ecc83378387e3b13c48a51efa54388ef ""
+  "paper-blx.bib" 1391009049 306 385f19de3b8fd810ba7ca241d1791e14 ""
+  "paper.aux" 1391009050 10141 2a61070bf998df980d3873b28d77f977 ""
+  "paper.bbl" 1391009049 723 0bdc2b0eaa4299a73d130504103e18aa "bibtex paper"
+  "paper.run.xml" 1391009050 2469 4574af5eb9dd79a8b27e0aca93c2e7dd ""
+  "paper.tex" 1391007446 53450 da83979efd9eed22f943307783edf97a ""
   (generated)
   "paper.run.xml"
   "paper.pdf"
