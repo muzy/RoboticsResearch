@@ -1,10 +1,10 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 1.7 $
+% $ biblatex bbl format version 2.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
 %
 \begingroup
 \makeatletter
@@ -16,18 +16,162 @@
   {}
 \endgroup
 
-\entry{9783423057677}{book}{}
-  \list{publisher}{1}{%
-    {DTV Deutscher Taschenbuch}%
-  }
-  \field{sortinit}{S}
-  \field{isbn}{342305767X}
-  \field{title}{SGB II Grundsicherung für Arbeitssuchende / SGB XII
-  Sozialhilfe}
-  \field{year}{2007}
-\endentry
 
-\lossort
-\endlossort
-
+\refsection{0}
+  \sortlist{entry}{nty}
+    \entry{juniorlow}{article}{}
+      \name{labelname}{6}{}{%
+        {{hash=0f745dd22d2e125f6e8c2b74ab7f1e6d}{Junior}{J\bibinitperiod}{Luiz\bibnamedelima A}{L\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=86c13f391c53fd2935d831b10ee3f707}{Neto}{N\bibinitperiod}{Osvaldo\bibnamedelima T}{O\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=d58441ee79dbc680d1d4485b4a75ffe8}{Hernandez}{H\bibinitperiod}{Marli\bibnamedelima F}{M\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=7f3a22cc6b7e20a8997f6221b6755c4c}{Martins}{M\bibinitperiod}{Paulo\bibnamedelima S}{P\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=c1700e918e64e6d9330f78a82a883b2a}{Roger}{R\bibinitperiod}{Leonardo\bibnamedelima L}{L\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=1be906661ff241379ce2a6cb906a1c88}{Guerra}{G\bibinitperiod}{Fátima\bibnamedelima A}{F\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{6}{}{%
+        {{hash=0f745dd22d2e125f6e8c2b74ab7f1e6d}{Junior}{J\bibinitperiod}{Luiz\bibnamedelima A}{L\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=86c13f391c53fd2935d831b10ee3f707}{Neto}{N\bibinitperiod}{Osvaldo\bibnamedelima T}{O\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=d58441ee79dbc680d1d4485b4a75ffe8}{Hernandez}{H\bibinitperiod}{Marli\bibnamedelima F}{M\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=7f3a22cc6b7e20a8997f6221b6755c4c}{Martins}{M\bibinitperiod}{Paulo\bibnamedelima S}{P\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=c1700e918e64e6d9330f78a82a883b2a}{Roger}{R\bibinitperiod}{Leonardo\bibnamedelima L}{L\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=1be906661ff241379ce2a6cb906a1c88}{Guerra}{G\bibinitperiod}{Fátima\bibnamedelima A}{F\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f58d1a2f6d24a38c7d7f629cd432adc1}
+      \strng{fullhash}{e254af562a4cdb27a7ab6562481b73d0}
+      \field{sortinit}{J}
+      \field{labeltitle}{A Low-Cost and Simple Arduino-Based Educational Robotics Kit}
+      \field{title}{A Low-Cost and Simple Arduino-Based Educational Robotics Kit}
+    \endentry
+    \entry{mclurkin2013low}{incollection}{}
+      \name{labelname}{7}{}{%
+        {{hash=ed302cbabda753666a13d4340f74b420}{McLurkin}{M\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=bc5697f438fb9f8222a365db8e0a717e}{Lynch}{L\bibinitperiod}{Andrew\bibnamedelima J}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=3c164b1c43ea7ad2d73af93f0d93c003}{Rixner}{R\bibinitperiod}{Scott}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=bf32b2e24da573ae923d33a0c1195765}{Barr}{B\bibinitperiod}{Thomas\bibnamedelima W}{T\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=6e35ae896074bec3b01e5c3186ef4b84}{Chou}{C\bibinitperiod}{Alvin}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=aa3ee068d5159c2d436e43f29f5564c3}{Foster}{F\bibinitperiod}{Kathleen}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=776bbeccf1c085db85ef843374175b6d}{Bilstein}{B\bibinitperiod}{Siegfried}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{7}{}{%
+        {{hash=ed302cbabda753666a13d4340f74b420}{McLurkin}{M\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=bc5697f438fb9f8222a365db8e0a717e}{Lynch}{L\bibinitperiod}{Andrew\bibnamedelima J}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=3c164b1c43ea7ad2d73af93f0d93c003}{Rixner}{R\bibinitperiod}{Scott}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=bf32b2e24da573ae923d33a0c1195765}{Barr}{B\bibinitperiod}{Thomas\bibnamedelima W}{T\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=6e35ae896074bec3b01e5c3186ef4b84}{Chou}{C\bibinitperiod}{Alvin}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=aa3ee068d5159c2d436e43f29f5564c3}{Foster}{F\bibinitperiod}{Kathleen}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=776bbeccf1c085db85ef843374175b6d}{Bilstein}{B\bibinitperiod}{Siegfried}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{864b11c4656b25c3f57e9e4c14011683}
+      \strng{fullhash}{99d9be18483161a19da5fd79d02a0683}
+      \field{sortinit}{M}
+      \field{labeltitle}{A low-cost multi-robot system for research, teaching, and outreach}
+      \field{booktitle}{Distributed Autonomous Robotic Systems}
+      \field{title}{A low-cost multi-robot system for research, teaching, and outreach}
+      \field{year}{2013}
+      \field{pages}{597\bibrangedash 609}
+    \endentry
+    \entry{mclurkin2013using}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=ed302cbabda753666a13d4340f74b420}{McLurkin}{M\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=15b6dc780f387613ed942541f2d90585}{Rykowski}{R\bibinitperiod}{Joshua}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=d93476c2b39dc68e14e5f9e4d674719c}{John}{J\bibinitperiod}{Meagan}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=1054bad0b6d2b701d6f4791d0e6f9cb6}{Kaseman}{K\bibinitperiod}{Quillan}{Q\bibinitperiod}{}{}{}{}}%
+        {{hash=bc5697f438fb9f8222a365db8e0a717e}{Lynch}{L\bibinitperiod}{Andrew\bibnamedelima J}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=ed302cbabda753666a13d4340f74b420}{McLurkin}{M\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=15b6dc780f387613ed942541f2d90585}{Rykowski}{R\bibinitperiod}{Joshua}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=d93476c2b39dc68e14e5f9e4d674719c}{John}{J\bibinitperiod}{Meagan}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=1054bad0b6d2b701d6f4791d0e6f9cb6}{Kaseman}{K\bibinitperiod}{Quillan}{Q\bibinitperiod}{}{}{}{}}%
+        {{hash=bc5697f438fb9f8222a365db8e0a717e}{Lynch}{L\bibinitperiod}{Andrew\bibnamedelima J}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{864b11c4656b25c3f57e9e4c14011683}
+      \strng{fullhash}{5641e4a5ce1491658e784bd5e1e89feb}
+      \field{sortinit}{M}
+      \field{labeltitle}{Using multi-robot systems for engineering education: teaching and outreach with large numbers of an advanced, low-cost robot}
+      \field{journaltitle}{Education, IEEE Transactions on}
+      \field{number}{1}
+      \field{title}{Using multi-robot systems for engineering education: teaching and outreach with large numbers of an advanced, low-cost robot}
+      \field{volume}{56}
+      \field{year}{2013}
+      \field{pages}{24\bibrangedash 33}
+    \endentry
+    \entry{mondada2009puck}{inproceedings}{}
+      \name{labelname}{10}{}{%
+        {{hash=e5ddc7316d0ced1da47649dcf0b45593}{Mondada}{M\bibinitperiod}{Francesco}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=9bfac1ee362473d2cc6e9468ba4ac841}{Bonani}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=2625d6de1d1c58bdd2dacaceb5527010}{Raemy}{R\bibinitperiod}{Xavier}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=6b44af93ae23c9e0dce5f3f6bc2c8dc2}{Pugh}{P\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=13857b061165d4c654acd9a6ac859c4f}{Cianci}{C\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=fcfe5faca141d28af416ae856eee2df7}{Klaptocz}{K\bibinitperiod}{Adam}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=6746a55bf5327ab107e8086d745e74f5}{Magnenat}{M\bibinitperiod}{Stéphane}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=eee156e3f1b0a9708f445e90842b71d7}{Zufferey}{Z\bibinitperiod}{Jean-Christophe}{J\bibinithyphendelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=620d43cd0ee8802d53fe4d7b715445ec}{Floreano}{F\bibinitperiod}{Dario}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=88b4c72ba9cf411dfef08a4c9acea1d5}{Martinoli}{M\bibinitperiod}{Alcherio}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{10}{}{%
+        {{hash=e5ddc7316d0ced1da47649dcf0b45593}{Mondada}{M\bibinitperiod}{Francesco}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=9bfac1ee362473d2cc6e9468ba4ac841}{Bonani}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=2625d6de1d1c58bdd2dacaceb5527010}{Raemy}{R\bibinitperiod}{Xavier}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=6b44af93ae23c9e0dce5f3f6bc2c8dc2}{Pugh}{P\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=13857b061165d4c654acd9a6ac859c4f}{Cianci}{C\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=fcfe5faca141d28af416ae856eee2df7}{Klaptocz}{K\bibinitperiod}{Adam}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=6746a55bf5327ab107e8086d745e74f5}{Magnenat}{M\bibinitperiod}{Stéphane}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=eee156e3f1b0a9708f445e90842b71d7}{Zufferey}{Z\bibinitperiod}{Jean-Christophe}{J\bibinithyphendelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=620d43cd0ee8802d53fe4d7b715445ec}{Floreano}{F\bibinitperiod}{Dario}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=88b4c72ba9cf411dfef08a4c9acea1d5}{Martinoli}{M\bibinitperiod}{Alcherio}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{58324ddccc6f8f1804164fe911a0c6df}
+      \strng{fullhash}{edb66365ee1d158bc0d02b71ed53933c}
+      \field{sortinit}{M}
+      \field{labeltitle}{The e-puck, a robot designed for education in engineering}
+      \field{booktitle}{Proceedings of the 9th conference on autonomous robot systems and competitions}
+      \field{number}{1}
+      \field{title}{The e-puck, a robot designed for education in engineering}
+      \field{volume}{1}
+      \field{year}{2009}
+      \field{pages}{59\bibrangedash 65}
+    \endentry
+    \entry{rubenstein2012kilobot}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{hash=b415a9b6641d3fcd76b45d713a7d7ac0}{Rubenstein}{R\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=d26b95c78dbdbe9a7dae3ca0fdb42357}{Ahler}{A\bibinitperiod}{Christian}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=d649a97dbd0a44bfdfb74b5c5f5da7c0}{Nagpal}{N\bibinitperiod}{Radhika}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=b415a9b6641d3fcd76b45d713a7d7ac0}{Rubenstein}{R\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=d26b95c78dbdbe9a7dae3ca0fdb42357}{Ahler}{A\bibinitperiod}{Christian}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=d649a97dbd0a44bfdfb74b5c5f5da7c0}{Nagpal}{N\bibinitperiod}{Radhika}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{9e6732123baa9d0ae49bb5141cf2024e}
+      \strng{fullhash}{9e6732123baa9d0ae49bb5141cf2024e}
+      \field{sortinit}{R}
+      \field{labeltitle}{Kilobot: A low cost scalable robot system for collective behaviors}
+      \field{booktitle}{Robotics and Automation (ICRA), 2012 IEEE International Conference on}
+      \field{title}{Kilobot: A low cost scalable robot system for collective behaviors}
+      \field{year}{2012}
+      \field{pages}{3293\bibrangedash 3298}
+    \endentry
+    \entry{9783423057677}{book}{}
+      \list{publisher}{1}{%
+        {DTV Deutscher Taschenbuch}%
+      }
+      \field{sortinit}{S}
+      \field{labeltitle}{SGB II Grundsicherung für Arbeitssuchende / SGB XII Sozialhilfe}
+      \field{isbn}{342305767X}
+      \field{title}{SGB II Grundsicherung für Arbeitssuchende / SGB XII Sozialhilfe}
+      \field{year}{2007}
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
+
