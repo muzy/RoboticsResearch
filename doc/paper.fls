@@ -246,14 +246,14 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT images/asuro.jpg
 INPUT ./images/asuro.jpg
 INPUT ./images/asuro.jpg
+INPUT images/arduinorobot.jpg
+INPUT ./images/arduinorobot.jpg
+INPUT ./images/arduinorobot.jpg
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmmi10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT images/arduinorobot.jpg
-INPUT ./images/arduinorobot.jpg
-INPUT ./images/arduinorobot.jpg
 INPUT images/mindstorms.jpg
 INPUT ./images/mindstorms.jpg
 INPUT ./images/mindstorms.jpg
@@ -320,6 +320,9 @@ INPUT ./images/30_lithium-polymer.jpg
 INPUT ./images/30_lithium-polymer.jpg
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmcsc10.tfm
+INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
+INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT paper.aux
 INPUT paper.run.xml
 OUTPUT paper.run.xml
@@ -335,4 +338,5 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmr6.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr9.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmri10.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb
