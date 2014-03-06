@@ -33,6 +33,31 @@
       \field{title}{Plataforma docente para la enseñanza de las TIC, basada en la maqueta de un puente colgante}
       \field{year}{2013}
     \endentry
+    \entry{eigner2012mechatronik}{incollection}{}
+      \name{labelname}{4}{}{%
+        {{hash=a566d07f3cf60f6a89268b3ae6470600}{Eigner}{E\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b9a43e5f788af7aeb43e91370f9eb657}{Gerhardt}{G\bibinitperiod}{Florian}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=d302224efce3e3900792eaa1c50acc3e}{Gilz}{G\bibinitperiod}{Torsten}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=1e52f827d2156a7bdc084f717c8af354}{Nem}{N\bibinitperiod}{Fabrice\bibnamedelima Mogo}{F\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=a566d07f3cf60f6a89268b3ae6470600}{Eigner}{E\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b9a43e5f788af7aeb43e91370f9eb657}{Gerhardt}{G\bibinitperiod}{Florian}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=d302224efce3e3900792eaa1c50acc3e}{Gilz}{G\bibinitperiod}{Torsten}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=1e52f827d2156a7bdc084f717c8af354}{Nem}{N\bibinitperiod}{Fabrice\bibnamedelima Mogo}{F\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c590245c290ea59f6c7ce6520cd9ca16}
+      \strng{fullhash}{c54eb9f995a6b455ac2057719d267f8e}
+      \field{sortinit}{E}
+      \field{labeltitle}{Mechatronik am Beispiel des ASURO}
+      \field{booktitle}{Informationstechnologie für Ingenieure}
+      \field{title}{Mechatronik am Beispiel des ASURO}
+      \field{year}{2012}
+      \field{pages}{239\bibrangedash 252}
+    \endentry
     \entry{1577016}{article}{}
       \name{labelname}{1}{}{%
         {{hash=559362a95ecb6b03b362635dd2dc8f7b}{Fiorini}{F\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
@@ -199,6 +224,101 @@
       \field{year}{2009}
       \field{pages}{59\bibrangedash 65}
     \endentry
+    \entry{mubin1review}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=bc78e3bff99fe244628636b222338d7e}{Mubin}{M\bibinitperiod}{Omar}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=2603cfe43d577238a04a137627f06f07}{Stevens}{S\bibinitperiod}{Catherine\bibnamedelima J}{C\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=4b0cbea69c6e55bf64ab7cb0630340e7}{Shahid}{S\bibinitperiod}{Suleman}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=f28b91df90001523031aac70ce297073}{Al\bibnamedelima Mahmud}{A\bibinitperiod\bibinitdelim M\bibinitperiod}{Abdullah}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=90250a14bca0e172a5149ea77068ef17}{Dong}{D\bibinitperiod}{Jian-Jie}{J\bibinithyphendelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=bc78e3bff99fe244628636b222338d7e}{Mubin}{M\bibinitperiod}{Omar}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=2603cfe43d577238a04a137627f06f07}{Stevens}{S\bibinitperiod}{Catherine\bibnamedelima J}{C\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=4b0cbea69c6e55bf64ab7cb0630340e7}{Shahid}{S\bibinitperiod}{Suleman}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=f28b91df90001523031aac70ce297073}{Al\bibnamedelima Mahmud}{A\bibinitperiod\bibinitdelim M\bibinitperiod}{Abdullah}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=90250a14bca0e172a5149ea77068ef17}{Dong}{D\bibinitperiod}{Jian-Jie}{J\bibinithyphendelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c856b0bccb80739889bf5752d1c9f708}
+      \strng{fullhash}{17186f77328e093b589fe86ce760d280}
+      \field{sortinit}{M}
+      \field{labeltitle}{A review of the applicability of robots in education}
+      \field{journaltitle}{Journal of Technology in Education and Learning}
+      \field{title}{A review of the applicability of robots in education}
+      \field{volume}{1}
+    \endentry
+    \entry{ranganathan2008use}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{hash=2ab951d43eed143244c7491ab7282f52}{Ranganathan}{R\bibinitperiod}{Prakash}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=587b88967a7587a619c923b08ce8a2db}{Schultz}{S\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=aae2a11646a827ca6ac04b2127238072}{Mardani}{M\bibinitperiod}{Mojdeh}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=2ab951d43eed143244c7491ab7282f52}{Ranganathan}{R\bibinitperiod}{Prakash}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=587b88967a7587a619c923b08ce8a2db}{Schultz}{S\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=aae2a11646a827ca6ac04b2127238072}{Mardani}{M\bibinitperiod}{Mojdeh}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b2e946ceeda511243de8ff0bec2efd0a}
+      \strng{fullhash}{b2e946ceeda511243de8ff0bec2efd0a}
+      \field{sortinit}{R}
+      \field{labeltitle}{Use of LEGO NXT Mindstorms brick in engineering education}
+      \field{booktitle}{Proceedings of the 2008 ASEE North Midwest Sectional Conference}
+      \field{title}{Use of LEGO NXT Mindstorms brick in engineering education}
+      \field{year}{2008}
+      \field{pages}{17\bibrangedash 19}
+    \endentry
+    \entry{riedo2012two}{incollection}{}
+      \name{labelname}{5}{}{%
+        {{hash=984f2995bfc349a502af0bdd393132f8}{Riedo}{R\bibinitperiod}{Fanny}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=7d4e7658f847cfb65d995ee46458b681}{Rétornaz}{R\bibinitperiod}{Philippe}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=95b04c14456aea1906683b8a8945b46c}{Bergeron}{B\bibinitperiod}{Luc}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=2232a897d988b6960c48100ead1284c1}{Nyffeler}{N\bibinitperiod}{Nathalie}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=e5ddc7316d0ced1da47649dcf0b45593}{Mondada}{M\bibinitperiod}{Francesco}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=984f2995bfc349a502af0bdd393132f8}{Riedo}{R\bibinitperiod}{Fanny}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=7d4e7658f847cfb65d995ee46458b681}{Rétornaz}{R\bibinitperiod}{Philippe}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=95b04c14456aea1906683b8a8945b46c}{Bergeron}{B\bibinitperiod}{Luc}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=2232a897d988b6960c48100ead1284c1}{Nyffeler}{N\bibinitperiod}{Nathalie}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=e5ddc7316d0ced1da47649dcf0b45593}{Mondada}{M\bibinitperiod}{Francesco}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f26fddd42df3b80c7f1e14d450357864}
+      \strng{fullhash}{38a6de761dac66a94794a9dc9e1c5634}
+      \field{sortinit}{R}
+      \field{labeltitle}{A two years informal learning experience using the thymio robot}
+      \field{booktitle}{Advances in Autonomous Mini Robots}
+      \field{title}{A two years informal learning experience using the thymio robot}
+      \field{year}{2012}
+      \field{pages}{37\bibrangedash 48}
+    \endentry
+    \entry{riedo2013thymio}{inproceedings}{}
+      \name{labelname}{4}{}{%
+        {{hash=984f2995bfc349a502af0bdd393132f8}{Riedo}{R\bibinitperiod}{Fanny}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=85f10423b6016f704e6898e31dddabf7}{Chevalier}{C\bibinitperiod}{Morgane}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=c2c1055f339975cee47afc82915d13fe}{Magnenat}{M\bibinitperiod}{Stephane}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=e5ddc7316d0ced1da47649dcf0b45593}{Mondada}{M\bibinitperiod}{Francesco}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=984f2995bfc349a502af0bdd393132f8}{Riedo}{R\bibinitperiod}{Fanny}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=85f10423b6016f704e6898e31dddabf7}{Chevalier}{C\bibinitperiod}{Morgane}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=c2c1055f339975cee47afc82915d13fe}{Magnenat}{M\bibinitperiod}{Stephane}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=e5ddc7316d0ced1da47649dcf0b45593}{Mondada}{M\bibinitperiod}{Francesco}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f26fddd42df3b80c7f1e14d450357864}
+      \strng{fullhash}{c538c6e0da983b23f1628c75668c2f7a}
+      \field{sortinit}{R}
+      \field{labeltitle}{Thymio II, a robot that grows wiser with children}
+      \field{booktitle}{Advanced Robotics and its Social Impacts (ARSO), 2013 IEEE Workshop on}
+      \field{title}{Thymio II, a robot that grows wiser with children}
+      \field{year}{2013}
+      \field{pages}{187\bibrangedash 193}
+    \endentry
     \entry{rubenstein2012kilobot}{inproceedings}{}
       \name{labelname}{3}{}{%
         {{hash=b415a9b6641d3fcd76b45d713a7d7ac0}{Rubenstein}{R\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
@@ -257,6 +377,22 @@
       \field{isbn}{342305767X}
       \field{title}{SGB II Grundsicherung für Arbeitssuchende / SGB XII Sozialhilfe}
       \field{year}{2007}
+    \endentry
+    \entry{tick2006modelling}{inproceedings}{}
+      \name{labelname}{1}{}{%
+        {{hash=e7505253f10164cedd30b67f77c3b562}{Tick}{T\bibinitperiod}{József}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e7505253f10164cedd30b67f77c3b562}{Tick}{T\bibinitperiod}{József}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e7505253f10164cedd30b67f77c3b562}
+      \strng{fullhash}{e7505253f10164cedd30b67f77c3b562}
+      \field{sortinit}{T}
+      \field{labeltitle}{„Modelling Control Systems by Autonomous Mini Robot”}
+      \field{booktitle}{Proceedings of the 3 rd Romanian--Hungarian Joint Symposium on Applied Computational Intelligence}
+      \field{title}{„Modelling Control Systems by Autonomous Mini Robot”}
+      \field{year}{2006}
+      \field{pages}{25\bibrangedash 26}
     \endentry
   \endsortlist
 \endrefsection

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.3.3)  5 MAR 2014 08:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.3.3)  6 MAR 2014 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1023,6 +1023,17 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 86.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 86.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 86.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 86.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -1031,13 +1042,17 @@ Overfull \hbox (10.2006pt too wide) in paragraph at lines 95--96
 essons are needed
  []
 
-[2] [3] <images/asuro.jpg, id=17, 1096.095pt x 1023.825pt>
+[2] [3] <images/asuro.jpg, id=20, 1096.095pt x 1023.825pt>
 File: images/asuro.jpg Graphic file (type jpg)
 
 <use images/asuro.jpg>
 Package pdftex.def Info: images/asuro.jpg used on input line 120.
 (pdftex.def)             Requested size: 180.0pt x 168.12709pt.
- [4 <./images/asuro.jpg>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 135--135
 []|\T1/lmr/m/n/10.95 Assessment
  []
@@ -1056,261 +1071,263 @@ Overfull \hbox (36.0pt too wide) in alignment at lines 133--146
 Underfull \vbox (badness 10000) detected at line 146
  []
 
-[5] <images/arduinorobot.jpg, id=25, 489.32813pt x 306.39468pt>
+[5 <./images/asuro.jpg>]
+<images/arduinorobot.jpg, id=28, 489.32813pt x 306.39468pt>
 File: images/arduinorobot.jpg Graphic file (type jpg)
 
 <use images/arduinorobot.jpg>
 Package pdftex.def Info: images/arduinorobot.jpg used on input line 153.
 (pdftex.def)             Requested size: 180.0pt x 112.70973pt.
- [6 <./images/arduinorobot.jpg>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 166.
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
-[]|\T1/lmr/m/n/10.95 Assessment
- []
-
-
-Overfull \hbox (36.0pt too wide) in paragraph at lines 166--178
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 3.02397pt on input line 180.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/mindstorms.jpg, id=29, 449.68pt x 381.425pt>
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+[]|\T1/lmr/m/n/10.95 Assessment
+ []
+
+
+Overfull \hbox (36.0pt too wide) in alignment at lines 164--177
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 177
+ []
+
+[7 <./images/arduinorobot.jpg>]
+<images/mindstorms.jpg, id=37, 449.68pt x 381.425pt>
 File: images/mindstorms.jpg Graphic file (type jpg)
 
 <use images/mindstorms.jpg>
-Package pdftex.def Info: images/mindstorms.jpg used on input line 187.
+Package pdftex.def Info: images/mindstorms.jpg used on input line 184.
 (pdftex.def)             Requested size: 180.0pt x 152.67787pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--188
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 []\T1/lmr/m/n/10.95 Figure 3: |Pic-ture of the LEGO Mind-storms NXT (from
  []
 
-[7 <./images/mindstorms.jpg>]
-Overfull \hbox (3.5698pt too wide) in paragraph at lines 195--196
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8]
+Overfull \hbox (3.5698pt too wide) in paragraph at lines 192--193
 \T1/lmr/m/n/10.95 Lithium-Ion bat-tery with in-te-grated charger which can be s
 ep-a-rately brought.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
 []|\T1/lmr/m/n/10.95 Assessment
  []
 
 
-Overfull \hbox (36.0pt too wide) in paragraph at lines 203--215
- [][] 
+Overfull \hbox (36.0pt too wide) in alignment at lines 199--212
+ [] [] [] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) detected at line 212
+ []
 
-<images/thymioii.jpg, id=34, 1204.5pt x 903.375pt>
+[9 <./images/mindstorms.jpg>]
+<images/thymioii.jpg, id=44, 1204.5pt x 903.375pt>
 File: images/thymioii.jpg Graphic file (type jpg)
  <use images/thymioii.jpg>
-Package pdftex.def Info: images/thymioii.jpg used on input line 224.
+Package pdftex.def Info: images/thymioii.jpg used on input line 219.
 (pdftex.def)             Requested size: 180.0pt x 134.99037pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 []\T1/lmr/m/n/10.95 Figure 4: |Pic-ture of the Thymio II (from
  []
 
-[8 <./images/thymioii.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 []|\T1/lmr/m/n/10.95 Assessment
  []
 
 
-Overfull \hbox (36.0pt too wide) in paragraph at lines 236--248
- [][] 
+Overfull \hbox (36.0pt too wide) in alignment at lines 230--243
+ [] [] [] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) detected at line 243
+ []
 
-[9] <images/30_ballcaster.jpg, id=41, 754.82pt x 605.26125pt>
+[11 <./images/thymioii.jpg>] [12]
+<images/30_ballcaster.jpg, id=54, 754.82pt x 605.26125pt>
 File: images/30_ballcaster.jpg Graphic file (type jpg)
 
 <use images/30_ballcaster.jpg>
-Package pdftex.def Info: images/30_ballcaster.jpg used on input line 263.
+Package pdftex.def Info: images/30_ballcaster.jpg used on input line 256.
 (pdftex.def)             Requested size: 180.0pt x 144.33287pt.
-
-<images/30_dcmotor.jpg, id=42, 623.32875pt x 499.8675pt>
+ [13 <./images/30_ballcaster.jpg>]
+<images/30_dcmotor.jpg, id=59, 623.32875pt x 499.8675pt>
 File: images/30_dcmotor.jpg Graphic file (type jpg)
 
 <use images/30_dcmotor.jpg>
-Package pdftex.def Info: images/30_dcmotor.jpg used on input line 278.
+Package pdftex.def Info: images/30_dcmotor.jpg used on input line 271.
 (pdftex.def)             Requested size: 155.51755pt x 124.71486pt.
 
-<images/30_gearboxmotor.jpg, id=43, 846.16125pt x 676.5275pt>
+<images/30_gearboxmotor.jpg, id=60, 846.16125pt x 676.5275pt>
 File: images/30_gearboxmotor.jpg Graphic file (type jpg)
 
 <use images/30_gearboxmotor.jpg>
-Package pdftex.def Info: images/30_gearboxmotor.jpg used on input line 283.
+Package pdftex.def Info: images/30_gearboxmotor.jpg used on input line 276.
 (pdftex.def)             Requested size: 155.51755pt x 124.3401pt.
+
+<images/30_speedsensor.jpg, id=61, 782.925pt x 626.34pt>
+File: images/30_speedsensor.jpg Graphic file (type jpg)
+
+<use images/30_speedsensor.jpg>
+Package pdftex.def Info: images/30_speedsensor.jpg used on input line 286.
+(pdftex.def)             Requested size: 180.0pt x 143.99782pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10 <./images/30_ballcaster.jpg>]
-<images/30_speedsensor.jpg, id=47, 782.925pt x 626.34pt>
-File: images/30_speedsensor.jpg Graphic file (type jpg)
 
-<use images/30_speedsensor.jpg>
-Package pdftex.def Info: images/30_speedsensor.jpg used on input line 293.
-(pdftex.def)             Requested size: 180.0pt x 143.99782pt.
-
-Underfull \hbox (badness 3168) in paragraph at lines 305--306
+Underfull \hbox (badness 3168) in paragraph at lines 298--299
 []|\T1/lmr/m/n/10.95 Motor speed con-trol us-ing pulse-
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11 <./images/30_dcmotor.jpg> <./images/30_gearboxmotor.jpg> <./images/30_speed
-sensor.jpg>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 320.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 320.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/mecanum.png, id=51, 298.76567pt x 145.28505pt>
+[14 <./images/30_dcmotor.jpg> <./images/30_gearboxmotor.jpg>] [15 <./images/30_
+speedsensor.jpg>] <images/mecanum.png, id=68, 298.76567pt x 145.28505pt>
 File: images/mecanum.png Graphic file (type png)
 
 <use images/mecanum.png>
-Package pdftex.def Info: images/mecanum.png used on input line 347.
+Package pdftex.def Info: images/mecanum.png used on input line 340.
 (pdftex.def)             Requested size: 180.0pt x 87.53526pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--348
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
 []\T1/lmr/m/n/10.95 Figure 8: |Screen-shot of a mecanum wheel 3D model (from
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[12] <images/omniwheel.jpg, id=58, 394.47375pt x 362.10281pt>
+[16 <./images/mecanum.png>]
+<images/omniwheel.jpg, id=72, 394.47375pt x 362.10281pt>
 File: images/omniwheel.jpg Graphic file (type jpg)
 
 <use images/omniwheel.jpg>
-Package pdftex.def Info: images/omniwheel.jpg used on input line 357.
+Package pdftex.def Info: images/omniwheel.jpg used on input line 350.
 (pdftex.def)             Requested size: 180.0pt x 165.22667pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--358
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
 []\T1/lmr/m/n/10.95 Figure 9: |Con-trol scheme of a omni wheel (from
  []
 
-[13 <./images/mecanum.png> <./images/omniwheel.jpg>]
-<images/30_ir.jpg, id=63, 842.14626pt x 674.52pt>
+[17 <./images/omniwheel.jpg>]
+<images/30_ir.jpg, id=76, 842.14626pt x 674.52pt>
 File: images/30_ir.jpg Graphic file (type jpg)
  <use images/30_ir.jpg>
-Package pdftex.def Info: images/30_ir.jpg used on input line 374.
+Package pdftex.def Info: images/30_ir.jpg used on input line 367.
 (pdftex.def)             Requested size: 180.0pt x 144.1647pt.
 
-[14 <./images/30_ir.jpg>]
-<images/30_proximity_front.jpg, id=67, 511.9125pt x 410.53375pt>
+[18 <./images/30_ir.jpg>]
+<images/30_proximity_front.jpg, id=80, 511.9125pt x 410.53375pt>
 File: images/30_proximity_front.jpg Graphic file (type jpg)
 
 <use images/30_proximity_front.jpg>
-Package pdftex.def Info: images/30_proximity_front.jpg used on input line 389.
+Package pdftex.def Info: images/30_proximity_front.jpg used on input line 382.
 (pdftex.def)             Requested size: 155.51755pt x 124.7146pt.
 
-<images/30_proximity_back.jpg, id=68, 878.28125pt x 702.625pt>
+<images/30_proximity_back.jpg, id=81, 878.28125pt x 702.625pt>
 File: images/30_proximity_back.jpg Graphic file (type jpg)
 
 <use images/30_proximity_back.jpg>
-Package pdftex.def Info: images/30_proximity_back.jpg used on input line 394.
+Package pdftex.def Info: images/30_proximity_back.jpg used on input line 387.
 (pdftex.def)             Requested size: 155.51755pt x 124.40857pt.
- [15 <./images/30_proximity_front.jpg> <./images/30_proximity_back.jpg>]
-<images/30_ultrasonic.jpg, id=72, 444.66125pt x 354.32375pt>
+
+<images/30_ultrasonic.jpg, id=82, 444.66125pt x 354.32375pt>
 File: images/30_ultrasonic.jpg Graphic file (type jpg)
 
 <use images/30_ultrasonic.jpg>
-Package pdftex.def Info: images/30_ultrasonic.jpg used on input line 409.
+Package pdftex.def Info: images/30_ultrasonic.jpg used on input line 402.
 (pdftex.def)             Requested size: 180.0pt x 143.43004pt.
- [16 <./images/30_ultrasonic.jpg>]
-<images/30_compass.jpg, id=76, 609.27625pt x 488.82625pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <./images/30_proximity_front.jpg> <./images/30_proximity_back.jpg>]
+[20 <./images/30_ultrasonic.jpg>]
+<images/30_compass.jpg, id=90, 609.27625pt x 488.82625pt>
 File: images/30_compass.jpg Graphic file (type jpg)
 
 <use images/30_compass.jpg>
-Package pdftex.def Info: images/30_compass.jpg used on input line 434.
+Package pdftex.def Info: images/30_compass.jpg used on input line 427.
 (pdftex.def)             Requested size: 180.0pt x 144.41133pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[17] <images/30_irdiodes.jpg, id=80, 747.79375pt x 599.23875pt>
+ [21 <./images/30_compass.jpg>]
+<images/30_irdiodes.jpg, id=94, 747.79375pt x 599.23875pt>
 File: images/30_irdiodes.jpg Graphic file (type jpg)
 
 <use images/30_irdiodes.jpg>
-Package pdftex.def Info: images/30_irdiodes.jpg used on input line 456.
+Package pdftex.def Info: images/30_irdiodes.jpg used on input line 449.
 (pdftex.def)             Requested size: 155.51755pt x 124.6186pt.
 File: images/30_ir.jpg Graphic file (type jpg)
  <use images/30_ir.jpg>
-Package pdftex.def Info: images/30_ir.jpg used on input line 461.
+Package pdftex.def Info: images/30_ir.jpg used on input line 454.
 (pdftex.def)             Requested size: 155.51755pt x 124.55782pt.
+ [22 <./images/30_irdiodes.jpg>] <images/30_nrf24l01.jpg, id=98, 381.425pt x 30
+6.14375pt>
+File: images/30_nrf24l01.jpg Graphic file (type jpg)
+
+<use images/30_nrf24l01.jpg>
+Package pdftex.def Info: images/30_nrf24l01.jpg used on input line 475.
+(pdftex.def)             Requested size: 180.0pt x 144.4715pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18 <./images/30_compass.jpg>] [19 <./images/30_irdiodes.jpg>]
-<images/30_nrf24l01.jpg, id=88, 381.425pt x 306.14375pt>
-File: images/30_nrf24l01.jpg Graphic file (type jpg)
 
-<use images/30_nrf24l01.jpg>
-Package pdftex.def Info: images/30_nrf24l01.jpg used on input line 482.
-(pdftex.def)             Requested size: 180.0pt x 144.4715pt.
-
-Overfull \hbox (3.7823pt too wide) in paragraph at lines 486--487
+Overfull \hbox (3.7823pt too wide) in paragraph at lines 479--480
 []\T1/lmr/m/n/10.95 Attaching the nRF24L01 to the mi-cro-con-troller re-quires 
 four SPI pins (MISO,
  []
 
-[20 <./images/30_nrf24l01.jpg>]
-Overfull \hbox (13.63702pt too wide) in paragraph at lines 502--503
+[23] [24 <./images/30_nrf24l01.jpg>]
+Overfull \hbox (13.63702pt too wide) in paragraph at lines 495--496
 []\T1/lmr/m/n/10.95 Interfacing other hard-ware com-po-nents is pos-si-ble us-i
 ng 20 dig-i-tal in-put/output
  []
 
-[21] [22] <images/30_lithium-polymer.jpg, id=99, 479.7925pt x 384.43625pt>
+[25] [26] <images/30_lithium-polymer.jpg, id=113, 479.7925pt x 384.43625pt>
 File: images/30_lithium-polymer.jpg Graphic file (type jpg)
 
 <use images/30_lithium-polymer.jpg>
-Package pdftex.def Info: images/30_lithium-polymer.jpg used on input line 525.
+Package pdftex.def Info: images/30_lithium-polymer.jpg used on input line 518.
 (pdftex.def)             Requested size: 180.0pt x 144.22775pt.
- [23 <./images/30_lithium-polymer.jpg>]
-Overfull \hbox (0.4377pt too wide) in paragraph at lines 536--537
+
+Overfull \hbox (0.4377pt too wide) in paragraph at lines 529--530
 \T1/lmr/m/n/10.95 wrong (over-charg-ing, over-discharging and over-discharge-cu
 rrent), they pro-
  []
 
-[24]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 555.
+[27 <./images/30_lithium-polymer.jpg>] [28] [29]
+Overfull \hbox (10.13771pt too wide) in paragraph at lines 549--549
+[]\T1/lmr/m/n/10.95 József Tick. ^^P  ^^RMod-elling Con-trol Sys-tems by Au-ton
+omous Mini Robot^^Q^^Q.
+ []
 
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [25] [26] [27] [28] [29]
 [30] (./paper.aux)
 Package logreq Info: Writing requests to 'paper.run.xml'.
 \openout1 = `paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12814 strings out of 493304
- 197945 string characters out of 6139872
- 638772 words of memory out of 5000000
- 15965 multiletter control sequences out of 15000+600000
- 70023 words of font info for 63 fonts, out of 8000000 for 9000
+ 12825 strings out of 493304
+ 198143 string characters out of 6139872
+ 628915 words of memory out of 5000000
+ 15975 multiletter control sequences out of 15000+600000
+ 70342 words of font info for 64 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,11n,49p,990b,1411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,49p,990b,1411s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm
@@ -1319,12 +1336,12 @@ f/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.p
-fb>
-Output written on paper.pdf (30 pages, 2961643 bytes).
+ic/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on paper.pdf (30 pages, 3006651 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+ 175 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

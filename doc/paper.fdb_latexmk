@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber paper"] 1394005949 "paper.bcf" "paper.bbl" "paper" 1394005951
-  "bibliography.bib" 1393929296 4122 8b577fb1fd9f4f91173d2070c9b90b5f ""
-  "paper.bcf" 1394005951 91566 4c676a59a4471d0b8746e16f27a8baca ""
+["biber paper"] 1394130718 "paper.bcf" "paper.bbl" "paper" 1394130720
+  "bibliography.bib" 1394057995 5960 a79b1916d980af577b6e40f1e451712c ""
+  "paper.bcf" 1394130720 91566 4c676a59a4471d0b8746e16f27a8baca ""
   (generated)
   "paper.bbl"
   "paper.blg"
-["pdflatex"] 1394005950 "paper.tex" "paper.pdf" "paper" 1394005951
+["pdflatex"] 1394130719 "paper.tex" "paper.pdf" "paper" 1394130720
   "/etc/texmf/web2c/texmf.cnf" 1393859830 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -127,6 +127,7 @@
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr9.tfm" 1254938640 12084 b7f5e4c003de6f57f07c7e9fee73a37c ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm" 1254938640 17148 9556e1b5f936b77a796f68d2d559ba99 ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmtt10.tfm" 1254938640 1372 2ef2c2b492b3c4cd7879fe083abbb061 ""
+  "/usr/share/texmf/fonts/tfm/public/lm/ec-lmtt9.tfm" 1254938640 1372 a2ff2d4391a2d6bba15b518acb79e80f ""
   "/usr/share/texmf/fonts/tfm/public/lm/lmex10.tfm" 1254938640 992 ce925c9346c7613270a79afbee98c070 ""
   "/usr/share/texmf/fonts/tfm/public/lm/lmmi10.tfm" 1254938640 1528 6d36b2385e0ca062a654de6ac59cb34f ""
   "/usr/share/texmf/fonts/tfm/public/lm/lmmi12.tfm" 1254938640 1524 753b192b18f2991794f9d41a8228510b ""
@@ -156,6 +157,7 @@
   "/usr/share/texmf/fonts/type1/public/lm/lmr9.pfb" 1254938640 121065 50bbfa703ce7e11638752ef5a6d120c7 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmri10.pfb" 1254938640 112593 fda2373ba4420af33949610de4c28fe8 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb" 1254938640 113227 1010e11451afc2822c95dae77c390042 ""
+  "/usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb" 1254938640 108480 ee1de99df36ee0a16b36023b9c9d8a58 ""
   "/usr/share/texmf/tex/latex/lm/lmodern.sty" 1256929440 1606 c17281c7cff2bbd7ff0173e1433487ec ""
   "/usr/share/texmf/tex/latex/lm/omllmm.fd" 1256929440 888 44447a3a3af84a22454ef89500942d93 ""
   "/usr/share/texmf/tex/latex/lm/omslmsy.fd" 1256929440 805 af340a8260c447aa315cfc740ff0152f ""
@@ -185,14 +187,14 @@
   "images/mindstorms.jpg" 1380911924 23406 713074cbbce1bd5e2baaa49afc1ffac5 ""
   "images/omniwheel.jpg" 1383939248 34581 2b0b6340761d39088c47d5ed4c9fc68c ""
   "images/thymioii.jpg" 1380911555 436739 ef0a2ab1dc017690c316f670fa986bf6 ""
-  "paper.aux" 1394005951 10169 26dd624f63cd5fad3fac9138b52c2117 ""
-  "paper.bbl" 1394005950 17167 92c6dc6d6e683fb041bcb743dd3a656f "biber paper"
-  "paper.run.xml" 1394005951 2314 9abd8f7f19dc8395e29a82ac48fa2d83 ""
-  "paper.tex" 1394005943 54886 72f124ffa7a2162c5b6b518942b56853 ""
+  "paper.aux" 1394130720 10463 bef1a24bfe3d8fa1bb09765fcabc120c ""
+  "paper.bbl" 1394130719 25919 0fe43ad77e628a58ece55b18c544cfb7 "biber paper"
+  "paper.run.xml" 1394130720 2314 9abd8f7f19dc8395e29a82ac48fa2d83 ""
+  "paper.tex" 1394015600 55302 3840aeff894d664c25d9b7f210f74652 ""
   (generated)
-  "paper.log"
-  "paper.bcf"
-  "paper-blx.bib"
-  "paper.run.xml"
-  "paper.aux"
   "paper.pdf"
+  "paper.aux"
+  "paper.bcf"
+  "paper.run.xml"
+  "paper-blx.bib"
+  "paper.log"
