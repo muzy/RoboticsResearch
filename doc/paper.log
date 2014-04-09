@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.3.3)  6 MAR 2014 19:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.3.3)  8 APR 2014 10:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -911,7 +911,11 @@ Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
-) (./paper.aux)
+) (./paper.aux
+
+LaTeX Warning: Label `tbl:bom' multiply defined.
+
+)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
@@ -1310,38 +1314,95 @@ rrent), they pro-
  []
 
 [27 <./images/30_lithium-polymer.jpg>] [28] [29]
-Overfull \hbox (10.13771pt too wide) in paragraph at lines 549--549
+<images/schematic/stepup.png, id=123, 340.1508pt x 188.3838pt>
+File: images/schematic/stepup.png Graphic file (type png)
+
+<use images/schematic/stepup.png>
+Package pdftex.def Info: images/schematic/stepup.png used on input line 565.
+(pdftex.def)             Requested size: 360.0pt x 199.38979pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/schematic/charge.png, id=124, 311.4837pt x 188.3838pt>
+File: images/schematic/charge.png Graphic file (type png)
+
+<use images/schematic/charge.png>
+Package pdftex.def Info: images/schematic/charge.png used on input line 573.
+(pdftex.def)             Requested size: 360.0pt x 217.73486pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[30]
+Overfull \hbox (29.9989pt too wide) in alignment at lines 598--621
+ [] [] [] [] 
+ []
+
+[31 <./images/schematic/stepup.png (PNG copy)> <./images/schematic/charge.png (
+PNG copy)>]
+Underfull \vbox (badness 10000) detected at line 621
+ []
+
+
+Overfull \hbox (29.9989pt too wide) in alignment at lines 621--641
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.9989pt too wide) in alignment at lines 641--659
+ [] [] [] [] 
+ []
+
+[32]
+Overfull \hbox (29.9989pt too wide) in alignment at lines 661--678
+ [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 678
+ []
+
+[33] [34]
+Overfull \hbox (10.13771pt too wide) in paragraph at lines 687--687
 []\T1/lmr/m/n/10.95 József Tick. ^^P  ^^RMod-elling Con-trol Sys-tems by Au-ton
 omous Mini Robot^^Q^^Q.
  []
 
-[30] (./paper.aux)
+[35] (./paper.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'paper.run.xml'.
 \openout1 = `paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12825 strings out of 493304
- 198143 string characters out of 6139872
- 628915 words of memory out of 5000000
- 15975 multiletter control sequences out of 15000+600000
- 70342 words of font info for 64 fonts, out of 8000000 for 9000
+ 12843 strings out of 493304
+ 198502 string characters out of 6139872
+ 641093 words of memory out of 5000000
+ 15989 multiletter control sequences out of 15000+600000
+ 70576 words of font info for 66 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,12n,49p,990b,1411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,49p,990b,1417s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on paper.pdf (30 pages, 3006651 bytes).
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/eurosym/feymr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on paper.pdf (35 pages, 3073149 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 215 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

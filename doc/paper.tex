@@ -536,13 +536,158 @@ Components which usage is desired in the robot are: stepper motors with wheels a
 Each component has its own electrical requirement such as voltage, current and pin count. The requirements for all components can be added up to create a power supply and a wiring concept. 
 
 \begin{description}
-\item[Stepper motors and driver] \hfill \\ The 28BYJ stepper motors are specified for usage with 5 volt. It is possible to drive the motors with lower voltage but rotation speed and torque suffer under lower voltages. Typically for motors, the current varies depending on the coil position and the magnetic field applied. Empirical experiments show, that the maximum current flow in the stepper motors and the driver is 140mA (at 5V) each when the motor is stuck and cannot rotate. During normal operation the current flow is between 40 and 100mA (at 5V). It is safe to assume, that the maximum current for the stepper motors and the driver chip is 300mA at 5V.
-\item[Ultrasonic proximity sensor] \hfill \\ The ultrasonic proximity sensor runs with a nominal voltage of 5 volt. Other voltages are discouraged since the measured distance can get inaccurate. 
-\item[Infrared sensor] \hfill \\ The infrared sensor is based on a fotodiode and a infrared LED. When in use the LED consumes up to 20mA (at 5V) 
-\item[Accelerometer and Gyroscope] \hfill \\ The MPU-6050 combines accelerometer and gyroscope in a single package. A breakout board like the GY-521 exist which allows easy interfacing and provides supportive components. A voltage regulator on the breakout board can operate with 3.3V or 5V. At 3.3V the IC consumes 0.5mA for the accelerometer and 3.6mA for the gyroscope (according to the datasheet). Considering the supporting elements like voltage regulator, a total current consumption of less than 10mA can be assumed.
-\item[Compass] \hfill \\ The HMC-5883L is a compass and available on a breakout board. It operates at 3.3V and has a typical current draw of 0.1mA.
-
+\item[Stepper motors and driver] \hfill \\ The 28BYJ stepper motors are specified for usage with 5 volt. It is possible to drive the motors with lower voltage but rotation speed and torque suffer under lower voltages. Typically for motors, the current varies depending on the coil position and the magnetic field applied. Empirical experiments show, that the maximum current flow in the stepper motors and the driver is 140mA (at 5V) each when the motor is stuck and cannot rotate.\footnote{Measured using a multimeter with hold-on-peak mode between the supply GND and VCC. Rotation was blocked by holding the shaft with one hand.} During normal operation the current flow is between 40 and 100mA (at 5V). It is safe to assume, that the maximum current for the stepper motors and the driver chip is 300mA at 5V.
+\item[Microcontroller] \hfill \\ The ATmega32U4 works at various supply voltages from 2.7 to 5.5V. According to the datasheet, the frequency is limited with lower voltages. To support 16MHz operation, the voltage must be between 4.5 and the maximum voltage of 5.5V. The current consumption with this speed is between 10 and 14mA.
+\item[Ultrasonic proximity sensor] \hfill \\ The ultrasonic proximity sensor runs with a nominal voltage of 5 volt. The working current is 15mA, the idle current below 2mA according to the datasheet.
+\item[Infrared sensor] \hfill \\ The infrared sensor is based on a photodiode and a infrared LED. When in use the LED consumes up to 20mA (at 5V) 
+\item[Accelerometer and Gyroscope] \hfill \\ The MPU-6050 can operate with 3.3V or 5V due to an integrated voltage regulator on board. At 3.3V the IC consumes 0.5mA for the accelerometer and 3.6mA for the gyroscope (according to the datasheet). Considering the supporting elements like voltage regulator, a total current consumption of less than 10mA can be assumed.
+\item[Compass] \hfill \\ The HMC-5883L operates at 3.3V and has a typical current draw of 0.1mA according to the datasheet. Since the breakout board has it's own voltage regulator, the current draw is a bit higher.
+\item[NRF24L01] \hfill \\ According to the datasheet the NRF24L01 consumes up to 13.5mA during communication at 3.3V and when in idle only 900nA at the same voltage level.
 \end{description}
+
+All in all the brief power consumption sums up to approximately 380mA at 5V and 15mA at 3.3V when all components run at their peak current. According to the Arduino reference\footnote{\url{http://arduino.cc/en/Main/arduinoBoardUno}}, the 3.3V port provides 50mA for shields and therefore the 3.3V supply should provide at least 65mA. The maximum output current for the 5V pin is not specified but can be estimated by looking at the components on an average Arduino board:
+
+The power supply for each Arduino based board is limited by a fuse which cuts the power supply when more than 500mA is drawn from the power source. Given that value, the maximum current available is 500mA at 5V. The available current is reduced by microcontrollers, LEDs, power regulator and other parts that dissipate power. In case of the Arduino Uno board\footnote{see schematic \url{http://arduino.cc/en/uploads/Main/arduino-uno-schematic.pdf}} the ATmega8U2 consumes up to 14mA at 5V \footnote{see \url{http://www.atmel.com/images/doc7799.pdf} fig. 27-1}, the ATmega8 is rated at 25mA\footnote{see \url{http://www.atmel.com/images/doc7799.pdf} fig. 119}, the power consumption fo the four status LEDs and the LP2985-33 voltage regulator are unknown. Therefore it is safe to assume, that 400mA can be provided by the 5V pin.
+
+This leads to overall an power requirement of 780mA at 5V and 65mA at 3.3V.
+
+\subsection{Power Management}
+Having the power requirements specified as 780mA at 5V and 65mA at 3.3V, the power subsystem can be build.  Since the chosen power source are lithium-polymer batteries, their characteristics have to be taken into account as well.
+
+Lithium-polymer batteries have a voltage range from 3 to 4.2 Volt. The voltage decreases during discharge following a $-x^3$ type function. For the 3.3V power supply a Low-Dropout Regulator can be used which reduces the voltage. When voltages under 3.3V occur, the regulator does not work anymore. At voltages below 3.3V the battery still as 10 to 20\% of its capacity. Therefore a LDO should be supplied by a stable voltage which is constantly higher than 3.3V.
+
+To feed the 5V supply a circuit is needed which increases the voltage range to constant 5V. A boost converter (sometimes called step-up converter) can be used to achieve this. The basic principle of a boost converter is that a capacitor is charged with a higher voltage than the supply voltage by generating a current flow through a diode and an inductor. 
+
+Since the rough power requirement is 1A at 5V, the MCP1650 is a well suited boost converter. If the system is connected to an USB port the boost converter is not needed and should by bypassed. Since automatic switching requires parts which are either available in very small form factors only or consist of complex circuitry, a simple switch is used instead.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{images/schematic/stepup.png}
+  \caption{Stepup converter schematic using the MCP1650}
+\end{figure}
+
+For charging the Lithium-Polymer battery a special integrated circuit can be utilized. The MCP73831 is such an IC with programmable output current up to 500mA. A indicator LED attached to one pin of the charge IC gives feedback of the charge status.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{images/schematic/charge.png}
+  \caption{Lithium-polymer battery charge circuit using the MCP73831}
+\end{figure}
+
+To switch between battery power and USB power, a simple toggle switch is used. When the switch has the USB position the USB power source powers both the robot main circuitry and the battery charger. When the toggle switch has the battery position, power is drained of the battery.
+
+\subsection{Processing Unit}
+As previously mentioned, the processing of user and sensor data is should be realised using an ATmega32U4 microcontroller. In previous case studies the interfacing requirements of each sensor were evaluated. Having this information, the connections between sensors and the microcontroller can be made.
+
+Hence Arduino compabilit
+
+% bus system
+% two options: "dual core" vs single core
+
+\subsection{Optional components}
+Due to unused pins on the second ATmega32U4, additional components can be added to the robot platform. Those additional components should add features, have educational potential and should be cost effective.
+
+
+\subsubsection{Display}
+\subsubsection{Gripper}
+
+\subsection{PCB design}
+
+\subsection{Mechanical platform}
+The robots PCB, wheels, ball caster, gripper and sensors have to be assembled together. Therefore mechanical components are needed which hold the components to a common base.
+
+
+
+
+
+
+
+\begin{longtable}{p{0.5\textwidth}p{0.15\textwidth}p{0.2\textwidth}p{0.1\textwidth}}
+\toprule
+Part & Amount & Cost per part\footnote{Average price when ordered in quantity of 100.} & Sum \\
+\midrule
+\multicolumn{4}{c}{\textbf{US Distributor}\footnote{Supplied via \url{http://digikey.de}, accessed on 16th of March 2014. Prices are based on quantities of 100 units.}}\\
+\\
+CAP 18pF 1206 50V & 4 & 0.04\euro & 0.16\euro \\ 
+CAP 0.1uF 1206 50V & 8 & 0.04\euro & 0.32\euro \\
+CAP 1uF 1206 50V & 5 & 0.05\euro & 0.25\euro \\
+CAP 4.7uF 1206 16V & 2 & 0.06\euro & 0.12\euro \\
+CAP 10uF 1206 16V & 3 & 0.05\euro & 0.15\euro \\
+CAP 47uF 1206 10V & 2 & 0.28\euro & 0.56\euro \\
+RES 22 OHM 1206 1\% & 4 &  0.01\euro & 0.04\euro \\
+RES 100 OHM 1206 5\% & 5 & 0.01\euro & 0.05\euro \\
+RES 470 OHM 1206 1\% & 1 & 0.01\euro & 0.01\euro \\
+RES 1K OHM 1206 5\% & 7 & 0.01\euro & 0.07\euro \\
+RES 2K OHM 1206 1\% & 1 & 0.01\euro & 0.01\euro \\
+RES 3.09K OHM 1206 1\% & 1 & 0.01\euro & 0.01\euro \\
+RES 10K OHM 1206 5\% & 8 & 0.01\euro & 0.08\euro \\
+B330A & 1 & 0.25\euro & 0.25\euro \\
+LED 1206 & 7 & 0.11\euro & 0.77\euro \\
+PTC RESET 15V .5A SMD 1206 & 2 & 0.26\euro & 0.52\euro \\
+MOSFET N-CH 20V 4.2A SOT-23 & 2 & 0.19\euro & 0.38\euro \\
+FERRITE 3A 100 OHM 1206 SMD & 1 & 0.05\euro & 0.05\euro \\
+INDUCTOR 3.3UH 1210 SMD & 1 & 0.15\euro & 0.15\euro \\
+CRYSTAL 16MHZ 20PF SMD & 2 & 0.25\euro & 0.50\euro \\
+ATMEGA32U4 44TQFP & 2 & 2.80\euro & 5.60\euro \\
+LDO 3.3V SOT 23 & 1 & 0.33\euro & 0.33\euro \\ 
+MCP1650 & 1 & 0.79\euro & 0.79\euro \\
+MCP73831 & 1 & 0.33\euro & 0.33\euro \\
+74HC595D SO16 & 2 & 0.20\euro & 0.40\euro \\
+74HC4051 SO16 & 1 & 0.21\euro & 0.21\euro \\
+ULN2803 SO18 & 1 & 0.54\euro & 0.54\euro \\
+\\
+\multicolumn{4}{c}{\textbf{Chinese Distributor}\footnote{\label{edragon}Supplied via Chinese distributors found on \url{http://alibaba.com} on the 16th of March 2014. The price is based on quantities of one, dollar prices were converted to Euro with $1\euro = 1.3USD$ }}\\
+\\
+CONN 02-JST-XH & 1 & 0.02\euro & 0.02\euro \\
+CONN 05-JST-XH & 2 & 0.05\euro & 0.10\euro \\
+CONN 2.54 FEMALE 1x06 & 2 & 0.07\euro & 0.14\euro \\
+CONN 2.54 FEMALE 1x08 & 1 & 0.08\euro & 0.08\euro \\
+CONN 2.54 FEMALE 1x10 & 2 & 0.10\euro & 0.20\euro \\
+CONN 2.54 MALE 1x03 & 3 & 0.01\euro & 0.03\euro \\
+CONN 2.54 MALE 1x04 & 1 & 0.01\euro & 0.01\euro \\
+CONN 2.54 MALE 2x03 & 4 & 0.01\euro & 0.04\euro \\
+CONN USB MINI B & 2 & 0.04\euro & 0.08\euro \\
+TACTILE SWITCH & 2 & 0.02\euro & 0.04\euro \\
+TOGGLE SWITCH & 1 & 0.03\euro & 0.03\euro \\
+MICRO SERVO & 2 & 2.04\euro & 4.08\euro \\
+IR RECV 38KHZ & 1 & 0.10\euro & 0.10\euro \\
+STEPPER MOTOR 28-BYJ & 2 & 1.39\euro & 2.78\euro \\
+HC-SR04 ULTRASONIC & 1 & 1.38\euro & 1.38\euro \\
+1100mAH LIPO BATTERY & 1 & 1.84\euro & 1.84\euro \\
+\\
+\multicolumn{4}{c}{\textbf{German Distributor}\footnote{Supplied via German distributors or made in Germany.}}\\
+\\
+LASERCUT PARTS\footnote{Price is based on the raw material price of 0.60\euro per DIN A3 sheet of 4mm plywood. Lasercutting costs are not included. } & 1 & 0.60\euro & 0.60\euro \\
+PCB\footnote{Price based on calculation at \url{http://multi-circuit-boards.eu} with the PCB dimensions, double-sided with solder stop.} & 1 & 3.66\euro & 3.66\euro \\ \hline\hline
+Total cost& & & 27.68\euro \\
+\bottomrule
+\caption{Bill of Material for required parts (assuming mass production of 100 units)}
+\label{tbl:bom}
+\end{longtable}
+
+\begin{longtable}{p{0.5\textwidth}p{0.15\textwidth}p{0.2\textwidth}p{0.1\textwidth}}
+\toprule
+Part & Amount & Cost per part\footnote{Items supplied via Chinese distributors found on \url{http://alibaba.com} on the 16th of March 2014. The price is based on quantities of one, dollar prices were converted to Euro with $1\euro = 1.3USD$ } & Sum \\
+\midrule
+DISPLAY SPI 1.8 INCH & 1 & 4.47\euro & 4.47\euro \\
+NRF24L01+ & 1 & 0.92\euro & 0.92\euro \\
+MPU6050 GYRO + ACCEL & 1 & 2.76\euro & 2.76\euro \\
+HMC-5883L & 1 & 1.84\euro & 1.84\euro \\
+CONN 2.54 FEMALE 1x04 & 1 & 0.04\euro & 0.04\euro \\
+CONN 2.54 FEMALE 1x05 & 1 & 0.05\euro & 0.05\euro \\
+CONN 2.54 FEMALE 1x08 & 2 & 0.05\euro & 0.10\euro \\
+CONN 2.54 FEMALE 2x04 & 1 & 0.05\euro & 0.05\euro \\
+\hline \\
+Total cost& & & 10.23\euro \\
+\bottomrule
+\caption{Bill of Material for optional parts (assuming mass production of 100 units)}
+\label{tbl:bom}
+\end{longtable}
+
+\section{Outlook}
+The robot designed has the potential to be used for educational purposes. With its modular design, initial costs for the base kit are reduced to a affordable minimum. Since the robot ought to generate revenue for the producing company, other sources for income must be available. By selling the modules with a higher profit margin, such income can be generated.
+
+
 
 \nocite{*}
 \printbibliography

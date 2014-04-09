@@ -1,0 +1,119 @@
+Partlist
+
+Exported from robot.brd at 3/16/14 11:22 AM
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part            Value                      Package            Library               Position (mil)        Orientation
+
+BATT            M02JST-PTH-VERT            JST-2-PTH-VERT     SparkFun-Connectors   (150 1000)            R270
+C1              0.1uF                      C1206              resistor              (4910 1750)           R90
+C2              0.1uF                      C1206              resistor              (1750 1625)           R180
+C3              1uF                        C1206              resistor              (5075 2130)           R270
+C4              1uF                        C1206              resistor              (5175 2130)           R270
+C5              10uF                       C1206              resistor              (900 1925)            R0
+C6              10uF                       C1206              resistor              (985 3375)            R0
+C7              10uF                       C1206              resistor              (2500 950)            R270
+C8              0.1uF                      C1206              resistor              (2775 1550)           R180
+C9              1uF                        C1206              resistor              (2750 2212.5)         R0
+C10             0.1uF                      C1206              resistor              (4400 1900)           R0
+C11             100nF                      C1206              resistor              (2587.5 950)          R270
+C12             1uF                        C1206              resistor              (4400 1700)           R0
+C13             0.1uF                      C1206              resistor              (4400 2600)           R90
+C14             0.1uF                      C1206              resistor              (5025 1750)           R270
+C15             18pF                       C1206              resistor              (5130 2850)           R0
+C16             18pF                       C1206              resistor              (5130 2700)           R0
+C17             1uF                        C1206              resistor              (1062.5 1337.5)       R270
+C18             47 uF                      C1206              resistor              (400 975)             R0
+C19             100N                       C1206              resistor              (1000 1150)           R180
+C20             4.7uF                      C1206              resistor              (150 1225)            R0
+C21             4.7uF                      C1206              resistor              (400 1100)            R180
+C22             18pF                       C1206              resistor              (2215 2980)           R0
+C23             18pF                       C1206              resistor              (2415 2980)           R180
+CONN1           ANALOG                     1X06-BIG           adafruit              (5050 1300)           R0
+CONN2           DIGITAL                    1X08-BIG           adafruit              (4950 3200)           R180
+CONN3           DIGITAL                    1X10-BIG           adafruit              (3985 3200)           R180
+CONN4           DIGITAL RASTER             1X10-BIG           adafruit              (3950 3100)           R180
+CONN5           POWER                      1X06-BIG           adafruit              (4350 1300)           R0
+D2              BAS70                      SOT23              diode                 (275 2487.5)          R90
+D3              B330A                      SMA                aaron_discrete        (1350 1550)           R180
+D4              POWER                      LED-1206           SparkFun-LED          (150 1350)            R0
+D13             Green                      LED-1206           SparkFun-LED          (4050 2850)           R0
+D13_2           Green                      LED-1206           SparkFun-LED          (1750 1925)           R0
+F1              1206L                      1206_PTC           microbuilder          (650 1925)            R0
+F2              1206L                      1206_PTC           microbuilder          (650 3375)            R0
+FET1            TR                         MICRO3             aaron_discrete        (5900 2000)           R0
+FET3            TR                         MICRO3             aaron_discrete        (900 1362.5)          R0
+JP1             ISP                        2X3                SparkFun              (1350 2350)           R270
+JP2                                        2X3                SparkFun-Connectors   (5950 2200)           R90
+JP3             ISP                        2X3                SparkFun              (5300 2399.75197)     R270
+JP4                                        2X3                SparkFun-Connectors   (3725 681.25)         R0
+L1              Ferrite                    1206W              wuerth-elektronik     (4400 1800)           R0
+L2              BRL3225T3R3M               L3225P             resistor              (950 1525)            R0
+MINIUSB         MINI-USB-SCHIELD-32005-201 32005-201          con-cypressindustries (250 3200)            R0
+MINIUSB1        MINI-USB-SCHIELD-32005-201 32005-201          con-cypressindustries (250 1750)            R0
+MUX             74HC4051                   SO16               SparkFun-AnalogIC     (3825 400)            R0
+Q1              CSM-3X-CRYSTALCSM-3X       CSM-3X             fmc                   (4890 2775)           R90
+Q2              QRE1113                    QRE1113            aaron_discrete        (3325 350)            MR180
+Q3              QRE1113                    QRE1113            aaron_discrete        (3675 350)            MR180
+Q4              QRE1113                    QRE1113            aaron_discrete        (3975 350)            MR180
+Q5              QRE1113                    QRE1113            aaron_discrete        (4325 350)            MR180
+Q6              CSM-3X-CRYSTALCSM-3X       CSM-3X             fmc                   (2315 2850)           R180
+R1              100                        R1206              resistor              (3325 484.375)        MR180
+R2              10K                        R1206              resistor              (5150 1750)           R90
+R3              10K                        R1206              resistor              (3325 215.625)        MR0
+R4              22                         R1206              resistor              (650 3170)            R180
+R5              22                         R1206              resistor              (650 3260)            R180
+R6              1K                         R1206              resistor              (4050 2750)           R180
+R7              1K                         R1206              resistor              (400 2800)            R180
+R8              1K                         R1206              resistor              (400 2675)            R180
+R9              10K                        R1206              resistor              (4250 2095)           R180
+R10             100                        R1206              resistor              (3675 465.625)        MR180
+R11             10K                        R1206              resistor              (3675 215.625)        MR0
+R12             100                        R1206              resistor              (3975 465.625)        MR180
+R13             10K                        R1206              resistor              (3975 215.625)        MR0
+R14             100                        R1206              resistor              (4325 465.625)        MR180
+R15             10K                        R1206              resistor              (4325 215.625)        MR0
+R16             22                         R1206              resistor              (650 1715)            R180
+R17             470                        R1206              resistor              (400 1350)            R180
+R18             100                        R1206              resistor              (5700 2000)           R0
+R19             2K                         R1206              resistor              (400 1225)            R180
+R20             1K                         R1206              resistor              (1750 1825)           R180
+R21             1K                         R1206              resistor              (400 2300)            R180
+R22             1K                         R1206              resistor              (400 2150)            R180
+R23             10K                        R1206              resistor              (1200 1900)           R90
+R24             10K                        R1206              resistor              (1750 1725)           R180
+R25             22                         R1206              resistor              (650 1815)            R180
+R26             2.2K                       R1206              resistor              (3100 3300)           R270
+R27             2.2K                       R1206              resistor              (3250 3300)           R270
+R46             100                        R1206              resistor              (1225 1337.5)         R90
+R49             3.09k                      R1206              resistor              (1375 1337.5)         R90
+R51             1K                         R1206              resistor              (1312.5 1150)         R180
+RX              Green                      LED-1206           SparkFun-LED          (150 2800)            R0
+RX1             Green                      LED-1206           SparkFun-LED          (150 2300)            R0
+S1              Reset                      TACTILE_SWITCH_SMD SparkFun              (1400 1900)           R270
+S2              Reset                      TACTILE_SWITCH_SMD SparkFun              (5350 1920)           R270
+SERVO1(USONIC)  USONIC                     1X03               pinhead               (5650 2300)           R90
+SERVO2(GRIP)    GRIPPER                    1X03               pinhead               (5650 3000)           R90
+SERVO3(GRIPROT) ROTATE                     1X03               pinhead               (5650 1500)           R90
+SER_CPU2        SER2                       1X02               pinhead               (1450 2850)           R90
+SHIFT1          74HC595D                   SO16               74xx-eu               (3900 2250)           R270
+SHIFT2          74HC595D                   SO16               74xx-eu               (3900 1800)           R270
+STEPPER_DRIVER  ULN2803                    SO018              SparkFun-PowerIC      (3500 2250)           R90
+TX              Green                      LED-1206           SparkFun-LED          (150 2675)            R0
+TX1             Green                      LED-1206           SparkFun-LED          (150 2150)            R0
+U$2             1.8TFT+SD                  1.8TFTSD           muzy_robot            (1550 3390)           R270
+U$3             GY-521                     GY-521             muzy_robot            (1600 3500)           R0
+U$4             HMC5883L                   HMC5883L           muzy_robot            (2650 3500)           R90
+U$5             NRF24L01+                  NRF24L01+          muzy_robot            (1650 950)            R0
+U$10            PNA460XM                   PNA460XM           adafruit              (850 2250)            R270
+U1              USER                       TQFP44             adafruit              (4700 2250)           R180
+U2              BRAIN                      TQFP44             adafruit              (2300 2250)           R180
+U3              LP2985                     SOT23-5@1          SparkFun              (2300 962.5)          R270
+U4              MCP1650                    MSOP8              aaron_ic              (1100 1000)           R90
+U5              MCP73831                   SOT23-5            SparkFun              (662.5 1387.5)        R90
+ULTRASONIC                                 1X04               pinhead               (3050 2250)           R90
+X1              05-JST-B5B-XH-A            B5B-XH             con-jst-xh            (3100 1650)           R90
+X2              05-JST-B5B-XH-A            B5B-XH             con-jst-xh            (3100 2850)           R90
