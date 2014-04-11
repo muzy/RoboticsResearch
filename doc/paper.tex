@@ -579,7 +579,21 @@ To switch between battery power and USB power, a simple toggle switch is used. W
 \subsection{Processing Unit}
 As previously mentioned, the processing of user and sensor data is should be realised using an ATmega32U4 microcontroller. In previous case studies the interfacing requirements of each sensor were evaluated. Having this information, the connections between sensors and the microcontroller can be made.
 
-Hence Arduino compabilit
+Hence Arduino compatibility is desired to enable support by a huge community and the use of existing comprehensive hardware tutorials, the typical Arduino Pin Headers should be available to users. Having one ATmega32U4 only makes it impossible to have fully compatible Arduino headers on board, since most pins would be dual used  - by the Arduino sheet and the robots components. Therefore a solution is needed where the headers as well as the robots can be interfaced simultaneously.
+
+Possible solutions are either port multiplexer or another microcontroller which communicate with each other. Port multiplexer (or demultiplexer since they mostly work as output and input) like the 74HC4051 enable the multiplexing of input and output ports. Having three control ports on a eight bit multiplexer enables the selection between the multiplexers ports ($2ˆ3$ combinations = 8 bit). Depending on the selection the selected pin is mapped to one of the microcontrollers pin. If only output pins are needed, shift registers like the 74HC595 can be used. Shift registers work like one-way multiplexers.
+
+Multiplexers have the advantage of being low priced but reduce the number of available pins on the Arduino pin header since there aren't no unused pins on the microcontroller. In addition setting the control lines requires additional CPU cycles\footnote{CITE ME HERE; possible links: http://web.archive.org/web/20130513161312/http://jeelabs.org/2010/01/06/pin-io-performance/ and http://billgrundmann.wordpress.com/2009/03/03/to-use-or-not-use-writedigital/} which may result in a bottleneck. 
+
+Another option is to use a second microcontroller attached to the main microcontroller using some kind of communication protocol. The ATmega32U4 has built in UART, SPI and I2C (introduced as Two Wire Interface, short TWI which is compatible to I2C) which are candidates to be used for communication. In this scenario the main IC sends requests to the second IC which acts as a slave.
+
+The standard UART usage assumes the presence of two communicating parties. The transfer speed is up to 115.200kBit/s with a duty cycle of 8.68µs. Disadvantages of using the UART for communication is, that the number of communicating microcontrollers over the same lines is limited to two by default. If the UART is built as a ring, additional processing overhead is introduced. 
+
+SPI can be faster than UART and supports an arbitrary number of participants but requires a chip-select pin for each participant. This is a disadvantage when dealing with pin count issues.
+
+I2C is a bus which works with two lines (SDA and SCL) only. The protocol defines one participant to be the master device, the other devices must act as a slave device. The maximum data rate supported out of the box is the 400kbit/s fast mode. Since no additional pins are required and multiple participants are supported, I2C is the best suited communication system.
+
+
 
 % bus system
 % two options: "dual core" vs single core
