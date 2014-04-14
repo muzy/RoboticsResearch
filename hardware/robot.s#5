@@ -11647,7 +11647,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="CONN5" library="adafruit" deviceset="PINHD-1X6" device="B" value="POWER"/>
 <part name="CONN3" library="adafruit" deviceset="PINHD-1X10" device="" value="DIGITAL"/>
 <part name="CONN4" library="adafruit" deviceset="PINHD-1X10" device="" value="DIGITAL RASTER"/>
-<part name="BATT" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-VERT"/>
+<part name="BATT" library="SparkFun-Connectors" deviceset="M02" device="POLAR_LOCK" value="M02POLAR_LOCK"/>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="C7" library="resistor" deviceset="C-EU" device="C1206" value="10uF"/>
 <part name="U3" library="SparkFun" deviceset="V_REG_LDO" device="SMD" value="LP2985"/>
@@ -11684,7 +11684,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="R51" library="resistor" deviceset="R-EU_" device="R1206" value="1K"/>
 <part name="U4" library="aaron_ic" deviceset="MCP1650" device=""/>
 <part name="R46" library="resistor" deviceset="R-EU_" device="R1206" value="100"/>
-<part name="C19" library="resistor" deviceset="C-EU" device="C1206" value="100N"/>
+<part name="C19" library="resistor" deviceset="C-EU" device="C1206" value="0.1uF"/>
 <part name="L2" library="resistor" deviceset="L-EU" device="L3225P" value="BRL3225T3R3M"/>
 <part name="D3" library="aaron_discrete" deviceset="B330A" device=""/>
 <part name="FET3" library="aaron_discrete" deviceset="IRLML2502TR" device="" value="TR"/>

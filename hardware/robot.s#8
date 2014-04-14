@@ -11650,7 +11650,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="BATT" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-VERT"/>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="C7" library="resistor" deviceset="C-EU" device="C1206" value="10uF"/>
-<part name="U3" library="SparkFun" deviceset="V_REG_LDO" device="SMD" value="LP2985-33DBVR"/>
+<part name="U3" library="SparkFun" deviceset="V_REG_LDO" device="SMD" value="LP2985"/>
 <part name="C11" library="resistor" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
 <part name="Q2" library="aaron_discrete" deviceset="QRE1113" device=""/>
@@ -11665,10 +11665,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="Q5" library="aaron_discrete" deviceset="QRE1113" device=""/>
 <part name="R14" library="resistor" deviceset="R-EU_" device="R1206" value="100"/>
 <part name="R15" library="resistor" deviceset="R-EU_" device="R1206" value="10K"/>
-<part name="FET1" library="aaron_discrete" deviceset="IRLML2502TR" device=""/>
+<part name="FET1" library="aaron_discrete" deviceset="IRLML2502TR" device="" value="TR"/>
 <part name="R18" library="resistor" deviceset="R-EU_" device="R1206" value="100"/>
 <part name="MUX" library="SparkFun-AnalogIC" deviceset="74HC4051_MUX" device="" value="74HC4051"/>
-<part name="STEPPER_DRIVER" library="SparkFun-PowerIC" deviceset="ULN2803" device="SOIC" value="ULN2803"/>
+<part name="STEPPER_DRIVER" library="SparkFun-PowerIC" deviceset="ULN2803" device="SOICW" value="ULN2803"/>
 <part name="U$2" library="muzy_robot" deviceset="1.8TFT+SD" device=""/>
 <part name="U$3" library="muzy_robot" deviceset="GY-521" device=""/>
 <part name="U$4" library="muzy_robot" deviceset="HMC5883L" device=""/>
@@ -11679,7 +11679,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="SERVO1(USONIC)" library="pinhead" deviceset="PINHD-1X3" device="" value="USONIC"/>
 <part name="SERVO2(GRIP)" library="pinhead" deviceset="PINHD-1X3" device="" value="GRIPPER"/>
 <part name="SERVO3(GRIPROT)" library="pinhead" deviceset="PINHD-1X3" device="" value="ROTATE"/>
-<part name="D2" library="diode" deviceset="BAS70-05" device=""/>
+<part name="D2" library="diode" deviceset="BAS70-05" device="" value="BAS70-05"/>
 <part name="R49" library="resistor" deviceset="R-EU_" device="R1206" value="3.09k"/>
 <part name="R51" library="resistor" deviceset="R-EU_" device="R1206" value="1K"/>
 <part name="U4" library="aaron_ic" deviceset="MCP1650" device=""/>
@@ -11687,12 +11687,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="C19" library="resistor" deviceset="C-EU" device="C1206" value="100N"/>
 <part name="L2" library="resistor" deviceset="L-EU" device="L3225P" value="BRL3225T3R3M"/>
 <part name="D3" library="aaron_discrete" deviceset="B330A" device=""/>
-<part name="FET3" library="aaron_discrete" deviceset="IRLML2502TR" device=""/>
+<part name="FET3" library="aaron_discrete" deviceset="IRLML2502TR" device="" value="TR"/>
 <part name="C20" library="resistor" deviceset="C-EU" device="C1206" value="4.7uF"/>
 <part name="C21" library="resistor" deviceset="C-EU" device="C1206" value="4.7uF"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="D4" library="SparkFun-LED" deviceset="LED" device="1206" value="Yellow"/>
+<part name="D4" library="SparkFun-LED" deviceset="LED" device="1206" value="POWER"/>
 <part name="R17" library="resistor" deviceset="R-EU_" device="R1206" value="470"/>
 <part name="U5" library="SparkFun" deviceset="MCP73831" device="SMD" value="MCP73831"/>
 <part name="R19" library="resistor" deviceset="R-EU_" device="R1206" value="2K"/>
@@ -11709,10 +11709,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND37" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND38" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+17" library="SparkFun" deviceset="VCC" device=""/>
-<part name="C18" library="resistor" deviceset="C-EU" device="C1206" value="47 µF"/>
+<part name="C18" library="resistor" deviceset="C-EU" device="C1206" value="47 uF"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="R20" library="resistor" deviceset="R-EU_" device="R1206" value="1K"/>
-<part name="L3" library="SparkFun-LED" deviceset="LED" device="1206" value="Green"/>
+<part name="D13_2" library="SparkFun-LED" deviceset="LED" device="1206" value="Green"/>
 <part name="GND39" library="SparkFun" deviceset="GND" device=""/>
 <part name="R21" library="resistor" deviceset="R-EU_" device="R1206" value="1K"/>
 <part name="R22" library="resistor" deviceset="R-EU_" device="R1206" value="1K"/>
@@ -12167,7 +12167,7 @@ DAMAGES THE BOARD!</text>
 <attribute name="NAME" x="422.6814" y="21.59" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="427.482" y="21.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="L3" gate="G$1" x="424.18" y="15.24" smashed="yes" rot="MR0">
+<instance part="D13_2" gate="G$1" x="424.18" y="15.24" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="420.497" y="12.954" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="GND39" gate="1" x="424.18" y="5.08" rot="MR0"/>
@@ -13175,7 +13175,7 @@ DAMAGES THE BOARD!</text>
 </segment>
 <segment>
 <wire x1="424.18" y1="7.62" x2="424.18" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="L3" gate="G$1" pin="C"/>
+<pinref part="D13_2" gate="G$1" pin="C"/>
 <pinref part="GND39" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -13788,7 +13788,7 @@ DAMAGES THE BOARD!</text>
 <net name="N$34" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="2"/>
-<pinref part="L3" gate="G$1" pin="A"/>
+<pinref part="D13_2" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$35" class="0">

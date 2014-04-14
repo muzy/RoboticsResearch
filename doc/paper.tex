@@ -2,6 +2,7 @@
 %\documentclass[conference]{IEEEtran}
 \usepackage[english]{babel} 
 \usepackage[T1]{fontenc}
+\usepackage{pdfpages}
 \usepackage{lmodern}
 \usepackage[utf8]{inputenc}
 \usepackage{eurosym}
@@ -587,23 +588,46 @@ Multiplexers have the advantage of being low priced but reduce the number of ava
 
 Another option is to use a second microcontroller attached to the main microcontroller using some kind of communication protocol. The ATmega32U4 has built in UART, SPI and I2C (introduced as Two Wire Interface, short TWI which is compatible to I2C) which are candidates to be used for communication. In this scenario the main IC sends requests to the second IC which acts as a slave.
 
-The standard UART usage assumes the presence of two communicating parties. The transfer speed is up to 115.200kBit/s with a duty cycle of 8.68µs. Disadvantages of using the UART for communication is, that the number of communicating microcontrollers over the same lines is limited to two by default. If the UART is built as a ring, additional processing overhead is introduced. 
+The standard UART usage assumes the presence of two communicating parties. The transfer speed is up to 115.200kBit/s with a duty cycle of 8.68us. Disadvantages of using the UART for communication is, that the number of communicating microcontrollers over the same lines is limited to two by default. If the UART is built as a ring, additional processing overhead is introduced. 
 
 SPI can be faster than UART and supports an arbitrary number of participants but requires a chip-select pin for each participant. This is a disadvantage when dealing with pin count issues.
 
 I2C is a bus which works with two lines (SDA and SCL) only. The protocol defines one participant to be the master device, the other devices must act as a slave device. The maximum data rate supported out of the box is the 400kbit/s fast mode. Since no additional pins are required and multiple participants are supported, I2C is the best suited communication system.
 
+The main drawback of using an additional microcontroller is the high price compared to multiplexer based solution. An advantage are the additional capabilities of microcontrollers since additional pins may support hardware PWM, analog to digital converter and hardware interrupts.  
 
+The robot constructed will feature two microcontroller where one acts as the master and the other as the slave device. The master is fully compatible to the Arduino Leonardo and provides Arduino headers for shields. In addition an extended header is included to match the standard 2.54 inch prototyping board. Communication between the microcontroller is realized using I2C. The second microcontroller controls sensors, movement and optional components such as networking. The schematics are in the appendix.
 
-% bus system
-% two options: "dual core" vs single core
+Having this setup the user is flexible and can utilize all Arduino possibilities. For advanced users the second microcontroller allows to dive into topics like inter-process-communication, remote procedure calls and distributed computing. 
 
 \subsection{Optional components}
-Due to unused pins on the second ATmega32U4, additional components can be added to the robot platform. Those additional components should add features, have educational potential and should be cost effective.
-
+Due to unused pins on the second ATmega32U4, additional components can be added to the robot platform. Those additional components should add features, have educational potential and should be cost effective. In addition those optional components may be used to generate a profit margin if the robot is produced for educational purposes.
 
 \subsubsection{Display}
+Displaying information and visual feedback helps to debug and reconstruct processes. A cost effective display solution is a standard 1.8 inch TFT display with integrated SD card reader. It is compatible to the Arduino TFT display and integrates the ST7735S display controller. Connecting the display requires standard SPI header and some additional pins. Since SPI is already used to interface the NRF24L01 module, only a chip-select, reset and a data/command switch are needed. The integrated SD card reader needs an additional chip select pin.
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/30_tftfront.jpg}
+  \caption{front-view}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/30_tftback.jpg}
+  \caption{back-view}
+  \end{subfigure}
+  \caption{1.8 Inch TFT display (CC-BY-SA Ben Oswald)}
+\end{figure}
+
+
+The display has a display resolution of 128x160 pixel with support for 262000 colors. With an average price of 4.50\euro\footnote{See BOM for optional parts in the appendix.} it provides a lot of features for a low price. Due to its compatibility to the Arduino TFT, the Arduino TFT library can be used.
+
 \subsubsection{Gripper}
+Interaction with the real world except movement requires mechanical structures which allow to interact with objects. A gripper is such a mechanical construction which allows to grip and release objects.
+
+A typical Gripper is moved 
 
 \subsection{PCB design}
 
@@ -613,7 +637,29 @@ The robots PCB, wheels, ball caster, gripper and sensors have to be assembled to
 
 
 
+\section{Conclusion}
+To conclude the success in robot construction, the robot must be evaluated using the assessment criteria already introduced in the chapter "State of the Art". 
 
+\begin{longtable}{p{0.2\textwidth}p{0.2\textwidth}p{0.6\textwidth}}
+\toprule
+Assessment Criteria    & Rating & Description \\
+\midrule
+Affordable      & \stars{5}    & With a price tag of 27.68\euro for the base kit and 37.91\euro for the kit with all extensions\footnote{without VAT, based on mass production calculation for hundred units.} the robots costs are below the maximum price of 100\euro.\\
+Educational     & \stars{4}     & Assembling the robot and its components includes a unique learning experience and allows the explanation of each part. The Arduino compatibility enables the usage of comprehensive tutorials and how-to documentation. Learning material for teachers is not yet supplied. \\
+Sustainable       & \stars{5}     &  The robot integrates charging circuit for the Lithium-polymer batteries which eliminates the need of a dedicated battery charger and therefore reduces the amount of electrical waste. All components can be easily replaced by beginners by either changing the pre-soldered modules or solder a new component. No tantalum capacitors are included.\\
+Extendable & \stars{5}      &  Sensors and a display can be directly plugged in to extend the functionality of the robot. Unused ports are broken out onto pin headers. Fully compatible Arduino headers allow the usage of Arduino shields.\\
+Trouble-free & \stars{4} & Building the robot is made easy doe to super sized SMD components. When possible 1206 sized parts are used. Some ICs on the board are hard to solder (e.g. the MCP 1650) and should come pre-assembled to avoid frustration.\\
+Open-Source & \stars{5} & The design file for laser cutting, the pcb schematic and board files are available under a Creative Commons Attribution Share-Alike license.\\
+\bottomrule
+\caption{Robot evaluation}
+\label{tbl:arduinorobot_eval}
+\end{longtable}
+
+All in all the robot reaches a rating of 4.6 of a maximum of 5. The main advantages are the low price, the extensibility and the Arduino compatibility. Disadvantages are located in the assembly since some parts are difficult to assemble.
+
+Anyway, the robot designed has the potential to be used for educational purposes. The modular design leads to low initial costs which should be affordable for everyone. Since the robot ought to generate revenue for the producing company, other sources for income must be available. The robot addresses this issues by enabling the sale of optional modules with a higher profit margin so that income and revenue can be generated.
+
+\section{Appendix}
 
 
 \begin{longtable}{p{0.5\textwidth}p{0.15\textwidth}p{0.2\textwidth}p{0.1\textwidth}}
@@ -650,7 +696,7 @@ MCP73831 & 1 & 0.33\euro & 0.33\euro \\
 74HC4051 SO16 & 1 & 0.21\euro & 0.21\euro \\
 ULN2803 SO18 & 1 & 0.54\euro & 0.54\euro \\
 \\
-\multicolumn{4}{c}{\textbf{Chinese Distributor}\footnote{\label{edragon}Supplied via Chinese distributors found on \url{http://alibaba.com} on the 16th of March 2014. The price is based on quantities of one, dollar prices were converted to Euro with $1\euro = 1.3USD$ }}\\
+\multicolumn{4}{c}{\textbf{Chinese Distributor}\footnote{\label{edragon}Supplied via Chinese distributors found on \url{http://alibaba.com} on the 16th of March 2014. The price is based on quantities of one, dollar prices were converted to Euro with 1\euro = 1.3USD }}\\
 \\
 CONN 02-JST-XH & 1 & 0.02\euro & 0.02\euro \\
 CONN 05-JST-XH & 2 & 0.05\euro & 0.10\euro \\
@@ -681,7 +727,7 @@ Total cost& & & 27.68\euro \\
 
 \begin{longtable}{p{0.5\textwidth}p{0.15\textwidth}p{0.2\textwidth}p{0.1\textwidth}}
 \toprule
-Part & Amount & Cost per part\footnote{Items supplied via Chinese distributors found on \url{http://alibaba.com} on the 16th of March 2014. The price is based on quantities of one, dollar prices were converted to Euro with $1\euro = 1.3USD$ } & Sum \\
+Part & Amount & Cost per part\footnote{Items supplied via Chinese distributors found on \url{http://alibaba.com} on the 16th of March 2014. The price is based on quantities of one, dollar prices were converted to Euro with 1\euro = 1.3USD } & Sum \\
 \midrule
 DISPLAY SPI 1.8 INCH & 1 & 4.47\euro & 4.47\euro \\
 NRF24L01+ & 1 & 0.92\euro & 0.92\euro \\
@@ -697,11 +743,7 @@ Total cost& & & 10.23\euro \\
 \caption{Bill of Material for optional parts (assuming mass production of 100 units)}
 \label{tbl:bom}
 \end{longtable}
-
-\section{Outlook}
-The robot designed has the potential to be used for educational purposes. With its modular design, initial costs for the base kit are reduced to a affordable minimum. Since the robot ought to generate revenue for the producing company, other sources for income must be available. By selling the modules with a higher profit margin, such income can be generated.
-
-
+\includepdf[pages={1}]{robot.pdf}
 
 \nocite{*}
 \printbibliography

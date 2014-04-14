@@ -4556,11 +4556,11 @@ ULN2803 Darlington array. 500mA max per channel, 8-channel package. Spark Fun El
 <wire x1="-6.83" y1="-1.65" x2="-6.83" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-6.83" y1="1.27" x2="-6.83" y2="2.7" width="0.127" layer="21"/>
 <wire x1="-6.83" y1="1.27" x2="6.83" y2="1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="-5.08" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="-2.54" y="0" drill="0.8"/>
-<pad name="P$3" x="0" y="0" drill="0.8"/>
-<pad name="P$4" x="2.54" y="0" drill="0.8"/>
-<pad name="P$5" x="5.08" y="0" drill="0.8"/>
+<pad name="P$1" x="-5.08" y="0" drill="1.1" shape="square"/>
+<pad name="P$2" x="-2.54" y="0" drill="1.1"/>
+<pad name="P$3" x="0" y="0" drill="1.1"/>
+<pad name="P$4" x="2.54" y="0" drill="1.1"/>
+<pad name="P$5" x="5.08" y="0" drill="1.1"/>
 <text x="-5.08" y="3.81" size="1.27" layer="21">&gt;NAME</text>
 <text x="-5.08" y="-3.81" size="1.27" layer="21">&gt;VALUE</text>
 </package>
@@ -11757,6 +11757,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="SW1" library="switch" deviceset="SPDT" device=""/>
 <part name="C24" library="resistor" deviceset="C-EU" device="C1206" value="47 uF"/>
 <part name="GND33" library="SparkFun" deviceset="GND" device=""/>
+<part name="P+12" library="SparkFun" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11891,7 +11892,7 @@ to scan the environment</text>
 <text x="232.664" y="67.818" size="1.778" layer="95" ratio="12" distance="66">NO SUPPORT FOR VIN DUE TO MISSING
 REGULATOR. EVERYTHING ABOVE 5.5V
 DAMAGES THE BOARD!</text>
-<text x="2.54" y="335.28" size="6.4516" layer="94">Edubot V.0.1 by Sebastian Muszytowski &lt;muzy@chaosdorf.de&gt; </text>
+<text x="2.54" y="335.28" size="6.4516" layer="94">Edubot V.0.12 by Sebastian Muszytowski &lt;muzy@chaosdorf.de&gt; </text>
 <text x="2.54" y="327.66" size="3.81" layer="94">licensed under CC-BY-SA 3.0, based on the beautiful Vinciduino (vinciduino.org), inspired by Sparki (arcbotics.com), made with the lovely Arduino Leonardo in mind (arduino.cc)</text>
 </plain>
 <instances>
@@ -12264,12 +12265,13 @@ DAMAGES THE BOARD!</text>
 <instance part="JP4" gate="G$1" x="299.72" y="53.34"/>
 <instance part="P+23" gate="1" x="414.02" y="134.62"/>
 <instance part="GND50" gate="1" x="386.08" y="104.14"/>
-<instance part="SW1" gate="G$1" x="347.98" y="231.14" rot="MR0"/>
+<instance part="SW1" gate="G$1" x="332.74" y="236.22" rot="MR180"/>
 <instance part="C24" gate="G$1" x="269.24" y="35.56" smashed="yes">
 <attribute name="NAME" x="276.479" y="32.766" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="273.939" y="32.004" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND33" gate="1" x="269.24" y="25.4"/>
+<instance part="P+12" gate="1" x="350.52" y="233.68"/>
 </instances>
 <busses>
 </busses>
@@ -12577,6 +12579,11 @@ DAMAGES THE BOARD!</text>
 <wire x1="408.94" y1="132.08" x2="414.02" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="414.02" y1="132.08" x2="414.02" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="P+23" gate="1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="2"/>
+<wire x1="337.82" y1="233.68" x2="350.52" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="P+12" gate="1" pin="VCC"/>
 </segment>
 </net>
 <net name="RX-I" class="0">
@@ -13558,6 +13565,11 @@ DAMAGES THE BOARD!</text>
 <wire x1="261.62" y1="254" x2="241.3" y2="254" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="254" x2="241.3" y2="248.92" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="3"/>
+<wire x1="330.2" y1="236.22" x2="317.5" y2="236.22" width="0.1524" layer="91"/>
+<label x="317.5" y="236.22" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VBATT" class="0">
 <segment>
@@ -14522,6 +14534,11 @@ DAMAGES THE BOARD!</text>
 <wire x1="269.24" y1="38.1" x2="269.24" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="45.72" x2="276.86" y2="45.72" width="0.1524" layer="91"/>
 <label x="269.24" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="1"/>
+<wire x1="330.2" y1="231.14" x2="317.5" y2="231.14" width="0.1524" layer="91"/>
+<label x="317.5" y="231.14" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -4556,11 +4556,11 @@ ULN2803 Darlington array. 500mA max per channel, 8-channel package. Spark Fun El
 <wire x1="-6.83" y1="-1.65" x2="-6.83" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-6.83" y1="1.27" x2="-6.83" y2="2.7" width="0.127" layer="21"/>
 <wire x1="-6.83" y1="1.27" x2="6.83" y2="1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="-5.08" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="-2.54" y="0" drill="0.8"/>
-<pad name="P$3" x="0" y="0" drill="0.8"/>
-<pad name="P$4" x="2.54" y="0" drill="0.8"/>
-<pad name="P$5" x="5.08" y="0" drill="0.8"/>
+<pad name="P$1" x="-5.08" y="0" drill="1.1" shape="square"/>
+<pad name="P$2" x="-2.54" y="0" drill="1.1"/>
+<pad name="P$3" x="0" y="0" drill="1.1"/>
+<pad name="P$4" x="2.54" y="0" drill="1.1"/>
+<pad name="P$5" x="5.08" y="0" drill="1.1"/>
 <text x="-5.08" y="3.81" size="1.27" layer="21">&gt;NAME</text>
 <text x="-5.08" y="-3.81" size="1.27" layer="21">&gt;VALUE</text>
 </package>
@@ -11892,7 +11892,7 @@ to scan the environment</text>
 <text x="232.664" y="67.818" size="1.778" layer="95" ratio="12" distance="66">NO SUPPORT FOR VIN DUE TO MISSING
 REGULATOR. EVERYTHING ABOVE 5.5V
 DAMAGES THE BOARD!</text>
-<text x="2.54" y="335.28" size="6.4516" layer="94">Edubot V.0.1 by Sebastian Muszytowski &lt;muzy@chaosdorf.de&gt; </text>
+<text x="2.54" y="335.28" size="6.4516" layer="94">Edubot V.0.12 by Sebastian Muszytowski &lt;muzy@muzy.eu&gt; </text>
 <text x="2.54" y="327.66" size="3.81" layer="94">licensed under CC-BY-SA 3.0, based on the beautiful Vinciduino (vinciduino.org), inspired by Sparki (arcbotics.com), made with the lovely Arduino Leonardo in mind (arduino.cc)</text>
 </plain>
 <instances>
