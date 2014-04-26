@@ -360,7 +360,7 @@ All in all a solution using stepper motors with darlington array connected to sh
 \subsection{Sensors}
 Sensors are important to make the robot sense its environment. Sensing the environment enables interaction such as obstacle avoidance, finding objects or following lines. Connecting sensors to a microcontroller can be done in various ways using various protocols. Different protocols require a different amount of microcontroller pins. Dependening on the sensor technology more or less computing time is needed to evaluate the sensors value.  
 
-\subsection{IR Reciever}
+\subsubsection{IR Reciever}
 Infrared Reciever are special photodiodes which react on infrared light with a base frequency of 38kHz. To ease the use of IR recievers with microcontrollers, the photodiode in the IR reciever has an integrated Schmitt trigger and therefore provides a near binary square voltage waveform instead of rising voltages. The cost of such a reciever is about 0.3USD.
 
 \begin{figure}[h!]
@@ -373,7 +373,7 @@ IR recievers are widely used in remote control applications such as televisions 
 
 Attaching a reciever to a microcontroller requires a single input pin which can be either a digital pin or a pin internally attached to an ADC. In terms of cost effectiveness and education potential IR recievers are a must have sensor. Under the premise that library for infrared readings exist, the sensor is easy to use and trouble free.
 
-\subsection{IR Proximity Sensor}
+\subsubsection{IR Proximity Sensor}
 Infrared proximity sensors can be used in various ways. When measuring distances using proximity sensors one has to choose the right sensor type since the range varies from a few centimeters to a few meters. Another use of IR proximity sensors is to measure brightness. This usually works with sensors designed for very small distances. When the IR light is emitted it reflects better on bright surfaces than on dark surfaces which do not reflect light. A photodiode for infrared wavelength changes its electrical behaviour on the influence of the light reflected which can be measured using the microcontrollers analog-to-digital converter.
 
 \begin{figure}[h!]
@@ -395,7 +395,7 @@ Applications for proximity sensors are line following, edge detection (for insta
 
 The price of a single proximity sensor is about 0.5 USD for average quality low distance sensors suitable for the application mentioned before. Microcontroller pin requirements are one pin to enable the infrared led within the proximity sensor (optional) and another analog-to-digital converter enabled pin to perform the readings of the photodiode. When multiple proximity sensors are used within a robot, analog multiplexer 
 
-\subsection{Ultrasonic Distance Sensor}
+\subsubsection{Ultrasonic Distance Sensor}
 Ultrasonic distance sensors sense distance between the sensor and an object in the visible area of the sensor. In case of ultrasonic sensors the visible area is the area where the echo spreads. By counting the time between the signal and the reflection the distance can be calculated using the speed of sound (340.29m/s at sea level). 
 
 \begin{figure}[h!]
@@ -408,19 +408,19 @@ The price for an ultrasonic distance sensor is very low, cheap versions with a r
 
 A typical application for ultrasonic distance sensor is obstacle avoidance. By mounting the sensor on a servo motor the visible area can be increased which allows better navigation due to enhanced obstacle avoidance possibilities. 
 
-\subsection{Accelerometer}
+\subsubsection{Accelerometer}
 Accelerometers can sense acceleration on one or more axis. This can be used to determine the speed of the robot or the direction in which the robot accelerates (which can be used to determine whether the robot falls/is lifted up). 
 
 Interfacing accelerometer is often done using serial protocols like SPI (Serial Periphal Interface), UART (Universal asynchronous receiver/transmitter) or I2C (Inter-Integrated Circuit). A affordable accelerometer with included gyroscope (evaluated in the section below) is the MPU-6050. It has a price tag of 3 USD and is usually sold on a breakout-board due to its small QFN (quad-flat no-leads) package which is hard to solder manually. 
 
 The MPU-6050 can be interfaced using various protocols, but I2C is the most common way to do so and requires two input/output pins only using software-based I2C or two I2C hardware pins. Libraries with permissive license exist which ease the use of the accelerometer. For advanced usage scenarios a integrated DMP (Digitial Motion Processor) can process raw values and interface additional sensors like a compass.
-\subsection{Gyroscope}
+\subsubsection{Gyroscope}
 Gyroscopes are used to determine the orientation. Applications for gyroscopes are balancing and position calculation (usually in combination with an accelerometer). Integrated circuits such as the MPU-6050 mentioned before usually combine a gyroscope and an accelerometer into one single device.
 
 The educational potential of a gyroscope/accelerometer is excellent, since interaction with a robot can be directly visualized. It can introduce the user to concepts of orientation and force by interacting with the robot. Advanced users can use the sensor to determine the position in of the robot based on a known starting point or lifting/falling detection.
 
 As mentioned in the previous section the MPU-6050 is easily interfaced using various protocols of which I2C is the common way.
-\subsection{Compass}
+\subsubsection{Compass}
 A compass allows the robot to sense its orientation relative to the magnetic field of the earth. Technically speaking a integrated circuit providing measurement of the magnetic field of the earth are a special form of magnetometers.
 
 \begin{figure}[h!]
@@ -529,7 +529,7 @@ Advantages over other battery types exist in energy density and the high cell vo
 \subsubsection{Conclusion}
 Even though lithium-polymer batteries expose a greater risk when handled wrong (overcharging, over-discharging and over-discharge-current), they provide higher rated discharge current and a high cell voltage. The size of lithium-polymer batteries is compact and security measures  exist which prevent harm up to a certain extend.
 \section{Robot Construction}
-The design and construction process of the robot is based on the evaluation and evaluation critera. The design process is centered on critera set by the components used and the previous evaluation. 
+The design and construction process of the robot is based on the evaluation and evaluation critera. Having the results of the previous evaluation, the design process can focus on the best suited parts.
 
 Components which usage is desired in the robot are: stepper motors with wheels attached for movement, infrared sensor, ultrasonic distance sensor, accelerometer, gyroscope and compass for sensing the environment and lithium-polymer batteries as power supply. Controlling the components and the execution of custom programs should be realized by an ATmega32U4 microcontroller.
 
@@ -596,9 +596,9 @@ I2C is a bus which works with two lines (SDA and SCL) only. The protocol defines
 
 The main drawback of using an additional microcontroller is the high price compared to multiplexer based solution. An advantage are the additional capabilities of microcontrollers since additional pins may support hardware PWM, analog to digital converter and hardware interrupts.  
 
-The robot constructed will feature two microcontroller where one acts as the master and the other as the slave device. The master is fully compatible to the Arduino Leonardo and provides Arduino headers for shields. In addition an extended header is included to match the standard 2.54 inch prototyping board. Communication between the microcontroller is realized using I2C. The second microcontroller controls sensors, movement and optional components such as networking. The schematics are in the appendix.
+The robot constructed will feature two microcontroller where one acts as the master and the other as the slave device. The master is fully compatible to the Arduino Leonardo and provides Arduino headers for shields. In addition an extended header is included to match the standard 2.54 inch prototyping board. Communication between the microcontroller is realized using I2C. The second microcontroller controls sensors, movement and optional components such as networking. The schematics are in the appendix. A 
 
-Having this setup the user is flexible and can utilize all Arduino possibilities. For advanced users the second microcontroller allows to dive into topics like inter-process-communication, remote procedure calls and distributed computing. 
+Having this setup the user is flexible and can utilize all Arduino possibilities. For advanced users the second microcontroller allows to dive into topics like inter-process-communication, remote procedure calls and distributed computing.  
 
 \subsection{Optional components}
 Due to unused pins on the second ATmega32U4, additional components can be added to the robot platform. Those additional components should add features, have educational potential and should be cost effective. In addition those optional components may be used to generate a profit margin if the robot is produced for educational purposes.
@@ -624,17 +624,54 @@ Displaying information and visual feedback helps to debug and reconstruct proces
 
 The display has a display resolution of 128x160 pixel with support for 262000 colors. With an average price of 4.50\euro\footnote{See BOM for optional parts in the appendix.} it provides a lot of features for a low price. Due to its compatibility to the Arduino TFT, the Arduino TFT library can be used.
 
+Power requirement for the display are 30mA at 3.3V for the backlight and 1mA at 5V for the processing unit according to the datasheet\footnote{\url{http://www.adafruit.com/datasheets/JD-T1800.pdf}}. Having a power subsystem which has spare power of 400mA at 5V and 50mA at 3.3V the display can be safely used.
+
 \subsubsection{Gripper}
 Interaction with the real world except movement requires mechanical structures which allow to interact with objects. A gripper is such a mechanical construction which allows to grip and release objects.
 
-A typical Gripper is moved 
+A typical Gripper is moved using a servo motor and contrarotating gears attached to it. The contrarotating gear enables the gripper to perform a grip and release action. The typical range of 180 degree for a servo motor, represents the typical range needed for grippers to work. 
 
-\subsection{PCB design}
+A well suited gripper is the Robotic Claw by Maker named Kepler\footnote{see \url{http://www.thingiverse.com/thing:18339/}}. The 3D printed components are simple, robust and relatively cheap to produce. In combination with the Servo motor the costs are 2.04 Euro for the servo and about 0.20 Euro for the 3D printer filament.
+
+% TODO insert image here
+
+\subsection{PCB design} 
+A PCB (short for printed circuit board) is a non-conductive base material with conductive traces connecting electrical components. Electrical components like resistors, microcontrollers or other integrated circuits are soldered to the traces. Components are available in different types, where THT (Through-Hole-Technology) components have the leads soldered to the opposite site through a hole and SMT (Surface-Mount-Technology) components have the leads soldered at the same side. The following illustration shows the difference between both technologies:
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/part_types_thtsmt.jpg}
+  \caption{Illustration of THT (top) and SMT (bottom) parts on a PCB (green) with Solder (grey) (own illustration)}
+\end{figure}
+
+PCBs can have multiple layers with copper traces which are connected using vias. A via is hole made conductive using the process of electroplating. If a PCB contains more than one layer, it is likely that vias are used. Leads of THT components can be used as vias as well, since the hole drilled for the lead is usually electroplated as well.
+
+Before a PCB can be created, a schematic must be drawn. A schematic defines the connections between each pin and therefore gives an overview where electrical connections must be made. The schematic for the robot is found in the appendix. It was made using Cadsoft Eagle - a cross platform CAD program for schematic and PCB layout.
+
+When creating the PCB from the schematic, the schematic must be checked for errors first. EAGLE has a Electrical Rule Check (ERC) built in, which performs several checks such as checks for whether each pin has a connection or checks for power pin connections to power lines. In the board view of Cadsoft EAGLE where one can design the PCB, all components are ordered by their appearance beneath the circuit board first.
+
+The main task is to order the components on the PCB, route traces between pins and keep some basic design rules/guidelines:
+
+\begin{itemize}
+\item The width of a trace determines its resistance. The thinner the trace the higher is the resistance and therefore it can carry less current or will heat up. The minimum trace width for a manufacturer is usually 6mil (1 mil = 0.001 inch), homemade etched PCBs are limited to a minimum width of about 10-12mil.
+\item The polarity of components is important. For ordinary parts include the symbol for pin one and for diodes and polarized capacitors the plus sign on the silkscreen or the copper layer. This eases manual assembly and prevents errors.
+\item Traces and pads (place where a lead connects to) should not be placed to close to each other. Soldering is difficult on close traces and pads. 
+\item Sharp edges (angle bigger than 45 degree) are considered bad style. If the angle looks like a "v", problems during the etching process may occur. 
+\item A ground plane (covering with whole pcb with a ground layer) is good to prevent signalling errors. 
+\item Components on screen may look bigger than they are in reality. Adding extra space between components makes them easier to solder. The solder tip should not touch other components.
+\item Orientation of components should be equal among equal parts to prevent errors while soldering. This especially holds for polarized parts.
+\end{itemize}
+
+Based on these guidelines the PCB is created. At first the components of the Arduino Leonardo compatible unit (first CPU/user CPU) are layouted. Special care is taken with the spacing between the Arduino shield compatible pin headers.\footnote{See the simplified board layout in the Appendix for illustration.}
+
+
+
+
 
 \subsection{Mechanical platform}
 The robots PCB, wheels, ball caster, gripper and sensors have to be assembled together. Therefore mechanical components are needed which hold the components to a common base.
 
-
+%todo
 
 
 \section{Conclusion}
@@ -644,7 +681,7 @@ To conclude the success in robot construction, the robot must be evaluated using
 \toprule
 Assessment Criteria    & Rating & Description \\
 \midrule
-Affordable      & \stars{5}    & With a price tag of 27.68\euro for the base kit and 37.91\euro for the kit with all extensions\footnote{without VAT, based on mass production calculation for hundred units.} the robots costs are below the maximum price of 100\euro.\\
+Affordable      & \stars{5}    & With a price tag of 31.28\euro for the base kit and 41.51\euro for the kit with all extensions\footnote{without VAT, based on mass production calculation for hundred units.} the robots costs are below the maximum price of 100\euro.\\
 Educational     & \stars{4}     & Assembling the robot and its components includes a unique learning experience and allows the explanation of each part. The Arduino compatibility enables the usage of comprehensive tutorials and how-to documentation. Learning material for teachers is not yet supplied. \\
 Sustainable       & \stars{5}     &  The robot integrates charging circuit for the Lithium-polymer batteries which eliminates the need of a dedicated battery charger and therefore reduces the amount of electrical waste. All components can be easily replaced by beginners by either changing the pre-soldered modules or solder a new component. No tantalum capacitors are included.\\
 Extendable & \stars{5}      &  Sensors and a display can be directly plugged in to extend the functionality of the robot. Unused ports are broken out onto pin headers. Fully compatible Arduino headers allow the usage of Arduino shields.\\
@@ -660,6 +697,59 @@ All in all the robot reaches a rating of 4.6 of a maximum of 5. The main advanta
 Anyway, the robot designed has the potential to be used for educational purposes. The modular design leads to low initial costs which should be affordable for everyone. Since the robot ought to generate revenue for the producing company, other sources for income must be available. The robot addresses this issues by enabling the sale of optional modules with a higher profit margin so that income and revenue can be generated.
 
 \section{Appendix}
+
+\begin{longtable}{p{0.06\textwidth}p{0.43\textwidth}p{0.2\textwidth}p{0.2\textwidth}}
+\toprule
+Pin&Atmel Pin Name&User CPU&Brain CPU\\
+\midrule
+1&PE6 (INT.6/AIN0)&Digital pin 7&NRF24L01 IRQ\\
+2&UVcc&5V&5V\\
+3&D-&USB-&USB2-\\
+4&D+&USB+&USB2+\\
+5&UGnd&GND&GND\\
+6&UCap&UCAP&UCAP2\\
+7&VUSB&5V&5V\\
+8&(SS/PCINT0) PB0&RXLED&RXLED2\\
+9&(PCINT1/SCLK) PB1&SCK&SCK2\\
+10&(PDI/PCINT2/MOSI) PB2&MOSI&MOSI2\\
+11&(PDO/PCINT3/MISO) PB3&MISO&MISO2\\
+12&(PCINT7/OCA0/OC1C/\#RTS) PB7&Digital pin 11 (PWM)&Servo Gripper Rotation\\
+13&RESET&RESET&RESET2\\
+14&Vcc&5V&5V\\
+15&GND&GND&GND\\
+16&XTAL2&XTAL2&XTAL22\\
+17&XTAL1&XTAL1&XTAL12\\
+18&(OC0B/SCL/INT0) PD0&SCL&SCL\\
+19&(SDA/INT1) PD1&SDA&SDA\\
+20&(RX D1/AIN1/INT2) PD2&Digital pin 0 (RX)&RX2\\
+21&(TXD1/INT3) PD3&Digital pin 1 (TX)&TX2\\
+22&(XCK1/\#CTS) PD5&TXLED&TXLED2\\
+23&GND1&GND&GND\\
+24&AVCC&AVCC&AVCC\\
+25&(ICP1/ADC8) PD4&Digital pin 4&IR\\
+26&(T1/\#OC4D/ADC9) PD6&Digital pin 12&Shift Register RCK\\
+27&(T0/OC4D/ADC10) PD7&Digital Pin 6 (PWM)&Servo Gripper Grip\\
+28&(ADC11/PCINT4) PB4&Digital pin 8&SD Card CS\\
+29&(PCINT5/OC1A/\#OC4B/ADC12) PB5&Digital Pin 9 (PWM)&NRF24L01 CE\\
+30&(PCINT6/OC1B/OC4B/ADC13) PB6&Digital Pin 10 (PWM)&NRF24L01 CSN\\
+31&(OC3A/\#0C4A) PC6&Digital Pin 5 (PWM)&Servo Ultrasonic Rotation\\
+32&(ICP3/CLK0/)C4A) PC7&Digital Pin 13 (PWM) + LED&LED\\
+33&(\#HWB) PE2&HWB&HWB\\
+34&Vcc1&5V&5V\\
+35&GND2&GND&GND\\
+36&(ADC7/TDI) PF7&Analog In 0&Ultrasonic Trigger\\
+37&(ADC6/TDO) PF6&Analog In 1&Ultrasonic Echo\\
+38&(ADC5/TMS) PF5&Analog In 2&TFT DC\\
+39&(ADC4/TCK) PF4&Analog In 3&TFT RST\\
+40&(ADC1) PF1&Analog In 4&TFT CS\\
+41&(ADC0) PF0&Analog In 5&MUX Out\\
+42&AREF&AREF&AREF\\
+43&GND3&GND&GND\\
+44&AVCC1&AVCC&AVCC\\
+\bottomrule
+\caption{CPU pin mapping for constructed robot}
+
+\end{longtable}
 
 
 \begin{longtable}{p{0.5\textwidth}p{0.15\textwidth}p{0.2\textwidth}p{0.1\textwidth}}
@@ -717,9 +807,12 @@ HC-SR04 ULTRASONIC & 1 & 1.38\euro & 1.38\euro \\
 \\
 \multicolumn{4}{c}{\textbf{German Distributor}\footnote{Supplied via German distributors or made in Germany.}}\\
 \\
-LASERCUT PARTS\footnote{Price is based on the raw material price of 0.60\euro per DIN A3 sheet of 4mm plywood. Lasercutting costs are not included. } & 1 & 0.60\euro & 0.60\euro \\
+LASERCUT PARTS\footnote{Price is based on the raw material (320x230mm) price of 40\euro per square meter of 3mm acrylic. Lasercutting costs are not included. } & 1 & 3.00\euro & 3.00\euro \\
+M4 Screw 25mm & 8 & 0.03\euro & 0.24\euro \\
+M4 Screw 10mm & 22 & 0.03\euro &  0.66\euro \\
+M4 Nut & 30 & 0.01\euro & 0.30\euro \\
 PCB\footnote{Price based on calculation at \url{http://multi-circuit-boards.eu} with the PCB dimensions, double-sided with solder stop.} & 1 & 3.66\euro & 3.66\euro \\ \hline\hline
-Total cost& & & 27.68\euro \\
+Total cost& & & 31.28\euro \\
 \bottomrule
 \caption{Bill of Material for required parts (assuming mass production of 100 units)}
 \label{tbl:bom}
@@ -733,17 +826,19 @@ DISPLAY SPI 1.8 INCH & 1 & 4.47\euro & 4.47\euro \\
 NRF24L01+ & 1 & 0.92\euro & 0.92\euro \\
 MPU6050 GYRO + ACCEL & 1 & 2.76\euro & 2.76\euro \\
 HMC-5883L & 1 & 1.84\euro & 1.84\euro \\
+MICRO SERVO & 2 & 2.04\euro & 2.04\euro \\
 CONN 2.54 FEMALE 1x04 & 1 & 0.04\euro & 0.04\euro \\
 CONN 2.54 FEMALE 1x05 & 1 & 0.05\euro & 0.05\euro \\
 CONN 2.54 FEMALE 1x08 & 2 & 0.05\euro & 0.10\euro \\
 CONN 2.54 FEMALE 2x04 & 1 & 0.05\euro & 0.05\euro \\
 \hline \\
-Total cost& & & 10.23\euro \\
+Total cost& & & 12.27\euro \\
 \bottomrule
 \caption{Bill of Material for optional parts (assuming mass production of 100 units)}
-\label{tbl:bom}
+\label{tbl:bom_opt}
 \end{longtable}
 \includepdf[pages={1}]{robot.pdf}
+\includepdf[pages={1}, angle=90]{../hardware/robot_schematic.pdf}
 
 \nocite{*}
 \printbibliography

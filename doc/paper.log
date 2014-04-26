@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.3.3)  13 APR 2014 21:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.3.3)  26 APR 2014 16:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,9 +935,6 @@ File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 
 LaTeX Warning: Label `tbl:arduinorobot_eval' multiply defined.
 
-
-LaTeX Warning: Label `tbl:bom' multiply defined.
-
 )
 \openout1 = `paper.aux'.
 
@@ -1389,88 +1386,256 @@ Package pdftex.def Info: images/30_tftback.jpg used on input line 618.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 645--645
+[33] <images/part_types_thtsmt.jpg, id=144, 306.14375pt x 233.87375pt>
+File: images/part_types_thtsmt.jpg Graphic file (type jpg)
+
+<use images/part_types_thtsmt.jpg>
+Package pdftex.def Info: images/part_types_thtsmt.jpg used on input line 643.
+(pdftex.def)             Requested size: 251.9989pt x 192.50926pt.
+ [34 <./images/30_tftfront.jpg> <./images/30_tftback.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 656.
+
+ (/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 656.
+ [35 <./images/part_types_thtsmt.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
 []|\T1/lmr/m/n/10.95 Assessment
  []
 
 
-Overfull \hbox (36.0pt too wide) in alignment at lines 643--656
+Overfull \hbox (36.0pt too wide) in alignment at lines 678--691
  [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 656
+Underfull \vbox (badness 10000) detected at line 691
  []
 
-[34 <./images/30_tftfront.jpg> <./images/30_tftback.jpg>] [35]
-Overfull \hbox (29.9989pt too wide) in alignment at lines 665--688
+[36] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
+[]|\T1/lmr/m/n/10.95 NRF24L01
+ []
+
+
+Overfull \hbox (1.23842pt too wide) in paragraph at lines 714--714
+[]|\T1/lmr/m/n/10.95 (PCINT7/OCA0/OC1C/#RTS)
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 714--715
+[]|\T1/lmr/m/n/10.95 Servo Grip-per
+ []
+
+
+Overfull \hbox (8.39429pt too wide) in alignment at lines 699--722
  [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 688
+Underfull \vbox (badness 10000) detected at line 722
  []
 
 
-Overfull \hbox (29.9989pt too wide) in alignment at lines 688--708
+Underfull \hbox (badness 2970) in paragraph at lines 722--722
+[]|\T1/lmr/m/n/10.95 Digital pin 0
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 723--723
+[]|\T1/lmr/m/n/10.95 Digital pin 1
+ []
+
+
+Underfull \hbox (badness 4217) in paragraph at lines 728--729
+[]|\T1/lmr/m/n/10.95 Shift Reg-is-ter
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 729--729
+[]|\T1/lmr/m/n/10.95 Digital Pin 6
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 729--730
+[]|\T1/lmr/m/n/10.95 Servo Grip-per
+ []
+
+
+Overfull \hbox (15.38237pt too wide) in paragraph at lines 731--731
+[]|\T1/lmr/m/n/10.95 (PCINT5/OC1A/#OC4B/ADC12)
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 731--731
+[]|\T1/lmr/m/n/10.95 Digital Pin 9
+ []
+
+
+Overfull \hbox (5.80113pt too wide) in paragraph at lines 732--732
+[]|\T1/lmr/m/n/10.95 (PCINT6/OC1B/OC4B/ADC13)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 732--733
+[]|\T1/lmr/m/n/10.95 NRF24L01
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 733--733
+[]|\T1/lmr/m/n/10.95 Digital Pin 5
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
+[]|\T1/lmr/m/n/10.95 Servo Ul-tra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 734--734
+[]|\T1/lmr/m/n/10.95 Digital Pin
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 734--734
+\T1/lmr/m/n/10.95 13 (PWM) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
+[]|\T1/lmr/m/n/10.95 Ultrasonic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
+[]|\T1/lmr/m/n/10.95 Ultrasonic
+ []
+
+
+Overfull \hbox (8.39429pt too wide) in alignment at lines 722--742
  [] [] [] [] 
  []
 
 
-Overfull \hbox (29.9989pt too wide) in alignment at lines 708--726
+Overfull \hbox (8.39429pt too wide) in alignment at lines 742--750
  [] [] [] [] 
  []
 
-[36]
-Overfull \hbox (29.9989pt too wide) in alignment at lines 728--745
+[38]
+Overfull \hbox (29.9989pt too wide) in alignment at lines 753--776
  [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 745
+Underfull \vbox (badness 10000) detected at line 776
  []
 
-[37] <robot.pdf, id=157, 597.23125pt x 845.1575pt>
+
+Overfull \hbox (29.9989pt too wide) in alignment at lines 776--796
+ [] [] [] [] 
+ []
+
+[39]
+Overfull \hbox (29.9989pt too wide) in alignment at lines 796--817
+ [] [] [] [] 
+ []
+
+[40]
+Overfull \hbox (29.9989pt too wide) in alignment at lines 819--837
+ [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 837
+ []
+
+[41] <robot.pdf, id=170, 597.23125pt x 845.1575pt>
 File: robot.pdf Graphic file (type pdf)
  <use robot.pdf>
-Package pdftex.def Info: robot.pdf used on input line 746.
+Package pdftex.def Info: robot.pdf used on input line 838.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: robot.pdf Graphic file (type pdf)
 
 <use robot.pdf>
-Package pdftex.def Info: robot.pdf used on input line 746.
+Package pdftex.def Info: robot.pdf used on input line 838.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
- [38] <robot.pdf, id=163, page=1, 597.23125pt x 845.1575pt>
+ [42] <robot.pdf, id=176, page=1, 597.23125pt x 845.1575pt>
 File: robot.pdf Graphic file (type pdf)
 
 <use robot.pdf, page 1>
-Package pdftex.def Info: robot.pdf, page1 used on input line 746.
+Package pdftex.def Info: robot.pdf, page1 used on input line 838.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: robot.pdf Graphic file (type pdf)
  <use robot.pdf, page 1>
-Package pdftex.def Info: robot.pdf, page1 used on input line 746.
+Package pdftex.def Info: robot.pdf, page1 used on input line 838.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: robot.pdf Graphic file (type pdf)
  <use robot.pdf, page 1>
-Package pdftex.def Info: robot.pdf, page1 used on input line 746.
+Package pdftex.def Info: robot.pdf, page1 used on input line 838.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: robot.pdf Graphic file (type pdf)
 
 <use robot.pdf, page 1>
-Package pdftex.def Info: robot.pdf, page1 used on input line 746.
+Package pdftex.def Info: robot.pdf, page1 used on input line 838.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: robot.pdf Graphic file (type pdf)
  <use robot.pdf, page 1>
-Package pdftex.def Info: robot.pdf, page1 used on input line 746.
+Package pdftex.def Info: robot.pdf, page1 used on input line 838.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [39 <./robot.pdf>] [40]
-Overfull \hbox (10.13771pt too wide) in paragraph at lines 750--750
+ [43 <./robot.pdf>]
+<../hardware/robot_schematic.pdf, id=190, 2322.8782pt x 1570.84865pt>
+File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
+
+<use ../hardware/robot_schematic.pdf>
+Package pdftex.def Info: ../hardware/robot_schematic.pdf used on input line 839
+.
+(pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
+File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
+ <use ../hardware/robot_schematic.pdf>
+Package pdftex.def Info: ../hardware/robot_schematic.pdf used on input line 839
+.
+(pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
+
+<../hardware/robot_schematic.pdf, id=193, page=1, 2322.8782pt x 1570.84865pt>
+File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
+
+<use ../hardware/robot_schematic.pdf, page 1>
+Package pdftex.def Info: ../hardware/robot_schematic.pdf, page1 used on input l
+ine 839.
+(pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
+File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
+
+<use ../hardware/robot_schematic.pdf, page 1>
+Package pdftex.def Info: ../hardware/robot_schematic.pdf, page1 used on input l
+ine 839.
+(pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
+File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
+
+<use ../hardware/robot_schematic.pdf, page 1>
+Package pdftex.def Info: ../hardware/robot_schematic.pdf, page1 used on input l
+ine 839.
+(pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
+File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
+
+<use ../hardware/robot_schematic.pdf, page 1>
+Package pdftex.def Info: ../hardware/robot_schematic.pdf, page1 used on input l
+ine 839.
+(pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
+File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
+
+<use ../hardware/robot_schematic.pdf, page 1>
+Package pdftex.def Info: ../hardware/robot_schematic.pdf, page1 used on input l
+ine 839.
+(pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
+ [44 <../hardware/robot_schematic.pdf>] [45]
+Overfull \hbox (10.13771pt too wide) in paragraph at lines 843--843
 []\T1/lmr/m/n/10.95 József Tick. ^^P  ^^RMod-elling Con-trol Sys-tems by Au-ton
 omous Mini Robot^^Q^^Q.
  []
 
-[41] (./paper.aux)
+[46] (./paper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1479,13 +1644,13 @@ Package logreq Info: Writing requests to 'paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13510 strings out of 493304
- 209593 string characters out of 6139872
- 654348 words of memory out of 5000000
- 16638 multiletter control sequences out of 15000+600000
+ 13544 strings out of 493304
+ 210343 string characters out of 6139872
+ 657423 words of memory out of 5000000
+ 16665 multiletter control sequences out of 15000+600000
  70576 words of font info for 66 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,18n,49p,990b,1417s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,20n,50p,990b,1417s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texlive/texmf-dist/fonts/ty
@@ -1500,10 +1665,10 @@ nts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfdin
 g/uzdr.pfb>
-Output written on paper.pdf (41 pages, 3464800 bytes).
+Output written on paper.pdf (46 pages, 3578166 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
+ 277 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
