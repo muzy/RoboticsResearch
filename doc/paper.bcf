@@ -1965,6 +1965,7 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="0">*</bcf:citekey>
+    <bcf:citekey order="1">horowitz1989art</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nty">

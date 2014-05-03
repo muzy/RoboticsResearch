@@ -23,6 +23,8 @@
 \usepackage[nomessages]{fp}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{float}
+
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -75,6 +77,26 @@
 %        \maketitle
 %        \end{@twocolumnfalse}
 %]
+
+\begin{abstract}
+Kinder, Jugendliche und Erwachsene an Technik heranzuführen ist eine wichtige Aufgabe in einer zunehmend technisierten Gesellschaft. Ein verbreiteter Ansatz ist die Heranführung mit Hilfe von Robotern da diese ihre Umgebung wahrnehmen und mit dieser interagieren können. 
+
+Eine Evaluation zeigt, dass viele Robotikplattformen für den Bildungssektor Kriterien an eine nachhaltige und pädagogisch wertvolle Lösung zu Teilen bereits erfüllen. Kriterien wie günstige Anschaffungskosten, Erweiterbarkeit und geringe Komplexität sind nur zu Teilen erfüllt und zeigen die Notwendigkeit einer neuen Plattform.
+
+Nach einer detalierten Analyse zu Bewegungskonzepten, Sensoren, Kommunikation, Mikrocontroller-Plattformen und Batterie-Systemen wird anhand einer Auswahl von Komponenten eine kostengünstige, pädagogisch wertvolle, quelloffene und erweiterbare Robotikplattform konstruiert. Eine detalierte Darstellung der Entwicklungsschritte zeigt auf, welche Designentscheidung die Bewertungskriterien positiv beeinflussen.
+
+Die Abschließende Evaluation von Chancen und Risiken zeigt, dass eine pädagogisch sinnvolle und wirtschaftliche Verwendung der neu entwickelten Robotikplattform möglich ist. Die zuvor auf andere Plattformen angewendeten Evaluationskriterien zeigen eine deutliche Verbesserung in Punkten Erweiterbarkeit, Anschaffungskosten und Nachhaltigkeit.
+\end{abstract}
+
+\begin{abstract}
+Getting children, young adults and adults in touch with technology is important with today’s technologically advancing society. A common approach is to use Robots since they can sense their environment and modify it. 
+
+The evaluation of different robotic platforms designed for educational use shows that criteria such as sustainability and educational value are met to a certain extend. Other criteria such as low cost of purchase, extendibility and low complexity are partially met and therefore show the need for a new robotic platform.
+
+After a detailed analysis of movement concepts, sensors, communication techniques, microcontroller platforms and power supply systems the optimal components for the new  platforms were chosen. The choice is based on cost, educational, extension and open source criteria. A detailed description of the construction steps allows to comprehend design decisions which positively influence the evaluation criteria.
+
+A evaluation of chances and challenges on the constructed robot shows that a educational use of the platform is possible whilst operating economically. The previously used evaluation criteria for evaluating other platforms applied to the new platform shows enhancements in extendibility, purchase costs and sustainability.
+\end{abstract}
 
 
 \section{Introduction}
@@ -149,7 +171,7 @@ Open-Source & \stars{4} & Asuro was licensed under the DLR-license which is tran
 All in all the Asuro is a cost effective robot platform suitable for beginners. The lack of extendability and some difficult steps during the build lower the overall good rating to an average of 3.5 stars. 
 
 \subsection{Arduino Robot}
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/arduinorobot.jpg}
   \caption{Picture of the Arduino Robot}
@@ -180,7 +202,7 @@ Open-Source & \stars{3} & Even though it is claimed that the Arduino robot is op
 To sum it up the Arduino robot is an extendable robot platform which requires no assembly at all. The integrated battery charging makes it a sustainable robot but the high price reduces the overall rating to an average of 3.5 stars.
 
 \subsection{LEGO Mindstorms NXT 2.0}
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/mindstorms.jpg}
   \caption{Picture of the LEGO Mindstorms NXT (from http://www.devoxx.com/)}
@@ -215,7 +237,7 @@ Open-Source & \stars{4} & LEGO open sourced the LEGO Mindstorms NXT brick and mo
 All in all the LEGO Mindstorms NXT 2.0 is a great robot platform with a lot of possible applications due to its compability with other LEGO products. The only drawback is the price which is not affordable for everyone.
 
 \subsection{Thymio II}
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/thymioii.jpg}
   \caption{Picture of the Thymio II (from https://aseba.wikidot.com/en:thymio)}
@@ -252,7 +274,7 @@ Movement is the most important feature since it allows the robot to interact wit
 
 There exist wheeled, legged, flying, swimming, diving and much more robot movement types. Wheeled robots are common since their mechanic principle is rather simple, cheap and easy to implement and control. Therefore other mentioned movement techniques except wheeled robots are not part of the evaluation.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/30_ballcaster.jpg}
   \caption{Metal ball caster (CC-BY-SA Ben Oswald)}
@@ -265,7 +287,7 @@ DC motors (direct current motors) are a cheap solutions for driving wheels. Usua
 
 There exist integrated circuits which provides two H-bridges combined in one component which allow the control of steering beneath the control of direction. Speed control is controlled by an external PWM (pulse-width-modulation) source.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \begin{subfigure}{0.48\textwidth}
   \centering
@@ -282,7 +304,7 @@ There exist integrated circuits which provides two H-bridges combined in one com
 
 In terms of cost effectiveness a solution with two wheels powered by a DC motor each performs well. A DC motor with integrated gearbox is available for 5.5 USD, the plastic wheel costs 3.5 USD, a motor driver such as the L293 costs about 3.5 USD rendering a total cost of 21.5 USD per robot. In addition speed sensors for each of the wheels are needed since the motors do not have exactly the same speed since they are subject to variation during the production process. Without speed control sensors the robot may not drive straight forward. A simple sensor based on a rotating encoder disk and a light beam which is interrupted by the disk is available from 0.3 USD and requires one microcontroller pin per wheel (a microcontoller pin with interrupt support is the most reliable solution).
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/30_speedsensor.jpg}
   \caption{Speedsensor (CC-BY-SA Ben Oswald)}
@@ -290,7 +312,7 @@ In terms of cost effectiveness a solution with two wheels powered by a DC motor 
 
 The mentioned gearbox cannot be repaired once broken and should be replaced rather than repaired. Moreover it is unclear which materials are used in the plastic parts and whether they can be recycled. Mounting and controlling the motors is trouble free and requires at least six microcontroller pins as one can see in the following table.
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{p{0.15\textwidth}p{0.15\textwidth}p{0.5\textwidth}}
 \toprule
@@ -315,7 +337,7 @@ Stepper motors are availble for about 5 USD (in the USA\footnote{http://www.adaf
 
 The pin usage on the microcontroller using the shift register is as follows:
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{p{0.15\textwidth}p{0.15\textwidth}p{0.5\textwidth}}
 \toprule
@@ -336,7 +358,7 @@ If a stepper motor gets broken, it can be easily replaced using the same model o
 \subsubsection{Omniwheels}
 Omniwheels/Mecanum wheels are the most flexible way of moving using wheels. Omniwheels are a special form of wheels which allow the movement in any direction having three independently moveable wheels. It requires three motors (typically DC motors) with direction control and optional speed control.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/mecanum.png}
   \caption{Screenshot of a mecanum wheel 3D model (from http://www.thingiverse.com/thing:2318)}
@@ -346,7 +368,7 @@ Integrating omni wheels into the robot plattform reduces the need of ball caster
 
 The pin usage is similar to the pin usage of wheeled robots with two DC motors. The control is more difficult since the control scheme is complex due to the movement vectors as shown in the figure \ref{fig:omnicontrol}.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/omniwheel.jpg}
   \caption{Control scheme of a omni wheel (from http://commons.wikimedia.org/wiki/File:Omni\_wheel\_control.jpg)}
@@ -363,7 +385,7 @@ Sensors are important to make the robot sense its environment. Sensing the envir
 \subsubsection{IR Reciever}
 Infrared Reciever are special photodiodes which react on infrared light with a base frequency of 38kHz. To ease the use of IR recievers with microcontrollers, the photodiode in the IR reciever has an integrated Schmitt trigger and therefore provides a near binary square voltage waveform instead of rising voltages. The cost of such a reciever is about 0.3USD.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/30_ir.jpg}
   \caption{IR Reciever with integrated Schmitt trigger (CC-BY-SA Ben Oswald)}
@@ -376,7 +398,7 @@ Attaching a reciever to a microcontroller requires a single input pin which can 
 \subsubsection{IR Proximity Sensor}
 Infrared proximity sensors can be used in various ways. When measuring distances using proximity sensors one has to choose the right sensor type since the range varies from a few centimeters to a few meters. Another use of IR proximity sensors is to measure brightness. This usually works with sensors designed for very small distances. When the IR light is emitted it reflects better on bright surfaces than on dark surfaces which do not reflect light. A photodiode for infrared wavelength changes its electrical behaviour on the influence of the light reflected which can be measured using the microcontrollers analog-to-digital converter.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \begin{subfigure}{0.48\textwidth}
   \centering
@@ -398,7 +420,7 @@ The price of a single proximity sensor is about 0.5 USD for average quality low 
 \subsubsection{Ultrasonic Distance Sensor}
 Ultrasonic distance sensors sense distance between the sensor and an object in the visible area of the sensor. In case of ultrasonic sensors the visible area is the area where the echo spreads. By counting the time between the signal and the reflection the distance can be calculated using the speed of sound (340.29m/s at sea level). 
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/30_ultrasonic.jpg}
   \caption{HC-SR04 ultrasonic distance sensor (CC-BY-SA Ben Oswald)}
@@ -423,7 +445,7 @@ As mentioned in the previous section the MPU-6050 is easily interfaced using var
 \subsubsection{Compass}
 A compass allows the robot to sense its orientation relative to the magnetic field of the earth. Technically speaking a integrated circuit providing measurement of the magnetic field of the earth are a special form of magnetometers.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/30_compass.jpg}
   \caption{Triple axis compass on breakout-board (CC-BY-SA Ben Oswald)}
@@ -443,7 +465,7 @@ Communication between robots or between the robot is essential to widen the appl
 \subsubsection{Infrared}
 Infrared based data transfer is widely used in remote control application where a small amount of data, usually a single word, is transferred. Infrared communication is easily interfered by other infrared signals. This limits the data rate since error correction mechanisms must be implemented.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \begin{subfigure}{0.48\textwidth}
   \centering
@@ -471,7 +493,7 @@ The maximum distance depends on the antenna used. A arduino compatible library e
 \subsubsection{NRF24L01}
 The nRF24L01 (or its sucessor the nRF24L01+) are single chip trancievers by Nordic Semiconductors which operate in the license free 2.4GHz frequency band. The allow sending and recieving of data and can standby in ultra low power mode consuming 900nA at 3.3V only.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/30_nrf24l01.jpg}
   \caption{nRF24L01 breakout board (CC-BY-SA Ben Oswald)}
@@ -514,7 +536,7 @@ Concerning environmental impact NiMH batteries are ready for recycling when disp
 \subsubsection{Lithium-polymer batteries}
 Lithium-polymer batteries are rechargeable batteries with a nominal cell voltage of 3.7V  and a density of 300 watt hours per liter. The charge cycle durability is over 1000 cycles and the self discharge rate is very low (about 5 percent per month). During charge the voltage increases to 4.2V and drops to 3V during discharge. Therefore voltage stabilizing components such as step-up converter are needed to provide a constant voltage.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/30_lithium-polymer.jpg}
   \caption{Lithium-polymer battery (CC-BY-SA Ben Oswald)}
@@ -561,7 +583,7 @@ To feed the 5V supply a circuit is needed which increases the voltage range to c
 
 Since the rough power requirement is 1A at 5V, the MCP1650 is a well suited boost converter. If the system is connected to an USB port the boost converter is not needed and should by bypassed. Since automatic switching requires parts which are either available in very small form factors only or consist of complex circuitry, a simple switch is used instead.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{images/schematic/stepup.png}
   \caption{Stepup converter schematic using the MCP1650}
@@ -569,7 +591,7 @@ Since the rough power requirement is 1A at 5V, the MCP1650 is a well suited boos
 
 For charging the Lithium-Polymer battery a special integrated circuit can be utilized. The MCP73831 is such an IC with programmable output current up to 500mA. A indicator LED attached to one pin of the charge IC gives feedback of the charge status.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{images/schematic/charge.png}
   \caption{Lithium-polymer battery charge circuit using the MCP73831}
@@ -606,7 +628,7 @@ Due to unused pins on the second ATmega32U4, additional components can be added 
 \subsubsection{Display}
 Displaying information and visual feedback helps to debug and reconstruct processes. A cost effective display solution is a standard 1.8 inch TFT display with integrated SD card reader. It is compatible to the Arduino TFT display and integrates the ST7735S display controller. Connecting the display requires standard SPI header and some additional pins. Since SPI is already used to interface the NRF24L01 module, only a chip-select, reset and a data/command switch are needed. The integrated SD card reader needs an additional chip select pin.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \begin{subfigure}{0.48\textwidth}
   \centering
@@ -638,7 +660,7 @@ A well suited gripper is the Robotic Claw by Maker named Kepler\footnote{see \ur
 \subsection{PCB design} 
 A PCB (short for printed circuit board) is a non-conductive base material with conductive traces connecting electrical components. Electrical components like resistors, microcontrollers or other integrated circuits are soldered to the traces. Components are available in different types, where THT (Through-Hole-Technology) components have the leads soldered to the opposite site through a hole and SMT (Surface-Mount-Technology) components have the leads soldered at the same side. The following illustration shows the difference between both technologies:
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{images/part_types_thtsmt.jpg}
   \caption{Illustration of THT (top) and SMT (bottom) parts on a PCB (green) with Solder (grey) (own illustration)}
@@ -662,9 +684,75 @@ The main task is to order the components on the PCB, route traces between pins a
 \item Orientation of components should be equal among equal parts to prevent errors while soldering. This especially holds for polarized parts.
 \end{itemize}
 
-Based on these guidelines the PCB is created. At first the components of the Arduino Leonardo compatible unit (first CPU/user CPU) are layouted. Special care is taken with the spacing between the Arduino shield compatible pin headers.\footnote{See the simplified board layout in the Appendix for illustration.}
+Based on these guidelines the PCB is created. At first the components of the Arduino Leonardo compatible unit (first CPU/user CPU) are layouted. Special care is taken with the spacing between the Arduino shield compatible pin headers. The USB connector for the IC is placed near the edge of the board to allow a good fit for the cable.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{robot_schematic_user.pdf}
+  \caption{Robot schematic creation. Arduino Leonardo compatible circuit part is higlighted in dark green.}
+\end{figure}
+
+The next step is to place logically connected components together. The battery charging circuit components are placed near the edge for a good placement of the batteries JST connector. Placing the connector in the middle of the board makes it difficult to carry the battery.
+
+When routing power circuits it is important to set the right trace width. A trace with 10 mil width on 35 micrometer copper can carry up to 1A but heats up 30 degree kelvin. A 20 mil trace only heats up 10 degree kelvin when carrying the same load. \cite[p. 841]{horowitz1989art} 
+
+In the robotic platform developed the trace width for power lines is 16 mil. The expected heat up is tolerable since in normal operation the average current should be much lower.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{robot_schematic_battery.pdf}
+  \caption{Robot schematic creation. Battery charging circuit components are higlighted in dark red.}
+\end{figure}
+
+Followed by the step-up circuit parts most of power related components are placed on the board. The components are placed near the battery charging circuit to reduce the length of the circuits. All components are placed with enough spacing to make soldering easier. This specially holds for the MCP1650 since the leads have a spacing of 0.65mm only. Making this chip easy accessible for desoldering wick helps to re-position it in case of misplacement. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{robot_schematic_stepup.pdf}
+  \caption{Robot schematic creation. Step-Up circuit parts are higlighted in dark blue.}
+\end{figure}
+
+The 3.3V LDO is mainly for providing power to the optional TFT display, the NRF24L01 module and shields which harvest energy from the 3.3V pins at the shield connector. To reduce the loss of energy due to trace-length the components are placed near the mentioned parts. To stabilize the current flow additional capacitors are placed on the output pins. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{robot_schematic_3_3v.pdf}
+  \caption{Robot schematic creation. 3.3V LDO components are higlighted in orange.}
+\end{figure}
+
+Having all power related components placed on the board, the second Arduino Leonardo compatible circuit for controlling sensors, actuators and optional modules is placed on the board. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{robot_schematic_brain.pdf}
+  \caption{Robot schematic creation. Second Arduino Leonardo compatible circuit components are higlighted in purple.}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{robot_schematic_motor.pdf}
+  \caption{Robot schematic creation. Motor control circuit components are higlighted in lime.}
+\end{figure}
 
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{robot_schematic_sensor.pdf}
+  \caption{Robot schematic creation. Line sensing components are higlighted in brown.}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{robot_schematic_addtional.pdf}
+  \caption{Robot schematic creation. Additional components are higlighted in aqua.}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{robot_schematic_optional.pdf}
+  \caption{Robot schematic creation. Placeholder for optional components on breakout boards are higlighted in olive.}
+\end{figure}
 
 
 
