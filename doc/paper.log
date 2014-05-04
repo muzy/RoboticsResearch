@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.3.3)  3 MAY 2014 10:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.3.3)  4 MAY 2014 19:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1384,311 +1384,326 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 File: robot_schematic_user.pdf Graphic file (type pdf)
 
 <use robot_schematic_user.pdf>
-Package pdftex.def Info: robot_schematic_user.pdf used on input line 691.
+Package pdftex.def Info: robot_schematic_user.pdf used on input line 692.
 (pdftex.def)             Requested size: 360.0pt x 243.43109pt.
  [38]
 
 LaTeX Warning: Citation 'horowitz1989art' on page 39 undefined on input line 69
-7.
+8.
 
 <robot_schematic_battery.pdf, id=162, 2322.8782pt x 1570.84865pt>
 File: robot_schematic_battery.pdf Graphic file (type pdf)
 
 <use robot_schematic_battery.pdf>
-Package pdftex.def Info: robot_schematic_battery.pdf used on input line 703.
+Package pdftex.def Info: robot_schematic_battery.pdf used on input line 704.
 (pdftex.def)             Requested size: 360.0pt x 243.43109pt.
  [39 <./robot_schematic_user.pdf>]
 <robot_schematic_stepup.pdf, id=168, 2322.8782pt x 1570.84865pt>
 File: robot_schematic_stepup.pdf Graphic file (type pdf)
 
 <use robot_schematic_stepup.pdf>
-Package pdftex.def Info: robot_schematic_stepup.pdf used on input line 711.
+Package pdftex.def Info: robot_schematic_stepup.pdf used on input line 712.
 (pdftex.def)             Requested size: 360.0pt x 243.43109pt.
  [40 <./robot_schematic_battery.pdf>]
 <robot_schematic_3_3v.pdf, id=174, 2322.8782pt x 1570.84865pt>
 File: robot_schematic_3_3v.pdf Graphic file (type pdf)
 
 <use robot_schematic_3_3v.pdf>
-Package pdftex.def Info: robot_schematic_3_3v.pdf used on input line 719.
+Package pdftex.def Info: robot_schematic_3_3v.pdf used on input line 720.
 (pdftex.def)             Requested size: 360.0pt x 243.43109pt.
  [41 <./robot_schematic_stepup.pdf>]
 <robot_schematic_brain.pdf, id=180, 2322.8782pt x 1570.84865pt>
 File: robot_schematic_brain.pdf Graphic file (type pdf)
 
 <use robot_schematic_brain.pdf>
-Package pdftex.def Info: robot_schematic_brain.pdf used on input line 727.
+Package pdftex.def Info: robot_schematic_brain.pdf used on input line 730.
 (pdftex.def)             Requested size: 360.0pt x 243.43109pt.
  [42 <./robot_schematic_3_3v.pdf>]
 <robot_schematic_motor.pdf, id=186, 2322.8782pt x 1570.84865pt>
 File: robot_schematic_motor.pdf Graphic file (type pdf)
 
 <use robot_schematic_motor.pdf>
-Package pdftex.def Info: robot_schematic_motor.pdf used on input line 733.
+Package pdftex.def Info: robot_schematic_motor.pdf used on input line 738.
 (pdftex.def)             Requested size: 360.0pt x 243.43109pt.
-
-<robot_schematic_sensor.pdf, id=187, 2322.8782pt x 1570.84865pt>
-File: robot_schematic_sensor.pdf Graphic file (type pdf)
-
-<use robot_schematic_sensor.pdf>
-Package pdftex.def Info: robot_schematic_sensor.pdf used on input line 740.
-(pdftex.def)             Requested size: 360.0pt x 243.43109pt.
- [43 <./robot_schematic_brain.pdf> <./robot_schematic_motor.pdf
-
-pdfTeX warning: pdflatex (file ./robot_schematic_motor.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
->] <robot_schematic_addtional.pdf, id=195, 2322.8782pt x 1570.84865pt>
-File: robot_schematic_addtional.pdf Graphic file (type pdf)
-
-<use robot_schematic_addtional.pdf>
-Package pdftex.def Info: robot_schematic_addtional.pdf used on input line 747.
-(pdftex.def)             Requested size: 360.0pt x 243.43109pt.
-
-<robot_schematic_optional.pdf, id=196, 2322.8782pt x 1570.84865pt>
+ [43 <./robot_schematic_brain.pdf>]
+<robot_schematic_optional.pdf, id=193, 2322.8782pt x 1570.84865pt>
 File: robot_schematic_optional.pdf Graphic file (type pdf)
 
 <use robot_schematic_optional.pdf>
-Package pdftex.def Info: robot_schematic_optional.pdf used on input line 753.
+Package pdftex.def Info: robot_schematic_optional.pdf used on input line 766.
 (pdftex.def)             Requested size: 360.0pt x 243.43109pt.
- [44 <./robot_schematic_sensor.pdf> <./robot_schematic_addtional.pdf
+ [44 <./robot_schematic_motor.pdf>]
+<images/mounting.pdf, id=199, 129.77611pt x 49.93112pt>
+File: images/mounting.pdf Graphic file (type pdf)
 
-pdfTeX warning: pdflatex (file ./robot_schematic_addtional.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 770--770
+<use images/mounting.pdf>
+Package pdftex.def Info: images/mounting.pdf used on input line 781.
+(pdftex.def)             Requested size: 216.0022pt x 83.11266pt.
+ [45 <./robot_schematic_optional.pdf>]
+<images/captive-square-nut-joint-exploded.png, id=206, 602.25pt x 375.4025pt>
+File: images/captive-square-nut-joint-exploded.png Graphic file (type png)
+
+<use images/captive-square-nut-joint-exploded.png>
+Package pdftex.def Info: images/captive-square-nut-joint-exploded.png used on i
+nput line 791.
+(pdftex.def)             Requested size: 155.51755pt x 96.93787pt.
+
+<images/captive-square-nut-joint-imploded.png, id=207, 602.25pt x 424.58624pt>
+File: images/captive-square-nut-joint-imploded.png Graphic file (type png)
+
+<use images/captive-square-nut-joint-imploded.png>
+Package pdftex.def Info: images/captive-square-nut-joint-imploded.png used on i
+nput line 796.
+(pdftex.def)             Requested size: 155.51755pt x 109.63829pt.
+
+Underfull \hbox (badness 6775) in paragraph at lines 799--799
+[]\T1/lmr/m/n/10.95 Figure 29: |Cap-tive nut joint il-lus-tra-tion by MAKE mag-
+a-zine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+\T1/lmr/m/n/10.95 (http://makezine.com/2011/10/06/clever-captive-square-nut-cnc
+-panel-
+ []
+
+[46 <./images/mounting.pdf> <./images/captive-square-nut-joint-exploded.png> <.
+/images/captive-square-nut-joint-imploded.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 815--815
 []|\T1/lmr/m/n/10.95 Assessment
  []
 
 
-Overfull \hbox (36.0pt too wide) in alignment at lines 768--781
+Overfull \hbox (36.0pt too wide) in alignment at lines 813--826
  [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 781
+Underfull \vbox (badness 10000) detected at line 826
  []
 
-[45 <./robot_schematic_optional.pdf>] [46]
-Underfull \hbox (badness 10000) in paragraph at lines 793--794
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 838--839
 []|\T1/lmr/m/n/10.95 NRF24L01
  []
 
 
-Overfull \hbox (1.23842pt too wide) in paragraph at lines 804--804
+Overfull \hbox (1.23842pt too wide) in paragraph at lines 849--849
 []|\T1/lmr/m/n/10.95 (PCINT7/OCA0/OC1C/#RTS)
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 804--805
+Underfull \hbox (badness 1609) in paragraph at lines 849--850
 []|\T1/lmr/m/n/10.95 Servo Grip-per
  []
 
 
-Overfull \hbox (8.39429pt too wide) in alignment at lines 789--812
+Overfull \hbox (8.39429pt too wide) in alignment at lines 834--857
  [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 812
+Underfull \vbox (badness 10000) detected at line 857
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 812--812
+Underfull \hbox (badness 2970) in paragraph at lines 857--857
 []|\T1/lmr/m/n/10.95 Digital pin 0
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 813--813
+Underfull \hbox (badness 2970) in paragraph at lines 858--858
 []|\T1/lmr/m/n/10.95 Digital pin 1
  []
 
 
-Underfull \hbox (badness 4217) in paragraph at lines 818--819
+Underfull \hbox (badness 4217) in paragraph at lines 863--864
 []|\T1/lmr/m/n/10.95 Shift Reg-is-ter
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 819--819
+Underfull \hbox (badness 2020) in paragraph at lines 864--864
 []|\T1/lmr/m/n/10.95 Digital Pin 6
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 819--820
+Underfull \hbox (badness 1609) in paragraph at lines 864--865
 []|\T1/lmr/m/n/10.95 Servo Grip-per
  []
 
 
-Overfull \hbox (15.38237pt too wide) in paragraph at lines 821--821
+Overfull \hbox (15.38237pt too wide) in paragraph at lines 866--866
 []|\T1/lmr/m/n/10.95 (PCINT5/OC1A/#OC4B/ADC12)
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 821--821
+Underfull \hbox (badness 2020) in paragraph at lines 866--866
 []|\T1/lmr/m/n/10.95 Digital Pin 9
  []
 
 
-Overfull \hbox (5.80113pt too wide) in paragraph at lines 822--822
+Overfull \hbox (5.80113pt too wide) in paragraph at lines 867--867
 []|\T1/lmr/m/n/10.95 (PCINT6/OC1B/OC4B/ADC13)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--823
+Underfull \hbox (badness 10000) in paragraph at lines 867--868
 []|\T1/lmr/m/n/10.95 NRF24L01
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 823--823
+Underfull \hbox (badness 2020) in paragraph at lines 868--868
 []|\T1/lmr/m/n/10.95 Digital Pin 5
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 823--824
+Underfull \hbox (badness 10000) in paragraph at lines 868--869
 []|\T1/lmr/m/n/10.95 Servo Ul-tra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
+Underfull \hbox (badness 10000) in paragraph at lines 869--869
 []|\T1/lmr/m/n/10.95 Digital Pin
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 824--824
+Underfull \hbox (badness 1038) in paragraph at lines 869--869
 \T1/lmr/m/n/10.95 13 (PWM) +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 828--829
+Underfull \hbox (badness 10000) in paragraph at lines 873--874
 []|\T1/lmr/m/n/10.95 Ultrasonic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 829--830
+Underfull \hbox (badness 10000) in paragraph at lines 874--875
 []|\T1/lmr/m/n/10.95 Ultrasonic
  []
 
 
-Overfull \hbox (8.39429pt too wide) in alignment at lines 812--832
- [] [] [] [] 
- []
-
-
-Overfull \hbox (8.39429pt too wide) in alignment at lines 832--840
- [] [] [] [] 
- []
-
-[47]
-Overfull \hbox (29.9989pt too wide) in alignment at lines 843--866
- [] [] [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 866
- []
-
-
-Overfull \hbox (29.9989pt too wide) in alignment at lines 866--886
+Overfull \hbox (8.39429pt too wide) in alignment at lines 857--877
  [] [] [] [] 
  []
 
 [48]
-Overfull \hbox (29.9989pt too wide) in alignment at lines 886--907
+Overfull \hbox (8.39429pt too wide) in alignment at lines 877--885
  [] [] [] [] 
  []
 
 [49]
-Overfull \hbox (29.9989pt too wide) in alignment at lines 909--927
+Overfull \hbox (29.9989pt too wide) in alignment at lines 888--911
  [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 927
+Underfull \vbox (badness 10000) detected at line 911
  []
 
-[50] <robot.pdf, id=225, 597.23125pt x 845.1575pt>
+
+Overfull \hbox (29.9989pt too wide) in alignment at lines 911--931
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.9989pt too wide) in alignment at lines 931--952
+ [] [] [] [] 
+ []
+
+[50] [51]
+Overfull \hbox (29.9989pt too wide) in alignment at lines 954--972
+ [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 972
+ []
+
+<robot.pdf, id=229, 597.23125pt x 845.1575pt>
 File: robot.pdf Graphic file (type pdf)
  <use robot.pdf>
-Package pdftex.def Info: robot.pdf used on input line 928.
+Package pdftex.def Info: robot.pdf used on input line 973.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: robot.pdf Graphic file (type pdf)
+ <use robot.pdf>
+Package pdftex.def Info: robot.pdf used on input line 973.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<use robot.pdf>
-Package pdftex.def Info: robot.pdf used on input line 928.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
- [51] <robot.pdf, id=231, page=1, 597.23125pt x 845.1575pt>
-File: robot.pdf Graphic file (type pdf)
-
-<use robot.pdf, page 1>
-Package pdftex.def Info: robot.pdf, page1 used on input line 928.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: robot.pdf Graphic file (type pdf)
- <use robot.pdf, page 1>
-Package pdftex.def Info: robot.pdf, page1 used on input line 928.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: robot.pdf Graphic file (type pdf)
- <use robot.pdf, page 1>
-Package pdftex.def Info: robot.pdf, page1 used on input line 928.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+[52] <robot.pdf, id=235, page=1, 597.23125pt x 845.1575pt>
 File: robot.pdf Graphic file (type pdf)
 
 <use robot.pdf, page 1>
-Package pdftex.def Info: robot.pdf, page1 used on input line 928.
+Package pdftex.def Info: robot.pdf, page1 used on input line 973.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: robot.pdf Graphic file (type pdf)
+ <use robot.pdf, page 1>
+Package pdftex.def Info: robot.pdf, page1 used on input line 973.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: robot.pdf Graphic file (type pdf)
  <use robot.pdf, page 1>
-Package pdftex.def Info: robot.pdf, page1 used on input line 928.
+Package pdftex.def Info: robot.pdf, page1 used on input line 973.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [52 <./robot.pdf>]
-<../hardware/robot_schematic.pdf, id=244, 2322.8782pt x 1570.84865pt>
+File: robot.pdf Graphic file (type pdf)
+
+<use robot.pdf, page 1>
+Package pdftex.def Info: robot.pdf, page1 used on input line 973.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: robot.pdf Graphic file (type pdf)
+ <use robot.pdf, page 1>
+Package pdftex.def Info: robot.pdf, page1 used on input line 973.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [53 <./robot.pdf>]
+<../hardware/robot_schematic.pdf, id=248, 2322.8782pt x 1570.84865pt>
 File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
 
 <use ../hardware/robot_schematic.pdf>
-Package pdftex.def Info: ../hardware/robot_schematic.pdf used on input line 929
+Package pdftex.def Info: ../hardware/robot_schematic.pdf used on input line 974
 .
 (pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
 File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
  <use ../hardware/robot_schematic.pdf>
-Package pdftex.def Info: ../hardware/robot_schematic.pdf used on input line 929
+Package pdftex.def Info: ../hardware/robot_schematic.pdf used on input line 974
 .
 (pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
 
-<../hardware/robot_schematic.pdf, id=247, page=1, 2322.8782pt x 1570.84865pt>
+<../hardware/robot_schematic.pdf, id=251, page=1, 2322.8782pt x 1570.84865pt>
 File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
 
 <use ../hardware/robot_schematic.pdf, page 1>
 Package pdftex.def Info: ../hardware/robot_schematic.pdf, page1 used on input l
-ine 929.
+ine 974.
 (pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
 File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
 
 <use ../hardware/robot_schematic.pdf, page 1>
 Package pdftex.def Info: ../hardware/robot_schematic.pdf, page1 used on input l
-ine 929.
+ine 974.
 (pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
 File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
 
 <use ../hardware/robot_schematic.pdf, page 1>
 Package pdftex.def Info: ../hardware/robot_schematic.pdf, page1 used on input l
-ine 929.
+ine 974.
 (pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
 File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
 
 <use ../hardware/robot_schematic.pdf, page 1>
 Package pdftex.def Info: ../hardware/robot_schematic.pdf, page1 used on input l
-ine 929.
+ine 974.
 (pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
 File: ../hardware/robot_schematic.pdf Graphic file (type pdf)
 
 <use ../hardware/robot_schematic.pdf, page 1>
 Package pdftex.def Info: ../hardware/robot_schematic.pdf, page1 used on input l
-ine 929.
+ine 974.
 (pdftex.def)             Requested size: 2322.87256pt x 1570.84483pt.
- [53 <../hardware/robot_schematic.pdf>] [54]
-Overfull \hbox (10.13771pt too wide) in paragraph at lines 933--933
+ [54 <../hardware/robot_schematic.pdf>] [55]
+Overfull \hbox (10.13771pt too wide) in paragraph at lines 978--978
 []\T1/lmr/m/n/10.95 József Tick. ^^P  ^^RMod-elling Con-trol Sys-tems by Au-ton
 omous Mini Robot^^Q^^Q.
  []
 
-[55] (./paper.aux)
+[56] (./paper.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1705,10 +1720,10 @@ Package logreq Info: Writing requests to 'paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13640 strings out of 493304
- 212363 string characters out of 6139872
- 657957 words of memory out of 5000000
- 16748 multiletter control sequences out of 15000+600000
+ 13645 strings out of 493304
+ 212621 string characters out of 6139872
+ 658957 words of memory out of 5000000
+ 16752 multiletter control sequences out of 15000+600000
  73571 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  44i,20n,50p,990b,1417s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1726,10 +1741,10 @@ nts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfdin
 g/uzdr.pfb>
-Output written on paper.pdf (55 pages, 4730298 bytes).
+Output written on paper.pdf (56 pages, 4557826 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
+ 336 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 

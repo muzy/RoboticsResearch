@@ -682,6 +682,7 @@ The main task is to order the components on the PCB, route traces between pins a
 \item A ground plane (covering with whole pcb with a ground layer) is good to prevent signalling errors. 
 \item Components on screen may look bigger than they are in reality. Adding extra space between components makes them easier to solder. The solder tip should not touch other components.
 \item Orientation of components should be equal among equal parts to prevent errors while soldering. This especially holds for polarized parts.
+\item Due to the target audience all components should be super-sized. Resistors and capacitors should have the 1206 footprint (3.2 mm x 1.6 mm) which can be easily soldered by beginners. For diodes, crystals and integrated circuits the biggest SMD package available at distributors should be chosen. Biggest package not only refers to the package size but also on the spacing between the pins which should be as high as possible.
 \end{itemize}
 
 Based on these guidelines the PCB is created. At first the components of the Arduino Leonardo compatible unit (first CPU/user CPU) are layouted. Special care is taken with the spacing between the Arduino shield compatible pin headers. The USB connector for the IC is placed near the edge of the board to allow a good fit for the cable.
@@ -720,7 +721,9 @@ The 3.3V LDO is mainly for providing power to the optional TFT display, the NRF2
   \caption{Robot schematic creation. 3.3V LDO components are higlighted in orange.}
 \end{figure}
 
-Having all power related components placed on the board, the second Arduino Leonardo compatible circuit for controlling sensors, actuators and optional modules is placed on the board. 
+Having all power related components placed on the board, the second Arduino Leonardo compatible circuit for controlling sensors, actuators and optional modules is placed on the board. The arrangement of the traces is difficult in this step since the ground-plane on both sides might be interrupted or has orphaned areas. Connecting orphaned ground areas (ground areas which are not connected to ground) can be usually done by placing a via on the orphaned area since the board is designed to be two sided and therefore likely has a ground-plane at the back of the orphaned area.
+
+The optional TFT display is placed directly over the ATmega32U4 to save space on the PCB. Since the display has enough spacing due to the height of the female header, the components are not touching each other. Heat dissipation won't be a problem either due to the small power consumption of the display and the microcontroller as well. As a result of this design, the RESET button, the ISP header and the UART are placed in an area which is not covered by the TFT.
 
 \begin{figure}[H]
   \centering
@@ -728,39 +731,85 @@ Having all power related components placed on the board, the second Arduino Leon
   \caption{Robot schematic creation. Second Arduino Leonardo compatible circuit components are higlighted in purple.}
 \end{figure}
 
+In addition to the second Arduino Leonardo the motor control must be placed. In the design the ULN2803 violates the pcb layout recommendation since it is placed rotated by 180 degree. This was necessary to prevent unnecessary  trace routing efforts. The connectors for the motors are standard JST XH series connectors which match the connectors crimped to the stepper motors.
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{robot_schematic_motor.pdf}
   \caption{Robot schematic creation. Motor control circuit components are higlighted in lime.}
 \end{figure}
 
+To allow line sensing the robot features four infrared sensors with integrated LEDs and photodiodes. Placing them in a well defined spacing allows to scan an area for a line and therefore speeds up the process of finding the line to follow.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\textwidth]{robot_schematic_sensor.pdf}
-  \caption{Robot schematic creation. Line sensing components are higlighted in brown.}
-\end{figure}
+Since the sensors must be placed within a few millimetres above the ground, the components for the sensor are placed on a external board which has, similar to the main board, mounting holes for standard M3 screws. Externalizing the components also allows to externalize the rather large 74HC4051 multiplexer to save space on the main board. Connecting the sensor board to the main is achieved using a 6 pin flat ribbon cable connector.
 
+% not needed.
+%\begin{figure}[H]
+%  \centering
+%  \includegraphics[width=\textwidth]{robot_schematic_sensor.pdf}
+%  \caption{Robot schematic creation. Line sensing components are higlighted in brown.}
+%\end{figure}
+%
+%
+%\begin{figure}[H]
+%  \centering
+%  \includegraphics[width=\textwidth]{robot_schematic_addtional.pdf}
+%  \caption{Robot schematic creation. Additional components are higlighted in aqua.}
+%\end{figure}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\textwidth]{robot_schematic_addtional.pdf}
-  \caption{Robot schematic creation. Additional components are higlighted in aqua.}
-\end{figure}
+Finally all other components are placed on the board as well. The power switch is positioned for easy reach and the IR reciever for maximum angle. Optional pull-up resistors for the I2C communication are placed near the I2C compass and I2C accelerometer + gyroscope module. 
+
+Pins headers for the gripper servos and ultrasonic distance sensor rotation servos are placed in the front rear of the board since the servos will be located at the front of the robot. 
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{robot_schematic_optional.pdf}
-  \caption{Robot schematic creation. Placeholder for optional components on breakout boards are higlighted in olive.}
+  \caption{Robot schematic creation. Placeholder for optional components on breakout boards are higlighted in olive, additional components in aqua and line sensing components are highlighted in brown.}
 \end{figure}
 
 
 
 \subsection{Mechanical platform}
-The robots PCB, wheels, ball caster, gripper and sensors have to be assembled together. Therefore mechanical components are needed which hold the components to a common base.
+The robots PCB, motors, ball caster, gripper and sensors have to be assembled together. Therefore mechanical components are needed which hold the components to a common base. 
 
-%todo
+Possible materials for a base are plywood or acrylic glass. Both materials can be shaped using a laser cutting machine.  Plywood is relatively cheap (3mm thick plywood costs about 6\euro per square meter) but smells like burned wood after laser cutting. Acrylic glass is more expensive than plywood (about 30\euro per square meter for colorless variants, about 40\euro for coloured acrylic glass) but does not smell after laser cutting. In terms of stability acrylic glass is more stable than plywood since it does not bend as much as plywood does.
 
+For making holders for the stepper motors and a stand for the ultrasonic sensor, 90 degree angled connections must be made. Instead of glueing the pieces together a new popular method with M4 screws and nuts is used. One part gets cutouts and a hole for the screw, the other parts gets a t-slot which fits the cutout and a screw with a nut. The robot features two types of t-slots: a small type and a wider type for mechanically stressful connections.
+
+When the part fitting the cutout is fitted into it, a basic 90 degree connection is made. To stabilize it a nut is placed in the t-slot and the two parts are fastened together with a screw. An illustration by MAKE magazine shows the principle well:
+ 
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/captive-square-nut-joint-exploded.png}
+  \caption{exploded view}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/captive-square-nut-joint-imploded.png}
+  \caption{imploded view}
+  \end{subfigure}
+  \caption{Captive nut joint illustration by MAKE magazine (http://makezine.com/2011/10/06/clever-captive-square-nut-cnc-panel-joint/) }
+\end{figure} 
+ 
+Different to the illustration by MAKE magazine the junctions designed for the robot are narrowing for easier fit. The main platform where the PCB is located features the mentioned junctions for stepper motors and the ultrasonic distance sensor.
+
+Advantages of the t-slots over glue or elbow connectors are the low costs (less than one cent for screw and nut), the mechanically stable connection and the adjustment possibilities when the connection accidentally loosens.
+ 
+\subsubsection{Wheels}
+
+The 28BJY-48 stepper motor shaft enables to attach a wheel. Since plastic wheels are expensive, a new wheel was developed which fits the motor. The most difficult part is the connection between the motor shaft and the wheel.
+
+There are three possible connections which can be made between the motor and the wheel:
+\begin{description}
+\item[Glue] Glue is a possible solution but lacks reproducible results, is difficult to apply in the right amount and may harm during the build (e.g. when using superglue).
+\item[Press-fit] Building a press-fit connection e.g. by 3D printing a mount gives a strong connection but may wears out after a while. Since 3D printing is not very accurate, making a press-fit connection is difficult.
+\item[Press-fit plus screws] Combining a press-fit connection with screws anchored in the 3D printed mount pressing against the motor shaft results in a strong connection. If needed the screws can be adjusted to provide more pressure.
+\end{description}
+
+Having a press-fit connector with screws still lacks a wheel attached to it. Since the components should be cheap and off the shelf, acrylic glass is one potential material.
+Acrylic only is not well suited for a wheel since it does not provide enough grip to the ground. A solution is to use two acrylic glass plates with an O-ring pressed between them using M4 screws with nuts. The rubber of the O-ring provides lots of grip and is relatively cheap (1.5\euro at the local DIY-market).
 
 \section{Conclusion}
 To conclude the success in robot construction, the robot must be evaluated using the assessment criteria already introduced in the chapter "State of the Art". 
