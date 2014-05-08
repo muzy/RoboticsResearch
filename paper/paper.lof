@@ -1,0 +1,43 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Picture of the Asuro (CC-BY-SA Robin Gruber)\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Rendering of the Arduino Robot (CC-BY-SA arduino.cc)\relax }}{8}{figure.caption.7}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Picture of the LEGO Mindstorms NXT (CC-BY-NC Elvis Ripley)\relax }}{10}{figure.caption.8}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Picture of the Thymio II (CC-BY-SA Thymio II project team)\relax }}{12}{figure.caption.9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Metal ball caster (CC-BY-SA Ben Oswald)\relax }}{15}{figure.caption.10}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Different DC motor types (CC-BY-SA Ben Oswald)\relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Speedsensor (CC-BY-SA Ben Oswald)\relax }}{16}{figure.caption.12}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Screenshot of a mecanum wheel 3D model (from \url {http://www.thingiverse.com/thing:2318})\relax }}{18}{figure.caption.15}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Control scheme of a omni wheel (from \url {http://commons.wikimedia.org/wiki/File:Omni\_wheel\_control.jpg})\relax }}{19}{figure.caption.16}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces IR Reciever with integrated Schmitt trigger (CC-BY-SA Ben Oswald)\relax }}{20}{figure.caption.17}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces IR proximity sensor (CC-BY-SA Ben Oswald)\relax }}{21}{figure.caption.18}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces HC-SR04 ultrasonic distance sensor (CC-BY-SA Ben Oswald)\relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces MPU-6050 breakout board (CC-BY-SA Ben Oswald)\relax }}{23}{figure.caption.20}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Triple axis compass on breakout-board (CC-BY-SA Ben Oswald)\relax }}{24}{figure.caption.21}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Components for infrared communication (CC-BY-SA Ben Oswald)\relax }}{25}{figure.caption.22}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces nRF24L01 breakout board (CC-BY-SA Ben Oswald)\relax }}{26}{figure.caption.23}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Lithium-polymer battery (CC-BY-SA Ben Oswald)\relax }}{30}{figure.caption.24}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Stepup converter schematic using the MCP1650\relax }}{35}{figure.caption.25}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Lithium-polymer battery charge circuit using the MCP73831\relax }}{36}{figure.caption.26}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces 1.8 Inch TFT display (CC-BY-SA Ben Oswald)\relax }}{39}{figure.caption.27}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces 3D printed gripper mounted on the Robot (CC-BY-SA Ben Oswald)\relax }}{40}{figure.caption.28}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Illustration of THT (top) and SMT (bottom) parts on a PCB (green) with Solder (grey) (own illustration)\relax }}{41}{figure.caption.29}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Robot schematic creation. Arduino Leonardo compatible circuit part is higlighted in dark green.\relax }}{43}{figure.caption.30}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Robot schematic creation. Battery charging circuit components are higlighted in dark red.\relax }}{44}{figure.caption.31}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Robot schematic creation. Step-Up circuit parts are higlighted in dark blue.\relax }}{45}{figure.caption.32}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Robot schematic creation. 3.3V LDO components are higlighted in orange.\relax }}{46}{figure.caption.33}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Robot schematic creation. Second Arduino Leonardo compatible circuit components are higlighted in purple.\relax }}{47}{figure.caption.34}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Robot schematic creation. Motor control circuit components are higlighted in lime.\relax }}{48}{figure.caption.35}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Robot schematic creation. Placeholder for optional components on breakout boards are higlighted in olive, additional components in aqua and line sensing components are highlighted in brown.\relax }}{49}{figure.caption.36}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Captive nut joint illustration by MAKE magazine (from \url {http://makezine.com/2011/10/06/clever-captive-square-nut-cnc-panel-joint/})\relax }}{50}{figure.caption.37}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Motor mount using t-slots (CC-BY-SA Ben Oswald)\relax }}{51}{figure.caption.38}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces 3D printed wheel connector with wheel (CC-BY-SA Ben Oswald)\relax }}{52}{figure.caption.39}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Views of the robot (CC-BY-SA Ben Oswald)\relax }}{53}{figure.caption.40}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Roboter front view (CC-BY-SA Ben Oswald)\relax }}{55}{figure.caption.41}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

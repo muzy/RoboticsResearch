@@ -1,0 +1,49 @@
+\BOOKMARK [0][-]{chapter*.4}{List of Figures}{}% 1
+\BOOKMARK [0][-]{chapter*.5}{List of Tables}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
+\BOOKMARK [0][-]{chapter.2}{Requirement Analysis / Project Goals}{}% 4
+\BOOKMARK [0][-]{chapter.3}{State of the Art}{}% 5
+\BOOKMARK [1][-]{section.3.1}{Asuro}{chapter.3}% 6
+\BOOKMARK [1][-]{section.3.2}{Arduino Robot}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.3}{LEGO Mindstorms NXT 2.0}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.4}{Thymio II}{chapter.3}% 9
+\BOOKMARK [0][-]{chapter.4}{Case studies}{}% 10
+\BOOKMARK [1][-]{section.4.1}{Movement}{chapter.4}% 11
+\BOOKMARK [2][-]{subsection.4.1.1}{Wheeled with two DC motors}{section.4.1}% 12
+\BOOKMARK [2][-]{subsection.4.1.2}{Wheeled with two Stepper motors}{section.4.1}% 13
+\BOOKMARK [2][-]{subsection.4.1.3}{Omniwheels}{section.4.1}% 14
+\BOOKMARK [2][-]{subsection.4.1.4}{Conclusion}{section.4.1}% 15
+\BOOKMARK [1][-]{section.4.2}{Sensors}{chapter.4}% 16
+\BOOKMARK [2][-]{subsection.4.2.1}{IR Reciever}{section.4.2}% 17
+\BOOKMARK [2][-]{subsection.4.2.2}{IR Proximity Sensor}{section.4.2}% 18
+\BOOKMARK [2][-]{subsection.4.2.3}{Ultrasonic Distance Sensor}{section.4.2}% 19
+\BOOKMARK [2][-]{subsection.4.2.4}{Accelerometer}{section.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.2.5}{Gyroscope}{section.4.2}% 21
+\BOOKMARK [2][-]{subsection.4.2.6}{Compass}{section.4.2}% 22
+\BOOKMARK [2][-]{subsection.4.2.7}{Conclusion}{section.4.2}% 23
+\BOOKMARK [1][-]{section.4.3}{Communication}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.3.1}{Infrared}{section.4.3}% 25
+\BOOKMARK [2][-]{subsection.4.3.2}{RFM12B}{section.4.3}% 26
+\BOOKMARK [2][-]{subsection.4.3.3}{NRF24L01}{section.4.3}% 27
+\BOOKMARK [2][-]{subsection.4.3.4}{Conclusion}{section.4.3}% 28
+\BOOKMARK [1][-]{section.4.4}{Microcontroller}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.4.1}{ATmega328p}{section.4.4}% 30
+\BOOKMARK [2][-]{subsection.4.4.2}{ATmega32U4}{section.4.4}% 31
+\BOOKMARK [2][-]{subsection.4.4.3}{Conclusion}{section.4.4}% 32
+\BOOKMARK [1][-]{section.4.5}{Power Supply}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.5.1}{Nickel-metal hydride batteries}{section.4.5}% 34
+\BOOKMARK [2][-]{subsection.4.5.2}{Lithium-polymer batteries}{section.4.5}% 35
+\BOOKMARK [2][-]{subsection.4.5.3}{Conclusion}{section.4.5}% 36
+\BOOKMARK [0][-]{chapter.5}{Robot Construction}{}% 37
+\BOOKMARK [1][-]{section.5.1}{Electrical requirement}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.2}{Power Management}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.3}{Processing Unit}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.4}{Optional components}{chapter.5}% 41
+\BOOKMARK [2][-]{subsection.5.4.1}{Display}{section.5.4}% 42
+\BOOKMARK [2][-]{subsection.5.4.2}{Gripper}{section.5.4}% 43
+\BOOKMARK [1][-]{section.5.5}{PCB design}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.6}{Mechanical platform}{chapter.5}% 45
+\BOOKMARK [2][-]{subsection.5.6.1}{Wheels}{section.5.6}% 46
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 47
+\BOOKMARK [0][-]{chapter*.42}{Bibliography}{}% 48
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 49

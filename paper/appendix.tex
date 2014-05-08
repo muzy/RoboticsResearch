@@ -1,0 +1,147 @@
+\chapter{Appendix}
+\newpage
+
+\begin{longtabu} to \textwidth { X[1,l] X[6,l] X[4,l] X[4,l]}
+\toprule
+Pin&Atmel Pin Name&User CPU&Brain CPU\\
+\midrule
+1&PE6 (INT.6/AIN0)&Digital pin 7&NRF24L01 IRQ\\
+2&UVcc&5V&5V\\
+3&D-&USB-&USB2-\\
+4&D+&USB+&USB2+\\
+5&UGnd&GND&GND\\
+6&UCap&UCAP&UCAP2\\
+7&VUSB&5V&5V\\
+8&(SS/PCINT0) PB0&RXLED&RXLED2\\
+9&(PCINT1/SCLK) PB1&SCK&SCK2\\
+10&(PDI/PCINT2/MOSI) PB2&MOSI&MOSI2\\
+11&(PDO/PCINT3/MISO) PB3&MISO&MISO2\\
+12&(PCINT7/OCA0/OC1C/\#RTS) PB7&Digital pin 11 (PWM)&Servo Gripper Rotation\\
+13&RESET&RESET&RESET2\\
+14&Vcc&5V&5V\\
+15&GND&GND&GND\\
+16&XTAL2&XTAL2&XTAL22\\
+17&XTAL1&XTAL1&XTAL12\\
+18&(OC0B/SCL/INT0) PD0&SCL&SCL\\
+19&(SDA/INT1) PD1&SDA&SDA\\
+20&(RX D1/AIN1/INT2) PD2&Digital pin 0 (RX)&RX2\\
+21&(TXD1/INT3) PD3&Digital pin 1 (TX)&TX2\\
+22&(XCK1/\#CTS) PD5&TXLED&TXLED2\\
+23&GND1&GND&GND\\
+24&AVCC&AVCC&AVCC\\
+25&(ICP1/ADC8) PD4&Digital pin 4&IR\\
+26&(T1/\#OC4D/ADC9) PD6&Digital pin 12&Shift Register RCK\\
+27&(T0/OC4D/ADC10) PD7&Digital Pin 6 (PWM)&Servo Gripper Grip\\
+28&(ADC11/PCINT4) PB4&Digital pin 8&SD Card CS\\
+29&(PCINT5/OC1A/\#OC4B/ADC12) PB5&Digital Pin 9 (PWM)&NRF24L01 CE\\
+30&(PCINT6/OC1B/OC4B/ADC13) PB6&Digital Pin 10 (PWM)&NRF24L01 CSN\\
+31&(OC3A/\#0C4A) PC6&Digital Pin 5 (PWM)&Servo Ultrasonic Rotation\\
+32&(ICP3/CLK0/)C4A) PC7&Digital Pin 13 (PWM) + LED&LED\\
+33&(\#HWB) PE2&HWB&HWB\\
+34&Vcc1&5V&5V\\
+35&GND2&GND&GND\\
+36&(ADC7/TDI) PF7&Analog In 0&Ultrasonic Trigger\\
+37&(ADC6/TDO) PF6&Analog In 1&Ultrasonic Echo\\
+38&(ADC5/TMS) PF5&Analog In 2&TFT DC\\
+39&(ADC4/TCK) PF4&Analog In 3&TFT RST\\
+40&(ADC1) PF1&Analog In 4&TFT CS\\
+41&(ADC0) PF0&Analog In 5&MUX Out\\
+42&AREF&AREF&AREF\\
+43&GND3&GND&GND\\
+44&AVCC1&AVCC&AVCC\\
+\bottomrule
+\caption{CPU pin mapping for constructed robot}
+\end{longtabu}
+
+\newpage
+
+\begin{longtabu} to \textwidth { X[3,l] X[1,r] X[1,r] X[1,r]}
+\toprule
+Part & Amount & Cost per part\footnote{Average price when ordered in quantity of 100.} & Sum \\
+\midrule
+\multicolumn{4}{c}{\textbf{US Distributor}\footnote{Supplied via \url{http://digikey.de}, accessed on 16th of March 2014. Prices are based on quantities of 100 units.}}\\
+\\
+CAP 18pF 1206 50V & 4 & 0.04\euro & 0.16\euro \\ 
+CAP 0.1uF 1206 50V & 8 & 0.04\euro & 0.32\euro \\
+CAP 1uF 1206 50V & 5 & 0.05\euro & 0.25\euro \\
+CAP 4.7uF 1206 16V & 2 & 0.06\euro & 0.12\euro \\
+CAP 10uF 1206 16V & 3 & 0.05\euro & 0.15\euro \\
+CAP 47uF 1206 10V & 2 & 0.28\euro & 0.56\euro \\
+RES 22 OHM 1206 1\% & 4 &  0.01\euro & 0.04\euro \\
+RES 100 OHM 1206 5\% & 5 & 0.01\euro & 0.05\euro \\
+RES 470 OHM 1206 1\% & 1 & 0.01\euro & 0.01\euro \\
+RES 1K OHM 1206 5\% & 7 & 0.01\euro & 0.07\euro \\
+RES 2K OHM 1206 1\% & 1 & 0.01\euro & 0.01\euro \\
+RES 3.09K OHM 1206 1\% & 1 & 0.01\euro & 0.01\euro \\
+RES 10K OHM 1206 5\% & 8 & 0.01\euro & 0.08\euro \\
+B330A & 1 & 0.25\euro & 0.25\euro \\
+LED 1206 & 7 & 0.11\euro & 0.77\euro \\
+PTC RESET 15V .5A SMD 1206 & 2 & 0.26\euro & 0.52\euro \\
+MOSFET N-CH 20V 4.2A SOT-23 & 2 & 0.19\euro & 0.38\euro \\
+FERRITE 3A 100 OHM 1206 SMD & 1 & 0.05\euro & 0.05\euro \\
+INDUCTOR 3.3UH 1210 SMD & 1 & 0.15\euro & 0.15\euro \\
+CRYSTAL 16MHZ 20PF SMD & 2 & 0.25\euro & 0.50\euro \\
+ATMEGA32U4 44TQFP & 2 & 2.80\euro & 5.60\euro \\
+LDO 3.3V SOT 23 & 1 & 0.33\euro & 0.33\euro \\ 
+MCP1650 & 1 & 0.79\euro & 0.79\euro \\
+MCP73831 & 1 & 0.33\euro & 0.33\euro \\
+74HC595D SO16 & 2 & 0.20\euro & 0.40\euro \\
+74HC4051 SO16 & 1 & 0.21\euro & 0.21\euro \\
+ULN2803 SO18 & 1 & 0.54\euro & 0.54\euro \\
+\\
+\multicolumn{4}{c}{\textbf{Chinese Distributor}\footnote{\label{edragon}Supplied via Chinese distributors found on \url{http://alibaba.com} on the 16th of March 2014. The price is based on quantities of one, dollar prices were converted to Euro with 1\euro = 1.3USD }}\\
+\\
+CONN 02-JST-XH & 1 & 0.02\euro & 0.02\euro \\
+CONN 05-JST-XH & 2 & 0.05\euro & 0.10\euro \\
+CONN 2.54 FEMALE 1x06 & 2 & 0.07\euro & 0.14\euro \\
+CONN 2.54 FEMALE 1x08 & 1 & 0.08\euro & 0.08\euro \\
+CONN 2.54 FEMALE 1x10 & 2 & 0.10\euro & 0.20\euro \\
+CONN 2.54 MALE 1x03 & 3 & 0.01\euro & 0.03\euro \\
+CONN 2.54 MALE 1x04 & 1 & 0.01\euro & 0.01\euro \\
+CONN 2.54 MALE 2x03 & 4 & 0.01\euro & 0.04\euro \\
+CONN USB MINI B & 2 & 0.04\euro & 0.08\euro \\
+TACTILE SWITCH & 2 & 0.02\euro & 0.04\euro \\
+TOGGLE SWITCH & 1 & 0.03\euro & 0.03\euro \\
+MICRO SERVO & 2 & 2.04\euro & 4.08\euro \\
+IR RECV 38KHZ & 1 & 0.10\euro & 0.10\euro \\
+STEPPER MOTOR 28-BYJ & 2 & 1.39\euro & 2.78\euro \\
+HC-SR04 ULTRASONIC & 1 & 1.38\euro & 1.38\euro \\
+1100mAH LIPO BATTERY & 1 & 1.84\euro & 1.84\euro \\
+\\
+\multicolumn{4}{c}{\textbf{German Distributor}\footnote{Supplied via German distributors or made in Germany.}}\\
+\\
+LASERCUT PARTS\footnote{Price is based on the raw material (320x230mm) price of 40\euro per square meter of 3mm acrylic. Lasercutting costs are not included. } & 1 & 3.00\euro & 3.00\euro \\
+M4 Screw 25mm & 8 & 0.03\euro & 0.24\euro \\
+M4 Screw 10mm & 22 & 0.03\euro &  0.66\euro \\
+M4 Nut & 30 & 0.01\euro & 0.30\euro \\
+PCB\footnote{Price based on calculation at \url{http://multi-circuit-boards.eu} with the PCB dimensions, double-sided with solder stop.} & 1 & 3.66\euro & 3.66\euro \\ 
+\hline \\
+Total cost& & & 31.28\euro \\
+\bottomrule
+\caption{Bill of Material for required parts (assuming mass production of 100 units)}
+\label{tbl:bom}
+\end{longtabu}
+
+\newpage
+
+\begin{longtabu} to \textwidth { X[3,l] X[1,r] X[1,r] X[1,r]}
+\toprule
+Part & Amount & Cost per part\footnote{Items supplied via Chinese distributors found on \url{http://alibaba.com} on the 16th of March 2014. The price is based on quantities of one, dollar prices were converted to Euro with 1\euro = 1.3USD } & Sum \\
+\midrule
+DISPLAY SPI 1.8 INCH & 1 & 4.47\euro & 4.47\euro \\
+NRF24L01+ & 1 & 0.92\euro & 0.92\euro \\
+MPU6050 GYRO + ACCEL & 1 & 2.76\euro & 2.76\euro \\
+HMC-5883L & 1 & 1.84\euro & 1.84\euro \\
+MICRO SERVO & 2 & 2.04\euro & 2.04\euro \\
+CONN 2.54 FEMALE 1x04 & 1 & 0.04\euro & 0.04\euro \\
+CONN 2.54 FEMALE 1x05 & 1 & 0.05\euro & 0.05\euro \\
+CONN 2.54 FEMALE 1x08 & 2 & 0.05\euro & 0.10\euro \\
+CONN 2.54 FEMALE 2x04 & 1 & 0.05\euro & 0.05\euro \\
+\hline \\
+Total cost& & & 12.27\euro \\
+\bottomrule
+\caption{Bill of Material for optional parts (assuming mass production of 100 units)}
+\label{tbl:bom_opt}
+\end{longtabu}
+\includepdf[pages={1}]{images/schematic/robot.pdf}
+%\includepdf[pages={1}, angle=90]{images/schematic/robot_schematic.pdf}

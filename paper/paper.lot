@@ -1,0 +1,19 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Asuro evaluation}}{7}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Arduino Robot evaluation}}{9}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Lego Mindstorms evaluation}}{11}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Thymio II evaluation}}{13}{table.3.4}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces DC motor microcontroller pin usage\relax }}{17}{table.caption.13}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Shift register microcontroller pin usage\relax }}{18}{table.caption.14}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Robot evaluation}}{54}{table.6.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces CPU pin mapping for constructed robot}}{60}{table.A.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Bill of Material for required parts (assuming mass production of 100 units)}}{62}{table.A.2}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Bill of Material for optional parts (assuming mass production of 100 units)}}{63}{table.A.3}

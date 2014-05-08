@@ -1,0 +1,113 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{RCMM13}
+
+\bibitem[CN13]{candel2013plataforma}
+Ricardo Candel~Navas.
+\newblock Plataforma docente para la ense{\~n}anza de las tic, basada en la
+  maqueta de un puente colgante.
+\newblock 2013.
+
+\bibitem[EGGN12]{eigner2012mechatronik}
+Martin Eigner, Florian Gerhardt, Torsten Gilz, and Fabrice~Mogo Nem.
+\newblock Mechatronik am beispiel des asuro.
+\newblock In {\em Informationstechnologie f{\"u}r Ingenieure}, pages 239--252.
+  Springer, 2012.
+
+\bibitem[Fio05]{1577016}
+P.~Fiorini.
+\newblock Lego kits in the lab [robotics education].
+\newblock {\em Robotics Automation Magazine, IEEE}, 12(4):5--, Dec 2005.
+
+\bibitem[GES04]{goldman2004using}
+Rachel Goldman, Amy Eguchi, and Elizabeth Sklar.
+\newblock Using educational robotics to engage inner-city students with
+  technology.
+\newblock In {\em Proceedings of the 6th international conference on Learning
+  sciences}, pages 214--221. International Society of the Learning Sciences,
+  2004.
+
+\bibitem[HHH89]{horowitz1989art}
+Paul Horowitz, Winfield Hill, and Thomas~C Hayes.
+\newblock {\em The art of electronics}, volume~2.
+\newblock Cambridge university press Cambridge, 1989.
+
+\bibitem[JNH{\etalchar{+}}]{juniorlow}
+Luiz~A Junior, Osvaldo~T Neto, Marli~F Hernandez, Paulo~S Martins, Leonardo~L
+  Roger, and F{\'a}tima~A Guerra.
+\newblock A low-cost and simple arduino-based educational robotics kit.
+
+\bibitem[Joh03]{johnson2003children}
+Jeffrey Johnson.
+\newblock Children, robotics, and education.
+\newblock {\em Artificial Life and Robotics}, 7(1-2):16--21, 2003.
+
+\bibitem[MBR{\etalchar{+}}09]{mondada2009puck}
+Francesco Mondada, Michael Bonani, Xavier Raemy, James Pugh, Christopher
+  Cianci, Adam Klaptocz, St{\'e}phane Magnenat, Jean-Christophe Zufferey, Dario
+  Floreano, and Alcherio Martinoli.
+\newblock The e-puck, a robot designed for education in engineering.
+\newblock In {\em Proceedings of the 9th conference on autonomous robot systems
+  and competitions}, volume~1, pages 59--65, 2009.
+
+\bibitem[MLR{\etalchar{+}}13]{mclurkin2013low}
+James McLurkin, Andrew~J Lynch, Scott Rixner, Thomas~W Barr, Alvin Chou,
+  Kathleen Foster, and Siegfried Bilstein.
+\newblock A low-cost multi-robot system for research, teaching, and outreach.
+\newblock In {\em Distributed Autonomous Robotic Systems}, pages 597--609.
+  Springer, 2013.
+
+\bibitem[MRJ{\etalchar{+}}13]{mclurkin2013using}
+James McLurkin, Joshua Rykowski, Meagan John, Quillan Kaseman, and Andrew~J
+  Lynch.
+\newblock Using multi-robot systems for engineering education: teaching and
+  outreach with large numbers of an advanced, low-cost robot.
+\newblock {\em Education, IEEE Transactions on}, 56(1):24--33, 2013.
+
+\bibitem[MSS{\etalchar{+}}]{mubin1review}
+Omar Mubin, Catherine~J Stevens, Suleman Shahid, Abdullah Al~Mahmud, and
+  Jian-Jie Dong.
+\newblock A review of the applicability of robots in education.
+\newblock {\em Journal of Technology in Education and Learning}, 1.
+
+\bibitem[RAN12]{rubenstein2012kilobot}
+Michael Rubenstein, Christian Ahler, and Radhika Nagpal.
+\newblock Kilobot: A low cost scalable robot system for collective behaviors.
+\newblock In {\em Robotics and Automation (ICRA), 2012 IEEE International
+  Conference on}, pages 3293--3298. IEEE, 2012.
+
+\bibitem[RCMM13]{riedo2013thymio}
+Fanny Riedo, Morgane Chevalier, Stephane Magnenat, and Francesco Mondada.
+\newblock Thymio ii, a robot that grows wiser with children.
+\newblock In {\em Advanced Robotics and its Social Impacts (ARSO), 2013 IEEE
+  Workshop on}, pages 187--193. IEEE, 2013.
+
+\bibitem[RdSA04]{1356096}
+J.~Ruiz-del Solar and R.~Aviles.
+\newblock Robotics courses for children as a motivation tool: the chilean
+  experience.
+\newblock {\em Education, IEEE Transactions on}, 47(4):474--480, Nov 2004.
+
+\bibitem[RRB{\etalchar{+}}12]{riedo2012two}
+Fanny Riedo, Philippe R{\'e}tornaz, Luc Bergeron, Nathalie Nyffeler, and
+  Francesco Mondada.
+\newblock A two years informal learning experience using the thymio robot.
+\newblock In {\em Advances in Autonomous Mini Robots}, pages 37--48. Springer,
+  2012.
+
+\bibitem[RSM08]{ranganathan2008use}
+Prakash Ranganathan, Richard Schultz, and Mojdeh Mardani.
+\newblock Use of lego nxt mindstorms brick in engineering education.
+\newblock In {\em Proceedings of the 2008 ASEE North Midwest Sectional
+  Conference}, pages 17--19, 2008.
+
+\bibitem[SGB07]{SGBI}
+{\em SGB II Grundsicherung für Arbeitssuchende / SGB XII Sozialhilfe}.
+\newblock DTV Deutscher Taschenbuch, 2007.
+
+\bibitem[Tic06]{tick2006modelling}
+J{\'o}zsef Tick.
+\newblock „modelling control systems by autonomous mini robot”.
+\newblock In {\em Proceedings of the 3 rd Romanian--Hungarian Joint Symposium
+  on Applied Computational Intelligence}, pages 25--26, 2006.
+
+\end{thebibliography}

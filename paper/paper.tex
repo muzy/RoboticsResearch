@@ -1,0 +1,220 @@
+\documentclass[	a4paper,11pt,oneside,			% sollte logisch sein
+		listof=totoc,bibliography=totoc,	% Listings und Literatur im Inhaltsverzeichnis
+		titlepage,				% Befehl Titlepage statt /maketitle
+		headsepline,				% Strich unter Kolumnentitel
+		BCOR5mm,	 			% Rand Korrektur zum Binden
+		2.1headlines,				% berechnet den nötigen Platz für Header (vermeidet Badbox)
+		numbers=noenddot,			% kein Punkt hinter der Kapitelnummerierung
+		parskip=full]{scrreprt}			% Leerzeile als Absatztrennung
+
+\usepackage[a4paper,left=2.5cm,right=2.5cm,top=3.5cm,bottom=3.5cm]{geometry}		% Seitenabstände
+\usepackage{ucs}		% UTF-8
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}	% beides für Umlaute
+\usepackage[english]{babel}
+\usepackage{scrhack}		% KOMA Kompatiblität mit listings
+\usepackage[colorlinks=false,pdfborder={0 0 0}]{hyperref}	% erstellt Hyperlinks im PDF ohne farbliche Kennzeichnung
+\usepackage{graphicx}		% Möglichkeit png einzubinden... kA was bei jpg passiert... ma wuascht
+\usepackage{textcomp}		% Euro und sonstige Symbole
+\usepackage{mathpazo}		% Mathe passend zu Palatino Font
+\usepackage{listings}		% Quellcode mit lstlisting
+\usepackage{pdfpages} 		
+\usepackage[intoc]{nomencl} 	% Abkürzungsverzeichnis
+\usepackage{setspace}		% Zeilenabstand nur im Text ändern. Fußnoten kompakter
+\usepackage[numbers,square,colon]{natbib} % BibTex
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{eurosym}
+\usepackage{csquotes}
+\usepackage{rotating} 
+\usepackage{array}
+\usepackage{booktabs} 
+\usepackage{longtable}
+\usepackage{ifthen}
+\usepackage{xcolor}
+\usepackage{tabu}
+\usepackage{subcaption}
+\usepackage{colortbl}
+\usepackage{calc}
+\usepackage{pifont}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{tabu}
+\usepackage{forloop}
+\usepackage{tablefootnote}
+\usepackage{lipsum}		% Lorem Ipsum einfügen mit lipsum[1]
+\sloppy
+
+\newcounter{starnumber}
+\newcommand{\stars}[1]{
+  \forloop{starnumber}{1}{\value{starnumber} < 6}{
+    \ifthenelse{#1 < \value{starnumber}}{\ding{73}}{\ding{72}}%
+  }
+}
+
+%\renewcommand{\arraystretch}{1.2}
+
+% Grafiken
+\DeclareGraphicsExtensions{.png}
+
+% Listings
+\lstset{	language=c++,
+		basicstyle=\footnotesize,
+		numbers=left,
+		numberstyle=\footnotesize,
+		stepnumber=1,
+		numbersep=3pt,
+		backgroundcolor=\color{lightgray},
+		showspaces=false,
+		showstringspaces=false,
+		showtabs=false,
+		frame=none,
+		tabsize=2,
+		captionpos=b,
+		breaklines=true,
+		breakatwhitespace=false,
+		title=\lstname,
+		escapeinside={\%*}{*)},
+		morekeywords={}
+}
+
+\newcounter{savedtocdepth}			% um im Anhang nur die oberste Ebene im toc zu haben
+\newcommand*{\SaveTocDepth}[1]{
+  \addtocontents{toc}{
+    \protect\setcounter{savedtocdepth}{\protect\value{tocdepth}}
+    \protect\setcounter{tocdepth}{#1}
+  }
+}
+
+\newcommand*{\RestoreTocDepth}{
+  \addtocontents{toc}{
+    \protect\setcounter{tocdepth}{\protect\value{savedtocdepth}}
+  }
+} 
+
+% anzupassende Daten
+\newcommand{\titel}{Development of a educational and sustainable robotic platform for children and adults}
+\newcommand{\untertitel}{}
+\newcommand{\arbeittyp}{Seminar Paper}
+\newcommand{\bsctyp}{}
+\newcommand{\studiengang}{Applied Information Technology}
+\newcommand{\autor}{Sebastian Muszytowski}
+\newcommand{\matrikelnr}{8410692}
+\newcommand{\kurs}{TINF-AI11-BC}
+\newcommand{\firma}{}
+\newcommand{\abgabe}{02.06.2014}
+\newcommand{\dauer}{}
+\newcommand{\betreuerdhbw}{Bernd Glaser}
+\newcommand{\betreuerfirma}{}
+\newcommand{\jahr}{2014}
+\newcommand{\ort}{Mannheim}
+
+% Generieren des Abkürzungsverzeichnis
+\makenomenclature		% Latex -> makeindex main.nlo -s nomencl.ist -o main.nls -> Latex nötig
+%\input{content/abrev}		% oder Latex Editor richtig konfigurieren :p
+
+\begin{document}
+\clearpage
+\pagestyle{empty}
+\renewcommand*{\chapterpagestyle}{empty}
+
+\setcounter{secnumdepth}{3}	% Nummerierungstiefe fürs Inhaltsverzeichnis
+\setcounter{tocdepth}{3}
+\rmfamily			% Font
+
+% Standardinhalt einer Arbeit
+\begin{titlepage}
+
+%\enlargethispage{4.0cm}
+\sffamily 								% Serifenlose Grundschrift für die Titelseite einstellen
+				
+\begin{flushright}
+\includegraphics[scale=0.5]{images/dhbwlogo.png}\\[20ex] %\hfill \includegraphics[scale=0.5]{images/hshlogo} \\[20ex]
+\end{flushright}
+
+\begin{center}
+
+\huge{\textbf{\titel}}\\[1.5ex]
+\Large{\textbf{\untertitel}}\\[5ex]
+\LARGE{\textbf{\arbeittyp}}\\[2ex]
+%\normalsize{für die Prüfung zum\\[1ex] Bachelor of \bsctyp}\\[7ex]
+\Large{\studiengang}\\[1ex]
+\normalsize{Cooperative State University Baden-Wuerttemberg Mannheim}\\[6ex]
+by\\[1ex] \textbf{\autor} \\[6ex]
+\today \\[18ex]
+
+
+\end{center}
+\vfill
+\begin{flushleft}
+
+\begin{tabular}{ll}
+%Bearbeitungszeitraum:			& \quad \dauer   \\ 
+Matrikelnummer, Kurs: 			& \quad \matrikelnr, \kurs \\
+%Ausbildungsfirma:	 			& \quad \firma \\
+%Betreuer der Ausbildungsfirma:  & \quad \betreuerfirma \\ 
+%Gutachter der Dualen Hochschule: & \quad \betreuerdhbw \\ [5ex]
+Betreuer: & \quad \betreuerdhbw \\ [5ex]
+
+\end{tabular} 
+\end{flushleft}
+
+\end{titlepage}
+\pagenumbering{roman}
+\onehalfspacing
+\include{abstract} 		% ??? lt. Vorgabe eigentlich lose beilegen
+\singlespacing
+
+\tableofcontents
+
+\clearpage
+\pagestyle{headings}
+\renewcommand*{\chapterpagestyle}{plain}
+
+\printnomenclature[2.0cm]
+\listoffigures
+\listoftables
+\pagebreak
+
+\pagenumbering{arabic}
+\onehalfspacing
+
+% eingebundene Kapitel
+\include{content}
+
+% BibTex einfügen
+\singlespacing
+\nocite{*}
+\bibliography{bibliography}
+%\bibliographystyle{alphadin}
+
+\bibliographystyle{alpha}
+
+\appendix
+\clearpage
+%\onehalfspacing
+\include{appendix}
+
+%\clearpage
+%\singlespacing
+%\glossarystyle{altlistgroup}
+%\printglossaries
+
+\clearpage
+\pagestyle{empty}
+\renewcommand{\chapterpagestyle}{empty}
+\singlespacing
+\chapter*{Ehrenwörtliche Erklärung}
+Ich versichere hiermit, dass ich meine Studienarbeit mit dem Thema
+\begin{quote}
+ \textit{\titel} %- \textit{\untertitel}
+\end{quote}
+selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe.
+
+\vspace{22pt}
+
+\rule[-0.2cm]{5cm}{0.5pt} \hfill \ort,den 16. Mai 2014
+
+\autor
+\end{document}          
+
