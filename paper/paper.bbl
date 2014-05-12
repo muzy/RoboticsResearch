@@ -13,10 +13,30 @@ Martin Eigner, Florian Gerhardt, Torsten Gilz, and Fabrice~Mogo Nem.
 \newblock In {\em Informationstechnologie f{\"u}r Ingenieure}, pages 239--252.
   Springer, 2012.
 
+\bibitem[EHJ{\etalchar{+}}08]{eugster2008sustainable}
+Martin Eugster, Duan Huabo, Li~Jinhui, Oshani Perera, Jason Potts, and Wanhua
+  Yang.
+\newblock Sustainable electronics and electrical equipment for china and the
+  world.
+\newblock {\em International Institute for Sustainable Development,
+  Switzerland}, 2008.
+
+\bibitem[End09]{enderle2009grape}
+Stefan Enderle.
+\newblock Grape--graphical robot programming for beginners.
+\newblock In {\em Research and Education in Robotics—EUROBOT 2008}, pages
+  180--192. Springer, 2009.
+
 \bibitem[Fio05]{1577016}
 P.~Fiorini.
 \newblock Lego kits in the lab [robotics education].
 \newblock {\em Robotics Automation Magazine, IEEE}, 12(4):5--, Dec 2005.
+
+\bibitem[FRC96]{ferriere1996design}
+Laurent Ferriere, Beno{\^\i}t Raucent, and Guy Campion.
+\newblock Design of omnimobile robot wheels.
+\newblock In {\em Robotics and Automation, 1996. Proceedings., 1996 IEEE
+  International Conference on}, volume~4, pages 3664--3670. IEEE, 1996.
 
 \bibitem[GES04]{goldman2004using}
 Rachel Goldman, Amy Eguchi, and Elizabeth Sklar.
@@ -69,6 +89,12 @@ Omar Mubin, Catherine~J Stevens, Suleman Shahid, Abdullah Al~Mahmud, and
 \newblock A review of the applicability of robots in education.
 \newblock {\em Journal of Technology in Education and Learning}, 1.
 
+\bibitem[Nik01]{niku2001introduction}
+Saeed~B Niku.
+\newblock {\em Introduction to robotics: analysis, systems, applications},
+  volume~7.
+\newblock Prentice Hall New Jersey, 2001.
+
 \bibitem[RAN12]{rubenstein2012kilobot}
 Michael Rubenstein, Christian Ahler, and Radhika Nagpal.
 \newblock Kilobot: A low cost scalable robot system for collective behaviors.
@@ -100,7 +126,7 @@ Prakash Ranganathan, Richard Schultz, and Mojdeh Mardani.
 \newblock In {\em Proceedings of the 2008 ASEE North Midwest Sectional
   Conference}, pages 17--19, 2008.
 
-\bibitem[SGB07]{SGBI}
+\bibitem[SGB07]{SGBII}
 {\em SGB II Grundsicherung für Arbeitssuchende / SGB XII Sozialhilfe}.
 \newblock DTV Deutscher Taschenbuch, 2007.
 

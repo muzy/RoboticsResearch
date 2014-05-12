@@ -28,9 +28,9 @@
 \contentsline {subsection}{\numberline {4.3.3}NRF24L01}{26}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Conclusion}{27}{subsection.4.3.4}
 \contentsline {section}{\numberline {4.4}Microcontroller}{27}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}ATmega328p}{27}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}ATmega328p}{28}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}ATmega32U4}{28}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Conclusion}{28}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.3}Conclusion}{29}{subsection.4.4.3}
 \contentsline {section}{\numberline {4.5}Power Supply}{29}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Nickel-metal hydride batteries}{29}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Lithium-polymer batteries}{30}{subsection.4.5.2}

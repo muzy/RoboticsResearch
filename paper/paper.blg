@@ -6,52 +6,52 @@ A level-1 auxiliary file: content.aux
 The style file: alpha.bst
 A level-1 auxiliary file: appendix.aux
 Database file #1: bibliography.bib
-Warning--to sort, need author, editor, or key in SGBI
+Warning--to sort, need author, editor, or key in SGBII
 Warning--empty journal in candel2013plataforma
 Warning--empty journal in juniorlow
 Warning--empty year in juniorlow
 Warning--can't use both volume and number fields in mondada2009puck
 Warning--empty year in mubin1review
-Warning--empty author and editor in SGBI
-You've used 18 entries,
+Warning--empty author and editor in SGBII
+You've used 22 entries,
             2543 wiz_defined-function locations,
-            663 strings with 8035 characters,
-and the built_in function-call counts, 8838 in all, are:
-= -- 874
-> -- 464
-< -- 15
-+ -- 174
-- -- 168
-* -- 657
-:= -- 1405
-add.period$ -- 58
-call.type$ -- 18
-change.case$ -- 134
-chr.to.int$ -- 18
-cite$ -- 26
-duplicate$ -- 361
-empty$ -- 613
-format.name$ -- 182
-if$ -- 1844
+            683 strings with 8754 characters,
+and the built_in function-call counts, 10693 in all, are:
+= -- 1063
+> -- 545
+< -- 21
++ -- 202
+- -- 196
+* -- 780
+:= -- 1691
+add.period$ -- 72
+call.type$ -- 22
+change.case$ -- 160
+chr.to.int$ -- 22
+cite$ -- 30
+duplicate$ -- 446
+empty$ -- 749
+format.name$ -- 215
+if$ -- 2243
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 19
-newline$ -- 92
-num.names$ -- 51
-pop$ -- 155
+missing$ -- 24
+newline$ -- 112
+num.names$ -- 63
+pop$ -- 188
 preamble$ -- 1
-purify$ -- 154
+purify$ -- 185
 quote$ -- 0
-skip$ -- 294
+skip$ -- 365
 stack$ -- 0
-substring$ -- 462
-swap$ -- 100
-text.length$ -- 15
-text.prefix$ -- 3
+substring$ -- 562
+swap$ -- 127
+text.length$ -- 21
+text.prefix$ -- 5
 top$ -- 0
-type$ -- 136
+type$ -- 164
 warning$ -- 7
-while$ -- 80
-width$ -- 23
-write$ -- 234
+while$ -- 96
+width$ -- 27
+write$ -- 288
 (There were 7 warnings)

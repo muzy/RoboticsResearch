@@ -3,7 +3,7 @@ Getting children in touch with technology is important in todays technologically
 Since schools are required to save money, robots used for teaching stay property of the schools. Therefore children usually cannot take the robot home to work with it. In addition modification of robot is usually not permitted which reduces potential learning experiences. Giving students the full control over all possibilities of the robot requires them to own the robot. This requires to robot to be cheap, extensible and suitable for educational purposes.\newline
 The development of a robot platform for educational purpose requires requirement engineering, market research and evaluation of robots which are already used in education. Once the research is completed a new robot platform can be constructed taking the research results into account. The goal is to develop such an educational robot platform with regard to the target user group, their needs and educational concepts.
 \chapter{Requirement Analysis / Project Goals}
-User group of a robot can be categorized into different groups regardless of their age:
+User group of a robot can be categorized into different groups regardless of their age\cite{enderle2009grape}:
 \begin{description}
 \item[Beginner] \hfill \\ Beginners have little to no experience with robots. They need extensive assistance to perform tasks such as soldering and programming. For programming graphical programming languages (such as minibloq\footnote{\url{http://blog.minibloq.org/}} or ModKit\footnote{\url{http://www.modkit.com/}}) or languages providing a high level of abstraction (such as Wiring), 
 \item[Advanced] \hfill \\ Advanced users have advanced experience with robots and robotics. Most programming and soldering tasks are done independently; working knowledge is utilized to solve new and unknown tasks.  
@@ -13,11 +13,11 @@ User group of a robot can be categorized into different groups regardless of the
 The target user group for this educational robotic project are beginners of all age with focus of children at school with limited budget. Teaching the knowledge requires a platform which is designed to be educational. Therefore it has to comply with several requirements which affect technical aspects as well as social aspects.
 The following lists describes the basic requirements on which existing platforms can be assessed. The assessment criteria can also be used to make decisions when developing a new platform.
 \begin{description}
-\item[Affordable] \hfill \\ The robot platform must be affordable for everyone. Especially when the robot is used in schools every child should own the robot to increase the possibilities to modify and extend it. Robots which stay property of a school may result in social problems since socially disadvantaged children cannot afford their own robot whereas socially advantaged children can. A considerable price tag for a educational robot is the educational budget for a welfare recipient which is 100 Euro per year in Germany as defined defined in SGB II §28 (as of the 07.05.2013).
+\item[Affordable] \hfill \\ The robot platform must be affordable for everyone. Especially when the robot is used in schools every child should own the robot to increase the possibilities to modify and extend it. Robots which stay property of a school may result in social problems since socially disadvantaged children cannot afford their own robot whereas socially advantaged children can. A considerable price tag for a educational robot is the educational budget for a welfare recipient which is 100 Euro per year in Germany as defined defined in SGB II §28 (as of the 07.05.2013).\cite{SGBII}\
 \item[Educational] \hfill \\ Documentation, learning materials and suggestions for lessons are needed to teach the usage of the robot. The robot should be designed to teach both electrical engineering as well as programming. This can be realized by having exercises specific to the topic e.g. by soldering the robot first with programming afterwards. If the platform supports both, graphical programming languages for young children as well as high-level programming languages the platform is more accessible for education. 
-\item[Sustainable] \hfill \\ Sustainability is an environmental issue which should be taken into account. Sustainability includes several aspects such as the choice of materials, their durability and the repairability. It is a huge bonus if materials are environment-friendly and produced in a socially acceptable manner (tantalum capacitors for instance should be avoided for those reasons). If the robot can be easily repaired or interchanged using household or easy to get items the robot can be considered sustainable. 
+\item[Sustainable] \hfill \\ Sustainability is an environmental issue which should be taken into account. Sustainability includes several aspects such as the choice of materials, their durability and the repairability. It is a huge bonus if materials are environment-friendly and produced in a socially acceptable manner (tantalum capacitors for instance should be avoided for those reasons). If the robot can be easily repaired or interchanged using household or easy to get items the robot can be considered sustainable.\cite[p. 40]{eugster2008sustainable}
 \item[Extendable] \hfill \\ Extendability enables the robot to adapt to new tasks. Interchangeable sensors and actuators are the key to a flexible platform. The platform should provide some unused microcontroller pins dedicated to extensions. Those pins should be mapped onto easy accessible pins which require no soldering.  
-\item[Trouble-free] \hfill \\ Building the robot should be a smooth, trouble free, task. Error sources should be prevented e.g. by using connectors which fit in one direction only or properly marked electric parts. Bending or modifying shipped parts should be avoided since it  could render the part broken or malfunctioning. Replacement parts should be easy to order or included within the robot kit (parts such as small SMD resistors which are very cheap).
+\item[Trouble-free] \hfill \\ Building the robot should be a smooth, trouble free, task. Error sources should be prevented e.g. by using connectors which fit in one direction only or properly marked electric parts. Bending or modifying shipped parts should be avoided since it  could render the part broken or malfunctioning. Replacement parts should be easy to order or included within the robot kit (parts such as small SMD resistors which are cheap).
 \item[Open-Source] \hfill \\ Open-Source products can be easily modified, extended and remixed into new, continuously improved, products. Schematics, PCB layout files, build-instructions and specifications should be accessible under a permissive open-source license. 
 \end{description}
 
@@ -49,14 +49,15 @@ Asuro features an eight bit Atmel ATmega8L microcontroller with eight kilobytes 
 
 Interaction with the environment is realized using two DC motors which can be controlled individually in terms of direction and speed. The robot is stabilized using a half table-tennis ball mounted at the bottom of the robot. Four LEDs are used for displaying the status of the Asuro. The whole system is powered by four AAA batteries or rechargeable batteries mounted in a 2x2 battery case. 
 
-Asuro can sense its environment using different sensors such as two photodiodes which can be used for line-following tasks, six push buttons to detect objects in front of Asuro and two photoelectric sensors to determine the rotation speed of each of Asuros wheels.
+Asuro can sense its environment using different sensors such as two photodiodes which can be used for line-following tasks, six push buttons to detect objects in front of Asuro and two photoelectric sensors to determine the rotation speed of each of Asuros wheels.\cite[p. 239-242]{eigner2012mechatronik}
 
+\clearpage
 
 \begin{longtabu} to \textwidth { X[1,l] X[1,l] X[4,l]}
 \toprule
 Assessment Criteria    & Rating & Description \\
 \midrule
-Affordable      & \stars{5}    & Having a price tag of 50 Euro renders the Asuro very affordable in comparison to the 100 Euro limit set. The cost effectiveness is outstanding and features sensors and actuators for basic tasks.     \\
+Affordable      & \stars{5}    & Having a price tag of 50 Euro renders the Asuro very affordable in comparison to the 100 Euro limit set. The cost effectiveness is outstanding and features sensors and actuators for basic tasks.\footnote{price as of the 11th of May 2014 from Conrad (EAN: 8717371231255)}\\
 Educational     & \stars{3}     & Asuro features detailed build-instructions in English and German. The guide also includes a tutorial on how to program Asuro in C. Even though there are a lot of opportunities to teach electrical engineering, the available documents do not explain the electrical usage and functional principle of each part. \\
 Sustainable       & \stars{4}     & Asuro uses standard components only and features ROHS compliant parts which are free from heavy metals such as lead (PB). A broken Asuro can be easily repaired using the tools which are required to solder it. \\
 Extendable & \stars{2}      & Having no free microcontroller pins and no broken out pins, Asuro cannot be considered extendable. There exist some hardware modification in the Asuro community which extend the functionality but require to unsolder/remove some parts.  \\
@@ -76,9 +77,9 @@ All in all the Asuro is a cost effective robot platform suitable for beginners. 
   \caption{Rendering of the Arduino Robot (CC-BY-SA arduino.cc)}
 \end{figure}
 
-The Arduino Robot is the first robot created by the Arduino foundation targeted to educational purposes. It comes preassembled and consists of two different boards: the motor board and the control board. Due to this design, the Arduino robot contains two Atmel ATmega 32U4 microcontroller featuring a clock speed of 16MHz, 32KB of flash memory (of which 28KB can be used for user programs), 2.5KB of RAM and 1KB of EEPROM each.\footnote{{http://arduino.cc/en/Main/Robot}}
+The Arduino Robot is the first robot created by the Arduino foundation targeted to educational purposes. It comes preassembled and consists of two different boards: the motor board and the control board. Due to this design, the Arduino robot contains two Atmel ATmega 32U4 microcontroller featuring a clock speed of 16MHz, 32KB of flash memory (of which 28KB can be used for user programs), 2.5KB of RAM and 1KB of EEPROM each.\footnote{see {http://arduino.cc/en/Main/Robot}}
 
-Each board can be individually programmed using the freely available Arduino IDE\footnote{\url{http://arduino.cc/en/Main/Software}} having the Robot connected to the computer using an USB cable. The IDE provides a lot of examples for the robot platform and introduces a library for abstract access to the robots functionaly. Power is applied to the system using four rechargeable NIMH-batteries which can be directly recharged on the board by connecting an appropriate power source to the board.
+Each board can be individually programmed using the freely available Arduino IDE\footnote{see \url{http://arduino.cc/en/Main/Software}} having the Robot connected to the computer using an USB cable. The IDE provides a lot of examples for the robot platform and introduces a library for abstract access to the robots functionaly. Power is applied to the system using four rechargeable NIMH-batteries which can be directly recharged on the board by connecting an appropriate power source to the board.
 
 The robot can interact with its environment using movement generated by two controllable DC motors attached to wheels and stabilized using two ball caster. In addition to movement the robot can play sounds using a small speaker on the control board and display text and images on the display mounted on the control board as well. In contrast to the actuators the user can interact with the robot using buttons and several sensors such as infrared sensors for line following tasks or distance measurement.
 
@@ -106,15 +107,15 @@ To sum it up the Arduino robot is an extendable robot platform which requires no
   \caption{Picture of the LEGO Mindstorms NXT (CC-BY-NC Elvis Ripley)}
 \end{figure}
 
-The LEGO Mindstorms NXT 2.0 platform was released by LEGO in 2009 and replaced the first LEGO Mindstorms NXT generation. It is compatible with Lego technic and therefore very flexible/extendable and aims at educational (Education Kit) and personal use (Inventor Kit). It is one of the most successful robotics system in education and is in wide use.
+The LEGO Mindstorms NXT 2.0 platform was released by LEGO in 2009 and replaced the first LEGO Mindstorms NXT generation. It is compatible with Lego technic and therefore very flexible/extendable and aims at educational (Education Kit) and personal use (Inventor Kit). It is one of the most successful robotics system in education and is in wide use.\cite[p. 1]{ranganathan2008use}
 
-LEGO Mindstorms NXT is available in two different kits: the educational kit and a consumer kit. The NXT intelligent brick is the core of the robot platform and contains an 32-bit Atmel ARM7 core with 256KB of Flash memory, 64KB of RAM and supports bluetooth and usb communication to communicate with a host computer. Moreover the brick features a greyscale display, a speaker and four buttons for direct interaction with the brick.
+LEGO Mindstorms NXT is available in two different kits: the educational kit and a consumer kit. The NXT intelligent brick is the core of the robot platform and contains an 32-bit Atmel ARM7 core with 256KB of Flash memory, 64KB of RAM and supports bluetooth and usb to communicate with a host computer. Moreover the brick features a greyscale display, a speaker and four buttons for direct interaction with the brick.\footnote{Sources available under \url{http://cache.lego.com/upload/contentTemplating/Mindstorms2SupportFilesDownloads/otherfiles/download88BC504D356D3DD966A6F4D07F8DA6D5.zip}}
 
 The brick can be powered by using six AA batteries or a rechargeable Lithium-Ion battery with integrated charger which can be separately brought. Sensors and actuators are powered by the brick. A total of four sensors and three actuators can be attached to the brick using flexible cables with a position encoded modular connector.
 
 In the standard kit three continuous rotation servo motors with one degree of accuracy are supplied as well as two touch sensors, one color sensor and an ultrasonic sensor. 
 
-The consumer kit has a price tag of 279 Euro and the education basis set a price tag of 368.99 Euro + 89.24 Euro for the education software.
+The consumer kit has a price tag of 279 Euro and the education basis set a price tag of 368.99 Euro + 89.24 Euro for the education software.\footnote{prices from \url{http://amazon.de} as of the 10th of August 2013}
 
 \begin{longtabu} to \textwidth { X[1,l] X[1,l] X[4,l]}
 \toprule
@@ -144,7 +145,7 @@ Thymio II is a robot developed by the Ecole Polytechnique Fédérale de Lausanne
 
 The robot can show its state using several LEDs which illuminate parts of the robots body. It interacts with its environment using two motors and of course the LEDs included. Sensing the environment is archieved using several infrared distance sensors, a microphone, capacitive touch sensors, an accelerometer and a temperature sensor. Data can be stored on a external memory card.
 
-Additional components can be mounted using LEGO compatible mechanical fixation points and an additional Thymio can be attached using the trailer hook. Various support for programming languages exist which adress beginners as well as advanced users.
+Additional components can be mounted using LEGO compatible mechanical fixation points and an additional Thymio can be attached using the trailer hook. Various support for programming languages exist which addresses beginners as well as advanced users.\cite{riedo2013thymio}
 
 
 \begin{longtabu} to \textwidth { X[1,l] X[1,l] X[4,l]}
@@ -167,9 +168,9 @@ To sum it up the Thymio II platform comes at a great price equipped with a lot o
 \chapter{Case studies}
 A robot is built using parts and modules which can be grouped into functional groups like movement, sensors or communication. The goal of each functional group can be achieved in various ways which have to be evaluated using the requirements used in the evaluation of other robot platforms. Some evaluation critera such as the fulfillment of the educational aspect or the open-source aspect may not be suitable for evaluation of single components and therefore left out. The Extendability describes the amount of microcontroller pins where the lesser amount of pins is considered better since this leaves space for extensions. Other difficulties in the evaluation process are dependencies between different modules, e.g. when a sensor has special power requirements. Based on the evaluation the robot will be constructed.
 \section{Movement}
-Movement is the most important feature since it allows the robot to interact with its environment. In contrast to a stationary robot, a moving robot can interact with a wider area but requires battery power or similar mobile energy sources. Different approaches for robot movement exist which will be part of critical evaluation.
+Movement is the most important feature since it allows the robot to interact with its environment. In contrast to a stationary robot, a moving robot can interact with a wider area but requires battery power or similar mobile energy sources. Different approaches for robot movement exist which will be part of critical evaluation. \cite{ferriere1996design}
 
-There exist wheeled, legged, flying, swimming, diving and much more robot movement types. Wheeled robots are common since their mechanic principle is rather simple, cheap and easy to implement and control. Therefore other mentioned movement techniques except wheeled robots are not part of the evaluation.
+There exist wheeled, legged, flying, swimming, diving and much more robot movement types. Wheeled robots are common since their mechanic principle is rather simple, cheap and easy to implement and control. Therefore other mentioned movement techniques except wheeled robots are not part of the evaluation. 
 
 \begin{figure}[H]
   \centering
@@ -182,7 +183,7 @@ Typically robots have two wheels and a ball caster which prevents the robot from
 \subsection{Wheeled with two DC motors}
 DC motors (direct current motors) are a cheap solutions for driving wheels. Usually a gear box is required to reduce the motor speed in favor of torque. Controlling the direction (forward and backward) requires the ability to switch the direction of the current flow. This is usally archieved using a H-bridge which can be found in as an integrated circuit or build using four electrical switches. 
 
-There exist integrated circuits which provides two H-bridges combined in one component which allow the control of steering beneath the control of direction. Speed control is controlled by an external PWM (pulse-width-modulation) source.
+There exist integrated circuits which provides two H-bridges combined in one component which allow the control of steering beneath the control of direction. Speed control is controlled by an external PWM (pulse-width-modulation) source.\cite[pp. 279]{niku2001introduction}
 
 \begin{figure}[H]
   \centering
@@ -228,9 +229,9 @@ When using a shift register for setting the four GPIO inputs of the motor driver
 
 \subsection{Wheeled with two Stepper motors}
 Stepper motors are basically DC motors with more coils. In stepper motors the full rotation is divided into a number of equal steps which can be separately controlled. The motor can step forward, backward or hold the current position with huge torque. Stepper motors are usually shipped within a gear box which reduces steps much further to gain higher precision and torque. 
-In typical applications stepper motors are driven by a dual H-bridge or darlington arrays attached to shift registers. The latter method is very cost effective but limited in current supply, the first method utilized a motor driver such as the L293 per stepper.
+In typical applications stepper motors are driven by a dual H-bridge or darlington arrays attached to shift registers. The latter method is very cost effective but limited in current supply, the first method utilized a motor driver such as the L293 per stepper. \cite[pp. 289]{niku2001introduction}
 
-Stepper motors are availble for about 5 USD (in the USA\footnote{http://www.adafruit.com/products/858}). Two stepper motors are needed to drive the robot, an additional ball caster is needed to stabilize the movement. As mentioned in the forehand the cost of driving a stepper motor can be reduced using a shift register such as the 74HC595 in combination with a darlington array such as the ULN2803. Costs for this solution are about 12 USD where the stepper motors cost 10 USD, and the integrated circuits about 2 USD.
+Stepper motors are availble for about 5 USD (in the USA\footnote{see \url{http://www.adafruit.com/products/858}}). Two stepper motors are needed to drive the robot, an additional ball caster is needed to stabilize the movement. As mentioned in the forehand the cost of driving a stepper motor can be reduced using a shift register such as the 74HC595 in combination with a darlington array such as the ULN2803. Costs for this solution are about 12 USD where the stepper motors cost 10 USD, and the integrated circuits about 2 USD.
 
 The pin usage on the microcontroller using the shift register is as follows:
 
@@ -253,7 +254,7 @@ Since shift registered are chainable, several stepper motors can be controlled u
 
 If a stepper motor gets broken, it can be easily replaced using the same model of stepper motor. Since the wheel is not part of the stepper motor, the old wheel can be replaced easily.
 \subsection{Omniwheels}
-Omniwheels/Mecanum wheels are the most flexible way of moving using wheels. Omniwheels are a special form of wheels which allow the movement in any direction having three independently moveable wheels. It requires three motors (typically DC motors) with direction control and optional speed control.
+Omniwheels/Mecanum wheels are the most flexible way of moving using wheels. Omniwheels are a special form of wheels which allow the movement in any direction having three independently moveable wheels. It requires three motors (typically DC motors) with direction control and optional speed control. \cite{ferriere1996design}
 
 \begin{figure}[H]
   \centering
@@ -312,7 +313,7 @@ Infrared proximity sensors can be used in various ways. When measuring distances
 
 Applications for proximity sensors are line following, edge detection (for instance of a table) or generic brightness measurement. When facing the front of the robot proximity sensors can be used to prevent collisions by measuring the proximity of the surrounding objects.
 
-The price of a single proximity sensor is about 0.5 USD for average quality low distance sensors suitable for the application mentioned before. Microcontroller pin requirements are one pin to enable the infrared led within the proximity sensor (optional) and another analog-to-digital converter enabled pin to perform the readings of the photodiode. When multiple proximity sensors are used within a robot, analog multiplexer 
+The price of a single proximity sensor is about 0.5 USD for average quality low distance sensors suitable for the application mentioned before. Microcontroller pin requirements are one pin to enable the infrared led within the proximity sensor (optional) and another analog-to-digital converter enabled pin to perform the readings of the photodiode. When multiple proximity sensors are used within a robot, analog multiplexer can be used to save pins. \cite[pp. 335]{niku2001introduction}
 
 \subsection{Ultrasonic Distance Sensor}
 Ultrasonic distance sensors sense distance between the sensor and an object in the visible area of the sensor. In case of ultrasonic sensors the visible area is the area where the echo spreads. By counting the time between the signal and the reflection the distance can be calculated using the speed of sound (340.29m/s at sea level). 
@@ -325,7 +326,7 @@ Ultrasonic distance sensors sense distance between the sensor and an object in t
 
 The price for an ultrasonic distance sensor is very low, cheap versions with a range between 1 and 255 centimeters start at about 1.5 USD. Interfacing the sensor requires two microcontroller pins - one for triggering the echo and another one for reading back the distance value. The trigger pin can be a generic purpose input/output pin, the sense pin must be attached to a pin which provides an analog to digital converter.
 
-A typical application for ultrasonic distance sensor is obstacle avoidance. By mounting the sensor on a servo motor the visible area can be increased which allows better navigation due to enhanced obstacle avoidance possibilities. 
+A typical application for ultrasonic distance sensor is obstacle avoidance. By mounting the sensor on a servo motor the visible area can be increased which allows better navigation due to enhanced obstacle avoidance possibilities. \cite[p. 338]{niku2001introduction}
 
 \subsection{Accelerometer}
 Accelerometers can sense acceleration on one or more axis. This can be used to determine the speed of the robot or the direction in which the robot accelerates (which can be used to determine whether the robot falls/is lifted up). 
@@ -339,6 +340,7 @@ Interfacing accelerometer is often done using serial protocols like SPI (Serial 
 \end{figure}
 
 The MPU-6050 can be interfaced using various protocols, but I2C is the most common way to do so and requires two input/output pins only using software-based I2C or two I2C hardware pins. Libraries with permissive license exist which ease the use of the accelerometer. For advanced usage scenarios a integrated DMP (Digitial Motion Processor) can process raw values and interface additional sensors like a compass.
+
 \subsection{Gyroscope}
 Gyroscopes are used to determine the orientation. Applications for gyroscopes are balancing and position calculation (usually in combination with an accelerometer). Integrated circuits such as the MPU-6050 mentioned before usually combine a gyroscope and an accelerometer into one single device.
 
@@ -383,7 +385,7 @@ Infrared based data transfer is widely used in remote control application where 
   \caption{Components for infrared communication (CC-BY-SA Ben Oswald)}
 \end{figure}
 
-When using infrared signals only one robot can send at a time which requires collision detection. The hardware requirements for infrared transmissions are ver low, only a infrared reciever and a infrared LED is required which sums up to a total of 0.5 USD. The infrared reciever and the infrared LED require one free GPIO pin on the microcontroller each. To ease programming the reciever should be attached to a microcontroller pin which is suitable for external interrupts.
+When using infrared signals only one robot can send at a time which requires collision detection. The hardware requirements for infrared transmissions are very low, only a infrared reciever and a infrared LED is required which sums up to a total of 0.5 USD. The infrared reciever and the infrared LED require one free GPIO pin on the microcontroller each. To ease programming the reciever should be attached to a microcontroller pin which is suitable for external interrupts.
 
 Since a lot of effort is needed to make the connection stable, this solution is not trouble free, although techniques to stabilize communication have educational potential. A standardizes data exchange format for infrared communication does not exist.
 
@@ -392,7 +394,7 @@ The RFM12B is a wireless transceiver operating in the 434MHz or 915MHz band. It 
 
 It operates at voltage levels from 2.2V to 3.8V and provides data rates up to 115.2kbps. It comes without a breakout board but is shaped with stamp holes which are easy to solder. The price tag is about 7 USD for each module.
 
-The maximum distance depends on the antenna used. A arduino compatible library exists which is licensed under MIT license. Connecting the RFM12B requires four SPI pins (MISO, MOSI, SCK and CS) and an additional IRQ interrupt on an external interrupt pin.
+The maximum distance depends on the antenna used. A arduino compatible library exists which is licensed under MIT license. Connecting the RFM12B requires four SPI pins (MISO, MOSI, SCK and CS) and an additional IRQ interrupt on an external interrupt pin.\footnote{see datasheet at \url{http://www.hoperf.de/upload/rf/RFM12B.pdf}}
 \subsection{NRF24L01}
 The nRF24L01 (or its sucessor the nRF24L01+) are single chip trancievers by Nordic Semiconductors which operate in the license free 2.4GHz frequency band. The allow sending and recieving of data and can standby in ultra low power mode consuming 900nA at 3.3V only.
 
@@ -404,7 +406,7 @@ The nRF24L01 (or its sucessor the nRF24L01+) are single chip trancievers by Nord
 
 Attaching the nRF24L01 to the microcontroller requires four SPI pins (MISO, MOSI, SCK and CS), an additional CE (chip enable) pin and an external interrupt pin to indicate state. Even though the microcontroller runs at 3.3V the inputs are 5V tolerant. The maximum data rate of the module is 2 Mbit/s, lower data rates (1 Mbit/s or 250Kbit/s) increase the maximum distance between two modules.
 
-Two open source libraries Mirf and RF24 exist. RF24 is licensed under a GPL 2.0 license and Mirf is provided under a permissive "as is" license. The price for a nRF24L01 on a breadout-board is around 3 USD on ebay, other modules with external antenna have a higher price tag.
+Two open source libraries Mirf and RF24 exist. RF24 is licensed under a GPL 2.0 license and Mirf is provided under a permissive "as is" license. The price for a nRF24L01 on a breadout-board is around 3 USD on ebay, other modules with external antenna have a higher price tag.\footnote{see datasheet at \url{https://www.sparkfun.com/datasheets/Components/SMD/nRF24L01Pluss_Preliminary_Product_Specification_v1_0.pdf}}
 \subsection{Conclusion}
 In terms of cost-effectiveness the nRF24L01 is the best solution for wireless communication between robots. The transmission is robust, easy to implement due to library support. Since the chip comes mounted on a breadboard with 2x4 header, a user can populate a socket and add the module on demand.
 \section{Microcontroller}
@@ -414,20 +416,19 @@ Since the target audience are beginners, the evaluation focusses on microcontrol
 \subsection{ATmega328p}
 The ATmega328p is a low power microcontroller produced by Atmel which runs on voltages between 1.8 and 5.5 Volt. It is usally operated at 5 Volt with a frequency of 16 MHz. The microcontroller has 32KB of integrated flash memory, 2KB RAM and 1KB EEPROM. Hardware interfaces include a UART, SPI and I2C (called TWI - two wire interface). Six microcontroller pins provide an analog to digital converter with 12 bit resolution (0 to 1024), additional 14 pins are generic input/output pins of which six pins provide PWM (pulse-width-modulation) capabilities.
 
-The ATmega328p costs about 3.5 USD in a single unit, when buying in bulk the price drops to about 2 USD per unit. The microcontroller can be programmed using an ISP (In-system programmer). When the Arduino bootloader is present, the microcontroller can be programmed using its UART. The bootloader consumes about 0.5KB of flash memory. Using the UART for programming requires a USB to serial cable with TTL logic level and reset pin. Integrated circuits such as the FTDI  FT232RL provide this functionality for about 4 USD plus additional components.
+The ATmega328p costs about 3.5 USD in a single unit\footnote{price from \url{http://digikey.com}}, when buying in bulk the price drops to about 2 USD per unit. The microcontroller can be programmed using an ISP (In-system programmer). When the Arduino bootloader is present, the microcontroller can be programmed using its UART. The bootloader consumes about 0.5KB of flash memory. Using the UART for programming requires a USB to serial cable with TTL logic level and reset pin. Integrated circuits such as the FTDI  FT232RL provide this functionality for about 4 USD plus additional components.\footnote{see datasheet at \url{http://www.atmel.com/Images/doc8161.pdf}}
 \subsection{ATmega32U4}
 The ATmega32U4 is a microcontroller produces by Atmel with integrated USB connectivity. It usually operates at 5 Volt with a frequency of 16Mhz. It provides 32KB of flash memory, 2.5KB RAM and 1KB EEPROM. 
 
-Interfacing other hardware components is possible using 20 digital input/output pins of which seven provide PWM output and twelve pins act as an ten bit analog to digital converter. Hardware interfaces for I2C, SPI and UART exist, the USB interface can be used for emulating a serial interface or usb mouse and keyboard.
+Interfacing other hardware components is possible using 20 digital input/output pins of which seven provide PWM output and twelve pins act as an ten bit analog to digital converter. Hardware interfaces for I2C, SPI and UART exist, the USB interface can be used for emulating a serial interface or usb mouse and keyboard. \footnote{see datasheet at \url{http://www.atmel.com/Images/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_\%20Datasheet.pdf}}
 
-When the Arduino bootloader is present on the microcontoller it can be programmed using the usb serial device. This reduces the available flash memory by 4KB to 28KB available. It also reduces the need of additional components such as an FT232RL for programming via USB.
-The cost per microcontroller is 6 USD for a single unit and drops to 3.5 USD in large quantities.
+When the Arduino bootloader is present on the microcontoller it can be programmed using the usb serial device. This reduces the available flash memory by 4KB to 28KB available. It also reduces the need of additional components such as an FT232RL for programming via USB. The cost per microcontroller is 6 USD for a single unit and drops to 3.5 USD in large quantities.
 \subsection{Conclusion}
 Both, the ATmega328p and ATmega32U4 are suitable for robotic projects. The pricing is similar considering the microcontroller to be programmable via USB (ATmega328p: 7.5 USD - ATmega32U4: 6 USD). Both microcontrollers well supported in the arduino community and provide sufficient connectivity for sensors and actuators.  
 
 Some features make the ATmega32U4 more favorable than the ATmega328p such as the increased number of PWM capable pins and the increased number of pins with an integrated analog to digital converter. In addition the usb keyboard and mouse emulation offers additional usage scenarios even though usb programming is not available in this mode. The newest Arduino generation (Arduino Leonardo) is based on the ATmega32U4.
 \section{Power Supply}
-Supplying power to the robot can be archieved using different technologies. Difficulties exist in handling the needed voltages and current for all attached devices including the microcontoller, actuators and sensors. Criteria on which power supply technologies are evaluated are the discharge rate, the cost and of the security.
+Supplying power to the robot can be achieved using different technologies. Difficulties exist in handling the needed voltages and current for all attached devices including the microcontoller, actuators and sensors. Criteria on which power supply technologies are evaluated are the discharge rate, the cost and of the security.
 \subsection{Nickel-metal hydride batteries}
 Nickel-metal hydride batteries better known as NiMH batteries are rechargeable with a nominal voltage of 1.2Volt and a energy density of 140 to 300 watt hours per liter. The durability of the cell is often specified in the range of 500 to 1000 charge cycles. Maximum discharge rates are about 1C which means full discharge in one hour.
 

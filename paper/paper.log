@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.3.3)  8 MAY 2014 22:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.3.3)  12 MAY 2014 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -986,7 +986,7 @@ Chapter 2.
 
 ] [3] [4]
 Chapter 3.
-<images/asuro.jpg, id=424, 1096.095pt x 1023.825pt>
+<images/asuro.jpg, id=431, 1096.095pt x 1023.825pt>
 File: images/asuro.jpg Graphic file (type jpg)
  <use images/asuro.jpg>
 Package pdftex.def Info: images/asuro.jpg used on input line 42.
@@ -994,331 +994,350 @@ Package pdftex.def Info: images/asuro.jpg used on input line 42.
 
 [5
 
-]
-Underfull \vbox (badness 10000) detected at line 68
+] [6 <./images/asuro.jpg>]
+Underfull \vbox (badness 10000) detected at line 69
  []
 
-[6 <./images/asuro.jpg>]
-<images/arduinorobot.jpg, id=436, 782.925pt x 547.04375pt>
+<images/arduinorobot.jpg, id=448, 782.925pt x 547.04375pt>
 File: images/arduinorobot.jpg Graphic file (type jpg)
 
 <use images/arduinorobot.jpg>
-Package pdftex.def Info: images/arduinorobot.jpg used on input line 75.
+Package pdftex.def Info: images/arduinorobot.jpg used on input line 76.
 (pdftex.def)             Requested size: 227.62206pt x 159.03928pt.
- [7]
-Underfull \vbox (badness 10000) detected at line 98
+ [7
+
+]
+Underfull \vbox (badness 10000) detected at line 99
  []
 
 [8 <./images/arduinorobot.jpg>]
-<images/mindstorms.jpg, id=456, 246.6816pt x 185.0112pt>
+<images/mindstorms.jpg, id=469, 246.6816pt x 185.0112pt>
 File: images/mindstorms.jpg Graphic file (type jpg)
 
 <use images/mindstorms.jpg>
-Package pdftex.def Info: images/mindstorms.jpg used on input line 105.
+Package pdftex.def Info: images/mindstorms.jpg used on input line 106.
 (pdftex.def)             Requested size: 227.62206pt x 170.7205pt.
  [9]
-Underfull \vbox (badness 10000) detected at line 132
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[][]\T1/ppl/m/n/9 Sources avail-able un-der []$\T1/cmtt/m/n/9 http : / / cache 
+. lego . com / upload / contentTemplating /
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 133
  []
 
 [10 <./images/mindstorms.jpg>]
-<images/thymioii.jpg, id=467, 1204.5pt x 903.375pt>
+<images/thymioii.jpg, id=489, 1204.5pt x 903.375pt>
 File: images/thymioii.jpg Graphic file (type jpg)
  <use images/thymioii.jpg>
-Package pdftex.def Info: images/thymioii.jpg used on input line 139.
+Package pdftex.def Info: images/thymioii.jpg used on input line 140.
 (pdftex.def)             Requested size: 227.62206pt x 170.70569pt.
 
 [11]
-Underfull \vbox (badness 10000) detected at line 163
+Underfull \vbox (badness 10000) detected at line 164
  []
 
 [12 <./images/thymioii.jpg>] [13]
 Chapter 4.
-<images/30_ballcaster.jpg, id=482, 754.82pt x 605.26125pt>
+<images/30_ballcaster.jpg, id=507, 754.82pt x 605.26125pt>
 File: images/30_ballcaster.jpg Graphic file (type jpg)
 
 <use images/30_ballcaster.jpg>
-Package pdftex.def Info: images/30_ballcaster.jpg used on input line 176.
+Package pdftex.def Info: images/30_ballcaster.jpg used on input line 177.
 (pdftex.def)             Requested size: 227.62206pt x 182.52179pt.
  [14
 
 ]
-<images/30_dcmotor.jpg, id=487, 623.32875pt x 499.8675pt>
+<images/30_dcmotor.jpg, id=514, 623.32875pt x 499.8675pt>
 File: images/30_dcmotor.jpg Graphic file (type jpg)
 
 <use images/30_dcmotor.jpg>
-Package pdftex.def Info: images/30_dcmotor.jpg used on input line 191.
+Package pdftex.def Info: images/30_dcmotor.jpg used on input line 192.
 (pdftex.def)             Requested size: 196.66235pt x 157.71078pt.
 
-<images/30_gearboxmotor.jpg, id=488, 846.16125pt x 676.5275pt>
+<images/30_gearboxmotor.jpg, id=515, 846.16125pt x 676.5275pt>
 File: images/30_gearboxmotor.jpg Graphic file (type jpg)
 
 <use images/30_gearboxmotor.jpg>
-Package pdftex.def Info: images/30_gearboxmotor.jpg used on input line 196.
+Package pdftex.def Info: images/30_gearboxmotor.jpg used on input line 197.
 (pdftex.def)             Requested size: 196.66235pt x 157.22906pt.
  [15 <./images/30_ballcaster.jpg>]
-<images/30_speedsensor.jpg, id=494, 782.925pt x 626.34pt>
+<images/30_speedsensor.jpg, id=522, 782.925pt x 626.34pt>
 File: images/30_speedsensor.jpg Graphic file (type jpg)
 
 <use images/30_speedsensor.jpg>
-Package pdftex.def Info: images/30_speedsensor.jpg used on input line 206.
+Package pdftex.def Info: images/30_speedsensor.jpg used on input line 207.
 (pdftex.def)             Requested size: 227.62206pt x 182.09268pt.
  [16 <./images/30_dcmotor.jpg> <./images/30_gearboxmotor.jpg> <./images/30_spee
 dsensor.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 []|\T1/ppl/m/n/10.95 Motor speed con-trol us-ing pulse-width-
  []
 
-[17] <images/mecanum.png, id=506, 298.76567pt x 145.28505pt>
+[17] <images/mecanum.png, id=537, 298.76567pt x 145.28505pt>
 File: images/mecanum.png Graphic file (type png)
 
 <use images/mecanum.png>
-Package pdftex.def Info: images/mecanum.png used on input line 260.
+Package pdftex.def Info: images/mecanum.png used on input line 261.
 (pdftex.def)             Requested size: 227.62206pt x 110.69266pt.
  [18 <./images/mecanum.png>]
-<images/omniwheel.jpg, id=515, 394.47375pt x 362.10281pt>
+<images/omniwheel.jpg, id=546, 394.47375pt x 362.10281pt>
 File: images/omniwheel.jpg Graphic file (type jpg)
 
 <use images/omniwheel.jpg>
-Package pdftex.def Info: images/omniwheel.jpg used on input line 270.
+Package pdftex.def Info: images/omniwheel.jpg used on input line 271.
 (pdftex.def)             Requested size: 227.62206pt x 208.94234pt.
  [19 <./images/omniwheel.jpg>]
-<images/30_ir.jpg, id=523, 842.14626pt x 674.52pt>
+<images/30_ir.jpg, id=554, 842.14626pt x 674.52pt>
 File: images/30_ir.jpg Graphic file (type jpg)
  <use images/30_ir.jpg>
-Package pdftex.def Info: images/30_ir.jpg used on input line 287.
+Package pdftex.def Info: images/30_ir.jpg used on input line 288.
 (pdftex.def)             Requested size: 227.62206pt x 182.30809pt.
 
 [20 <./images/30_ir.jpg>]
-<images/30_proximity_front.jpg, id=528, 511.9125pt x 410.53375pt>
+<images/30_proximity_front.jpg, id=559, 511.9125pt x 410.53375pt>
 File: images/30_proximity_front.jpg Graphic file (type jpg)
 
 <use images/30_proximity_front.jpg>
-Package pdftex.def Info: images/30_proximity_front.jpg used on input line 302.
+Package pdftex.def Info: images/30_proximity_front.jpg used on input line 303.
 (pdftex.def)             Requested size: 196.66235pt x 157.71457pt.
 
-<images/30_proximity_back.jpg, id=529, 878.28125pt x 702.625pt>
+<images/30_proximity_back.jpg, id=560, 878.28125pt x 702.625pt>
 File: images/30_proximity_back.jpg Graphic file (type jpg)
 
 <use images/30_proximity_back.jpg>
-Package pdftex.def Info: images/30_proximity_back.jpg used on input line 307.
+Package pdftex.def Info: images/30_proximity_back.jpg used on input line 308.
 (pdftex.def)             Requested size: 196.66235pt x 157.32259pt.
 
-<images/30_ultrasonic.jpg, id=530, 444.66125pt x 354.32375pt>
+<images/30_ultrasonic.jpg, id=562, 444.66125pt x 354.32375pt>
 File: images/30_ultrasonic.jpg Graphic file (type jpg)
 
 <use images/30_ultrasonic.jpg>
-Package pdftex.def Info: images/30_ultrasonic.jpg used on input line 322.
+Package pdftex.def Info: images/30_ultrasonic.jpg used on input line 323.
 (pdftex.def)             Requested size: 227.62206pt x 181.37852pt.
  [21 <./images/30_proximity_front.jpg> <./images/30_proximity_back.jpg>]
-<images/30_gyroaccel.jpg, id=535, 620.3175pt x 483.8075pt>
+<images/30_gyroaccel.jpg, id=568, 620.3175pt x 483.8075pt>
 File: images/30_gyroaccel.jpg Graphic file (type jpg)
 
 <use images/30_gyroaccel.jpg>
-Package pdftex.def Info: images/30_gyroaccel.jpg used on input line 337.
+Package pdftex.def Info: images/30_gyroaccel.jpg used on input line 338.
 (pdftex.def)             Requested size: 227.62206pt x 177.52951pt.
  [22 <./images/30_ultrasonic.jpg>] [23 <./images/30_gyroaccel.jpg>] <images/30_
-compass.jpg, id=545, 609.27625pt x 488.82625pt>
+compass.jpg, id=578, 609.27625pt x 488.82625pt>
 File: images/30_compass.jpg Graphic file (type jpg)
 
 <use images/30_compass.jpg>
-Package pdftex.def Info: images/30_compass.jpg used on input line 353.
+Package pdftex.def Info: images/30_compass.jpg used on input line 355.
 (pdftex.def)             Requested size: 227.62206pt x 182.62317pt.
  [24 <./images/30_compass.jpg>]
-<images/30_irdiodes.jpg, id=550, 747.79375pt x 599.23875pt>
+<images/30_irdiodes.jpg, id=583, 747.79375pt x 599.23875pt>
 File: images/30_irdiodes.jpg Graphic file (type jpg)
 
 <use images/30_irdiodes.jpg>
-Package pdftex.def Info: images/30_irdiodes.jpg used on input line 375.
+Package pdftex.def Info: images/30_irdiodes.jpg used on input line 377.
 (pdftex.def)             Requested size: 196.66235pt x 157.59055pt.
 File: images/30_ir.jpg Graphic file (type jpg)
  <use images/30_ir.jpg>
-Package pdftex.def Info: images/30_ir.jpg used on input line 380.
+Package pdftex.def Info: images/30_ir.jpg used on input line 382.
 (pdftex.def)             Requested size: 196.66235pt x 157.51385pt.
- [25 <./images/30_irdiodes.jpg>] <images/30_nrf24l01.jpg, id=555, 381.425pt x 3
+ [25 <./images/30_irdiodes.jpg>] <images/30_nrf24l01.jpg, id=590, 381.425pt x 3
 06.14375pt>
 File: images/30_nrf24l01.jpg Graphic file (type jpg)
 
 <use images/30_nrf24l01.jpg>
-Package pdftex.def Info: images/30_nrf24l01.jpg used on input line 401.
+Package pdftex.def Info: images/30_nrf24l01.jpg used on input line 403.
 (pdftex.def)             Requested size: 227.62206pt x 182.69733pt.
- [26 <./images/30_nrf24l01.jpg>] [27] [28] [29]
-<images/30_lithium-polymer.jpg, id=574, 479.7925pt x 384.43625pt>
+ [26 <./images/30_nrf24l01.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 409--409
+[][]\T1/ppl/m/n/9 see datasheet at []$\T1/cmtt/m/n/9 https : / / www . sparkfun
+ . com / datasheets / Components / SMD / nRF24L01Pluss _ Preliminary _
+ []
+
+[27]
+Underfull \hbox (badness 1558) in paragraph at lines 423--423
+[][]\T1/ppl/m/n/9 see datasheet at []$\T1/cmtt/m/n/9 http : / / www . atmel . c
+om / Images / Atmel-[]7766-[]8-[]bit-[]AVR-[]ATmega16U4-[]32U4 _ %20Datasheet .
+
+ []
+
+[28] [29] <images/30_lithium-polymer.jpg, id=625, 479.7925pt x 384.43625pt>
 File: images/30_lithium-polymer.jpg Graphic file (type jpg)
 
 <use images/30_lithium-polymer.jpg>
-Package pdftex.def Info: images/30_lithium-polymer.jpg used on input line 444.
+Package pdftex.def Info: images/30_lithium-polymer.jpg used on input line 445.
 (pdftex.def)             Requested size: 227.62206pt x 182.3862pt.
  [30 <./images/30_lithium-polymer.jpg>]
 [31]
 Chapter 5.
 [32
 
-] [33] <images/schematic/stepup.png, id=604, 340.1508pt x 188.3838pt>
+] [33] <images/schematic/stepup.png, id=654, 340.1508pt x 188.3838pt>
 File: images/schematic/stepup.png Graphic file (type png)
 
 <use images/schematic/stepup.png>
-Package pdftex.def Info: images/schematic/stepup.png used on input line 491.
+Package pdftex.def Info: images/schematic/stepup.png used on input line 492.
 (pdftex.def)             Requested size: 455.24411pt x 252.14264pt.
  [34]
-<images/schematic/charge.png, id=613, 311.4837pt x 188.3838pt>
+<images/schematic/charge.png, id=663, 311.4837pt x 188.3838pt>
 File: images/schematic/charge.png Graphic file (type png)
 
 <use images/schematic/charge.png>
-Package pdftex.def Info: images/schematic/charge.png used on input line 499.
+Package pdftex.def Info: images/schematic/charge.png used on input line 500.
 (pdftex.def)             Requested size: 455.24411pt x 275.33987pt.
  [35 <./images/schematic/stepup.png (PNG copy)>] [36 <./images/schematic/charge
 .png (PNG copy)>]
-Overfull \hbox (13.85751pt too wide) in paragraph at lines 512--512
+Overfull \hbox (13.85751pt too wide) in paragraph at lines 513--513
 [][]\T1/ppl/m/n/9 CITE ME HERE; pos-si-ble links: http://web.archive.org/web/20
 130513161312/http://jeelabs.org/2010/01/06/pin-
  []
 
-[37] <images/30_tftfront.jpg, id=629, 572.1375pt x 401.5pt>
+[37] <images/30_tftfront.jpg, id=679, 572.1375pt x 401.5pt>
 File: images/30_tftfront.jpg Graphic file (type jpg)
 
 <use images/30_tftfront.jpg>
-Package pdftex.def Info: images/30_tftfront.jpg used on input line 538.
+Package pdftex.def Info: images/30_tftfront.jpg used on input line 539.
 (pdftex.def)             Requested size: 196.66235pt x 138.00916pt.
 
-<images/30_tftback.jpg, id=630, 572.1375pt x 401.5pt>
+<images/30_tftback.jpg, id=680, 572.1375pt x 401.5pt>
 File: images/30_tftback.jpg Graphic file (type jpg)
 
 <use images/30_tftback.jpg>
-Package pdftex.def Info: images/30_tftback.jpg used on input line 543.
+Package pdftex.def Info: images/30_tftback.jpg used on input line 544.
 (pdftex.def)             Requested size: 196.66235pt x 138.00916pt.
  [38]
-<images/30_gripper.jpg, id=640, 839.135pt x 672.5125pt>
+<images/30_gripper.jpg, id=690, 839.135pt x 672.5125pt>
 File: images/30_gripper.jpg Graphic file (type jpg)
 
 <use images/30_gripper.jpg>
-Package pdftex.def Info: images/30_gripper.jpg used on input line 563.
+Package pdftex.def Info: images/30_gripper.jpg used on input line 564.
 (pdftex.def)             Requested size: 364.19667pt x 291.87357pt.
  [39 <./images/30_tftfront.jpg> <./images/30_tftback.jpg>] <images/part_types_t
-htsmt.jpg, id=649, 306.14375pt x 233.87375pt>
+htsmt.jpg, id=699, 306.14375pt x 233.87375pt>
 File: images/part_types_thtsmt.jpg Graphic file (type jpg)
 
 <use images/part_types_thtsmt.jpg>
-Package pdftex.def Info: images/part_types_thtsmt.jpg used on input line 573.
+Package pdftex.def Info: images/part_types_thtsmt.jpg used on input line 574.
 (pdftex.def)             Requested size: 318.66948pt x 243.4549pt.
  [40 <./images/30_gripper.jpg>]
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 586.
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 587.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [41 <./images/part_types_thtsmt.jpg>]
-<images/schematic/robot_schematic_user.pdf, id=662, 2322.8782pt x 1570.84865pt>
+<images/schematic/robot_schematic_user.pdf, id=712, 2322.8782pt x 1570.84865pt>
 File: images/schematic/robot_schematic_user.pdf Graphic file (type pdf)
 <use images/schematic/robot_schematic_user.pdf>
 Package pdftex.def Info: images/schematic/robot_schematic_user.pdf used on inpu
-t line 600.
+t line 601.
 (pdftex.def)             Requested size: 455.24411pt x 307.86028pt.
  [42]
-<images/schematic/robot_schematic_battery.pdf, id=669, 2322.8782pt x 1570.84865
+<images/schematic/robot_schematic_battery.pdf, id=719, 2322.8782pt x 1570.84865
 pt>
 File: images/schematic/robot_schematic_battery.pdf Graphic file (type pdf)
  <use images/schematic/robot_schematic_battery.pdf>
 Package pdftex.def Info: images/schematic/robot_schematic_battery.pdf used on i
-nput line 612.
+nput line 613.
 (pdftex.def)             Requested size: 455.24411pt x 307.86028pt.
  [43 <./images/schematic/robot_schematic_user.pdf>]
-<images/schematic/robot_schematic_stepup.pdf, id=676, 2322.8782pt x 1570.84865p
+<images/schematic/robot_schematic_stepup.pdf, id=727, 2322.8782pt x 1570.84865p
 t>
 File: images/schematic/robot_schematic_stepup.pdf Graphic file (type pdf)
  <use images/schematic/robot_schematic_stepup.pdf>
 Package pdftex.def Info: images/schematic/robot_schematic_stepup.pdf used on in
-put line 620.
+put line 621.
 (pdftex.def)             Requested size: 455.24411pt x 307.86028pt.
  [44 <./images/schematic/robot_schematic_battery.pdf>]
-<images/schematic/robot_schematic_3_3v.pdf, id=683, 2322.8782pt x 1570.84865pt>
+<images/schematic/robot_schematic_3_3v.pdf, id=734, 2322.8782pt x 1570.84865pt>
 File: images/schematic/robot_schematic_3_3v.pdf Graphic file (type pdf)
 <use images/schematic/robot_schematic_3_3v.pdf>
 Package pdftex.def Info: images/schematic/robot_schematic_3_3v.pdf used on inpu
-t line 628.
+t line 629.
 (pdftex.def)             Requested size: 455.24411pt x 307.86028pt.
  [45 <./images/schematic/robot_schematic_stepup.pdf>]
-<images/schematic/robot_schematic_brain.pdf, id=690, 2322.8782pt x 1570.84865pt
+<images/schematic/robot_schematic_brain.pdf, id=741, 2322.8782pt x 1570.84865pt
 >
 File: images/schematic/robot_schematic_brain.pdf Graphic file (type pdf)
  <use images/schematic/robot_schematic_brain.pdf>
 Package pdftex.def Info: images/schematic/robot_schematic_brain.pdf used on inp
-ut line 638.
+ut line 639.
 (pdftex.def)             Requested size: 455.24411pt x 307.86028pt.
  [46 <./images/schematic/robot_schematic_3_3v.pdf>]
-<images/schematic/robot_schematic_motor.pdf, id=697, 2322.8782pt x 1570.84865pt
+<images/schematic/robot_schematic_motor.pdf, id=748, 2322.8782pt x 1570.84865pt
 >
 File: images/schematic/robot_schematic_motor.pdf Graphic file (type pdf)
  <use images/schematic/robot_schematic_motor.pdf>
 Package pdftex.def Info: images/schematic/robot_schematic_motor.pdf used on inp
-ut line 646.
+ut line 647.
 (pdftex.def)             Requested size: 455.24411pt x 307.86028pt.
  [47 <./images/schematic/robot_schematic_brain.pdf>]
-<images/schematic/robot_schematic_optional.pdf, id=705, 2322.8782pt x 1570.8486
+<images/schematic/robot_schematic_optional.pdf, id=756, 2322.8782pt x 1570.8486
 5pt>
 File: images/schematic/robot_schematic_optional.pdf Graphic file (type pdf)
  <use images/schematic/robot_schematic_optional.pdf>
 Package pdftex.def Info: images/schematic/robot_schematic_optional.pdf used on 
-input line 674.
+input line 675.
 (pdftex.def)             Requested size: 455.24411pt x 307.86028pt.
  [48 <./images/schematic/robot_schematic_motor.pdf>] [49 <./images/schematic/ro
 bot_schematic_optional.pdf>]
-<images/captive-square-nut-joint-exploded.png, id=719, 602.25pt x 375.4025pt>
+<images/captive-square-nut-joint-exploded.png, id=769, 602.25pt x 375.4025pt>
 File: images/captive-square-nut-joint-exploded.png Graphic file (type png)
 
 <use images/captive-square-nut-joint-exploded.png>
 Package pdftex.def Info: images/captive-square-nut-joint-exploded.png used on i
-nput line 693.
+nput line 694.
 (pdftex.def)             Requested size: 196.66235pt x 122.58864pt.
 
-<images/captive-square-nut-joint-imploded.png, id=720, 602.25pt x 424.58624pt>
+<images/captive-square-nut-joint-imploded.png, id=770, 602.25pt x 424.58624pt>
 File: images/captive-square-nut-joint-imploded.png Graphic file (type png)
 
 <use images/captive-square-nut-joint-imploded.png>
 Package pdftex.def Info: images/captive-square-nut-joint-imploded.png used on i
-nput line 698.
+nput line 699.
 (pdftex.def)             Requested size: 196.66235pt x 138.6497pt.
 
-<images/30_motormount1.jpg, id=723, 728.7225pt x 490.83376pt>
+<images/30_motormount1.jpg, id=773, 728.7225pt x 490.83376pt>
 File: images/30_motormount1.jpg Graphic file (type jpg)
 
 <use images/30_motormount1.jpg>
-Package pdftex.def Info: images/30_motormount1.jpg used on input line 708.
+Package pdftex.def Info: images/30_motormount1.jpg used on input line 709.
 (pdftex.def)             Requested size: 364.19667pt x 245.30392pt.
  [50 <./images/captive-square-nut-joint-exploded.png> <./images/captive-square-
 nut-joint-imploded.png>] [51 <./images/30_motormount1.jpg>] <images/30_wheel_fu
-ll.jpg, id=733, 649.42625pt x 560.0925pt>
+ll.jpg, id=783, 649.42625pt x 560.0925pt>
 File: images/30_wheel_full.jpg Graphic file (type jpg)
 
 <use images/30_wheel_full.jpg>
-Package pdftex.def Info: images/30_wheel_full.jpg used on input line 729.
+Package pdftex.def Info: images/30_wheel_full.jpg used on input line 730.
 (pdftex.def)             Requested size: 364.19667pt x 314.10262pt.
  [52 <./images/30_wheel_full.jpg>]
 Chapter 6.
-<images/30_robot_top.jpg, id=738, 1018.80624pt x 783.92876pt>
+<images/30_robot_top.jpg, id=788, 1018.80624pt x 783.92876pt>
 File: images/30_robot_top.jpg Graphic file (type jpg)
 
 <use images/30_robot_top.jpg>
-Package pdftex.def Info: images/30_robot_top.jpg used on input line 742.
+Package pdftex.def Info: images/30_robot_top.jpg used on input line 743.
 (pdftex.def)             Requested size: 196.66235pt x 151.31644pt.
 
-<images/30_robot_bottom.jpg, id=739, 868.24374pt x 724.7075pt>
+<images/30_robot_bottom.jpg, id=789, 868.24374pt x 724.7075pt>
 File: images/30_robot_bottom.jpg Graphic file (type jpg)
 
 <use images/30_robot_bottom.jpg>
-Package pdftex.def Info: images/30_robot_bottom.jpg used on input line 747.
+Package pdftex.def Info: images/30_robot_bottom.jpg used on input line 748.
 (pdftex.def)             Requested size: 196.66235pt x 164.1469pt.
 
-Underfull \vbox (badness 10000) detected at line 766
+Underfull \vbox (badness 10000) detected at line 767
  []
 
 [53
 
  <./images/30_robot_top.jpg> <./images/30_robot_bottom.jpg>]
-<images/30_robotfront.jpg, id=749, 963.6pt x 702.625pt>
+<images/30_robotfront.jpg, id=799, 963.6pt x 702.625pt>
 File: images/30_robotfront.jpg Graphic file (type jpg)
 
 <use images/30_robotfront.jpg>
-Package pdftex.def Info: images/30_robotfront.jpg used on input line 772.
+Package pdftex.def Info: images/30_robotfront.jpg used on input line 773.
 (pdftex.def)             Requested size: 364.19667pt x 265.5529pt.
  [54]) [55 <./images/30_robotfront.jpg>]
 (./paper.bbl [56
@@ -1350,7 +1369,7 @@ Underfull \vbox (badness 10000) detected at line 123
 Underfull \vbox (badness 10000) detected at line 145
  []
 
-<images/schematic/robot.pdf, id=837, 597.23125pt x 845.1575pt>
+<images/schematic/robot.pdf, id=883, 597.23125pt x 845.1575pt>
 File: images/schematic/robot.pdf Graphic file (type pdf)
 
 <use images/schematic/robot.pdf>
@@ -1361,7 +1380,7 @@ File: images/schematic/robot.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/schematic/robot.pdf used on input line 146.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [63]
-<images/schematic/robot.pdf, id=846, page=1, 597.23125pt x 845.1575pt>
+<images/schematic/robot.pdf, id=891, page=1, 597.23125pt x 845.1575pt>
 File: images/schematic/robot.pdf Graphic file (type pdf)
 
 <use images/schematic/robot.pdf, page 1>
@@ -1413,20 +1432,44 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
- 16549 strings out of 493304
- 250503 string characters out of 6139872
+ 16573 strings out of 493304
+ 251023 string characters out of 6139872
  555277 words of memory out of 5000000
- 19407 multiletter control sequences out of 15000+600000
+ 19419 multiletter control sequences out of 15000+600000
  39529 words of font info for 85 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  48i,18n,58p,931b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.23} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.31} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.30} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.29} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.25} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.24} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.23} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.22} has been referenced but does not exis
 t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exis
 t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exis
@@ -1497,10 +1540,10 @@ ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.p
 fb>
-Output written on paper.pdf (73 pages, 5496514 bytes).
+Output written on paper.pdf (73 pages, 5503642 bytes).
 PDF statistics:
- 975 PDF objects out of 1000 (max. 8388607)
- 803 compressed objects within 9 object streams
- 211 named destinations out of 1000 (max. 500000)
+ 1025 PDF objects out of 1200 (max. 8388607)
+ 851 compressed objects within 9 object streams
+ 223 named destinations out of 1000 (max. 500000)
  613 words of extra memory for PDF output out of 10000 (max. 10000000)
 
